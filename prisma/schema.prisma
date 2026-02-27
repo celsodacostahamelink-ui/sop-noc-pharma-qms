@@ -1,0 +1,190 @@
+// NOC Pharma QMS — Database Schema
+// GxP Compliant: 21 CFR Part 11, EU Annex 11, ALCOA++
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// ─── AUTHENTICATION & ROLES ────────────────────────────
+
+enum Role {
+  QP           // Qualified Person (Sachkundige Person) — highest authority
+  RP           // Responsible Person (Verantwortliche Person §52a)
+  QA_MANAGER   // Quality Assurance Manager
+  IT_ADMIN     // IT Compliance / System Admin
+  COMPLIANCE   // Compliance / Legal
+  SCM          // Supply Chain Manager
+  AUDITOR      // Read-only audit access (BfArM inspectors)
+  VIEWER       // Read-only staff
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String
+  role          Role
+  passwordHash  String
+  active        Boolean   @default(true)
+  lastLogin     DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  // Relations
+  auditEntries  AuditLog[]
+  hitlDecisions HITLDecision[]
+  aiDrafts      AIDraft[]
+  sessions      Session[]
+
+  @@index([email])
+  @@index([role])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// ─── SOP DOCUMENTS ─────────────────────────────────────
+
+enum RiskLevel {
+  HIGH
+  MEDIUM
+  LOW
+}
+
+model SOP {
+  id          String    @id @default(cuid())
+  code        String    @unique   // e.g. "SOP-604-02"
+  name        String              // e.g. "Wareneingang Wareneingangskontrollen"
+  type        String              // SOP, Anhang, SOP-AI, Stellenb., QMS
+  version     Int       @default(1)
+  originDate  DateTime?
+  isAI        Boolean   @default(false)
+  riskLevel   RiskLevel?
+  owner       String?             // Role owner
+  regulation  String?             // Regulatory references
+
+  // Compliance scan results
+  scanScore       Int?            // 0-100 compliance %
+  scanGaps        String[]        // ["A11§9", "A11§4", ...]
+  lastScanned     DateTime?
+
+  // Required updates
+  requiredUpdates String[]        // ["U1", "U3", ...]
+  updateStatus    String?         // "pending" | "draft" | "review" | "approved"
+
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  // Relations
+  documents   Document[]
+  aiDrafts    AIDraft[]
+  checklist   ChecklistItem[]
+  auditLogs   AuditLog[]
+
+  @@index([code])
+  @@index([type])
+  @@index([riskLevel])
+}
+
+model Document {
+  id          String   @id @default(cuid())
+  sopId       String
+  sop         SOP      @relation(fields: [sopId], references: [id])
+  filename    String
+  mimeType    String
+  sizeBytes   Int
+  storageKey  String   // S3/local path
+  hash        String   // SHA-256 for integrity (ALCOA++)
+  uploadedBy  String?
+  createdAt   DateTime @default(now())
+
+  @@index([sopId])
+}
+
+// ─── AI AGENT DRAFTS ───────────────────────────────────
+
+model AIDraft {
+  id          String   @id @default(cuid())
+  sopId       String
+  sop         SOP      @relation(fields: [sopId], references: [id])
+  mode        String   // "generate" | "update"
+  content     String   @db.Text
+  model       String   // "claude-sonnet-4-20250514"
+  promptHash  String   // Reproducibility
+  status      String   @default("draft") // draft | review | approved | rejected
+  reviewedBy  String?
+  reviewedAt  DateTime?
+  createdBy   String
+  creator     User     @relation(fields: [createdBy], references: [id])
+  createdAt   DateTime @default(now())
+
+  @@index([sopId])
+  @@index([status])
+}
+
+// ─── HITL DECISIONS (Art.14) ───────────────────────────
+
+model HITLDecision {
+  id          String   @id @default(cuid())
+  decisionType String  // "Batch Release", "COA Verify", etc.
+  riskLevel   RiskLevel
+  isOverride  Boolean  @default(false)
+  reason      String?  @db.Text
+  signature   String   // Digital signature: "Name — Role"
+  signedBy    String
+  signer      User     @relation(fields: [signedBy], references: [id])
+  createdAt   DateTime @default(now())
+
+  // Immutable after creation — no updatedAt
+  @@index([decisionType])
+  @@index([signedBy])
+  @@index([createdAt])
+}
+
+// ─── AUDIT TRAIL (Annex 11 §9, 10yr retention) ────────
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  action    String   // VIEW, UPLOAD, HITL_OK, HITL_OVR, AI_GEN, AI_UPDATE, etc.
+  target    String   // SOP code or resource
+  detail    String?  @db.Text
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id])
+  sopId     String?
+  sop       SOP?     @relation(fields: [sopId], references: [id])
+  ipAddress String?
+  userAgent String?
+  createdAt DateTime @default(now())
+
+  // CRITICAL: Never delete audit logs. 10yr retention per EU AI Act Art.12
+  // No updatedAt — audit entries are immutable
+
+  @@index([action])
+  @@index([userId])
+  @@index([sopId])
+  @@index([createdAt])
+}
+
+// ─── AUDIT CHECKLIST ───────────────────────────────────
+
+model ChecklistItem {
+  id        String   @id @default(cuid())
+  sopId     String?
+  sop       SOP?     @relation(fields: [sopId], references: [id])
+  question  String
+  category  String   // "doc" | "sys"
+  passed    Boolean  @default(false)
+  passedBy  String?
+  passedAt  DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
