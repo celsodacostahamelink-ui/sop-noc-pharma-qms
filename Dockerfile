@@ -5,4 +5,4 @@ RUN npm install
 COPY noc-qms-app/ ./
 RUN npm run build
 EXPOSE 3001
-CMD ["node", "server.cjs"]
+CMD ["node", "/app/noc-qms-app/server.cjs"]
