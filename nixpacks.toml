@@ -1,0 +1,8 @@
+[phases.install]
+cmds = ["cd noc-qms-app && npm install"]
+
+[phases.build]
+cmds = ["cd noc-qms-app && npm run build"]
+
+[start]
+cmd = "cd noc-qms-app && NODE_ENV=production node server.cjs"
