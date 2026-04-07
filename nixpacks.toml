@@ -1,8 +1,8 @@
 [phases.install]
-cmds = ["cd noc-qms-app && npm install"]
+cmds = ["npm install --prefix noc-qms-app"]
 
 [phases.build]
-cmds = ["cd noc-qms-app && npm run build"]
+cmds = ["npm run build --prefix noc-qms-app"]
 
 [start]
-cmd = "cd noc-qms-app && NODE_ENV=production node server.cjs"
+cmd = "node noc-qms-app/server.cjs"
