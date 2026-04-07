@@ -6,3 +6,6 @@ cmds = ["npm run build --prefix noc-qms-app"]
 
 [start]
 cmd = "node noc-qms-app/server.cjs"
+
+[variables]
+NIXPACKS_NO_CACHE = "1"
