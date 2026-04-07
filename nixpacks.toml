@@ -2,10 +2,7 @@
 cmds = ["npm install --prefix noc-qms-app"]
 
 [phases.build]
-cmds = ["npm run build --prefix noc-qms-app"]
+cmds = ["npm run build --prefix noc-qms-app", "cp noc-qms-app/server.cjs noc-qms-app/dist/server.cjs"]
 
 [start]
-cmd = "node noc-qms-app/server.cjs"
-
-[variables]
-NIXPACKS_NO_CACHE = "1"
+cmd = "node noc-qms-app/dist/server.cjs"
