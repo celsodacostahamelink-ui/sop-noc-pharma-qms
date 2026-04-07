@@ -1,8 +1,8 @@
 FROM node:20-alpine
-WORKDIR /app
-COPY noc-qms-app/package*.json noc-qms-app/
-RUN cd noc-qms-app && npm install
-COPY noc-qms-app/ noc-qms-app/
-RUN cd noc-qms-app && npm run build
+WORKDIR /app/noc-qms-app
+COPY noc-qms-app/package*.json ./
+RUN npm install
+COPY noc-qms-app/ ./
+RUN npm run build
 EXPOSE 3001
-CMD ["node", "noc-qms-app/server.cjs"]
+CMD ["node", "server.cjs"]
