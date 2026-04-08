@@ -1,0 +1,196 @@
+
+=== Journal Entry 2026-02-24T16:52:35.791048+00:00 ===
+2026-02-24-16-52-35-noc-pharma-qms-project-handoff.txt
+[Project handoff session for NOC Pharma QMS pharmaceutical quality management system. New developer onboarding with complete project context, current state assessment, known issues, and next steps discussion.]
+
+
+
+
+=== Journal Entry 2026-02-24T17:03:53.907753+00:00 ===
+2026-02-24-17-03-53-noc-pharma-qms-rebuild-attempt.txt
+[Development session attempting to rebuild NOC Pharma QMS application from transfer package specifications. Developer requested comprehensive rebuild incorporating BtM module, SOP management, supplier qualification, and bug fixes. Session ended with file size limitation preventing single-file SPA creation.]
+
+
+
+
+=== Journal Entry 2026-02-24T17:10:06.847264+00:00 ===
+2026-02-24-17-10-06-noc-qms-rebuild-complete.txt
+[Complete rebuild of NOC Pharma QMS single-page application. Successfully created modular build system to overcome file size limits. Delivered full-featured QMS with BtM module, SOP management (230+ SOPs), supplier qualification (3 suppliers), compliance dashboard, and all features from transfer package. Includes bug fixes, mobile optimization, and deployment-ready index.html.]
+
+
+
+
+=== Journal Entry 2026-02-24T17:55:38.526254+00:00 ===
+2026-02-24-17-55-37-noc-qms-lifecycle-integration.txt
+[Integration of complete M0-M6 batch lifecycle workflow into NOC Pharma QMS single-page application. Added 11-stage compliance tracker with document control, GDP transport monitoring, barcode verification, Safety Gate logic, and AI agent. Builds on previous QMS rebuild session.]
+
+
+
+
+=== Journal Entry 2026-02-25T11:02:29.613903+00:00 ===
+2026-02-25-11-02-28-noc-pharma-qms-lifecycle-interactive-v23.txt
+[Development of interactive NOC Pharma QMS v2.3 React application with complete M0-M6 batch lifecycle tracker, clickable document expansion with full regulatory metadata, supplier COA vs QSI Bremen comparison, AI compliance agent with proactive alerts, DE/EN i18n, RBAC user management, and supplier context switching. Includes BfArM/PIC/S compliance fixes for third-country cannabis imports.]
+
+
+
+
+=== Journal Entry 2026-02-25T12:08:28.006651+00:00 ===
+2026-02-25-12-08-27-noc-qms-supplier-agents-onboarding.txt
+[Development of supplier-specific AI compliance agents (ANMAT×BfArM, INVIMA×BfArM, Health Canada×BfArM) with dual-expertise identities, supplier onboarding workspaces for MCCN and HYTN pre-qualification, VAT refund tracking on proforma invoice, import permit return documentation (§11 BtMG), and UTF-8 character encoding fixes. Includes comprehensive backup procedures.]
+
+
+
+
+=== Journal Entry 2026-02-25T15:30:00.652930+00:00 ===
+2026-02-25-15-29-59-noc-qms-v23-enhancements.txt
+[NOC Pharma QMS v2.3 React app enhancements: M4 relabeling with label image uploads and DocuSign signatures (Celso Hamelink + Dr. Olaf Schagon), M3.1 quarantine release DocuSign workflow (3 signatures), M3.5 GDP transport with Celso/Torsten signatures, M1.5 vault arrival with datalogger extraction (4 USB loggers, temp/humidity tracking), M1 GDP transport full documentation (5 tabs: overview, pickup FRA, transit monitoring, delivery Anklam, GDP docs), M3 QP release AI agent workflow (generates certificate CGZ-2025-0047, sends to Dr. Schagon via DocuSign), M0 QR code generator (239 codes with download/email/print options), M0 import permit interactive action buttons (complete/no renewal vs file new permit), M0 permit return upload (Einschreiben receipt + BfArM confirmation), WAS Logistics invoice #138688 integration (€49,355.52 total transport costs), M0.5 stage elimination, and comprehensive GDP compliance tracking.]
+
+
+
+
+=== Journal Entry 2026-02-25T18:55:37.634376+00:00 ===
+2026-02-25-18-55-36-noc-qms-localhost-migration-batch-selector.txt
+[NOC Pharma QMS v2.5 React app migration to localhost:3025, professional BfArM-grade login page implementation, M4.5 storage QC monitoring with expiry/CAPA actions, M5 shipment with Base44 sales data and SendCloud integration, M6 reconciliation with BfArM dossier closure, and multi-batch selector for supplier imports (Cannava BI-01 through BI-04, HYTN, MCCN).]
+
+
+
+
+=== Journal Entry 2026-02-26T20:00:53.353131+00:00 ===
+2026-02-26-20-00-52-noc-qms-storage-monitoring-registration-docs.txt
+[NOC Pharma QMS v2.5 development session: X-Sense STH51 WiFi temperature/humidity monitoring integration for GDP storage compliance, M0.5 Registration & Permits stage creation with Canmed/BfArM/PZN workflow (Torsten Cuny + Dominik Delacher responsibilities), real PZN data extraction from NOC_Registrierungen spreadsheet (19 Cannava + 6 Medcolcanna products), and universal Google Drive document management system with View/PDF/Email/Upload actions across all M0-M6 lifecycle stages.]
+
+
+
+
+=== Journal Entry 2026-02-26T21:13:17.563588+00:00 ===
+2026-02-26-21-13-16-noc-qms-pzn-ifa-confirmation-integration.txt
+[Technical session fixing React scope errors (sup/selBatch undefined), integrating real IFA Auftragsbestätigung Nr. 1000658281 with 6 Medcolcanna PZN confirmations, adding PPN numbers to product registry, and building complete PZN request/confirmation workflow in M0.5 Registration stage.]
+
+
+
+
+=== Journal Entry 2026-02-26T21:57:31.734964+00:00 ===
+2026-02-26-21-57-31-m0-m05-swap-thc-protocol-integration.txt
+[Technical session swapping M0/M0.5 stage order (Registration before Pre-Arrival), building multi-supplier M0.5 Registration with Cannava/Medcolcanna/HYTN regulatory frameworks, and implementing THC Discrepancy Protocol workflow linking M2 Lab → PZN request → M4 Relabeling with Pia (QSI) COA amendment process.]
+
+
+
+
+=== Journal Entry 2026-02-26T22:27:34.198431+00:00 ===
+2026-02-26-22-27-33-agent-architecture-drive-integration.txt
+[Session building hierarchical AI agent system (Master + 3 supplier-specific agents) with SOP integration, font size increase (+2px), and Google Drive folder structure setup. Includes agent toggle UI, SOPs tab, and troubleshooting non-functional Drive buttons due to placeholder folder IDs.]
+
+
+
+
+=== Journal Entry 2026-02-26T23:02:09.395734+00:00 ===
+2026-02-26-23-02-08-qms-v25-drive-integration-doc-renewal.txt
+[Session implementing Google Drive integration with document upload/management system, PDF generation/printing, Gmail integration with QP contacts, and automated document renewal request workflow for expiring supplier certifications.]
+
+
+
+
+=== Journal Entry 2026-02-26T23:40:06.951906+00:00 ===
+2026-02-26-23-40-06-email-send-upload-fixes.txt
+[Bug fixes for email send functionality (Gmail compose with document body instead of attachment) and upload button implementation (local file input instead of Google Drive links). Includes syntax error resolution for JSX structure and quote escaping in PDF generation.]
+
+
+
+
+=== Journal Entry 2026-02-27T00:19:15.972037+00:00 ===
+2026-02-27-00-19-15-qms-v25-upload-sops-finance-deviations.txt
+[NOC Pharma QMS v2.5 development session: file upload functionality, SOP register with BfArM audit compliance, finance page with harvest calendar and margin analysis, deviation/CAPA management system, and dashboard import tracking. Contains full component implementations, regulatory compliance details, and financial forecasting models.]
+
+
+
+
+=== Journal Entry 2026-02-27T01:00:56.785321+00:00 ===
+2026-02-27-01-00-56-qms-v25-translator-expiry-tracking.txt
+[NOC Pharma QMS v2.5 bug fixes and feature additions: AI translator tab (ES/EN/DE), product expiry tracking with sale/extension/destruction workflows, bilingual documentation (DE/EN), and resolution of white screen crashes caused by duplicate file inputs and corrupted translation objects.]
+
+
+
+
+=== Journal Entry 2026-02-27T01:39:59.203964+00:00 ===
+2026-02-27-01-39-58-qms-v25-bilingual-qr-generation.txt
+[NOC Pharma QMS v2.5 bilingual UI fixes and complete QR code generation system with CSV export and A4 label printing for 239-unit batches.]
+
+
+
+
+=== Journal Entry 2026-02-27T02:11:43.867101+00:00 ===
+2026-02-27-02-11-43-qms-v25-btm-batches-suppliers-zip-upload.txt
+[NOC Pharma QMS v2.5 development session: BtM narcotics register, batch management, supplier dossier, and ZIP upload with auto-extraction and stage assignment for BI-03 import.]
+
+
+
+
+=== Journal Entry 2026-03-02T10:43:56.133249+00:00 ===
+2026-03-02-10-43-55-qms-v25-suppliers-upload-dashboard.txt
+[NOC Pharma QMS v2.5 development: Supplier document request system with email integration, ZIP/file upload with PDF content classification and preview, supplier-aware dashboard with all-suppliers overview and individual supplier dashboards.]
+
+
+
+
+=== Journal Entry 2026-03-02T11:21:29.827546+00:00 ===
+2026-03-02-11-21-29-finance-control-harvest-calendar.txt
+[NOC Pharma QMS v2.5 Finance module: Complete financial control board with per-supplier cost breakdown (FOB, logistics, processing, VAT), sales tracking with QR code unit tracing, client details, P&L analysis. Medcolcanna harvest calendar integration (15 harvests, 1,492kg/yr). Global font size increase (+2px) for readability.]
+
+
+
+
+=== Journal Entry 2026-03-02T18:47:05.069974+00:00 ===
+2026-03-02-18-47-04-wix-sendcloud-integration-jsx-fixes.txt
+[Wix eCommerce API integration with live order sync, SendCloud shipping setup planning, and multiple JSX syntax debugging (duplicate padding, adjacent elements, div balance issues). Contains API credentials, Site IDs, and complete Wix Orders panel implementation with auto-sync, KPIs, and detailed order tables.]
+
+
+
+
+=== Journal Entry 2026-03-02T19:57:57.686848+00:00 ===
+2026-03-02-19-57-56-finance-ai-cfo-sidebar-navigation.txt
+[Finance module restructuring with AI CFO agent, sidebar sub-navigation for suppliers (Cannava/MCCN/HYTN), expense tracking, VAT recovery, bank reconciliation, cash flow forecasting, and automated invoice reminders. Contains JSX syntax debugging (div balance, fragment errors), Wix proxy setup, and complete finance architecture.]
+
+
+
+
+=== Journal Entry 2026-03-02T20:38:25.507213+00:00 ===
+2026-03-02-20-38-24-sendcloud-wix-integration-tracking.txt
+[SendCloud API integration with Wix eCommerce for shipment tracking, delivery confirmation, and automated BfArM dossier closure. Contains supplier-filtered order views, parcel creation endpoints, tracking status mapping, and proxy server configuration with authentication.]
+
+
+
+
+=== Journal Entry 2026-03-02T20:53:33.737675+00:00 ===
+2026-03-02-20-53-33-sendcloud-intern-transport-lieferschein.txt
+[SendCloud API integration completion with intern transport protocol system and GDP-compliant Lieferschein generator. Contains harvest calendar data extraction from Cannava and Medcolcanna Excel files, transport workflow implementation, and printable delivery documentation.]
+
+
+
+
+=== Journal Entry 2026-03-02T21:25:31.530140+00:00 ===
+2026-03-02-21-25-30-harvest-calendar-investor-financials.txt
+[Harvest calendar integration for Cannava/MCCN/HYTN suppliers with combined overview, plus comprehensive AI CFO financial analysis for 3-ton import plan and Series A investor presentation. Contains revenue projections, P&L models, capital requirements, and funding strategy discussion.]
+
+
+
+
+=== Journal Entry 2026-03-02T21:40:30.751589+00:00 ===
+2026-03-02-21-40-29-noc-qms-ai-cfo-unified-finance.txt
+[NOC Pharma QMS v2.5 Finance module rebuild: unified AI CFO engine integrating harvest calendars, competitor intelligence, investor dashboard, and live financial forecasting. Contains market analysis, revenue share models, platform strategies, and cross-referenced data architecture.]
+
+
+
+
+=== Journal Entry 2026-03-03T08:26:28.440494+00:00 ===
+2026-03-03-08-26-27-qms-finance-bilingual-warehouse-monitor.txt
+[NOC Pharma QMS v2.5 Finance module bilingual verification and warehouse monitoring integration. Contains language toggle fixes across all finance tabs, NOC Pharma Dossier creation with licenses/audits tracking, and X-Sense STH51 temperature/humidity monitoring system setup for GDP compliance.]
+
+
+
+
+=== Journal Entry 2026-03-06T10:57:36.822451+00:00 ===
+2026-03-06-10-57-36-noc-qms-import-codes-warehouse-hytn-m4-deviation.txt
+[NOC Pharma QMS v2.5 restructure: Import codes (CA-01/02/03/04, CO-01, HY-01) replacing batch codes in lifecycle, warehouse monitoring enhancements with CSV import/daily/monthly MKT reports, HYTN harvest calendar integration from official spreadsheet, M4 deviation/CAPA section for CA-01/CA-02 relabeling with 3 SOPs. Contains import structure changes, GDP monitoring system, harvest data, and compliance documentation.]
+
+
+

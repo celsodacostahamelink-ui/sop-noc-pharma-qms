@@ -5,40 +5,11 @@ en:{dashboard:"Dashboard",lifecycle:"Lifecycle",batches:"Batches",suppliers:"Sup
 
 
 const BT_DATA={
-"CA-02":{id:"BI-02-NOCB1.1-INF-F",p:"NOC AS 22/24 + NOC KS 23 + NOC SE 22/27 + NOC SE 14/17 + NOC OF 25",exp:"29.08.2026",lab:"QSI Bremen",aNo:"210-1624923",per:"26.11–04.12.2025",coa:"12.12.2025",qp:"Dr. Olaf Schagon",cert:"NOC-CGZ-2025-003",kg:"151.8",units:580,bags1kg:130,doy10g:580,boxes:"4",net:"151.80",gross:"227.47",exw:"€254,083.60",route:"EZE→FRA",
-pl:{no:"00003-0000010",exp:"Cannabis Avatara S.E.",expAddr:"La Caridad Nº 320, San Salvador de Jujuy / Finca El Pongo, Palpalá-Jujuy, AR",vat:"30-71627410-8",con:"NOC Pharma GmbH",conAddr:"An der Redoute 1, D-17390 Murchin, Germany",prod:"Medicinal Cannabis Inflorescence NOC AS 22/24 + NOC KS 23 + NOC SE 22/27 + NOC SE 14/17 + NOC OF 25",batch:"48-NOC1-6-INF-F / 36-NOC2-13-INF-NF / IN10-17-NOCB1-4-INF-F / E10-NOCB1-1-INF-F / IN10-25-NOCB3-10-INF-F / IN10-26-NOCB3-12-INF-F",ship:"Aerial",from:"Ezeiza EZE",to:"Frankfurt FRA",net:"151.80 kg",gross:"227.47 kg",exw:"€254,083.60",
-boxes:[
-{n:1,d:"37×1kg NOC AS 22/24 (48-NOC1-6) + 100×10g Doypacks NOC AS 22/24 + 1 Sensitech",net:"38 kg",gross:"57.10 kg",dims:"113.3×70×74cm"},
-{n:2,d:"37×1kg NOC AS 22/24 (48-NOC1-6) + 100×10g Doypacks NOC KS 23 (36-NOC2-13) + 1 Sensitech",net:"38 kg",gross:"57.10 kg",dims:"113.3×70×74cm"},
-{n:3,d:"16×1kg NOC AS 22/24 + 21×1kg NOC KS 23 + 100×10g NOC SE 22/24 (IN10-17) + 100×10g NOC SE 14/17 (E10) + 1 Sensitech",net:"39 kg",gross:"58.97 kg",dims:"113.3×70×74cm"},
-{n:4,d:"5×1kg NOC KS 23 + 12×1kg NOC SE 22/27 (IN10-17) + 5×1kg NOC SE 14/17 (E10) + 5×1kg NOC OF 25 (IN10-25) + 7×1kg NOC OF 25 (IN10-26) + 100×10g NOC OF 25 (IN10-25) + 180×10g NOC OF 25 (IN10-26) + 1 Sensitech",net:"36.80 kg",gross:"54.30 kg",dims:"113.3×70×74cm"}
-],u1kg:130,udoy:580,dl:4}},
-"CA-03":{id:"BI-03-NOCB1.2-INF-F",p:"NOC SE 17/20",exp:"28.07.2027",lab:"QSI Bremen",aNo:"210-1625xxx",per:"TBD",coa:"TBD",qp:"Dr. Olaf Schagon",cert:"TBD",kg:"140.0",units:239,bags1kg:139,doy10g:100,boxes:"3",net:"140.0",gross:"198.5",exw:"€116,538.02",route:"EZE→FRA",pl:{no:"00003-0000011",exp:"Cannabis Avatara S.E.",expAddr:"Finca El Pongo, Palpalá-Jujuy, AR",vat:"30-71627410-8",con:"NOC Pharma GmbH",conAddr:"An der Redoute 1, D-17390 Murchin",prod:"Medicinal Cannabis Inflorescence NOC SE 17/20",batch:"BI-02-NOCB1.1-INF-F",ship:"Aerial",from:"Ezeiza EZE",to:"Frankfurt FRA",net:"140.00 kg",gross:"198.50 kg",exw:"€116,538.02",boxes:[{n:1,d:"45×1kg LDPE bags + 100×10g Doypacks + 1 Sensitech Datalogger",net:"46 kg",gross:"65.90 kg",dims:"113.3×70×74cm"},{n:2,d:"47×1kg LDPE bags + 1 Sensitech Datalogger",net:"47 kg",gross:"66.30 kg",dims:"113.3×70×74cm"},{n:3,d:"47×1kg LDPE bags + 1 Sensitech Datalogger",net:"47 kg",gross:"66.30 kg",dims:"113.3×70×74cm"}],u1kg:139,udoy:100,dl:3}},
-"CA-01":{id:"BI-01-NOCB1.0-INF-F",p:"NOC SE 17 + NOC SE 17/20 + NOC AS 22/24",exp:"22.03.2027",lab:"QSI Bremen",aNo:"See paper file",per:"~Feb–Mar 2025",coa:"22.03.2025",qp:"Dr. Olaf Schagon",cert:"CGZ-2024-0031",kg:"275.5",units:507,bags1kg:257,doy10g:350,boxes:"7",net:"275.5",gross:"412.39",exw:"€258,143.50",route:"EZE→FRA",permit:"E-10891/2024",importDate:"22.03.2025",shipper:"Cannabis Avatara S.E.",carrier:"WAS-Logistics GmbH",consignee:"NOC Pharma GmbH, An der Redoute 1, D-17390 Murchin",
-pl:{no:"00003-0000010",exp:"Cannabis Avatara S.E.",expAddr:"La Caridad Nº 320, San Salvador de Jujuy / Finca El Pongo, Palpalá-Jujuy, AR",vat:"30-71627410-8",con:"NOC Pharma GmbH",conAddr:"An der Redoute 1, D-17390 Murchin, Germany",prod:"Medicinal Cannabis Inflorescence NOC SE 14/17 + NOC SE 17/20 + NOC AS 22/24",batch:"IN10-12-NOCB1-1 / IN11-12-NOCB1-1 / 002-39-NOC1-6-INF-F / 005-37-NOCB1-1-INF-F",ship:"Aerial",from:"Ezeiza EZE",to:"Frankfurt FRA",net:"275.50 kg",gross:"412.39 kg",exw:"€258,143.50",
-boxes:[
-{n:1,d:"36×1kg LDPE bags NOC SE 14/17 (Batch 12-NOCB1-1) + 150×10g Doypacks + 1 Sensitech",net:"37.5 kg",gross:"56.95 kg",dims:"113.3×70×74cm"},
-{n:2,d:"39×1kg LDPE bags NOC SE 14/17 (Batch 12-NOCB1-1) + 1 Sensitech",net:"39 kg",gross:"57.50 kg",dims:"113.3×70×74cm"},
-{n:3,d:"39×1kg LDPE bags NOC SE 14/17 (Batch IN11-12-NOCB1-1) + 100×10g Doypacks + 1 Sensitech",net:"40 kg",gross:"59.60 kg",dims:"113.3×70×74cm"},
-{n:4,d:"22×1kg NOC SE 14/17 + 17×1kg NOC SE 17/20 (IN10-12-NOCB1-1) + 1 Sensitech",net:"39 kg",gross:"57.50 kg",dims:"113.3×70×74cm"},
-{n:5,d:"39×1kg NOC SE 17/20 (IN10) + 100×10g Doypacks + 1 Sensitech",net:"40 kg",gross:"59.64 kg",dims:"113.3×70×74cm"},
-{n:6,d:"5×1kg NOC SE 17/20 (IN10) + 24×1kg NOC AS 22/24 (002-39) + 10×1kg NOC SE 17/20 (005-37) + 100×10g Doypacks NOC AS 22/24 + 1 Sensitech",net:"40 kg",gross:"59.60 kg",dims:"113.3×70×74cm"},
-{n:7,d:"39×1kg NOC SE 17/20 (005-37) + 100×10g Doypacks NOC AS 17/20 (005-37) + 1 Sensitech",net:"40 kg",gross:"59.60 kg",dims:"113.3×70×74cm"}
-],u1kg:257,udoy:350,dl:7}},
-"CA-04":{id:"BI-04-NOCB1.3-INF-F",p:"NOC AS 22 + NOC AO 20",exp:"TBD",lab:"QSI Bremen",aNo:"TBD",per:"TBD",coa:"TBD",qp:"Dr. Olaf Schagon",cert:"TBD",kg:"434.0",units:534,bags1kg:434,doy10g:200,boxes:"9",net:"434.00",gross:"612.90",exw:"€585,121.26 FCA Ezeiza",route:"EZE→FRA",permit:"Ausstehend",importDate:"~Apr 2026",shipper:"Cannabis Avatara S.E.",carrier:"WAS-Logistics GmbH",consignee:"NOC Pharma GmbH, An der Redoute 1, D-17390 Murchin",
-pl:{no:"00003-0000012",exp:"Cannabis Avatara S.E.",expAddr:"La Caridad Nº 320, San Salvador de Jujuy / Finca El Pongo, Palpalá-Jujuy, AR",vat:"30-71627410-8",con:"NOC Pharma GmbH",conAddr:"An der Redoute 1, D-17390 Murchin, Germany",prod:"Medicinal Cannabis Inflorescence NOC AS 22 + NOC AO 20",batch:"11-INF.F-AL02-NOC1.7 / 12-INF.F-AL03-NOC1.FIC / AL01-09-NOC4.2-INF-F",ship:"Aerial",from:"Ezeiza EZE",to:"Frankfurt FRA",net:"434.00 kg",gross:"612.90 kg",exw:"€585,121.26 FCA Ezeiza",
-boxes:[
-{n:1,d:"47×1kg NOC AS 22 (11-INF.F-AL02-NOC1.7) + 100×10g Doypacks NOC AS 22 + 1 Sensitech",net:"48 kg",gross:"68.45 kg",dims:"113.3×70×74cm"},
-{n:2,d:"48×1kg NOC AS 22 (11-INF.F-AL02-NOC1.7)",net:"48 kg",gross:"67.70 kg",dims:"113.3×70×74cm"},
-{n:3,d:"48×1kg NOC AS 22 (11-INF.F-AL02-NOC1.7)",net:"48 kg",gross:"67.70 kg",dims:"113.3×70×74cm"},
-{n:4,d:"48×1kg NOC AS 22 (11-INF.F-AL02-NOC1.7) + 1 Sensitech",net:"48 kg",gross:"67.80 kg",dims:"113.3×70×74cm"},
-{n:5,d:"48×1kg NOC AS 22 (11-INF.F-AL02-NOC1.7)",net:"48 kg",gross:"67.70 kg",dims:"113.3×70×74cm"},
-{n:6,d:"48×1kg NOC AS 22 (11-INF.F-AL02-NOC1.7)",net:"48 kg",gross:"67.70 kg",dims:"113.3×70×74cm"},
-{n:7,d:"32×1kg NOC AS 22 (11-INF.F-AL02) + 16×1kg NOC AS 22 (12-INF.F-AL03-NOC1.FIC) + 100×10g Doypacks NOC AS 22 + 1 Sensitech",net:"49 kg",gross:"69.50 kg",dims:"113.3×70×74cm"},
-{n:8,d:"33×1kg NOC AS 22 (12-INF.F-AL03) + 16×1kg NOC AO 20 (AL01-09-NOC4.2-INF-F)",net:"49 kg",gross:"68.25 kg",dims:"113.3×70×74cm"},
-{n:9,d:"47×1kg NOC AO 20 (AL01-09-NOC4.2-INF-F) + 100×10g Doypacks NOC AO 20 + 1 Sensitech",net:"48 kg",gross:"67.80 kg",dims:"113.3×70×74cm"}
-],u1kg:434,udoy:200,dl:4}}
+"CA-02":{id:"BI-02-NOCB1.1-INF-F",p:"NOC SE 19",exp:"29.08.2026",lab:"QSI Bremen",aNo:"210-1624923",per:"26.11–04.12.2025",coa:"12.12.2025",qp:"Dr. Olaf Schagon",cert:"NOC-CGZ-2025-003",kg:"198.5",units:239,bags1kg:139,doy10g:100,boxes:"7",net:"140.0",gross:"198.5",exw:"€116,538.02",route:"EZE→FRA"},
+"CA-03":{id:"BI-03-NOCB1.2-INF-F",p:"NOC SE 17/20",exp:"28.07.2027",lab:"QSI Bremen",aNo:"210-1625xxx",per:"TBD",coa:"TBD",qp:"Dr. Olaf Schagon",cert:"TBD",kg:"140.0",units:239,bags1kg:139,doy10g:100,boxes:"3",net:"140.0",gross:"198.5",exw:"€116,538.02",route:"EZE→FRA"},
+"CA-01":{id:"BI-01-NOCB1.0-INF-F",p:"NOC SE 17",exp:"22.03.2027",lab:"QSI Bremen",aNo:"TBD",per:"TBD",coa:"TBD",qp:"Dr. Olaf Schagon",cert:"CGZ-2024-0031",kg:"59.5",units:72,bags1kg:59,doy10g:0,boxes:"1",net:"59.5",gross:"85.0",exw:"TBD",route:"EZE→FRA"}
 };
+const BT=BT_DATA["CA-03"];
 // Supplier QP Contacts — for document renewal requests
 const SUP_QP={
 cannava:{qp:"Lic. María Fernanda Ruiz",email:"mfruiz@cannava.gob.ar",title:"QP / Directora Técnica",company:"Cannabis Avatara S.E. (Cannava)",authority:"ANMAT",country:"Argentina",
@@ -89,7 +60,7 @@ mccn:{name:"MCCN (Colombia)",tamc:500000,tymc:10000,gram:50000}
 
 const SG=[{id:"M0",n:"registration",ic:"📝",c:"#b45309"},{id:"M0.5",n:"preArr",ic:"📋",c:"#7c3aed"},{id:"M1",n:"logistics",ic:"🚛",c:"#0891b2"},{id:"M1.5",n:"vault",ic:"📦",c:"#059669"},{id:"M2",n:"labTest",ic:"🔬",c:"#d97706"},{id:"M3",n:"qpRel",ic:"✅",c:"#16a34a"},{id:"M3.1",n:"quarRel",ic:"🔓",c:"#0369a1"},{id:"M3.5",n:"logistics",ic:"🚛",c:"#0d9488"},{id:"M4",n:"relabel",ic:"🏷️",c:"#9333ea"},{id:"M4.5",n:"storage",ic:"📦",c:"#ea580c"},{id:"M5",n:"shipment",ic:"📤",c:"#dc2626"},{id:"M6",n:"recon",ic:"📊",c:"#6366f1"}];
 
-// M0 Documents
+// M0 Documents — now with Phytosanitary + fixed INCB expiry
 const M0D=[
 {k:"sq",ic:"🏭",up:1,req:1,st:"ok",de:"Lieferantenqualifizierung",en:"Supplier Qualification File",ref:"SQF-CANN-2025-001",by:"ANMAT",on:"15.03.2025",vu:"15.03.2028",dl:1114,det:[["GMP Cert","ANMAT-GMP-2024-4821 → 15.03.2028"],["QTA","QTA-NOC-CANN-2024-01 → 15.03.2026 ⚠️"],["PIC/S","Accepted (Argentina — ANMAT)"],["Last Audit","12.02.2025 (Jujuy, on-site)"],["Next Audit","12.02.2026 ⚠️ OVERDUE"],["Mfg License","ANMAT Disp. 2025/1847"],["GDP Status","ANMAT GDP certified"],["Stability","ICH Q1A 25°C/60% RH — 24mo"]]},
 {k:"qr",ic:"📱",up:1,req:1,st:"ok",de:"Serien-/QR-Codes (NOC)",en:"Serial/QR Codes (NOC generated)",ref:"SER-BI02-2025",by:"NOC Pharma QMS",on:"01.10.2025",vu:"—",dl:null,det:[["Total Erstellt","239 unique codes"],["Format","BI-02-NOCB1.1-INF-F-{SIZE}-{SEQ}"],["1kg bags","0001–0139 (139 units)"],["10g doypacks","0001–0100 (100 units)"],["Sent to Supplier","05.10.2025 (encrypted)"],["Applied & Confirmed","20.10.2025"],["Verification","SHA-256 hash per unit"]]},
@@ -103,9 +74,10 @@ const M0D=[
 {k:"bt",ic:"⚖️",up:1,req:1,st:"ok",de:"BtM-Ausfuhrerklärung",en:"BtM Export Declaration",ref:"BtM-EXP-AR-2025-0047",by:"SEDRONAR Argentina",on:"18.08.2025",vu:"18.08.2026",dl:175,det:[["Authority","SEDRONAR (Secretaría de Políticas Integrales sobre Drogas)"],["Substance","Cannabis sativa L. (flos, dried)"],["1961 Convention","Schedule IV"],["Cross-ref INCB","INCB-IMP-DE-2025-0891"]]},
 {k:"ic",ic:"🌐",up:1,req:1,st:"warning",de:"INCB-Genehmigung",en:"INCB Authorization",ref:"INCB-IMP-DE-2025-0891",by:"INCB Vienna",on:"05.09.2025",vu:"31.12.2025",dl:-55,det:[["EXPIRED","⚠️ 31.12.2025 — 55 days ago!"],["Status","Covered — shipment arrived 14.11.2025 (before expiry)"],["Import Country","Germany (DE annual estimate)"],["Export Country","Argentina"],["2025 Annual Estimate","500 kg cannabis flos"],["Used YTD","198.5 kg (39.7%)"],["2026 Estimate","Filed 01.10.2025 — pending INCB confirmation"],["Note","New auth needed for any 2026 imports"]]},
 {k:"sc",ic:"🔬",up:1,req:1,st:"ok",de:"Lieferanten-COA (Cannava)",en:"Supplier COA (Cannava Lab)",ref:"COA-CANN-2025-BI02",by:"Laboratorio Cannava, Jujuy",on:"20.10.2025",vu:"—",dl:null,det:[["Labor","In-house (Cannava, ISO 17025 scope)"],["THC","20.1% (declared)"],["CBD","0.3%"],["Moisture","8.2% (gravimetric)"],["TAMC","8,500 CFU/g"],["TYMC","850 CFU/g"],["Pesticides","Konform"],["Aflatoxins","<1 ppb"],["NOTE","⚠️ Supplier COA is REFERENCE ONLY"],["Regulatory","QSI Bremen independent retest MANDATORY per §14 AMG"]]},
-{k:"aw",ic:"✈️",up:1,req:1,st:"ok",de:"Luftfrachtbrief (AWB)",en:"Air Waybill (AWB)",ref:"E251115130",by:"B&B Cargo (B&B Consultora S.A.)",on:"15.11.2025",vu:"—",dl:null,det:[["HAWB","E251115130"],["Airline Prefix","020 EZE 03715843"],["Carrier","Lufthansa LH511"],["Issuing Agent","B&B Cargo (B&B Consultora S.A.), México 313, CABA, Argentina"],["Freight Forwarder","WAS-LOGISTICS GMBH, Am Oberw Ald 5, Donauwörth, Bayern"],["Origin","MINISTRO PISTARINI, AR (EZE)"],["Destination","FRANKFURT AM MAIN, GERMANY (FRA)"],["Flight/Date","LH511 / 15-11-2025"],["Pieces","3"],["Gross Weight","198.50 kg"],["Chargeable Weight","295.00 kg"],["Goods","Medicinal cannabis inflorescence — 3 BOXES, NCM: 1211.90.90, 3× Sensitech Datalogger Ultra Fit"],["Shipper","Cannabis Avatara S.E., La Caridad Nº 320-Bº Chijra, San Salvador de Jujuy, Jujuy, Argentina"],["Consignee","Noc Pharma GmbH, Langetal 1, D-07751 Golmsdorf, Germany"],["Temp Range","+15°C to +25°C"],["Import Auth","E12267/2025"],["Currency","USD"],["Executed","15.11.2025 — Ministro Pistarini — Yesica Volpe"]]},
+{k:"aw",ic:"✈️",up:1,req:1,st:"ok",de:"Luftfrachtbrief (AWB)",en:"Air Waybill (AWB)",ref:"020-12345678",by:"LATAM Cargo",on:"10.11.2025",vu:"—",dl:null,det:[["MAWB","020-12345678"],["HAWB","NOC-FWD-2025-047"],["Carrier","LATAM Cargo LA8170"],["Origin","EZE (Buenos Aires Ezeiza)"],["Destination","FRA (Frankfurt am Main)"],["Abfahrt","12.11.2025 23:45 ART"],["Arrival","14.11.2025 18:30 CET"],["Pieces","3 pallets / 7 boxes"],["Gross Weight","198.5 kg"],["Freight Forwarder","K+N Pharma Logistics"]]},
 {k:"fi",ic:"🛡️",up:1,req:1,st:"ok",de:"Frachtversicherung",en:"Freight Insurance Certificate",ref:"INS-NOC-2025-TR-047",by:"Allianz Trade",on:"08.11.2025",vu:"08.02.2026",dl:null,det:[["Policy","INS-NOC-2025-TR-047"],["Insurer","Allianz Trade (EU)"],["Coverage","All-risk marine + air + warehouse"],["Value Insured","€250,000 (125% of invoice)"],["Route","Buenos Aires → Frankfurt → Murchin"],["Deductible","€500"]]},
 {k:"dl",ic:"🌡️",up:1,req:1,st:"ok",de:"Datenlogger (Sensitech)",en:"Datalogger (Sensitech)",ref:"SEN-2025-DL-003",by:"Sensitech Inc.",on:"10.11.2025",vu:"—",dl:null,det:[["Devices","SEN-003-A (pallet 1), -B (pallet 2), -C (pallet 3)"],["Type","Sensitech TempTale Ultra"],["Range","-30°C to +70°C / 0–100% RH"],["Interval","Every 5 minutes"],["GDP Limits","15–25°C (EU GDP 2013/C 343/01)"],["Result: Min Temp","16.2°C ✅"],["Result: Max Temp","23.1°C ✅"],["Result: Avg Temp","19.4°C"],["Result: Humidity","38–52% RH ✅"],["MKT","19.8°C (Mean Kinetic Temp)"],["Calibration Valid","→ 10.05.2026"]]},
+{k:"ph",ic:"🌿",up:1,req:1,st:"ok",de:"Phytosanitäres Zeugnis",en:"Phytosanitary Certificate",ref:"PHYTO-AR-2025-28471",by:"SENASA Argentina",on:"08.11.2025",vu:"—",dl:null,det:[["Authority","SENASA (Servicio Nacional de Sanidad)"],["ISPM 15","Pallet treatment confirmed (HT 56°C/30min)"],["Pest-free","Certified pest-free declaration"],["IPPC Standard","ISPM No. 12 (Phytosanitary Certificates)"],["EU Regulation","Reg. (EU) 2016/2031 Plant Health"],["Inspection","Buenos Aires port, 08.11.2025"],["Stamp","✅ SENASA official seal + inspector signature"]]}
 ];
 
 const ALERTS=[
@@ -187,29 +159,6 @@ export default function App(){
 const[auth,setAuth]=useState(null);
 const[loginForm,setLoginForm]=useState({user:"",pass:"",remember:false,loading:false,error:""});
 const[lang,setLang]=useState("en");const[pg,setPg]=useState("lifecycle");const[lcs,setLcs]=useState(0);const[exDoc,setExDoc]=useState(null);const[agO,setAgO]=useState(false);const[agT,setAgT]=useState("alerts");const[agMode,setAgMode]=useState("supplier");const[ci,setCi]=useState("");const[cm,setCm]=useState([]);const[labTab,setLabTab]=useState("compare");const[sup,setSup]=useState("cannava");const[thcProto,setThcProto]=useState({open:false,newThc:"",reason:"",piaNotified:false,pznRequested:false});const[docPreview,setDocPreview]=useState(null);const[uploads,setUploads]=useState([]);const[docOriginals,setDocOriginals]=useState({});const origFileRef=useRef(null);const[origTarget,setOrigTarget]=useState(null);const fileRef=useRef(null);const[trSrc,setTrSrc]=useState("");const[trOut,setTrOut]=useState("");const[trLang,setTrLang]=useState("de");const[trLoading,setTrLoading]=useState(false);
-const[aiApproval,setAiApproval]=useState(null);/* {docKey, fileName, aiResult, fields:[{key,label,systemValue,docValue,status:'pending'|'approved'|'rejected',severity}], finance:[], stageData:{}, spreadTo:[] } */
-const[auditLog,setAuditLog]=useState(()=>{try{return JSON.parse(localStorage.getItem("noc-qms-audit-log")||"[]")}catch(e){return[]}});
-const[btOverrides,setBtOverrides]=useState(()=>{
-try{
-  const raw=JSON.parse(localStorage.getItem("noc-qms-bt-overrides")||"{}");
-  // Strip any values that contain " kg" suffix — those came from gross weight strings
-  const clean={};
-  Object.entries(raw).forEach(([k,v])=>{
-    if(typeof v==="string"&&v.includes(" kg"))clean[k]=v.replace(/\s*kg$/i,"").trim();
-    else clean[k]=v;
-  });
-  return clean;
-}catch(e){return{}}
-});
-const[batchStages,setBatchStages]=useState(()=>{try{return JSON.parse(localStorage.getItem("noc-qms-batch-stages")||"{}")}catch(e){return{}}});
-const[financeEntries,setFinanceEntries]=useState(()=>{try{return JSON.parse(localStorage.getItem("noc-qms-finance")||"[]")}catch(e){return[]}});
-const[approvalHistory,setApprovalHistory]=useState(()=>{try{return JSON.parse(localStorage.getItem("noc-qms-approvals")||"[]")}catch(e){return[]}});
-const[docDetails,setDocDetails]=useState(()=>{
-// Initialize from M0D static data
-const init={};
-M0D.forEach(d=>{init[d.k]={ref:d.ref,by:d.by,on:d.on,vu:d.vu,det:d.det||[],aiVerified:false,aiVerifiedAt:null,aiVerifiedBy:null,aiApprovedCount:0};});
-return init;
-});
 const[wixOrders,setWixOrders]=useState([]);const[wixLoading,setWixLoading]=useState(false);const[wixLastSync,setWixLastSync]=useState(null);const[wixError,setWixError]=useState(null);const[wixAutoSync,setWixAutoSync]=useState(false);
 const[scParcels,setScParcels]=useState([]);const[scLoading,setScLoading]=useState(false);const[scLastSync,setScLastSync]=useState(null);const[scError,setScError]=useState(null);const[scMethods,setScMethods]=useState([]);
 const fetchScParcels=async()=>{setScLoading(true);setScError(null);try{const r=await fetch("http://localhost:3001/api/sendcloud/parcels");if(!r.ok)throw new Error(r.status+" "+await r.text());const d=await r.json();const parcels=(d.parcels||[]).map(p=>({id:p.id,tracking:p.tracking_number||"",trackingUrl:p.tracking_url||"",carrier:p.carrier?.code||p.shipment?.name||"",status:p.status?.message||"",statusId:p.status?.id||0,name:p.name||"",company:p.company_name||"",email:p.email||"",address:p.address||"",city:p.city||"",postal:p.postal_code||"",country:p.country?.name||p.country_iso_2||"",orderNo:p.order_number||p.external_order_id||"",weight:p.weight||"",labelUrl:p.label?.label_printer||p.label?.normal_printer?.[0]||"",created:p.created_at?new Date(p.created_at).toLocaleDateString("de-DE"):"",raw:p}));setScParcels(parcels);setScLastSync(new Date().toLocaleTimeString());return parcels}catch(e){setScError(e.message);return[]}finally{setScLoading(false)}};
@@ -262,7 +211,7 @@ const[investors]=useState([
 {name:(lang==="de"?"Brückenkredit":"Bridge Loan"),amount:50000,date:"01.12.2025",equity:"—",type:"convertible",status:"active",interest:"6%",maturity:"01.12.2026",notes:"Working capital for MCCN qualification"},
 {name:"Series A (Target)",amount:500000,date:"Q3 2026",equity:"20-25%",type:"equity",status:"planned",notes:"Scale to 3 suppliers + EU expansion"}
 ]);
-const WIX_API_KEY="[SERVER-SIDE]";/* Key moved to server.cjs for security */
+const WIX_API_KEY="IST.eyJraWQiOiJQb3pIX2FDMiIsImFsZyI6IlJTMjU2In0.eyJkYXRhIjoie1wiaWRcIjpcImE0MmM1ZGM5LTEzMDgtNDAwZi05MGEwLTExMGRhYjliOWQ4OVwiLFwiaWRlbnRpdHlcIjp7XCJ0eXBlXCI6XCJhcHBsaWNhdGlvblwiLFwiaWRcIjpcImNlZjEzMzE3LWQ0MzMtNGMwMy1iZDViLTA3OGQ5ZWFmOWRlMFwifSxcInRlbmFudFwiOntcInR5cGVcIjpcImFjY291bnRcIixcImlkXCI6XCI1MTRlZTRhNy0xMTdhLTQ1OWEtODE0MC02ZTk4MTAwZDA2NzRcIn19IiwiaWF0IjoxNzcyNDQ3ODQyfQ.YnE__cx5zrZ8TUS_7dJT_DZDbj-h_BnAqw5CVpai7BqJz7hcVRiQr8bmIEm4usdUupP3mtwynnqUA8MpdLe8wTnluwF3bLrxHRwu0MfO1dKf_aGam7ZtMuFKpcV-2lZRBo2wB6oEUnKPEy326RrMp8JxVi10vRGO95SUuvWEasjf_Hogdrt5mAKpj8Gob2eWqRS_n8rNFAG0R22DPqVKZGSEFWUPF6Uly_EfuotckiRX1g7Rtp0b4ZlAnH2_1-Mb8Yf2PnLT8A7uEXd7p9IMSo8F21cgxJuVy0M196SDDO2eoxRVjDSUVnP3TLzjL1NqWLBdKonp93IstGyJIL4XzA";
 const WIX_SITE_ID="2c364620-6bf9-447c-bde1-e292e8a03ec4";
 const fetchWixOrders=async()=>{setWixLoading(true);setWixError(null);try{
 const resp=await fetch("http://localhost:3001/api/wix/orders",{method:"POST",headers:{"Content-Type":"application/json"}});
@@ -302,23 +251,14 @@ setWixOrders(orders);setWixLastSync(new Date().toLocaleString("de-DE"));
 }catch(err){setWixError(err.message)}finally{setWixLoading(false)}};
 const t=T[lang];const sn=9;
 useEffect(()=>{if(!wixAutoSync)return;const iv=setInterval(()=>{fetchWixOrders()},30000);return()=>clearInterval(iv)},[wixAutoSync]);
-/* Persist critical QMS data to localStorage — 21 CFR Part 11 audit trail */
-useEffect(()=>{try{localStorage.setItem("noc-qms-audit-log",JSON.stringify(auditLog.slice(0,500)))}catch(e){}},[auditLog]);
-useEffect(()=>{try{localStorage.setItem("noc-qms-approvals",JSON.stringify(approvalHistory.slice(0,100)))}catch(e){}},[approvalHistory]);
-useEffect(()=>{try{localStorage.setItem("noc-qms-finance",JSON.stringify(financeEntries))}catch(e){}},[financeEntries]);
-useEffect(()=>{try{localStorage.setItem("noc-qms-bt-overrides",JSON.stringify(btOverrides))}catch(e){}},[btOverrides]);
-/* Restore BT_DATA overrides on mount */
-useEffect(()=>{Object.entries(btOverrides).forEach(([k,v])=>{const[batch,field]=k.split("_");if(BT_DATA[batch]&&field)BT_DATA[batch][field]=v})},[]);
-/* Session timeout — auto-logout after 30min inactivity (GxP requirement) */
-useEffect(()=>{if(!auth)return;let timer;const reset=()=>{clearTimeout(timer);timer=setTimeout(()=>{setAuth(null);setAuditLog(prev=>[{ts:new Date().toISOString(),user:auth?.name||"System",action:"SESSION_TIMEOUT",docKey:"",field:"auth",oldVal:"active",newVal:"timed out after 30min inactivity",batch:"",document:"",docType:"system"},...prev])},30*60*1000)};const events=["mousedown","keydown","scroll","touchstart"];events.forEach(e=>window.addEventListener(e,reset));reset();return()=>{clearTimeout(timer);events.forEach(e=>window.removeEventListener(e,reset))}},[auth]);
 const triggerUpload=()=>{if(fileRef.current)fileRef.current.click()};
 const handleFileUpload=async(e)=>{const files=Array.from(e.target.files||[]);if(!files.length)return;const supName=sup==="cannava"?"Cannava":sup==="mccn"?"Medcolcanna":"HYTN";const batch=selBatch||"CA-02";
 const stageRules=[
-{stage:"M0",keys:["canmed","registration","gmp_cert","gmp-cert","gmp certificate","gmp conform","gacp","quality_technical","qta","pzn","ifa","bfarm","import_permit","import-permit","incb","supplier_qual","sqf","qualification","dqs","anmat","herstellungserlaubnis","manufacturing","licence","license","who_gmp","eu_gmp","pics","handelsregister","52a","btm_erlaubnis","narcotic","habilitacion","resolucion","disposicion","autorizacion","audit agenda","audit_agenda","melacrom","pimpo","p impo","permiso importacion","permiso de importacion","e02329","e02330","e-02329","e-02330","einfuhrgenehmigung","bfarm erlaubnis","audit report","informe auditoria","informe_auditoria","audit_report","certificado buenas practicas","cgmp","inspección","inspeccion"]},
-{stage:"M0.5",keys:["coa","certificate_of_analysis","supplier_coa","export_permit","export-permit","sedronar","phyto","sanitary","pack_list","btm_export","btm-export","senasa","proforma","pro_forma","commercial_invoice","packing_list","weight_list","fumigation","apostille","apostilla","hague","btm_exp","incb_imp","origin","certificado_origen","4 packing","5 proforma","4.packing","5.proforma","6 factura","6.factura","6 embarque","6.embarque","noc 25","noc25","noc-25","datalloger","datalogger","sensitech","loggpro","trazabilidad","nota psa","psa ezeiza","apostilla noc","c exportacion","f proforma","p importacion","p embarque","factura noc","lista empaque","liste emballage","konossement","handelsrechnung"]},
+{stage:"M0",keys:["canmed","registration","gmp_cert","gmp-cert","gmp certificate","gmp conform","gacp","quality_technical","qta","pzn","ifa","bfarm","import_permit","import-permit","incb","supplier_qual","sqf","qualification","dqs","anmat","herstellungserlaubnis","manufacturing","licence","license","who_gmp","eu_gmp","pics","handelsregister","52a","btm_erlaubnis","narcotic","habilitacion","resolucion","disposicion","autorizacion","audit agenda","audit_agenda","melacrom"]},
+{stage:"M0.5",keys:["coa","certificate_of_analysis","supplier_coa","export_permit","export-permit","sedronar","phyto","sanitary","pack_list","btm_export","btm-export","senasa","proforma","pro_forma","commercial_invoice","packing_list","weight_list","fumigation","apostille","apostilla","hague","btm_exp","incb_imp","origin","certificado_origen"]},
 {stage:"M1",keys:["awb","airway","waybill","cmr","transport","gdp_transport","temp_log","temperature","datalog","sensitech","customs","mrn","zoll","iata","dg_declaration","freight","cargo","tracking","flight","bill_of_lading","bol","dangerous_good","fedex","dhl","kuehne","latam","lufthansa","loggpro","logger","flete","seguro_transporte","guia_aerea","conocimiento","poliza","insurance"]},
 {stage:"M1.5",keys:["vault","arrival","receipt","btm_receipt","visual_inspection","seal","quarantine_arrival","tresor","empfang","eingang","wareneingang","incoming","goods_receipt","seal_verification","tamper","lieferschein","recepcion","acta_recepcion","verificacion_visual"]},
-{stage:"M2",keys:["qsi","lab_report","lab_result","potency","hplc","tamc","tymc","mycotox","aflatox","terpene","moisture","testing","residual","prüfbericht","test_report","lab_report","cannabinoid_profile","water_activity","karl_fischer","informe","cannabinoide","cromatografia","espectro","resultado","determinacion","perfil","plaguicida","metales_pesados","humedad","actividad_acuosa","ensayo","analisis_lab","informe_700","informe_797","informe_002","coa 126","coa 127","coa_126","coa_127","coa 130","coa 131","coa_130","coa_131","coa-126","coa-127","coa-130","coa-131","inf 700","inf_700","inf 005","inf_005","in10","in11","in 10","in 11","005-37","informe 356","informe_356","informe 492","informe_492","210-16246","210-16247","210-16248","210-16249","210-16250","210-16251","210-16252","prüfbericht","pruefbericht","analysenzertifikat","analysenprotokoll"]},
+{stage:"M2",keys:["qsi","lab_report","lab_result","potency","hplc","tamc","tymc","mycotox","aflatox","terpene","moisture","testing","residual","prüfbericht","test_report","lab_report","cannabinoid_profile","water_activity","karl_fischer","informe","cannabinoide","cromatografia","espectro","resultado","determinacion","perfil","plaguicida","metales_pesados","humedad","actividad_acuosa","ensayo","analisis_lab","informe_700","informe_797","informe_002","coa 126","coa 127","coa_126","coa_127","inf 700","inf_700","inf 005","inf_005"]},
 {stage:"M3",keys:["release","qp_release","qp-release","cgz","batch_release","freigabe","chargenfreigabe","sachkundige","qualified_person","conformity","batch_record","freigabezertifikat","certificate_release","liberacion","certificado_liberacion"]},
 {stage:"M3.1",keys:["quarantine_release","quar_release","zone_transfer","quarantine_free","zone_change","liberacion_cuarentena"]},
 {stage:"M3.5",keys:["gdp_out","outbound","transfer_transport","ausgang","outgoing","transporte_salida"]},
@@ -354,30 +294,18 @@ const processFile=async(file,blob)=>{
 const url=URL.createObjectURL(blob||file);
 const ext=(file.name||"").split(".").pop().toLowerCase();
 let textContent="";
+// Extract text from PDF for content classification
+if(ext==="pdf"&&blob){
 try{
-const srcBlob=blob||file;
-const arr=await srcBlob.arrayBuffer();
+const arr=await (blob||file).arrayBuffer();
 const bytes=new Uint8Array(arr);
-const isZip=bytes[0]===0x50&&bytes[1]===0x4B&&bytes[2]===0x03&&bytes[3]===0x04;
-if(isZip){
-try{
-const {default:JSZip}=await import("https://cdn.jsdelivr.net/npm/jszip@3.10.1/+esm");
-const zip=await JSZip.loadAsync(arr);
-let combined="";
-const txts=Object.keys(zip.files).filter(n=>n.toLowerCase().endsWith(".txt"));
-for(const tf of txts.slice(0,3)){const t2=await zip.files[tf].async("text");combined+=t2+" ";}
-textContent=combined.slice(0,2000);
-}catch(ze){
-let txt="";let run="";
-for(let i=0;i<Math.min(bytes.length,50000);i++){const c=bytes[i];if(c>=32&&c<127){run+=String.fromCharCode(c)}else{if(run.length>4)txt+=run+" ";run="";}}
-textContent=txt.replace(/\s+/g," ").slice(0,2000);
-}
-}else if(ext==="pdf"){
 let txt="";
-for(let i=0;i<bytes.length-1;i++){if(bytes[i]===0x28){let s="";let depth=1;i++;while(i<bytes.length&&depth>0){if(bytes[i]===0x28)depth++;else if(bytes[i]===0x29){depth--;if(depth===0)break;}else if(bytes[i]>=32&&bytes[i]<127)s+=String.fromCharCode(bytes[i]);i++;}if(s.length>2)txt+=s+" ";}}
-textContent=txt.replace(/\s+/g," ").slice(0,2000);
+// Simple PDF text extraction (looks for text between parentheses in PDF stream)
+for(let i=0;i<bytes.length-1;i++){
+if(bytes[i]===0x28){let s="";let depth=1;i++;while(i<bytes.length&&depth>0){if(bytes[i]===0x28)depth++;else if(bytes[i]===0x29)depth--;else if(depth>0)s+=String.fromCharCode(bytes[i]);i++}if(s.length>2)txt+=s+" "}}
+textContent=txt.slice(0,2000);
+}catch(ex){}
 }
-}catch(ex){textContent="";}
 return {textContent,url,ext};
 };
 const createEntry=(name,size,ext,date,stage,batchId,supplier,url,content,fromZip)=>({
@@ -471,10 +399,10 @@ const SUPS=[{k:"cannava",fl:"🇦🇷",n:"Cannava",co:"Argentina",st:lang==="de"
 
 const BATCHES={
 cannava:[
-{id:"CA-01",n:1,ref:"BI-01-NOCB1.0-INF-F",batch:"BI-01",product:"NOC SE 14/17 + NOC SE 17/20 + NOC AS 22/24",kg:"275.5",units:507,permit:"E-10891/2024",import:"22.03.2025",stage:11,status:"active",stageLabel:lang==="de"?"M6 Abgeschlossen":"M6 Completed",qp:"CGZ-2024-0031",color:"#059669"},
-{id:"CA-02",n:2,ref:"BI-02-NOCB1.1-INF-F",batch:"BI-02",product:"NOC AS 22/24 + NOC KS 23 + NOC SE 14/17 + NOC OF 25",kg:"151.8",units:580,permit:"E-12267/2025",import:"14.11.2025",stage:9,status:"active",stageLabel:lang==="de"?"M4.5 Lagerung":"M4.5 Storage",qp:"CGZ-2025-0047",color:"#2563eb"},
+{id:"CA-01",n:1,ref:"BI-01-NOCB1.0-INF-F",batch:"BI-01",product:"NOC SE 17 Cannabis flos",kg:"59.5",units:72,permit:"E-10891/2024",import:"22.03.2025",stage:0,status:"docs-pending",stageLabel:lang==="de"?"Doku ausstehend":"Docs Pending",qp:"CGZ-2024-0031",color:"#6b7280"},
+{id:"CA-02",n:2,ref:"BI-02-NOCB1.1-INF-F",batch:"BI-02",product:"NOC SE 19 Cannabis flos (T22/1)",kg:"198.5",units:239,permit:"E-12267/2025",import:"14.11.2025",stage:0,status:"docs-pending",stageLabel:lang==="de"?"Doku ausstehend":"Docs Pending",qp:"CGZ-2025-0047",color:"#6b7280"},
 {id:"CA-03",n:3,ref:"BI-03-NOCB1.2-INF-F",batch:"BI-03",product:"NOC SE 17/20 Cannabis flos",kg:"140.0",units:239,permit:"E-12267/2025",import:"28.01.2026",stage:5,status:"active",stageLabel:"M2 Lab Testing",qp:null,color:"#d97706"},
-{id:"CA-04",n:4,ref:"BI-04-NOCB1.3-INF-F",batch:"BI-04",product:"NOC AS 22 + NOC AO 20",kg:"434.0",units:534,permit:"Ausstehend",import:"~Apr 2026",stage:0,status:"planned",stageLabel:"M0 Planned",qp:null,color:"#9ca3af"}
+{id:"CA-04",n:4,ref:"BI-04-NOCB1.3-INF-F",batch:"BI-04",product:"NOC SE 21 Cannabis flos",kg:"250.0",units:0,permit:"Ausstehend",import:"~Apr 2026",stage:0,status:"planned",stageLabel:"M0 Planned",qp:null,color:"#9ca3af"}
 ],
 hytn:[
 {id:"HY-01",n:1,ref:"HY-01-NOC-CAN-F",batch:"HY-01",product:"HYTN Premium Cannabis flos",kg:"0",units:0,permit:"Ausstehend",import:"~Q3 2026",stage:0,status:"planned",stageLabel:"M0 Planned",qp:null,color:"#9ca3af"}
@@ -524,77 +452,25 @@ const gmailLink=(subject,body)=>"https://mail.google.com/mail/?view=cm&fs=1&su="
 const DocActions=({doc,stage})=>{
 const hasDoc=doc.up||doc.st==="ok"||doc.st==="done";
 const docName=doc[lang]||doc.en||doc.de||"Document";
-/* Read from docDetails state (updated by AI commit) — fall back to static M0D values */
-const dd=docDetails[doc.k]||{};
-const ref=dd.ref||doc.ref||"";const by=dd.by||doc.by||"";const on=dd.on||doc.on||"";const vu=dd.vu||doc.vu||"";
-const detRows=dd.det||doc.det||[];
-const aiVerified=dd.aiVerified||false;
+const ref=doc.ref||"";const by=doc.by||"";const on=doc.on||"";const vu=doc.vu||"";
 const folderUrl=gdLink(doc.k||stage||"");
 const supName=sup==="cannava"?"Cannava":sup==="mccn"?"Medcolcanna":"HYTN";
 const qpData=SUP_QP[sup]||SUP_QP.cannava;const nocQp=SUP_QP.noc;
 // Build document as structured email body (the email IS the document)
-const docBody=()=>{const sep="━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━";const ld=lang==="de";const rows=[[ld?"Dokument":"Document",docName],[ld?"Referenz":"Reference",ref],[ld?"Ausgestellt von":"Issued by",by],[ld?"Ausstellungsdatum":"Issue date",on],[ld?"Gueltig bis":"Valid until",vu],[ld?"Charge":"Batch",selBatch||"—"],[ld?"Lieferant":"Supplier",supName],[ld?"Stufe":"Stage",stage],[ld?"Status":"Status",hasDoc?(ld?"✅ Konform":"✅ Compliant"):(ld?"⏳ Ausstehend":"⏳ Pending")]];detRows.forEach(d=>rows.push(d));let body="NOC PHARMA GmbH\nPharmaceutical Quality Management System v2.5\n§52a AMG · EU GMP · BtMG\n"+sep+"\n\n";rows.forEach(r=>{body+=r[0]+": "+r[1]+"\n"});body+="\n"+sep+"\n\nRP: T. Cuny · QP: Dr. O. Schagon\nNOC Pharma GmbH · An der Redoute 1 · 17390 Murchin · MV\n"+(ld?"Erstellt: ":"Generated: ")+new Date().toISOString()+"\nQMS v2.5";return body};
+const docBody=()=>{const sep="━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━";const ld=lang==="de";const rows=[[ld?"Dokument":"Document",docName],[ld?"Referenz":"Reference",ref],[ld?"Ausgestellt von":"Issued by",by],[ld?"Ausstellungsdatum":"Issue date",on],[ld?"Gueltig bis":"Valid until",vu],[ld?"Charge":"Batch",selBatch||"—"],[ld?"Lieferant":"Supplier",supName],[ld?"Stufe":"Stage",stage],[ld?"Status":"Status",hasDoc?(ld?"✅ Konform":"✅ Compliant"):(ld?"⏳ Ausstehend":"⏳ Pending")]];if(doc.det)doc.det.forEach(d=>rows.push(d));let body="NOC PHARMA GmbH\nPharmaceutical Quality Management System v2.5\n§52a AMG · EU GMP · BtMG\n"+sep+"\n\n";rows.forEach(r=>{body+=r[0]+": "+r[1]+"\n"});body+="\n"+sep+"\n\nRP: T. Cuny · QP: Dr. O. Schagon\nNOC Pharma GmbH · An der Redoute 1 · 17390 Murchin · MV\n"+(ld?"Erstellt: ":"Generated: ")+new Date().toISOString()+"\nQMS v2.5";return body};
 // Print PDF function
-const printPdf=()=>{const ld=lang==="de";const w=window.open("","_blank","width=800,height=600");w.document.write('<html><head><title>'+docName+' — NOC Pharma</title><style>body{font-family:Arial,sans-serif;padding:40px;color:#1f2937}h1{font-size:18px;border-bottom:2px solid #1e40af;padding-bottom:8px;color:#1e40af}h2{font-size:14px;color:#374151;margin-top:20px}table{width:100%;border-collapse:collapse;margin:16px 0}td{padding:6px 10px;border:1px solid #d1d5db;font-size:13px}td:first-child{font-weight:700;background:#f9fafb;width:35%}.ft{margin-top:30px;padding-top:10px;border-top:1px solid #d1d5db;font-size:10px;color:#9ca3af;text-align:center}.banner{background:#1e40af;color:#fff;padding:16px 40px;margin:-40px -40px 20px;font-size:12px;display:flex;justify-content:space-between;align-items:center}@media print{body{padding:20px}.banner{margin:-20px -20px 20px}}</style></head><body>');w.document.write('<div class="banner"><div><strong style="font-size:16px">NOC Pharma GmbH</strong><br/>QMS v2.5</div><div style="text-align:right">'+new Date().toLocaleDateString('de-DE')+'<br/>§52a AMG</div></div>');w.document.write('<h1>'+docName+'</h1><h2>Deutsch</h2><table>');[["Referenz",ref],["Ausgestellt von",by],["Ausstellungsdatum",on],["Gueltig bis",vu],["Charge",selBatch||"—"],["Lieferant",supName],["Stufe",stage],["Status",hasDoc?"✅ Konform":"⏳ Ausstehend"]].forEach(function(r){w.document.write('<tr><td>'+r[0]+'</td><td>'+(r[1]||"—")+'</td></tr>')});detRows.forEach(function(d){w.document.write('<tr><td>'+d[0]+'</td><td>'+d[1]+'</td></tr>')});w.document.write('</table><h2>English</h2><table>');[["Reference",ref],["Issued by",by],["Issue date",on],["Valid until",vu],["Batch",selBatch||"—"],["Supplier",supName],["Stage",stage],["Status",hasDoc?"✅ Compliant":"⏳ Pending"]].forEach(function(r){w.document.write('<tr><td>'+r[0]+'</td><td>'+(r[1]||"—")+'</td></tr>')});detRows.forEach(function(d){w.document.write('<tr><td>'+d[0]+'</td><td>'+d[1]+'</td></tr>')});w.document.write('</table><div class="ft">NOC Pharma GmbH · An der Redoute 1, 17390 Murchin · §52a AMG · QMS v2.5<br/>RP: T. Cuny · QP: Dr. O. Schagon · Generated: '+new Date().toISOString()+'</div></body></html>');w.document.close();setTimeout(function(){w.print()},500)};
+const printPdf=()=>{const ld=lang==="de";const w=window.open("","_blank","width=800,height=600");w.document.write('<html><head><title>'+docName+' — NOC Pharma</title><style>body{font-family:Arial,sans-serif;padding:40px;color:#1f2937}h1{font-size:18px;border-bottom:2px solid #1e40af;padding-bottom:8px;color:#1e40af}h2{font-size:14px;color:#374151;margin-top:20px}table{width:100%;border-collapse:collapse;margin:16px 0}td{padding:6px 10px;border:1px solid #d1d5db;font-size:13px}td:first-child{font-weight:700;background:#f9fafb;width:35%}.ft{margin-top:30px;padding-top:10px;border-top:1px solid #d1d5db;font-size:10px;color:#9ca3af;text-align:center}.banner{background:#1e40af;color:#fff;padding:16px 40px;margin:-40px -40px 20px;font-size:12px;display:flex;justify-content:space-between;align-items:center}@media print{body{padding:20px}.banner{margin:-20px -20px 20px}}</style></head><body>');w.document.write('<div class="banner"><div><strong style="font-size:16px">NOC Pharma GmbH</strong><br/>QMS v2.5</div><div style="text-align:right">'+new Date().toLocaleDateString('de-DE')+'<br/>§52a AMG</div></div>');w.document.write('<h1>'+docName+'</h1><h2>Deutsch</h2><table>');[["Referenz",ref],["Ausgestellt von",by],["Ausstellungsdatum",on],["Gueltig bis",vu],["Charge",selBatch||"—"],["Lieferant",supName],["Stufe",stage],["Status",hasDoc?"✅ Konform":"⏳ Ausstehend"]].forEach(function(r){w.document.write('<tr><td>'+r[0]+'</td><td>'+(r[1]||"—")+'</td></tr>')});if(doc.det)doc.det.forEach(function(d){w.document.write('<tr><td>'+d[0]+'</td><td>'+d[1]+'</td></tr>')});w.document.write('</table><h2>English</h2><table>');[["Reference",ref],["Issued by",by],["Issue date",on],["Valid until",vu],["Batch",selBatch||"—"],["Supplier",supName],["Stage",stage],["Status",hasDoc?"✅ Compliant":"⏳ Pending"]].forEach(function(r){w.document.write('<tr><td>'+r[0]+'</td><td>'+(r[1]||"—")+'</td></tr>')});if(doc.det)doc.det.forEach(function(d){w.document.write('<tr><td>'+d[0]+'</td><td>'+d[1]+'</td></tr>')});w.document.write('</table><div class="ft">NOC Pharma GmbH · An der Redoute 1, 17390 Murchin · §52a AMG · QMS v2.5<br/>RP: T. Cuny · QP: Dr. O. Schagon · Generated: '+new Date().toISOString()+'</div></body></html>');w.document.close();setTimeout(function(){w.print()},500)};
 // Send = email body IS the document (one click)
 const sendDoc=()=>{const subj="NOC Pharma — "+docName+" ["+ref+"] — "+supName+" — Batch "+(selBatch||"");window.open(gmailLink(subj,docBody())+"&to="+encodeURIComponent(qpData.email)+"&cc="+encodeURIComponent(nocQp.email),"_blank")};
-/* Special case: sc = Supplier COA — show multi-upload manager */
-if(doc.k==="sc"){
-const allSup=Object.entries(docOriginals).filter(([k])=>k==="sc"||k.startsWith("sc_")).sort(([a],[b])=>a.localeCompare(b));
-const nextKey=allSup.length===0?"sc":"sc_"+allSup.length;
-return <div style={{marginTop:8}}>
-{/* Uploaded COAs list */}
-{allSup.length>0&&<div style={{display:"grid",gap:6,marginBottom:8}}>
-{allSup.map(([k,v])=>{
-const d=v?.approvedData||v?.extracted||{};
-const sub=d["Sub-Batch Number"]||d["Batch Number"]||k;
-const verified=v?.approvalComplete;
-return <div key={k} style={{borderRadius:7,border:"1.5px solid "+(verified?"#fde68a":"#e5e7eb"),background:verified?"#fffbeb":"#f9fafb",overflow:"hidden"}}>
-<div style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"6px 10px"}}>
-<div style={{display:"flex",alignItems:"center",gap:6}}>
-<span>🇦🇷</span>
-<div>
-<div style={{fontSize:13,fontWeight:700,color:"#92400e"}}>{sub}</div>
-<div style={{fontSize:11,color:"#6b7280"}}>{v.name} · {v.size}{verified?" · ✅ "+v.approvedCount+" fields":""}</div>
-</div>
-</div>
-<div style={{display:"flex",gap:3}}>
-{verified
-?<span style={{padding:"2px 7px",borderRadius:4,fontSize:11,fontWeight:700,background:"#dcfce7",color:"#059669"}}>✅ AI</span>
-:<button onClick={()=>{setOrigTarget(k);setTimeout(()=>origFileRef.current&&origFileRef.current.click(),50)}} style={{padding:"2px 7px",borderRadius:4,fontSize:11,fontWeight:700,border:"none",background:"#d97706",color:"#fff",cursor:"pointer"}}>🤖 Analyze</button>}
-{v.url&&<button onClick={()=>{if(v.ext==="pdf")window.open(v.url,"_blank");else{const w=window.open("","_blank");w.document.write("<html><body style='margin:0;background:#111'><img src='"+v.url+"' style='max-width:100%;max-height:100vh'/></body></html>");w.document.close()}}} style={{padding:"2px 7px",borderRadius:4,fontSize:11,fontWeight:700,border:"none",background:"#1e40af",color:"#fff",cursor:"pointer"}}>👁️</button>}
-<button onClick={()=>{setOrigTarget(k);setTimeout(()=>origFileRef.current&&origFileRef.current.click(),50)}} style={{padding:"2px 5px",borderRadius:4,fontSize:11,border:"1px solid #d97706",background:"#fff",color:"#92400e",cursor:"pointer"}}>🔄</button>
-<button onClick={()=>{if(confirm("Delete COA for "+sub+"?"))setDocOriginals(p=>{const n={...p};delete n[k];return n})}} style={{padding:"2px 5px",borderRadius:4,fontSize:11,border:"1px solid #fca5a5",background:"#fff",color:"#dc2626",cursor:"pointer"}}>🗑️</button>
-</div>
-</div>
-{verified&&d["THC Content"]&&<div style={{padding:"3px 10px 6px",display:"flex",gap:4,flexWrap:"wrap"}}>
-{[["THC",d["THC Content"]],["TAMC",d["TAMC"]],["Loss on Drying",d["Loss on Drying"]],["Lead Pb",d["Lead Pb"]||"ND"]].filter(([,v2])=>v2).map(([k2,v2],i)=>
-<span key={i} style={{padding:"1px 6px",borderRadius:3,background:"#fef3c7",color:"#92400e",fontSize:11,fontWeight:600}}>{k2}: {v2}</span>)}
-</div>}
-</div>;})}
-</div>}
-{/* Add / Upload button */}
-<button onClick={()=>{setOrigTarget(nextKey);setTimeout(()=>origFileRef.current&&origFileRef.current.click(),50)}} style={{width:"100%",padding:"7px",borderRadius:6,fontSize:13,fontWeight:700,border:"2px dashed #d97706",background:allSup.length>0?"#fff":"#fffbeb",color:"#92400e",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",gap:6}}>
-➕ {allSup.length===0?(lang==="de"?"Ersten Lieferanten-COA hochladen":"Upload First Supplier COA"):(lang==="de"?"Weiteren COA hinzufügen":"Add Another COA")} {allSup.length>0&&<span style={{padding:"1px 6px",borderRadius:8,background:"#fde68a",fontSize:11}}>{allSup.length} uploaded</span>}
-</button>
-{allSup.length>0&&<div style={{marginTop:4,padding:"5px 8px",background:"#eff6ff",borderRadius:5,fontSize:12,color:"#1e40af",border:"1px solid #bfdbfe"}}>
-ℹ️ {lang==="de"?"Diese COAs erscheinen in M2 Laborprüfung für den QSI-Vergleich":"These COAs appear in M2 Lab Testing for QSI comparison"}
-</div>}
-</div>;
-}
-
 return <div style={{display:"flex",gap:4,flexWrap:"wrap",marginTop:6}}>
 {hasDoc?<>
-<button onClick={()=>setDocPreview({name:docName,ref,by,on,vu,stage,hasDoc:true,det:detRows,sup:supName,batch:selBatch||"—"})} style={{padding:"4px 10px",borderRadius:4,fontSize:14,fontWeight:600,border:"none",background:"#1a73e8",color:"#fff",cursor:"pointer",display:"flex",alignItems:"center",gap:4}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="#fff" strokeWidth="2"/><circle cx="12" cy="12" r="3" stroke="#fff" strokeWidth="2"/></svg>{lang==="de"?"Ansehen":"View"}</button>
+<button onClick={()=>setDocPreview({name:docName,ref,by,on,vu,stage,hasDoc:true,det:doc.det||[],sup:supName,batch:selBatch||"—"})} style={{padding:"4px 10px",borderRadius:4,fontSize:14,fontWeight:600,border:"none",background:"#1a73e8",color:"#fff",cursor:"pointer",display:"flex",alignItems:"center",gap:4}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="#fff" strokeWidth="2"/><circle cx="12" cy="12" r="3" stroke="#fff" strokeWidth="2"/></svg>{lang==="de"?"Ansehen":"View"}</button>
 <button onClick={printPdf} style={{padding:"4px 10px",borderRadius:4,fontSize:14,fontWeight:600,border:"1px solid #d1d5db",background:"#fff",color:"#374151",cursor:"pointer",display:"flex",alignItems:"center",gap:4}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6v-8z" stroke="#374151" strokeWidth="1.5"/></svg>PDF</button>
 <button onClick={sendDoc} style={{padding:"4px 10px",borderRadius:4,fontSize:14,fontWeight:700,border:"none",background:"#059669",color:"#fff",cursor:"pointer",display:"flex",alignItems:"center",gap:4}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="#fff" strokeWidth="1.5" strokeLinejoin="round"/></svg>{lang==="de"?"Senden":"Send"}</button>
 <button onClick={()=>window.open(folderUrl,"_blank")} title="Google Drive" style={{padding:"4px 6px",borderRadius:4,fontSize:14,border:"1px solid #bae6fd",background:"#eff6ff",color:"#1a73e8",cursor:"pointer"}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z" fill="#1a73e8"/></svg></button>
 {/* Upload Original */}
-{docOriginals[doc.k]?<>
+{docOriginals[doc.k]?
 <button onClick={()=>{const o=docOriginals[doc.k];if(o.ext==="pdf")window.open(o.url,"_blank");else{const w=window.open("","_blank");w.document.write('<html><head><title>'+o.name+'</title><style>body{margin:0;display:flex;justify-content:center;align-items:center;min-height:100vh;background:#f1f5f9}img{max-width:90%;max-height:90vh;box-shadow:0 4px 20px rgba(0,0,0,.15);border-radius:8px}@media print{body{background:#fff}}</style></head><body><img src="'+o.url+'"/></body></html>');w.document.close()}}} style={{padding:"4px 10px",borderRadius:4,fontSize:14,fontWeight:600,border:"1px solid #059669",background:"#f0fdf4",color:"#059669",cursor:"pointer",display:"flex",alignItems:"center",gap:4}}>📄 {lang==="de"?"Original":"Original"} ✅</button>
-<button onClick={()=>{setOrigTarget(doc.k);setTimeout(()=>origFileRef.current&&origFileRef.current.click(),50)}} title={lang==="de"?"Neue Version hochladen":"Upload new version"} style={{padding:"4px 8px",borderRadius:4,fontSize:13,fontWeight:600,border:"1.5px dashed #d97706",background:"#fffbeb",color:"#92400e",cursor:"pointer",display:"flex",alignItems:"center",gap:3}}>🔄 {lang==="de"?"Neu":"Re-upload"}</button>
-<button onClick={()=>{if(confirm(lang==="de"?"Original '"+docOriginals[doc.k].name+"' wirklich löschen? Die KI-Analyse geht verloren.":"Delete original '"+docOriginals[doc.k].name+"'? AI analysis will be lost.")){setDocOriginals(prev=>{const n={...prev};delete n[doc.k];return n});setAuditLog(prev=>[{ts:new Date().toISOString(),user:auth?.name||"Celso Hamelink",action:"DELETE_ORIGINAL",docKey:doc.k,field:"original_document",oldVal:docOriginals[doc.k].name,newVal:"",batch:selBatch||"CA-03",document:docOriginals[doc.k].name,docType:"original"},...prev])}}} title={lang==="de"?"Original löschen":"Delete original"} style={{padding:"4px 8px",borderRadius:4,fontSize:13,fontWeight:600,border:"1px solid #fca5a5",background:"#fef2f2",color:"#dc2626",cursor:"pointer",display:"flex",alignItems:"center",gap:2}}>🗑️</button>
-</>
 :<button onClick={()=>{setOrigTarget(doc.k);setTimeout(()=>origFileRef.current&&origFileRef.current.click(),50)}} style={{padding:"4px 10px",borderRadius:4,fontSize:14,fontWeight:600,border:"2px dashed #3b82f6",background:"#eff6ff",color:"#1e40af",cursor:"pointer",display:"flex",alignItems:"center",gap:4}}>📤 {lang==="de"?"Original hochladen":"Upload Original"}</button>}
 </>:<>
 <button onClick={()=>{setOrigTarget(doc.k);setTimeout(()=>origFileRef.current&&origFileRef.current.click(),50)}} style={{padding:"4px 10px",borderRadius:4,fontSize:14,fontWeight:700,border:"2px dashed #d97706",background:"#fffbeb",color:"#92400e",cursor:"pointer",display:"flex",alignItems:"center",gap:4}}><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12" stroke="#92400e" strokeWidth="2"/></svg>{lang==="de"?"Original hochladen":"Upload Original"}</button>
@@ -603,10 +479,9 @@ return <div style={{display:"flex",gap:4,flexWrap:"wrap",marginTop:6}}>
 {/* Original file info + AI analysis */}
 {docOriginals[doc.k]&&<div style={{width:"100%",marginTop:4}}>
 <div style={{padding:"4px 8px",background:"#f0fdf4",borderRadius:docOriginals[doc.k].extracted&&Object.keys(docOriginals[doc.k].extracted).length>0?"4px 4px 0 0":"4px",border:"1px solid #a7f3d0",fontSize:11,display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-<span>{docOriginals[doc.k].analyzing?"⏳ ":"📄 "}<strong>{docOriginals[doc.k].name}</strong> · {docOriginals[doc.k].size} · {docOriginals[doc.k].date}{docOriginals[doc.k].version>1&&<span style={{marginLeft:4,padding:"0 4px",borderRadius:3,background:"#dbeafe",color:"#1e40af",fontSize:9,fontWeight:700}}>v{docOriginals[doc.k].version}</span>}</span>
+<span>{docOriginals[doc.k].analyzing?"⏳ ":"📄 "}<strong>{docOriginals[doc.k].name}</strong> · {docOriginals[doc.k].size} · {docOriginals[doc.k].date}</span>
 <div style={{display:"flex",gap:3}}>
 {docOriginals[doc.k].analyzing&&<span style={{fontSize:10,color:"#d97706",fontWeight:700}}>🤖 Analyzing...</span>}
-{docOriginals[doc.k].approvalComplete&&docOriginals[doc.k].approvedCount>0&&<span style={{fontSize:10,color:"#059669",fontWeight:700,padding:"1px 6px",borderRadius:3,background:"#dcfce7",border:"1px solid #a7f3d0"}}>🤖✅ AI Verified · {docOriginals[doc.k].approvedCount||0} approved · {docOriginals[doc.k].approvedAt?new Date(docOriginals[doc.k].approvedAt).toLocaleDateString("de-DE"):"—"} · {docOriginals[doc.k].approvedBy||"—"}</span>}
 <button onClick={()=>{const o=docOriginals[doc.k];if(o.ext==="pdf")window.open(o.url,"_blank");else{const w=window.open("","_blank");w.document.write('<html><body style="margin:0;display:flex;justify-content:center;background:#111"><img src="'+o.url+'" style="max-width:100%;max-height:100vh"/></body></html>');w.document.close()}}} style={{padding:"2px 8px",borderRadius:3,fontSize:10,fontWeight:700,border:"none",background:"#2563eb",color:"#fff",cursor:"pointer"}}>👁️ {lang==="de"?"Original":"Original"}</button>
 <button onClick={()=>{const o=docOriginals[doc.k];if(o.ext==="pdf"){window.open(o.url,"_blank")}else{const w=window.open("","_blank");w.document.write('<html><body style="margin:0;background:#f1f5f9;display:flex;justify-content:center"><img src="'+o.url+'" style="max-width:90%;max-height:90vh"/></body></html>');w.document.close();setTimeout(()=>w.print(),500)}}} style={{padding:"2px 8px",borderRadius:3,fontSize:10,fontWeight:700,border:"none",background:"#374151",color:"#fff",cursor:"pointer"}}>🖨️</button>
 </div>
@@ -632,7 +507,7 @@ return <div style={{display:"flex",gap:4,flexWrap:"wrap",marginTop:6}}>
 {docOriginals[doc.k].discrepancies&&docOriginals[doc.k].discrepancies.length>0&&
 <div style={{padding:"4px 8px",background:"#fef2f2",border:"1px solid #fecaca",borderTop:"none",borderRadius:"0 0 4px 4px",fontSize:10}}>
 <span style={{fontWeight:700,color:"#dc2626"}}>⚠️ {lang==="de"?"Abweichungen":"Discrepancies"}: </span>
-{docOriginals[doc.k].discrepancies.map((d,i)=><div key={i} style={{marginLeft:16,color:"#991b1b"}}>• {typeof d==="string"?d:(d.field||"")+(d.declared?" ("+d.declared+"":"")+(d.found?" → "+d.found:"")+(d.declared?")":"")}</div>)}
+{docOriginals[doc.k].discrepancies.map((d,i)=><div key={i} style={{marginLeft:16,color:"#991b1b"}}>• {d}</div>)}
 </div>}
 {/* Corrections */}
 {docOriginals[doc.k].corrections&&Object.keys(docOriginals[doc.k].corrections).length>0&&
@@ -664,8 +539,8 @@ setTimeout(()=>setQrAnim("Compiling QR code package..."),3000);
 setTimeout(()=>{setQrGen(false);setQrDone(true);setQrAnim("")},3800)};
 
 const M0=()=>{if(sup==="hytn"||sup==="mccn")return <OnboardWS/>;
-if(curBatch&&curBatch.status==="planned"&&lcs===0)return <Cd t={"📋 M0 "+curBatch.id+" — "+(lang==="de"?"Vorab-Dokumente":"Pre-Arrival Docs")} badge={<Bd c="#9ca3af" b="#f3f4f6">{lang==="de"?"Geplant":"Planned"}</Bd>}><div style={{textAlign:"center",padding:24,color:"#9ca3af"}}><div style={{fontSize:32,marginBottom:8}}>📋</div><div style={{fontSize:15,fontWeight:600,marginBottom:4}}>{lang==="de"?"Wartet auf Dokumentation":"Awaiting documentation"}</div><div style={{fontSize:15,maxWidth:400,margin:"0 auto"}}>{lang==="de"?"Dokumente werden hier hochgeladen sobald verfügbar.":"Documents will be uploaded here once available."}</div><div style={{marginTop:16,display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,maxWidth:400,margin:"16px auto 0"}}>{["Supplier Qualification","Import Permit (BfArM)","Export Permit","Packing List","Air Waybill","COA","Datenlogger",].map((d,j)=><div key={j} style={{padding:"6px 10px",borderRadius:6,border:"1.5px dashed #d1d5db",fontSize:14,color:"#9ca3af",display:"flex",alignItems:"center",gap:4}}><span style={{color:"#d1d5db"}}>○</span>{d}</div>)}</div></div></Cd>;
-if(curBatch&&curBatch.status==="docs-pending"&&lcs===0)return <Cd t={"📂 "+curBatch.id+" — "+(lang==="de"?"Dokumentation importieren":"Import Documentation")} badge={<Bd c="#d97706" b="#fef3c7">{lang==="de"?"Doku ausstehend":"Docs Pending"}</Bd>}><div style={{textAlign:"center",padding:24}}><div style={{fontSize:40,marginBottom:8}}>📂</div><div style={{fontSize:16,fontWeight:700,color:"#d97706",marginBottom:4}}>{curBatch.id}: {curBatch.product}</div><div style={{fontSize:14,color:"#374151",marginBottom:4}}>{curBatch.kg}kg · {lang==="de"?"Importiert":"Imported"}: {curBatch.import} · Batch: {curBatch.batch}</div><div style={{fontSize:14,color:"#6b7280",maxWidth:450,margin:"0 auto",marginBottom:16}}>{lang==="de"?"Dieser Import wurde bereits abgeschlossen. Lade die Originaldokumente als ZIP hoch um sie den Lifecycle-Stufen zuzuordnen.":"This import has already been completed. Upload the original documents as a ZIP to assign them to lifecycle stages."}</div><button onClick={()=>fileRef.current&&fileRef.current.click()} style={{padding:"12px 28px",borderRadius:8,fontSize:15,fontWeight:700,border:"2px dashed #d97706",background:"#fefce8",color:"#d97706",cursor:"pointer"}}>📤 {lang==="de"?"ZIP mit Dokumenten hochladen":"Upload ZIP with Documents"}</button><div style={{marginTop:16,display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:6,maxWidth:500,margin:"16px auto 0"}}>{[["M0","Registration"],["M0.5","Pre-Arrival"],["M1","GDP Transport"],["M1.5","Vault Arrival"],["M2","Lab Testing"],["M3","QP Release"],["M3.1","Quarantine"],["M4","Relabeling"],["M4.5","Storage"],["M5","Shipment"],["M6","Reconciliation"]].map(([id,name],j)=>{const cnt=uploads.filter(u=>u.stage===id&&u.batch===curBatch.id).length;return <div key={j} style={{padding:"6px 8px",borderRadius:6,border:cnt>0?"1.5px solid #059669":"1.5px dashed #d1d5db",background:cnt>0?"#f0fdf4":"transparent",fontSize:12,color:cnt>0?"#059669":"#9ca3af",display:"flex",alignItems:"center",justifyContent:"space-between"}}><span>{cnt>0?"✅":"○"} {id} {name}</span>{cnt>0&&<span style={{fontWeight:700}}>{cnt}</span>}</div>})}</div></div></Cd>;
+if(curBatch&&curBatch.status==="planned")return <Cd t={"📋 M0 "+curBatch.id+" — "+(lang==="de"?"Vorab-Dokumente":"Pre-Arrival Docs")} badge={<Bd c="#9ca3af" b="#f3f4f6">{lang==="de"?"Geplant":"Planned"}</Bd>}><div style={{textAlign:"center",padding:24,color:"#9ca3af"}}><div style={{fontSize:32,marginBottom:8}}>📋</div><div style={{fontSize:15,fontWeight:600,marginBottom:4}}>{lang==="de"?"Wartet auf Dokumentation":"Awaiting documentation"}</div><div style={{fontSize:15,maxWidth:400,margin:"0 auto"}}>{lang==="de"?"Dokumente werden hier hochgeladen sobald verfügbar.":"Documents will be uploaded here once available."}</div><div style={{marginTop:16,display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,maxWidth:400,margin:"16px auto 0"}}>{["Supplier Qualification","Import Permit (BfArM)","Export Permit","Packing List","Air Waybill","COA","Datenlogger","Phytosanitary Cert."].map((d,j)=><div key={j} style={{padding:"6px 10px",borderRadius:6,border:"1.5px dashed #d1d5db",fontSize:14,color:"#9ca3af",display:"flex",alignItems:"center",gap:4}}><span style={{color:"#d1d5db"}}>○</span>{d}</div>)}</div></div></Cd>;
+if(curBatch&&curBatch.status==="docs-pending")return <Cd t={"📂 "+curBatch.id+" — "+(lang==="de"?"Dokumentation importieren":"Import Documentation")} badge={<Bd c="#d97706" b="#fef3c7">{lang==="de"?"Doku ausstehend":"Docs Pending"}</Bd>}><div style={{textAlign:"center",padding:24}}><div style={{fontSize:40,marginBottom:8}}>📂</div><div style={{fontSize:16,fontWeight:700,color:"#d97706",marginBottom:4}}>{curBatch.id}: {curBatch.product}</div><div style={{fontSize:14,color:"#374151",marginBottom:4}}>{curBatch.kg}kg · {lang==="de"?"Importiert":"Imported"}: {curBatch.import} · Batch: {curBatch.batch}</div><div style={{fontSize:14,color:"#6b7280",maxWidth:450,margin:"0 auto",marginBottom:16}}>{lang==="de"?"Dieser Import wurde bereits abgeschlossen. Lade die Originaldokumente als ZIP hoch um sie den Lifecycle-Stufen zuzuordnen.":"This import has already been completed. Upload the original documents as a ZIP to assign them to lifecycle stages."}</div><button onClick={()=>fileRef.current&&fileRef.current.click()} style={{padding:"12px 28px",borderRadius:8,fontSize:15,fontWeight:700,border:"2px dashed #d97706",background:"#fefce8",color:"#d97706",cursor:"pointer"}}>📤 {lang==="de"?"ZIP mit Dokumenten hochladen":"Upload ZIP with Documents"}</button><div style={{marginTop:16,display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:6,maxWidth:500,margin:"16px auto 0"}}>{[["M0","Registration"],["M0.5","Pre-Arrival"],["M1","GDP Transport"],["M1.5","Vault Arrival"],["M2","Lab Testing"],["M3","QP Release"],["M3.1","Quarantine"],["M4","Relabeling"],["M4.5","Storage"],["M5","Shipment"],["M6","Reconciliation"]].map(([id,name],j)=>{const cnt=uploads.filter(u=>u.stage===id&&u.batch===curBatch.id).length;return <div key={j} style={{padding:"6px 8px",borderRadius:6,border:cnt>0?"1.5px solid #059669":"1.5px dashed #d1d5db",background:cnt>0?"#f0fdf4":"transparent",fontSize:12,color:cnt>0?"#059669":"#9ca3af",display:"flex",alignItems:"center",justifyContent:"space-between"}}><span>{cnt>0?"✅":"○"} {id} {name}</span>{cnt>0&&<span style={{fontWeight:700}}>{cnt}</span>}</div>})}</div></div></Cd>;
 const up=M0D.filter(d=>d.up).length;const tot=M0D.filter(d=>d.req).length;const crit=M0D.filter(d=>d.st==="critical").length;const warn=M0D.filter(d=>d.st==="warning").length;
 return <div><div style={{display:"flex",gap:6,marginBottom:10,flexWrap:"wrap"}}><Bd c="#059669" b="#d1fae5">✅ {up}/{tot} {t.uploaded}</Bd>{crit>0&&<Bd c="#dc2626" b="#fee2e2">🔴 {crit} {t.critical}</Bd>}{warn>0&&<Bd c="#d97706" b="#fef3c7">🟠 {warn} {t.warning}</Bd>}</div>
 {M0D.map(doc=>{const ex=exDoc===doc.k;return <div key={doc.k} style={{marginBottom:3}}>
@@ -683,7 +558,7 @@ return <div><div style={{display:"flex",gap:6,marginBottom:10,flexWrap:"wrap"}}>
 {[[t.refNo,doc.ref],[t.issuedBy,doc.by],[t.issuedOn,doc.on],[t.validUntil,doc.vu],doc.dl!==null?[t.expiresIn,doc.dl+" "+t.days]:null].filter(Boolean).map(([l,v],j)=><div key={j}><div style={{fontSize:13,color:"#6b7280",textTransform:"uppercase",fontWeight:600}}>{l}</div><div style={{fontSize:16,fontWeight:600,color:typeof doc.dl==="number"&&doc.dl<=30?"#dc2626":"#1f2937"}}>{v}</div></div>)}
 </div>
 <div style={{background:"#f9fafb",borderRadius:6,padding:10,marginBottom:10}}>
-{(docDetails[doc.k]?.det||doc.det||[]).map(([l,v],j)=>{const det2=docDetails[doc.k]?.det||doc.det||[];return <div key={j} style={{display:"flex",justifyContent:"space-between",padding:"4px 0",borderBottom:j<det2.length-1?"1px solid #e5e7eb":"none",fontSize:15}}><span style={{color:"#6b7280"}}>{l}</span><span style={{fontWeight:600,textAlign:"right",maxWidth:"65%"}}>{v}</span></div>})}
+{doc.det.map(([l,v],j)=><div key={j} style={{display:"flex",justifyContent:"space-between",padding:"4px 0",borderBottom:j<doc.det.length-1?"1px solid #e5e7eb":"none",fontSize:15}}><span style={{color:"#6b7280"}}>{l}</span><span style={{fontWeight:600,textAlign:"right",maxWidth:"65%"}}>{v}</span></div>)}
 </div>
 <div style={{display:"flex",gap:5}}>
 <DocActions doc={doc} stage="M0"/>
@@ -856,384 +731,120 @@ return <div><div style={{display:"flex",gap:6,marginBottom:10,flexWrap:"wrap"}}>
 </div>})}</div>};
 
 // M2 Lab — Supplier COA vs QSI Comparison
-const ComparePanel=({allSupCoas,allQsiCoas,qsiMerged,hasSup,hasQsi,KEY_PARAMS,LIMITS,lang})=>{
-const[activeTab,setActiveTab]=useState("table");
-const passParams=KEY_PARAMS.filter(p=>LIMITS[p]&&qsiMerged[p]&&qsiMerged[p]!=="—"&&LIMITS[p].check(qsiMerged[p]));
-const failParams=KEY_PARAMS.filter(p=>LIMITS[p]&&qsiMerged[p]&&qsiMerged[p]!=="—"&&!LIMITS[p].check(qsiMerged[p]));
-const totalChecked=passParams.length+failParams.length;
-const allPass=failParams.length===0&&totalChecked>0;
-const thcQsi=parseFloat(String(qsiMerged["THC Content"]||"0").replace(/[^0-9.]/g,""))||0;
-const thcSup=parseFloat(String((allSupCoas[0]?.[1]?.approvedData||allSupCoas[0]?.[1]?.extracted||{})["THC Content"]||"0").replace(/[^0-9.]/g,""))||0;
-const thcPct=Math.min(Math.max((thcQsi-15)/(25-15)*100,0),100);
-const thcPass=thcQsi>=17&&thcQsi<=21;
-
-return <div style={{marginBottom:16}}>
-{/* Tab buttons */}
-<div style={{display:"flex",gap:4,marginBottom:10}}>
-{[["table","📊 "+(lang==="de"?"Vergleich":"Comparison")],["dashboard","🎯 "+(lang==="de"?"Dashboard":"Quality Dashboard")]].map(([k,l])=>
-<button key={k} onClick={()=>setActiveTab(k)} style={{padding:"6px 14px",borderRadius:6,fontSize:13,fontWeight:700,border:activeTab===k?"2px solid #2563eb":"1px solid #d1d5db",background:activeTab===k?"#dbeafe":"#fff",color:activeTab===k?"#1e40af":"#374151",cursor:"pointer"}}>{l}</button>)}
-{hasSup&&!hasQsi&&<span style={{padding:"6px 10px",borderRadius:6,background:"#fef3c7",fontSize:12,color:"#d97706",fontWeight:600,border:"1px solid #fde68a"}}>⏳ Upload QSI COA to compare</span>}
-</div>
-
-{/* TABLE */}
-{activeTab==="table"&&<div style={{overflowX:"auto",borderRadius:8,border:"1px solid #e5e7eb",overflow:"hidden",marginBottom:10}}>
-<table style={{width:"100%",borderCollapse:"collapse",fontSize:13}}>
-<thead><tr style={{background:"#1e293b"}}>
-<th style={{padding:"8px 12px",textAlign:"left",color:"#f8fafc",fontWeight:700}}>Parameter</th>
-{allSupCoas.map(([k,v])=>{const d=v?.approvedData||v?.extracted||{};const sub=d["Sub-Batch Number"]||d["Batch Number"]||k;return <th key={k} style={{padding:"8px 10px",textAlign:"center",color:"#fde68a",fontWeight:700,fontSize:12,whiteSpace:"nowrap"}}>🇦🇷 {sub.length>14?sub.slice(0,14)+"…":sub}</th>;})}
-{hasQsi?allQsiCoas.map(([k,v])=>{const d=v?.approvedData||v?.extracted||{};const cert=d["Analysis Certificate Number"]||k;return <th key={k} style={{padding:"8px 10px",textAlign:"center",color:"#86efac",fontWeight:700,fontSize:12,whiteSpace:"nowrap"}}>🇩🇪 QSI {cert.length>10?cert.slice(0,10)+"…":cert}</th>;}):
-<th style={{padding:"8px 10px",textAlign:"center",color:"#64748b",fontSize:12}}>🇩🇪 QSI</th>}
-<th style={{padding:"8px 10px",textAlign:"center",color:"#94a3b8",fontSize:11}}>Ph.Eur.</th>
-{hasQsi&&allSupCoas.length>0&&<th style={{padding:"8px 10px",textAlign:"center",color:"#94a3b8",fontSize:11}}>Δ</th>}
-<th style={{padding:"8px 10px",textAlign:"center",color:"#94a3b8",fontSize:11}}>✓</th>
-</tr></thead>
-<tbody>
-{KEY_PARAMS.filter(param=>{
-const anySupHas=allSupCoas.some(([,v])=>{const d=v?.approvedData||v?.extracted||{};return d[param]&&d[param]!=="—";});
-return anySupHas||(qsiMerged[param]&&qsiMerged[param]!=="—");
-}).map((param,ri)=>{
-const limInfo=LIMITS[param];
-const qsiVal=qsiMerged[param]||"—";
-const qsiPass=limInfo&&qsiVal!=="—"?limInfo.check(qsiVal):null;
-const firstSupD=allSupCoas[0]?.[1]?.approvedData||allSupCoas[0]?.[1]?.extracted||{};
-const firstSupVal=firstSupD[param]||"—";
-const sn=parseFloat(String(firstSupVal).replace(/[^0-9.]/g,""));
-const qn=parseFloat(String(qsiVal).replace(/[^0-9.]/g,""));
-const delta=hasQsi&&!isNaN(sn)&&!isNaN(qn)&&sn>0?((qn-sn)/sn*100).toFixed(1):null;
-const abs=delta?Math.abs(parseFloat(delta)):0;
-return <tr key={param} style={{background:ri%2===0?"#fff":"#f8fafc"}}>
-<td style={{padding:"5px 12px",fontWeight:600,color:"#1e293b",borderBottom:"1px solid #f1f5f9",whiteSpace:"nowrap"}}>{param}</td>
-{allSupCoas.map(([k,v])=>{const d=v?.approvedData||v?.extracted||{};const val=d[param]||"—";return <td key={k} style={{padding:"5px 10px",textAlign:"center",borderBottom:"1px solid #f1f5f9",color:val==="—"?"#cbd5e1":"#92400e",background:"#fffbeb",fontWeight:val==="—"?400:600}}>{val}</td>;})}
-{hasQsi?allQsiCoas.map(([k,v])=>{const d=v?.approvedData||v?.extracted||{};const val=d[param]||qsiVal;const p=limInfo&&val!=="—"?limInfo.check(val):null;return <td key={k} style={{padding:"5px 10px",textAlign:"center",borderBottom:"1px solid #f1f5f9",color:val==="—"?"#cbd5e1":p===false?"#dc2626":"#059669",background:p===false?"#fef2f2":p===true?"#f0fdf4":"#fff",fontWeight:val==="—"?400:700}}>{val}{p===false&&" ⚠️"}</td>;}):
-<td style={{padding:"5px 10px",textAlign:"center",color:"#cbd5e1"}}>—</td>}
-<td style={{padding:"5px 10px",textAlign:"center",color:"#9ca3af",fontSize:11}}>{limInfo?.lim||""}</td>
-{hasQsi&&allSupCoas.length>0&&<td style={{padding:"5px 10px",textAlign:"center"}}>{delta!==null?<span style={{fontWeight:700,fontSize:12,padding:"1px 6px",borderRadius:4,background:abs>25?"#fee2e2":abs>10?"#fef3c7":"#dcfce7",color:abs>25?"#dc2626":abs>10?"#d97706":"#059669"}}>{delta>0?"+":""}{delta}%</span>:<span style={{color:"#cbd5e1"}}>—</span>}</td>}
-<td style={{padding:"5px 10px",textAlign:"center"}}>{hasQsi?(qsiPass===true?"✅":qsiPass===false?"❌":"—"):"—"}</td>
-</tr>;})}
-</tbody></table>
-<div style={{padding:"8px 12px",background:"#dbeafe",fontSize:13,borderLeft:"3px solid #2563eb"}}>
-<strong>§14 AMG:</strong> QSI Bremen retest is the official binding result. Supplier COA is reference only.
-</div>
-</div>}
-
-{/* DASHBOARD */}
-{activeTab==="dashboard"&&<div>
-{!hasQsi&&<div style={{textAlign:"center",padding:24,color:"#6b7280",background:"#f8fafc",borderRadius:8,border:"1px dashed #d1d5db"}}>
-<div style={{fontSize:32,marginBottom:8}}>🔬</div>
-<div style={{fontWeight:600,marginBottom:4}}>Upload QSI COA to unlock Quality Dashboard</div>
-<div style={{fontSize:13}}>Auto-generates once QSI results are AI-verified</div>
-</div>}
-{hasQsi&&<div>
-{/* Safety Gate Banner */}
-<div style={{padding:"14px 18px",borderRadius:10,background:allPass?"linear-gradient(135deg,#059669,#10b981)":"linear-gradient(135deg,#dc2626,#ef4444)",color:"#fff",marginBottom:12,display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-<div style={{display:"flex",alignItems:"center",gap:12}}>
-<span style={{fontSize:36}}>{allPass?"🟢":"🔴"}</span>
-<div>
-<div style={{fontSize:18,fontWeight:800}}>Safety Gate — {allPass?"ALL PASS":"REVIEW REQUIRED"}</div>
-<div style={{fontSize:13,opacity:.9}}>{passParams.length} PASS · {failParams.length} FAIL · {allSupCoas.length} supplier COA(s) · {allQsiCoas.length} QSI</div>
-</div>
-</div>
-<div style={{textAlign:"right"}}>
-<div style={{fontSize:28,fontWeight:900}}>{totalChecked>0?Math.round(passParams.length/totalChecked*100):0}%</div>
-<div style={{fontSize:12,opacity:.85}}>compliance</div>
-</div>
-</div>
-{/* THC Gauge */}
-{thcQsi>0&&<div style={{marginBottom:12,padding:14,borderRadius:10,background:"#fff",border:"1px solid #e5e7eb"}}>
-<div style={{fontSize:14,fontWeight:700,color:"#374151",marginBottom:10,display:"flex",justifyContent:"space-between"}}>
-<span>🌿 THC — QSI Official Result</span>
-<span style={{color:thcPass?"#059669":"#dc2626",fontWeight:800}}>{thcQsi}% {thcPass?"✅":"❌"}</span>
-</div>
-<div style={{position:"relative",height:28,borderRadius:6,background:"linear-gradient(90deg,#fef3c7 0%,#dcfce7 20%,#dcfce7 60%,#fef3c7 80%,#fee2e2 100%)",border:"1px solid #e5e7eb",marginBottom:4}}>
-<div style={{position:"absolute",left:"20%",top:0,bottom:0,borderLeft:"2px dashed #d97706"}}/>
-<div style={{position:"absolute",left:"60%",top:0,bottom:0,borderLeft:"2px dashed #d97706"}}/>
-{thcSup>0&&<div style={{position:"absolute",left:(Math.min(Math.max((thcSup-15)/(25-15)*100,0),100))+"%",top:-4,transform:"translateX(-50%)",zIndex:2}}>
-<div style={{width:3,height:36,background:"#d97706",borderRadius:2}}/>
-<div style={{position:"absolute",bottom:"100%",left:"50%",transform:"translateX(-50%)",fontSize:9,fontWeight:700,color:"#92400e",whiteSpace:"nowrap",background:"#fef3c7",padding:"1px 4px",borderRadius:3,marginBottom:2}}>🇦🇷 {thcSup}%</div>
-</div>}
-<div style={{position:"absolute",left:thcPct+"%",top:-4,transform:"translateX(-50%)",zIndex:3}}>
-<div style={{width:4,height:36,background:"#059669",borderRadius:2}}/>
-<div style={{position:"absolute",bottom:"100%",left:"50%",transform:"translateX(-50%)",fontSize:9,fontWeight:700,color:"#065f46",whiteSpace:"nowrap",background:"#dcfce7",padding:"1px 4px",borderRadius:3,marginBottom:2}}>🇩🇪 {thcQsi}%</div>
-</div>
-</div>
-<div style={{display:"flex",justifyContent:"space-between",fontSize:10,color:"#9ca3af",marginBottom:10}}>
-<span>15%</span><span style={{color:"#d97706"}}>↑17%</span><span style={{color:"#059669",fontWeight:700}}>safe zone</span><span style={{color:"#d97706"}}>21%↑</span><span>25%</span>
-</div>
-{thcSup>0&&<div style={{display:"flex",gap:8}}>
-<div style={{flex:1,padding:8,background:"#fffbeb",borderRadius:6,textAlign:"center",border:"1px solid #fde68a"}}>
-<div style={{fontSize:11,color:"#92400e",fontWeight:600}}>🇦🇷 Supplier</div>
-<div style={{fontSize:20,fontWeight:800,color:"#92400e"}}>{thcSup}%</div>
-</div>
-<div style={{flex:1,padding:8,background:thcPass?"#f0fdf4":"#fef2f2",borderRadius:6,textAlign:"center",border:"1px solid "+(thcPass?"#a7f3d0":"#fca5a5")}}>
-<div style={{fontSize:11,color:thcPass?"#065f46":"#dc2626",fontWeight:600}}>🇩🇪 QSI Official</div>
-<div style={{fontSize:20,fontWeight:800,color:thcPass?"#059669":"#dc2626"}}>{thcQsi}%</div>
-</div>
-<div style={{flex:1,padding:8,background:"#f8fafc",borderRadius:6,textAlign:"center",border:"1px solid #e2e8f0"}}>
-<div style={{fontSize:11,color:"#6b7280",fontWeight:600}}>Δ Variance</div>
-<div style={{fontSize:20,fontWeight:800,color:thcSup>0&&Math.abs(((thcQsi-thcSup)/thcSup)*100)>10?"#d97706":"#059669"}}>{thcSup>0?(((thcQsi-thcSup)/thcSup*100)>0?"+":"")+((thcQsi-thcSup)/thcSup*100).toFixed(1)+"%":"—"}</div>
-</div>
-</div>}
-</div>}
-{/* Parameter grid */}
-<div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:6,marginBottom:10}}>
-{KEY_PARAMS.filter(p=>LIMITS[p]&&(qsiMerged[p]||((allSupCoas[0]?.[1]?.approvedData||allSupCoas[0]?.[1]?.extracted||{})[p]))).map(param=>{
-const qv=qsiMerged[param];const sv=(allSupCoas[0]?.[1]?.approvedData||allSupCoas[0]?.[1]?.extracted||{})[param];
-const pass=qv&&LIMITS[param]?LIMITS[param].check(qv):null;
-return <div key={param} style={{padding:"7px 9px",borderRadius:7,background:pass===true?"#f0fdf4":pass===false?"#fef2f2":"#f8fafc",border:"1.5px solid "+(pass===true?"#a7f3d0":pass===false?"#fca5a5":"#e5e7eb")}}>
-<div style={{fontSize:10,color:"#6b7280",fontWeight:600,marginBottom:2}}>{param}</div>
-<div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-<div>{sv&&sv!=="—"&&<div style={{fontSize:10,color:"#92400e"}}>🇦🇷 {sv}</div>}
-<div style={{fontSize:12,fontWeight:700,color:pass===true?"#059669":pass===false?"#dc2626":"#374151"}}>🇩🇪 {qv||"—"}</div>
-</div>
-<span>{pass===true?"✅":pass===false?"❌":"—"}</span>
-</div>
-</div>;})}
-</div>
-<div style={{padding:10,background:"#dbeafe",borderRadius:8,fontSize:13,borderLeft:"4px solid #2563eb"}}>
-<strong>§14 AMG:</strong> QSI Bremen is the official binding result. QP Dr. Olaf Schagon signs CGZ based on QSI results.
-</div>
-</div>}
-</div>}
-
-{/* ── THC Adjustment Observation (NOT a CAPA) ── */}
-{hasQsi&&thcQsi>0&&(()=>{
-const thcVariance=thcSup>0?((thcQsi-thcSup)/thcSup*100):0;
-const thcOutOfSpec=thcQsi<17||thcQsi>21;
-const thcDeviation=Math.abs(thcVariance)>10;
-if(!thcDeviation&&!thcOutOfSpec)return null;
-const newPznNeeded=thcOutOfSpec||thcDeviation;
-return <div style={{marginTop:10,borderRadius:8,border:"2px solid #d97706",overflow:"hidden"}}>
-<div style={{padding:"10px 14px",background:"#fffbeb",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-<div style={{display:"flex",alignItems:"center",gap:8}}>
-<span style={{fontSize:18}}>🏷️</span>
-<div>
-<div style={{fontSize:14,fontWeight:700,color:"#92400e"}}>THC Value Adjustment — PZN Update Required</div>
-<div style={{fontSize:12,color:"#6b7280"}}>QSI: {thcQsi}% · Supplier declared: {thcSup||"—"}% · Variance: {thcSup>0?((thcQsi-thcSup)/thcSup*100).toFixed(1):"-"}% · This is an observation — no CAPA needed</div>
-</div>
-</div>
-<span style={{padding:"3px 10px",borderRadius:6,fontSize:12,fontWeight:700,background:"#fef3c7",color:"#d97706"}}>📋 Observation</span>
-</div>
-<div style={{padding:12,background:"#fff"}}>
-<div style={{marginBottom:10,padding:8,background:"#fffbeb",borderRadius:6,border:"1px solid #fde68a",fontSize:12,color:"#92400e",lineHeight:1.6}}>
-<strong>What happens:</strong> The QSI result ({thcQsi}%) differs from the supplier declared value ({thcSup||"—"}%).
-This is normal and expected — QSI Bremen is the official §14 AMG result.
-The product name and PZN number must reflect the confirmed QSI THC value.
-Pia at QSI will update the COA product description and issue the final certificate.
-{newPznNeeded&&<div style={{marginTop:4,fontWeight:700}}>🏷️ New PZN registration at IFA required for corrected THC value.</div>}
-</div>
-<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:8}}>
-{/* Notify Pia */}
-<div style={{padding:8,background:"#fff",borderRadius:6,border:"1px solid #e5e7eb"}}>
-<div style={{fontSize:12,fontWeight:700,color:"#1e40af",marginBottom:4}}>📬 Step 1 — Notify Pia @ QSI Bremen</div>
-<div style={{fontSize:11,color:"#6b7280",marginBottom:6}}>Send QSI-confirmed THC value. Pia amends product name on the COA to reflect the correct THC range.</div>
-<button onClick={()=>{
-const btId=typeof selBatch!=="undefined"?selBatch:"--";
-const prod=(typeof BT!=="undefined"&&BT?.p)||"Cannabis flos";
-const body="Dear Pia,\n\nPZN Adjustment Notification — "+btId+"\n\nQSI confirmed THC: "+thcQsi+"%\nSupplier declared: "+(thcSup||"--")+"%\nProduct: "+prod+"\n\nPlease update the product description on the COA to reflect the confirmed QSI THC value ("+thcQsi+"%).\n"+(newPznNeeded?"A new PZN registration will be submitted to IFA based on your amended COA.\n":"")+"\nKindly send the amended certificate to qp@nocpharma.de.\n\nBest regards,\nCelso Hamelink\nNOC Pharma GmbH";
-window.open("https://mail.google.com/mail/?view=cm&to=pia@qsi-gmbh.de&cc=qp@nocpharma.de&su=PZN+Adjustment+Notice+-+"+encodeURIComponent(btId)+"&body="+encodeURIComponent(body),"_blank");
-}} style={{width:"100%",padding:"7px 10px",borderRadius:5,fontSize:12,fontWeight:700,border:"none",background:"#1e40af",color:"#fff",cursor:"pointer"}}>
-📧 Email Pia — COA Product Name Update
-</button>
-</div>
-{/* New PZN */}
-<div style={{padding:8,background:"#fff",borderRadius:6,border:"1px solid #e5e7eb"}}>
-<div style={{fontSize:12,fontWeight:700,color:"#7c3aed",marginBottom:4}}>🏷️ Step 2 — New PZN Registration (IFA)</div>
-<div style={{fontSize:11,color:"#6b7280",marginBottom:6}}>Once Pia sends the amended COA, submit new PZN to IFA with the corrected THC value ({thcQsi}%).</div>
-<button onClick={()=>{
-window.open("https://www.ifa.de/service/arzneimittelzulassung","_blank");
-}} style={{width:"100%",padding:"7px 10px",borderRadius:5,fontSize:12,fontWeight:700,border:"1px solid #7c3aed",background:"#f5f3ff",color:"#7c3aed",cursor:"pointer"}}>
-🔗 IFA Portal — PZN Registration
-</button>
-</div>
-</div>
-<div style={{padding:6,background:"#dbeafe",borderRadius:5,fontSize:11,color:"#1e40af",border:"1px solid #bfdbfe"}}>
-ℹ️ THC variance is an observation only — no CAPA, no batch hold. Relabeling with corrected THC value happens at M4.
-</div>
-</div>
-</div>;
-})()}
-
-{/* ── OOS Parameters — CAPA under QTA (Cannava ↔ NOC Pharma) ── */}
-{hasQsi&&(()=>{
-const OOS_PARAMS=["TAMC","TYMC","E. coli","Salmonella","Bile-tolerant Gram-neg","Staphylococcus aureus","Pseudomonas aeruginosa","Lead Pb","Cadmium Cd","Mercury Hg","Arsenic As","Aflatoxin B1","Aflatoxins Total","Ochratoxin A","Pesticides","Loss on Drying","CBD Content","CBN Content"];
-const failedParams=OOS_PARAMS.filter(p=>LIMITS[p]&&qsiMerged[p]&&qsiMerged[p]!=="—"&&!LIMITS[p].check(qsiMerged[p]));
-if(failedParams.length===0)return null;
-const btId=typeof selBatch!=="undefined"?selBatch:"--";
-const capaId="CAPA-"+new Date().getFullYear()+"-OOS-"+btId.replace(/[^A-Z0-9]/g,"");
-return <div style={{marginTop:10,borderRadius:8,border:"2px solid #dc2626",overflow:"hidden"}}>
-<div style={{padding:"10px 14px",background:"#fef2f2",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-<div style={{display:"flex",alignItems:"center",gap:8}}>
-<span style={{fontSize:18}}>🔴</span>
-<div>
-<div style={{fontSize:14,fontWeight:700,color:"#dc2626"}}>Out-of-Spec — CAPA Required (QTA §Cannava / NOC Pharma)</div>
-<div style={{fontSize:12,color:"#6b7280"}}>{failedParams.length} parameter(s) outside Ph. Eur. spec · Batch HOLD · QP sign-off required</div>
-</div>
-</div>
-<span style={{padding:"3px 10px",borderRadius:6,fontSize:12,fontWeight:700,background:"#dc2626",color:"#fff"}}>🔴 CAPA</span>
-</div>
-<div style={{padding:12,background:"#fff"}}>
-<div style={{display:"flex",flexWrap:"wrap",gap:6,marginBottom:10}}>
-{failedParams.map((p,i)=><span key={i} style={{padding:"3px 10px",borderRadius:4,background:"#fee2e2",color:"#991b1b",fontSize:12,fontWeight:700,border:"1px solid #fca5a5"}}>❌ {p}: {qsiMerged[p]}</span>)}
-</div>
-<div style={{marginBottom:10,padding:8,background:"#fef2f2",borderRadius:6,border:"1px solid #fecaca",fontSize:12,color:"#991b1b",lineHeight:1.6}}>
-<strong>QTA obligation:</strong> Per the Quality Technical Agreement signed between Cannabis Avatara S.E. (Cannava) and NOC Pharma GmbH, any parameter outside Ph. Eur. specification triggers a mandatory CAPA. The CAPA must be signed by both parties under the QTA. Batch is placed on HOLD until CAPA is closed and QP releases.
-</div>
-<div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:8}}>
-<button onClick={()=>{
-const body="URGENT — Out-of-Spec QSI Result\n\nCAPAID: "+capaId+"\nImport: "+btId+"\nDate: "+new Date().toLocaleDateString("de-DE")+"\n\nFailed parameters:\n"+failedParams.map(p=>p+": "+qsiMerged[p]).join("\n")+"\n\nPer QTA between Cannava and NOC Pharma:\n- Batch placed on HOLD\n- Root cause investigation required from Cannava\n- CAPA document must be signed by both parties\n- Expected response: 5 working days\n\nPlease confirm receipt and initiate investigation.\n\nNOC Pharma GmbH — QP: Dr. O. Schagon";
-window.open("https://mail.google.com/mail/?view=cm&to=mfruiz@cannava.gob.ar&cc=qp@nocpharma.de&su=URGENT+CAPA+OOS+-+"+encodeURIComponent(btId)+"&body="+encodeURIComponent(body),"_blank");
-}} style={{padding:"8px 10px",borderRadius:6,fontSize:12,fontWeight:700,border:"none",background:"#dc2626",color:"#fff",cursor:"pointer"}}>
-📧 Notify Cannava QP (QTA)
-</button>
-<button onClick={()=>{
-const body="URGENT OOS Result\nImport: "+btId+"\nCAPA: "+capaId+"\nFailed: "+failedParams.map(p=>p+": "+qsiMerged[p]).join(", ")+"\n\nBatch on HOLD. QTA CAPA initiated with Cannava. Awaiting root cause + corrective action. Please review and sign CGZ hold confirmation.";
-window.open("https://mail.google.com/mail/?view=cm&to=qp@nocpharma.de&cc=torsten.cuny@nocpharma.de&su=URGENT+OOS+-+"+encodeURIComponent(btId)+"&body="+encodeURIComponent(body),"_blank");
-}} style={{padding:"8px 10px",borderRadius:6,fontSize:12,fontWeight:700,border:"none",background:"#7f1d1d",color:"#fff",cursor:"pointer"}}>
-📧 Notify QP Dr. Schagon
-</button>
-<button onClick={()=>{
-alert("CAPA "+capaId+" opened.\nParameters: "+failedParams.join(", ")+"\n\nNext steps:\n1. Cannava root cause investigation\n2. QTA CAPA document signed by both parties\n3. QP review and batch hold confirmation\n\nDocument in Deviations module.");
-}} style={{padding:"8px 10px",borderRadius:6,fontSize:12,fontWeight:700,border:"1px solid #dc2626",background:"#fef2f2",color:"#dc2626",cursor:"pointer"}}>
-⚡ Open CAPA {capaId}
-</button>
-</div>
-</div>
-</div>;
-})()}
-
-</div>;};
-
-const M2Lab=()=>{
-/* ── All supplier COAs: sc, sc_1, sc_2 ... sc_9 ── */
-/* ── All supplier COAs: sc, sc_1, sc_2 ... sc_9 ── */
-const allSupCoas=Object.entries(docOriginals).filter(([k])=>k==="sc"||k.startsWith("sc_")).sort(([a],[b])=>a.localeCompare(b));
-const allQsiCoas=Object.entries(docOriginals).filter(([k])=>k==="lab_coa"||k==="qsi_coa"||k.startsWith("lab_coa_")).sort(([a],[b])=>a.localeCompare(b));
-const nextSupKey=allSupCoas.length===0?"sc":"sc_"+allSupCoas.length;
-const nextQsiKey=allQsiCoas.length===0?"lab_coa":"lab_coa_"+allQsiCoas.length;
-const hasSup=allSupCoas.length>0;
-const hasQsi=allQsiCoas.length>0;
-
-/* Merge all QSI data for comparison */
-const qsiMerged={};
-allQsiCoas.forEach(([,v])=>Object.assign(qsiMerged,(v?.approvedData||v?.extracted||{})));
-
-/* Ph. Eur. limits */
-const LIMITS={"THC Content":{lim:"17–21%",check:(v)=>{const n=parseFloat(v);return !isNaN(n)&&n>=17&&n<=21}},"CBD Content":{lim:"≤1.0%",check:(v)=>{const n=parseFloat(v);return isNaN(n)||n<=1.0}},"CBN Content":{lim:"≤0.5%",check:(v)=>{const n=parseFloat(v);return isNaN(n)||n<=0.5||v==="ND"}},"Loss on Drying":{lim:"≤12%",check:(v)=>{const n=parseFloat(v);return isNaN(n)||n<=12}},"TAMC":{lim:"≤500,000 CFU/g",check:(v)=>{const n=parseFloat(String(v).replace(/[^0-9.]/g,""));return isNaN(n)||n<=500000}},"TYMC":{lim:"≤10,000 CFU/g",check:(v)=>{const n=parseFloat(String(v).replace(/[^0-9.]/g,""));return isNaN(n)||n<=10000}},"Lead Pb":{lim:"≤0.5 ppm",check:(v)=>{const n=parseFloat(v);return isNaN(n)||n<=0.5||v==="ND"}},"Cadmium Cd":{lim:"≤0.3 ppm",check:(v)=>{const n=parseFloat(v);return isNaN(n)||n<=0.3||v==="ND"}},"Mercury Hg":{lim:"≤0.1 ppm",check:(v)=>{const n=parseFloat(v);return isNaN(n)||n<=0.1||v==="ND"}},"Arsenic As":{lim:"≤0.2 ppm",check:(v)=>{const n=parseFloat(v);return isNaN(n)||n<=0.2||v==="ND"||v==="NC"}},"Aflatoxin B1":{lim:"≤2 ppb",check:(v)=>v==="ND"||parseFloat(v)<=2},"Aflatoxins Total":{lim:"≤4 ppb",check:(v)=>v==="ND"||parseFloat(v)<=4},"Ochratoxin A":{lim:"≤2 ppb",check:(v)=>v==="ND"||parseFloat(v)<=2},"E. coli":{lim:"Absent",check:(v)=>v==="ND"||v==="Absent"||v?.toLowerCase().includes("aus")},"Salmonella":{lim:"Absent",check:(v)=>v==="ND"||v==="Absent"||v?.toLowerCase().includes("aus")}};
-
-const KEY_PARAMS=["THC Content","THCA","CBD Content","CBN Content","Other Cannabinoids","Loss on Drying","Total Ash","TAMC","TYMC","Bile-tolerant Gram-neg","E. coli","Salmonella","Staphylococcus aureus","Pseudomonas aeruginosa","Lead Pb","Cadmium Cd","Mercury Hg","Arsenic As","Aflatoxin B1","Aflatoxins Total","Ochratoxin A","Pesticides","Total Terpenes","Main Terpenes"];
-
+const M2Lab=()=>{const cats=[...new Set(LAB.map(l=>l.cat))];
 return <div>
-<Cd t={"🔬 M2 — "+(lang==="de"?"Laborprüfung — Lieferanten-COA vs QSI":"Lab Testing — Supplier COA vs QSI Retest")} badge={hasQsi&&hasSup?<Bd c="#059669" b="#dcfce7">✅ {allSupCoas.length} Sup + {allQsiCoas.length} QSI</Bd>:hasSup?<Bd c="#d97706" b="#fef3c7">{allSupCoas.length} Sup COA · QSI pending</Bd>:<Bd c="#6b7280" b="#f3f4f6">No COAs yet</Bd>}>
+<div style={{display:"flex",gap:5,marginBottom:10}}>{[["compare","🔍 "+t.comparison],["terpenes","🌿 "+t.terpeneProfile],["limits","🏭 Supplier Limits"]].map(([k,l])=><button key={k} onClick={()=>setLabTab(k)} style={{padding:"5px 10px",borderRadius:5,fontSize:14,fontWeight:600,border:labTab===k?"2px solid #2563eb":"1px solid #d1d5db",background:labTab===k?"#dbeafe":"#fff",color:labTab===k?"#1e40af":"#374151",cursor:"pointer"}}>{l}</button>)}</div>
 
-{/* ── SECTION 1: Supplier COAs ── */}
-<div style={{marginBottom:16}}>
-<div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:8}}>
-<div style={{fontSize:15,fontWeight:700,color:"#92400e",display:"flex",alignItems:"center",gap:6}}>
-<span>🇦🇷</span> {lang==="de"?"Lieferanten-COAs (Cannava)":"Supplier COAs (Cannava)"}
-<span style={{padding:"2px 8px",borderRadius:10,background:"#fef3c7",fontSize:12,color:"#92400e"}}>{allSupCoas.length} / {BT_DATA[selBatch]?.bags1kg?Math.ceil((BT_DATA[selBatch].bags1kg)/40)+"±":"?"} expected</span>
+{labTab==="compare"&&<div>
+{cats.map(cat=>{const cl=CatLabel[cat]||["Other","#6b7280","#f3f4f6"];const params=LAB.filter(l=>l.cat===cat);
+return <div key={cat} style={{marginBottom:10}}>
+<div style={{display:"flex",alignItems:"center",gap:6,marginBottom:4}}><Bd c={cl[1]} b={cl[2]}>{cl[0]}</Bd></div>
+<div style={{border:"1px solid #e5e7eb",borderRadius:6,overflow:"hidden"}}>
+<div style={{display:"grid",gridTemplateColumns:"2fr 1fr 1fr 1fr 1fr",gap:0,fontSize:14,fontWeight:600,background:"#f9fafb",padding:"5px 8px",borderBottom:"1px solid #e5e7eb"}}>
+<div>{t.param}</div><div>{t.supplierCoa}</div><div>{t.qsiResults}</div><div>{t.spec}</div><div>{t.variance}</div></div>
+{params.map((p,j)=><div key={j} style={{display:"grid",gridTemplateColumns:"2fr 1fr 1fr 1fr 1fr",gap:0,fontSize:15,padding:"5px 8px",borderBottom:j<params.length-1?"1px solid #f3f4f6":"none",background:p.var!==null&&Math.abs(p.var)>20?"#fef3c7":"#fff"}}>
+<div style={{fontWeight:600}}>{p[lang]}</div>
+<div style={{color:"#6b7280"}}>{p.sup}</div>
+<div style={{fontWeight:700,color:"#059669"}}>{p.qsi}</div>
+<div style={{fontSize:14,color:"#6b7280"}}>{p.spec}</div>
+<div style={{fontWeight:600,color:p.var===null?"#9ca3af":Math.abs(p.var)>20?"#d97706":"#059669"}}>{p.var!==null?(p.var>0?"+":"")+p.var+"%":"—"}</div>
+</div>)}
+</div></div>})}
+<div style={{marginTop:8,padding:10,background:"#dbeafe",borderRadius:6,fontSize:15,borderLeft:"3px solid #2563eb"}}>
+<strong>§14 AMG:</strong> {lang==="de"?"Lieferanten-COA dient nur als Referenz. Die QSI Bremen Analyse ist das offizielle, rechtsverbindliche Ergebnis. Alle Varianzen innerhalb akzeptabler Bereiche.":"Supplier COA is reference only. QSI Bremen analysis is the official, legally binding result. All variances within acceptable ranges."}</div>
+
+{/* THC Discrepancy Protocol */}
+<div style={{marginTop:12,border:"2px solid #d97706",borderRadius:8,overflow:"hidden"}}>
+<div onClick={()=>setThcProto(p=>({...p,open:!p.open}))} style={{padding:"10px 12px",background:"#fffbeb",display:"flex",justifyContent:"space-between",alignItems:"center",cursor:"pointer"}}>
+<div style={{display:"flex",alignItems:"center",gap:8}}>
+<span style={{fontSize:16}}>⚠️</span>
+<div>
+<div style={{fontSize:15,fontWeight:700,color:"#92400e"}}>{lang==="de"?"THC-Abweichungsprotokoll":"THC Discrepancy Protocol"}</div>
+<div style={{fontSize:13,color:"#6b7280"}}>{lang==="de"?"Bei THC-Wertänderung: Neue PZN + COA-Korrektur + Umetikettierung":"When THC value changes: New PZN + COA correction + Relabeling"}</div>
 </div>
-<button onClick={()=>{setOrigTarget(nextSupKey);setTimeout(()=>origFileRef.current&&origFileRef.current.click(),50)}} style={{padding:"6px 14px",borderRadius:6,fontSize:13,fontWeight:700,border:"2px dashed #d97706",background:"#fffbeb",color:"#92400e",cursor:"pointer",display:"flex",alignItems:"center",gap:4}}>
-➕ {lang==="de"?"COA hinzufügen":"Add Supplier COA"}
+</div>
+<span style={{fontSize:14,color:"#92400e",fontWeight:700}}>{thcProto.open?"▲":"▼"}</span>
+</div>
+
+{thcProto.open&&<div style={{padding:12,background:"#fff",borderTop:"1px solid #fcd34d"}}>
+{/* Current values */}
+<div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:8,marginBottom:12}}>
+<div style={{padding:8,background:"#f9fafb",borderRadius:6,textAlign:"center"}}>
+<div style={{fontSize:12,color:"#6b7280",fontWeight:600}}>{lang==="de"?"Registrierter THC-Wert":"Registered THC Value"}</div>
+<div style={{fontSize:22,fontWeight:800,color:"#374151"}}>18.9%</div>
+<div style={{fontSize:12,color:"#6b7280"}}>PZN: 19797739 (10g) / 19797685 (1kg)</div>
+</div>
+<div style={{padding:8,background:"#f0fdf4",borderRadius:6,textAlign:"center",border:"2px solid #a7f3d0"}}>
+<div style={{fontSize:12,color:"#6b7280",fontWeight:600}}>QSI Bremen {lang==="de"?"Ergebnis":"Result"}</div>
+<div style={{fontSize:22,fontWeight:800,color:"#059669"}}>19.7%</div>
+<div style={{fontSize:12,color:"#059669"}}>✅ {lang==="de"?"Innerhalb ±10% Toleranz":"Within ±10% tolerance"}</div>
+</div>
+<div style={{padding:8,background:"#fef3c7",borderRadius:6,textAlign:"center"}}>
+<div style={{fontSize:12,color:"#6b7280",fontWeight:600}}>{lang==="de"?"Abweichung":"Variance"}</div>
+<div style={{fontSize:22,fontWeight:800,color:"#d97706"}}>Δ -2.0%</div>
+<div style={{fontSize:12,color:"#059669"}}>✅ {lang==="de"?"Kein PZN-Wechsel nötig":"No PZN change needed"}</div>
+</div>
+</div>
+
+{/* Protocol workflow */}
+<div style={{background:"#fffbeb",borderRadius:6,padding:10,marginBottom:10,border:"1px solid #fcd34d"}}>
+<div style={{fontSize:14,fontWeight:700,color:"#92400e",marginBottom:6}}>{lang==="de"?"Protokoll bei THC-Abweichung außerhalb Toleranz (>±10%)":"Protocol when THC variance exceeds tolerance (>±10%)"}</div>
+<div style={{display:"grid",gridTemplateColumns:"auto 1fr",gap:"4px 10px",fontSize:14}}>
+<span style={{fontWeight:700,color:"#b45309"}}>1.</span><span>{lang==="de"?"QSI Bremen THC-Ergebnis weicht >±10% vom registrierten Wert ab":"QSI Bremen THC result deviates >±10% from registered value"}</span>
+<span style={{fontWeight:700,color:"#b45309"}}>2.</span><span>{lang==="de"?"THC-Abweichungsprotokoll erstellen (Ref.: DEV-THC-[Batch])":"Create THC Discrepancy Protocol (Ref.: DEV-THC-[Batch])"}</span>
+<span style={{fontWeight:700,color:"#b45309"}}>3.</span><span><strong>{lang==="de"?"Pia (QSI Bremen)":"Pia (QSI Bremen)"}</strong> — {lang==="de"?"Geändertes COA mit neuem THC-Wert anfordern":"Request amended COA with new THC value"}</span>
+<span style={{fontWeight:700,color:"#b45309"}}>4.</span><span><strong>IFA GmbH</strong> — {lang==="de"?"Neue PZN-Nummer für korrigierten THC-Wert beantragen":"Request new PZN number for corrected THC value"}</span>
+<span style={{fontWeight:700,color:"#b45309"}}>5.</span><span><strong>M4 {lang==="de"?"Umetikettierung":"Relabeling"}</strong> — {lang==="de"?"Neue Etiketten mit korrektem THC% und neuer PZN drucken":"Print new labels with correct THC% and new PZN"}</span>
+<span style={{fontWeight:700,color:"#b45309"}}>6.</span><span>{lang==="de"?"Alle Dokumente in Google Drive ablegen — Abweichungsbericht schließen":"File all documents in Google Drive — close deviation report"}</span>
+</div>
+</div>
+
+{/* Action: Initiate THC Protocol */}
+<div style={{fontSize:14,fontWeight:700,color:"#374151",marginBottom:6}}>{lang==="de"?"THC-Abweichungsprotokoll einleiten":"Initiate THC Discrepancy Protocol"}</div>
+<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:10}}>
+<div>
+<div style={{fontSize:13,fontWeight:600,color:"#6b7280",marginBottom:2}}>{lang==="de"?"Neuer THC-Wert (QSI)":"New THC Value (QSI)"}</div>
+<input value={thcProto.newThc} onChange={e=>setThcProto(p=>({...p,newThc:e.target.value}))} placeholder="z.B. 16.5%" style={{width:"100%",padding:"6px 8px",borderRadius:4,border:"1px solid #d1d5db",fontSize:15}}/>
+</div>
+<div>
+<div style={{fontSize:13,fontWeight:600,color:"#6b7280",marginBottom:2}}>{lang==="de"?"Abweichungsgrund":"Abweichung Reason"}</div>
+<input value={thcProto.reason} onChange={e=>setThcProto(p=>({...p,reason:e.target.value}))} placeholder={lang==="de"?"z.B. THC unter Registrierungswert":"e.g. THC below registered value"} style={{width:"100%",padding:"6px 8px",borderRadius:4,border:"1px solid #d1d5db",fontSize:15}}/>
+</div>
+</div>
+
+{/* Step buttons */}
+<div style={{display:"flex",gap:6,flexWrap:"wrap"}}>
+<button onClick={()=>{setThcProto(p=>({...p,piaNotified:true}));window.open(gmailLink("THC Discrepancy Protocol — Batch "+(selBatch||"")+" — Amended COA Request","Sehr geehrte/r Pia,\n\nCharge: "+(selBatch||"")+"\nProduct: NOC SE 19 — Essence (BBS I)\n\nQSI Lab Result: THC "+(thcProto.newThc||"[NEW VALUE]")+"%\nRegistered Value: 18.9%\nReason: "+(thcProto.reason||"THC variance exceeds ±10% tolerance")+"\n\nPlease issue an amended COA with the corrected THC value for product final release.\n\nThe new THC value will be registered with IFA for a new PZN number.\n\nMit freundlichen Gruessen,\nNOC Pharma GmbH"),"_blank")}} style={{flex:1,padding:"8px",borderRadius:6,fontSize:14,fontWeight:700,border:"none",background:thcProto.piaNotified?"#059669":"#2563eb",color:"#fff",cursor:"pointer"}}>
+{thcProto.piaNotified?"✅ ":"📧 "}{lang==="de"?"Pia (QSI) — Geändertes COA anfordern":"Pia (QSI) — Request Amended COA"}
+</button>
+<button onClick={()=>{setThcProto(p=>({...p,pznRequested:true}));setLcs(0);setPznForm(p=>({...p,show:true,submitted:false,thc:thcProto.newThc}))}} style={{flex:1,padding:"8px",borderRadius:6,fontSize:14,fontWeight:700,border:"none",background:thcProto.pznRequested?"#059669":"#b45309",color:"#fff",cursor:"pointer"}}>
+{thcProto.pznRequested?"✅ ":"🏷️ "}{lang==="de"?"Neue PZN bei IFA beantragen":"Request New PZN from IFA"}
 </button>
 </div>
-
-{allSupCoas.length===0&&<div style={{padding:16,borderRadius:8,border:"2px dashed #fde68a",background:"#fefce8",textAlign:"center",color:"#92400e"}}>
-<div style={{fontSize:24,marginBottom:4}}>📋</div>
-<div style={{fontWeight:600,marginBottom:4}}>{lang==="de"?"Keine Lieferanten-COAs hochgeladen":"No Supplier COAs uploaded yet"}</div>
-<div style={{fontSize:13,color:"#6b7280",marginBottom:8}}>{lang==="de"?"Für CA-01 werden bis zu 4 COAs erwartet (IN10, IN11, 002-39, 005-37)":"CA-01 expects up to 4 COAs (IN10, IN11, 002-39, 005-37)"}</div>
-<button onClick={()=>{setOrigTarget("sc");setTimeout(()=>origFileRef.current&&origFileRef.current.click(),50)}} style={{padding:"8px 20px",borderRadius:6,fontSize:14,fontWeight:700,border:"none",background:"#d97706",color:"#fff",cursor:"pointer"}}>📤 Upload First COA</button>
-</div>}
-
-{allSupCoas.length>0&&<div style={{display:"grid",gap:8}}>
-{allSupCoas.map(([k,v])=>{
-const d=v?.approvedData||v?.extracted||{};
-const subBatch=d["Sub-Batch Number"]||d["Batch Number"]||k;
-const verified=v?.approvalComplete;
-return <div key={k} style={{borderRadius:8,border:"1.5px solid "+(verified?"#fde68a":"#e5e7eb"),background:verified?"#fffbeb":"#f9fafb",overflow:"hidden"}}>
-<div style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"8px 12px",borderBottom:"1px solid #f3f4f6"}}>
-<div style={{display:"flex",alignItems:"center",gap:8}}>
-<span style={{fontSize:16}}>🇦🇷</span>
-<div>
-<div style={{fontSize:14,fontWeight:700,color:"#92400e"}}>{subBatch}</div>
-<div style={{fontSize:11,color:"#6b7280"}}>{v.name} · {v.size} {verified&&"· ✅ AI Verified · "+v.approvedCount+" fields"}</div>
+<div style={{display:"flex",gap:6,marginTop:6}}>
+<button onClick={()=>window.open(gdLink("thc_protocol"),"_blank")} style={{flex:1,padding:"6px",borderRadius:5,fontSize:13,fontWeight:600,border:"1px solid #d1d5db",background:"#fff",color:"#374151",cursor:"pointer"}}>📂 {lang==="de"?"Protokoll in Drive speichern":"Save Protocol to Drive"}</button>
+<button onClick={()=>{setLcs(8)}} style={{flex:1,padding:"6px",borderRadius:5,fontSize:13,fontWeight:600,border:"1px solid #d1d5db",background:"#fff",color:"#374151",cursor:"pointer"}}>🏷️ {lang==="de"?"Zu M4 Umetikettierung":"Go to M4 Relabeling"}</button>
 </div>
-</div>
-<div style={{display:"flex",gap:4,alignItems:"center"}}>
-{verified?<span style={{padding:"2px 8px",borderRadius:4,fontSize:11,fontWeight:700,background:"#dcfce7",color:"#059669"}}>✅ Verified</span>:<span style={{padding:"2px 8px",borderRadius:4,fontSize:11,fontWeight:700,background:"#fef3c7",color:"#d97706"}}>⏳ Not analyzed</span>}
-{v.url&&<button onClick={()=>{if(v.ext==="pdf")window.open(v.url,"_blank");else{const w=window.open("","_blank");w.document.write("<html><body style='margin:0;background:#111'><img src='"+v.url+"' style='max-width:100%;max-height:100vh'/></body></html>");w.document.close()}}} style={{padding:"3px 8px",borderRadius:4,fontSize:12,fontWeight:700,border:"none",background:"#d97706",color:"#fff",cursor:"pointer"}}>👁️</button>}
-<button onClick={()=>{setOrigTarget(k);setTimeout(()=>origFileRef.current&&origFileRef.current.click(),50)}} style={{padding:"3px 8px",borderRadius:4,fontSize:11,fontWeight:600,border:"1px solid #d97706",background:"#fff",color:"#92400e",cursor:"pointer"}}>🔄</button>
-<button onClick={()=>{if(confirm("Delete "+subBatch+"?"))setDocOriginals(p=>{const n={...p};delete n[k];return n})}} style={{padding:"3px 6px",borderRadius:4,fontSize:11,border:"1px solid #fca5a5",background:"#fff",color:"#dc2626",cursor:"pointer"}}>🗑️</button>
-</div>
-</div>
-{verified&&d["THC Content"]&&<div style={{padding:"6px 12px",display:"flex",gap:6,flexWrap:"wrap"}}>
-{[["THC",d["THC Content"],d["THC Content"]&&(parseFloat(d["THC Content"])>=17&&parseFloat(d["THC Content"])<=21)?"#059669":"#dc2626"],["CBD",d["CBD Content"],"#6b7280"],["Loss on Drying",d["Loss on Drying"],"#6b7280"],["TAMC",d["TAMC"],"#6b7280"],["Lead Pb",d["Lead Pb"]||"ND","#6b7280"]].filter(([,v])=>v).map(([k2,v2,c],i)=>
-<span key={i} style={{padding:"2px 8px",borderRadius:4,background:"#fef3c7",color:c,fontSize:12,fontWeight:600,border:"1px solid #fde68a"}}>{k2}: {v2}</span>)}
-</div>}
-</div>;})}
 </div>}
 </div>
-
-{/* ── SECTION 2: QSI COAs ── */}
-<div style={{marginBottom:16}}>
-<div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:8}}>
-<div style={{fontSize:15,fontWeight:700,color:"#065f46",display:"flex",alignItems:"center",gap:6}}>
-<span>🇩🇪</span> QSI Bremen COA (§14 AMG)
-<span style={{padding:"2px 8px",borderRadius:10,background:"#dcfce7",fontSize:12,color:"#065f46"}}>{allQsiCoas.length} uploaded</span>
-</div>
-<button onClick={()=>{setOrigTarget(nextQsiKey);setTimeout(()=>origFileRef.current&&origFileRef.current.click(),50)}} style={{padding:"6px 14px",borderRadius:6,fontSize:13,fontWeight:700,border:"2px dashed #059669",background:"#f0fdf4",color:"#065f46",cursor:"pointer",display:"flex",alignItems:"center",gap:4}}>
-➕ {lang==="de"?"QSI COA hinzufügen":"Add QSI COA"}
-</button>
-</div>
-
-{allQsiCoas.length===0&&<div style={{padding:14,borderRadius:8,border:"2px dashed #a7f3d0",background:"#f0fdf4",textAlign:"center",color:"#065f46"}}>
-<div style={{fontSize:22,marginBottom:4}}>🔬</div>
-<div style={{fontWeight:600,marginBottom:4}}>QSI Bremen retest required (§14 AMG)</div>
-<div style={{fontSize:13,color:"#6b7280",marginBottom:8}}>Upload QSI report to unlock comparison table and Safety Gate</div>
-<button onClick={()=>{setOrigTarget("lab_coa");setTimeout(()=>origFileRef.current&&origFileRef.current.click(),50)}} style={{padding:"8px 20px",borderRadius:6,fontSize:14,fontWeight:700,border:"none",background:"#059669",color:"#fff",cursor:"pointer"}}>📤 Upload QSI COA</button>
 </div>}
 
-{allQsiCoas.length>0&&<div style={{display:"grid",gap:8}}>
-{allQsiCoas.map(([k,v])=>{
-const d=v?.approvedData||v?.extracted||{};
-const certNo=d["Analysis Certificate Number"]||d["Certificate Number"]||k;
-const verified=v?.approvalComplete;
-return <div key={k} style={{borderRadius:8,border:"1.5px solid "+(verified?"#a7f3d0":"#e5e7eb"),background:verified?"#f0fdf4":"#f9fafb",overflow:"hidden"}}>
-<div style={{display:"flex",justifyContent:"space-between",alignItems:"center",padding:"8px 12px",borderBottom:"1px solid #f3f4f6"}}>
-<div style={{display:"flex",alignItems:"center",gap:8}}>
-<span style={{fontSize:16}}>🇩🇪</span>
-<div>
-<div style={{fontSize:14,fontWeight:700,color:"#065f46"}}>{certNo}</div>
-<div style={{fontSize:11,color:"#6b7280"}}>{v.name} · {v.size} {verified&&"· ✅ AI Verified · "+v.approvedCount+" fields"}</div>
-</div>
-</div>
-<div style={{display:"flex",gap:4,alignItems:"center"}}>
-{verified?<span style={{padding:"2px 8px",borderRadius:4,fontSize:11,fontWeight:700,background:"#dcfce7",color:"#059669"}}>✅ Verified</span>:<span style={{padding:"2px 8px",borderRadius:4,fontSize:11,fontWeight:700,background:"#fef3c7",color:"#d97706"}}>⏳ Not analyzed</span>}
-{v.url&&<button onClick={()=>{if(v.ext==="pdf")window.open(v.url,"_blank");else{const w=window.open("","_blank");w.document.write("<html><body style='margin:0;background:#111'><img src='"+v.url+"' style='max-width:100%;max-height:100vh'/></body></html>");w.document.close()}}} style={{padding:"3px 8px",borderRadius:4,fontSize:12,fontWeight:700,border:"none",background:"#059669",color:"#fff",cursor:"pointer"}}>👁️</button>}
-<button onClick={()=>{setOrigTarget(k);setTimeout(()=>origFileRef.current&&origFileRef.current.click(),50)}} style={{padding:"3px 8px",borderRadius:4,fontSize:11,fontWeight:600,border:"1px solid #059669",background:"#fff",color:"#065f46",cursor:"pointer"}}>🔄</button>
-<button onClick={()=>{if(confirm("Delete "+certNo+"?"))setDocOriginals(p=>{const n={...p};delete n[k];return n})}} style={{padding:"3px 6px",borderRadius:4,fontSize:11,border:"1px solid #fca5a5",background:"#fff",color:"#dc2626",cursor:"pointer"}}>🗑️</button>
-</div>
-</div>
-{verified&&d["THC Content"]&&<div style={{padding:"6px 12px",display:"flex",gap:6,flexWrap:"wrap"}}>
-{[["THC",d["THC Content"]],["CBD",d["CBD Content"]],["TAMC",d["TAMC"]],["Lead Pb",d["Lead Pb"]||"ND"]].filter(([,v])=>v).map(([k2,v2],i)=>
-<span key={i} style={{padding:"2px 8px",borderRadius:4,background:"#dcfce7",color:"#065f46",fontSize:12,fontWeight:600,border:"1px solid #a7f3d0"}}>{k2}: {v2}</span>)}
-</div>}
-</div>;})}
-</div>}
-</div>
+{labTab==="terpenes"&&<Cd t={"🌿 "+t.terpeneProfile+" — GC-FID/MS"}><div style={{marginBottom:10}}>
+{TERPENES.map((tp,j)=>{const max=1.0;return <div key={j} style={{marginBottom:6}}>
+<div style={{display:"flex",justifyContent:"space-between",fontSize:15,marginBottom:2}}><span style={{fontWeight:600}}>{tp.n}</span><span style={{color:"#6b7280"}}>{tp.qsi}%</span></div>
+<div style={{height:8,background:"#f3f4f6",borderRadius:4,overflow:"hidden",position:"relative"}}>
+<div style={{height:"100%",width:(tp.sup/max*100)+"%",background:"#d1d5db",borderRadius:4,position:"absolute"}}/>
+<div style={{height:"100%",width:(tp.qsi/max*100)+"%",background:"#059669",borderRadius:4,position:"absolute"}}/>
+</div></div>})}
+</div><div style={{display:"flex",gap:12,fontSize:14}}><span>█ <span style={{color:"#059669"}}>QSI Bremen</span></span><span>█ <span style={{color:"#d1d5db"}}>Supplier (declared)</span></span></div></Cd>}
 
-{/* ── SECTION 3+4: Comparison + Dashboard ── */}
-{(hasSup||hasQsi)&&<ComparePanel
-  allSupCoas={allSupCoas}
-  allQsiCoas={allQsiCoas}
-  qsiMerged={qsiMerged}
-  hasSup={hasSup}
-  hasQsi={hasQsi}
-  KEY_PARAMS={KEY_PARAMS}
-  LIMITS={LIMITS}
-  lang={lang}
-/>}
-</Cd>
+{labTab==="limits"&&<Cd t={"🏭 Supplier-Specific Microbiology Limits (per QTA)"}><div style={{overflowX:"auto"}}>
+<table style={{width:"100%",fontSize:15,borderCollapse:"collapse"}}><thead><tr>{["Parameter","Ph.Eur. Limit","Cannava","HYTN","MCCN","QSI Result"].map((h,j)=><th key={j} style={{border:"1px solid #d1d5db",padding:"4px 6px",background:"#f9fafb",fontSize:14,fontWeight:600}}>{h}</th>)}</tr></thead><tbody>
+{[["TAMC","500,000","500,000","500,000","500,000","10,000 ✅"],["TYMC","10,000","10,000","500,000","10,000","1,200 ✅"],["Gram-neg","50,000","50,000","50,000","50,000","<100 ✅"]].map(([p,...vals],j)=><tr key={j}>{[p,...vals].map((v,k)=><td key={k} style={{border:"1px solid #d1d5db",padding:"4px 6px",fontWeight:k===0||k===5?600:400,color:k===5?"#059669":"inherit",background:k===3?"#fef3c7":"inherit"}}>{v}</td>)}</tr>)}
+</tbody></table></div>
+<div style={{marginTop:8,fontSize:14,color:"#6b7280"}}>⚠️ HYTN has higher TYMC limit (500k) due to different regulatory framework (Health Canada). Cannava/MCCN follow stricter Ph.Eur. limits.</div></Cd>}
 </div>};
+
 // M3 QP Release — AI Agent generates doc for DocuSign
 const[m3Step,setM3Step]=useState(0);
 const[m3Anim,setM3Anim]=useState("");
@@ -1481,7 +1092,7 @@ const stageDocs={
 {n:lang==="de"?"BtM-Ausfuhrerklärung":"BtM Export Declaration",ref:"BtM-EXP-AR-xxxx",who:supInfo.n},
 {n:lang==="de"?"Packliste":"Packing List",ref:"PL-xxxxx",who:supInfo.n},
 {n:lang==="de"?"Proforma-Rechnung":"Proforma Invoice",ref:"PI-CANN-xxxx",who:supInfo.n},
-
+{n:lang==="de"?"Phytosanitäres Zeugnis":"Phytosanitary Certificate",ref:"SENASA",who:"SENASA Argentina"},
 {n:lang==="de"?"Herkunftszertifikat":"Certificate of Origin",ref:"CO-xxxx",who:supInfo.n},
 {n:lang==="de"?"Produktspezifikation":"Product Specification",ref:"SPEC-xxxx",who:supInfo.n},
 ],
@@ -2411,127 +2022,138 @@ return <div key={lg.id} style={{marginBottom:10,border:"1px solid "+(done?"#a7f3
 :"Upon goods receipt, all boxes are opened, products recounted and barcodes scanned. USB dataloggers are removed from each pallet and downloaded at PC station (SOP-201-01). Temperature and humidity data exported as PDF/CSV and archived in batch dossier. Any excursion (>25°C or <15°C) triggers immediate deviation report."}
 </div>
 
-{/* ═══════ QSI SAMPLE DISPATCH PROTOCOL — DYNAMIC ═══════ */}
-{(()=>{
-const allSup=Object.entries(docOriginals).filter(([k])=>k==="sc"||k.startsWith("sc_")).sort(([a],[b])=>a.localeCompare(b));
-const sDate=new Date().toLocaleDateString("de-DE");
-const sRef="SAMP-"+(selBatch||"CA-03")+"-"+new Date().getFullYear();
-const batchId=BT?.id||selBatch||"—";
-const permit=BT_DATA[selBatch]?.permit||"—";
-
-/* Build per-sub-batch sample list */
-const subBatches=allSup.length>0?allSup.map(([k,v])=>{
-const d=v?.approvedData||v?.extracted||{};
-return {
-key:k,
-subBatch:d["Sub-Batch Number"]||d["Batch Number"]||k,
-product:d["Product Description"]||d["Product"]||BT?.p||"Cannabis flos",
-thc:d["THC Content"]||"—",
-cbd:d["CBD Content"]||"—",
-moisture:d["Loss on Drying"]||d["Moisture"]||"—",
-tamc:d["TAMC"]||"—",
-expiry:d["Expiry Date"]||d["Retest Date"]||"—",
-certNo:d["Certificate Number"]||"—",
-verified:v?.approvalComplete||false
-};
-}):[{
-key:"sc",subBatch:batchId,product:BT?.p||"Cannabis flos",
-thc:"—",cbd:"—",moisture:"—",tamc:"—",expiry:"—",certNo:"—",verified:false
-}];
-
-const totalSamples=subBatches.length*14;
-const totalWeight=subBatches.length*140;
-
-return <div style={{marginTop:16,background:"linear-gradient(135deg,#eff6ff,#f0f9ff)",borderRadius:10,padding:14,border:"2px solid #3b82f6"}}>
-<div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:12}}>
-<div>
-<div style={{fontSize:15,fontWeight:800,color:"#1e40af"}}>🔬 QSI Bremen — Sample Test Request</div>
-<div style={{fontSize:12,color:"#6b7280"}}>§14 AMG mandatory retest · {subBatches.length} sub-batch(es) · {totalSamples} bags × 10g = {totalWeight}g total</div>
-</div>
-<div style={{display:"flex",gap:6,alignItems:"center"}}>
+{/* ═══════ QSI SAMPLE DISPATCH PROTOCOL ═══════ */}
+<div style={{marginTop:16,background:"linear-gradient(135deg,#eff6ff,#f0f9ff)",borderRadius:10,padding:14,border:"2px solid #3b82f6"}}>
+<div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:10}}>
+<div style={{fontSize:15,fontWeight:800,color:"#1e40af"}}>🔬 {lang==="de"?"Probenahme & Versand an QSI Bremen":"Probenahme- und Versandprotokoll — QSI Bremen"}</div>
 <Bd c="#1e40af" b="#dbeafe">SOP-202-01 v1.0</Bd>
-<Bd c="#059669" b="#dcfce7">{sRef}</Bd>
-</div>
 </div>
 
-{/* Sub-batch table */}
-<div style={{marginBottom:12,borderRadius:8,overflow:"hidden",border:"1px solid #bfdbfe"}}>
-<div style={{background:"#1e40af",color:"#fff",padding:"6px 12px",fontSize:12,fontWeight:700,display:"grid",gridTemplateColumns:"1.5fr 1.5fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 1fr",gap:4}}>
-<div>Sub-Batch</div><div>Product</div><div>THC</div><div>CBD</div><div>Moisture</div><div>TAMC</div><div>Expiry</div><div>Status</div>
-</div>
-{subBatches.map((sb,i)=><div key={i} style={{padding:"6px 12px",fontSize:12,display:"grid",gridTemplateColumns:"1.5fr 1.5fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 1fr",gap:4,background:i%2===0?"#fff":"#f0f9ff",borderBottom:"1px solid #dbeafe"}}>
-<div style={{fontWeight:700,color:"#1e40af"}}>{sb.subBatch}</div>
-<div style={{color:"#374151"}}>{sb.product.length>20?sb.product.slice(0,20)+"…":sb.product}</div>
-<div style={{fontWeight:600,color:sb.thc!=="—"?"#059669":"#9ca3af"}}>{sb.thc}</div>
-<div style={{color:"#6b7280"}}>{sb.cbd}</div>
-<div style={{color:"#6b7280"}}>{sb.moisture}</div>
-<div style={{color:"#6b7280"}}>{sb.tamc}</div>
-<div style={{color:"#6b7280",fontSize:11}}>{sb.expiry}</div>
-<div>{sb.verified?<span style={{color:"#059669",fontWeight:700,fontSize:11}}>✅ COA</span>:<span style={{color:"#d97706",fontSize:11}}>⏳ Upload COA</span>}</div>
+{/* Sample Details */}
+<div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:8,marginBottom:10}}>
+{[
+[lang==="de"?"Probentyp":"Probenart","10g Doypacks (Rückstellmuster/QC)"],
+[lang==="de"?"Anzahl":"Menge","14 × 10g = 140g total"],
+[lang==="de"?"Entnommen aus":"Entnommen aus","Pallet 4 — 10g Doypacks (Box 15–20)"],
+[lang==="de"?"Probenahme durch":"Entnommen von","T. Cuny (RP)"],
+[lang==="de"?"Datum/Uhrzeit":"Date/Time",new Date().toLocaleDateString("de-DE")+" — "+new Date().toLocaleTimeString("de-DE",{hour:"2-digit",minute:"2-digit"})],
+[lang==="de"?"Probenstatus":"Sample Status",lang==="de"?"Quarantäne → QSI":"Quarantine → QSI"],
+["Ref.","SAMP-"+(selBatch||"BI02")+"-"+new Date().getFullYear()],
+[lang==="de"?"Verbleibend im Tresor":"Remaining in Vault","86 × 10g Doypacks"],
+[lang==="de"?"Produkt":"Product",BT.p+" ("+BT.id+")"]
+].map(([l,v],j)=><div key={j} style={{padding:8,background:"#fff",borderRadius:6,border:"1px solid #dbeafe"}}>
+<div style={{fontSize:12,color:"#6b7280",textTransform:"uppercase",fontWeight:600}}>{l}</div>
+<div style={{fontSize:14,fontWeight:700,color:"#1e3a5f"}}>{v}</div>
 </div>)}
 </div>
 
-{/* Sampling + shipping info */}
-<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10,marginBottom:12}}>
-<div style={{background:"#fff",borderRadius:8,padding:10,border:"1px solid #bfdbfe"}}>
-<div style={{fontSize:13,fontWeight:700,color:"#1e40af",marginBottom:6}}>📦 Sampling Protocol</div>
-{[["Sample per sub-batch","14 bags × 10g = 140g"],["Total samples",subBatches.length+" sub-batch(es) → "+totalWeight+"g"],["Sample type","10g Doypacks (sealed)"],["Taken by","T. Cuny (RP §52a AMG)"],["Date",sDate],["BtM Transfer","§13 BtMG — within company"],["BtM Seal","SEAL-"+(selBatch||"CA-03")+"-QSI"],["Remaining",totalSamples+" bags removed from stock"]].map(([l,v],j)=><div key={j} style={{display:"flex",justifyContent:"space-between",padding:"2px 0",borderBottom:"1px solid #f0f9ff",fontSize:12}}><span style={{color:"#6b7280"}}>{l}</span><span style={{fontWeight:600,color:"#1e293b"}}>{v}</span></div>)}
-</div>
-<div style={{background:"#fff",borderRadius:8,padding:10,border:"1px solid #bfdbfe"}}>
-<div style={{fontSize:13,fontWeight:700,color:"#059669",marginBottom:6}}>🚚 Shipping to QSI Bremen</div>
-{[["Lab","QSI GmbH Bremen"],["Contact","Pia (QSI)"],["Address","Flughafendamm 9a, 28199 Bremen"],["Container","GDP insulated box + Coolpack"],["Temp","15–25°C (EU GDP 2013/C 343)"],["Datalogger","TL-SAMP-001 (Sensitech)"],["Route","Murchin → Bremen (~350 km)"],["ETA","10–14 working days"]].map(([l,v],j)=><div key={j} style={{display:"flex",justifyContent:"space-between",padding:"2px 0",borderBottom:"1px solid #f0f9ff",fontSize:12}}><span style={{color:"#6b7280"}}>{l}</span><span style={{fontWeight:600,color:"#1e293b"}}>{v}</span></div>)}
+{/* GDP Shipping Container */}
+<div style={{background:"#fff",borderRadius:8,padding:12,marginBottom:10,border:"1px solid #e5e7eb"}}>
+<div style={{fontSize:15,fontWeight:700,color:"#374151",marginBottom:8}}>📦 {lang==="de"?"GDP-konformer Versandbehälter":"GDP-Konform Shipping Container"}</div>
+<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8}}>
+{[
+[lang==="de"?"Behältertyp":"Container Type","Styrofoam insulated box + Coolpack"],
+[lang==="de"?"Temperaturbereich":"Temperature Range","15–25°C (GDP 2013/C 343/01)"],
+[lang==="de"?"Datenlogger beigelegt":"Datalogger Enclosed","TL-SAMP-001 (Sensitech TempTale)"],
+[lang==="de"?"Versiegelung":"Seal","BtM-Siegel Nr. SEAL-"+(selBatch||"BI02")+"-QSI"],
+["GDP "+t.status,"✅ "+( lang==="de"?"Qualifizierter Behälter (SOP-703)":"Qualified container (SOP-703)")],
+[lang==="de"?"Gewicht":"Gewicht","~450g (14×10g + Verpackung)"]
+].map(([l,v],j)=><div key={j} style={{display:"flex",gap:6,alignItems:"flex-start"}}>
+<span style={{fontSize:13,fontWeight:600,color:"#6b7280",minWidth:120}}>{l}:</span>
+<span style={{fontSize:14,fontWeight:600,color:"#1f2937"}}>{v}</span>
+</div>)}
 </div>
 </div>
 
-{/* Scope */}
-<div style={{background:"#f0fdf4",borderRadius:8,padding:10,border:"1px solid #a7f3d0",marginBottom:12}}>
-<div style={{fontSize:13,fontWeight:700,color:"#065f46",marginBottom:4}}>🔬 Test Scope — Ph. Eur. Cannabis flos monograph</div>
-<div style={{display:"flex",flexWrap:"wrap",gap:6}}>
-{["Potency (HPLC) — THC/CBD/CBN","Moisture (Karl Fischer)","TAMC/TYMC","Heavy Metals (Pb/Cd/Hg/As)","Mycotoxins (Aflatoxin B1/Total/OTA)","Pesticides (multi-residue)","Terpene Profile","Microbiology (E.coli/Salmonella)"].map((t,i)=>
-<span key={i} style={{padding:"2px 8px",borderRadius:4,background:"#dcfce7",color:"#065f46",fontSize:12,fontWeight:600}}>✓ {t}</span>)}
+{/* Internal Courier */}
+<div style={{background:"#fff",borderRadius:8,padding:12,marginBottom:10,border:"1px solid #e5e7eb"}}>
+<div style={{fontSize:15,fontWeight:700,color:"#374151",marginBottom:8}}>🚐 {lang==="de"?"Interner GDP-Kurier":"Internal GDP Courier"}</div>
+<div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:8}}>
+{[
+[lang==="de"?"Kurierdienst":"Kurierdienst","NOC Pharma — Interner GDP-Transport"],
+[lang==="de"?"Fahrer":"Fahrer",lang==="de"?"[Name eintragen]":"[Enter name]"],
+[lang==="de"?"Fahrzeug":"Fahrzeug","GDP-qualified (SOP-780)"],
+[lang==="de"?"Route":"Route","Murchin (Tresor) → QSI Bremen"],
+[lang==="de"?"Entfernung":"Distance","~350 km / ~4h"],
+[lang==="de"?"Abfahrt geplant":"Departure planned",new Date().toLocaleDateString("de-DE")],
+["BtM "+t.transferDoc,"§13 BtMG — Transfer within company"],
+[lang==="de"?"Empfänger":"Recipient","QSI GmbH Bremen — Pia (Labor)"],
+[lang==="de"?"QSI Adresse":"QSI Address","Flughafendamm 9a, 28199 Bremen"]
+].map(([l,v],j)=><div key={j}>
+<div style={{fontSize:12,color:"#6b7280",textTransform:"uppercase",fontWeight:600}}>{l}</div>
+<div style={{fontSize:14,fontWeight:600,color:"#1f2937"}}>{v}</div>
+</div>)}
+</div>
+</div>
+
+{/* QSI Lab Destination */}
+<div style={{background:"#f0fdf4",borderRadius:8,padding:12,marginBottom:10,border:"1px solid #a7f3d0"}}>
+<div style={{fontSize:15,fontWeight:700,color:"#065f46",marginBottom:6}}>🔬 QSI GmbH Bremen — {lang==="de"?"Auftragsanalytik":"Contract Testing"}</div>
+<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,fontSize:14}}>
+{[
+[lang==="de"?"Ansprechpartnerin":"Ansprechpartner","Pia — QSI Bremen"],
+[lang==="de"?"Auftragsnummer":"Auftragsnr.","210-1624923"],
+[lang==="de"?"Prüfumfang":"Pruefumfang","Ph.Eur. Cannabis flos monograph"],
+[lang==="de"?"Prüfungen":"Pruefungen","Potency (HPLC), Micro (TAMC/TYMC), Heavy Metals, Mycotoxins, Pesticides, Moisture, Terpenes"],
+[lang==="de"?"Erwartete Dauer":"Expected Duration","10–14 working days"],
+[lang==="de"?"Ergebnisse an":"Ergebnisse an","Dr. O. Schagon (QP) + T. Cuny (RP)"]
+].map(([l,v],j)=><div key={j}>
+<span style={{fontWeight:600,color:"#6b7280"}}>{l}: </span>
+<span style={{fontWeight:600,color:"#065f46"}}>{v}</span>
+</div>)}
 </div>
 </div>
 
 {/* Action Buttons */}
 <div style={{display:"flex",gap:8,flexWrap:"wrap"}}>
 <button onClick={()=>{
-const w=window.open("","_blank","width=900,height=900");
-w.document.write('<html><head><title>QSI Sample Test Request - '+sRef+'</title><style>body{font-family:Arial,sans-serif;padding:30px;color:#1f2937;font-size:11px}h1{font-size:16px;color:#1e40af;border-bottom:2px solid #1e40af;padding-bottom:6px}h2{font-size:13px;color:#374151;margin-top:14px;border-bottom:1px solid #e5e7eb;padding-bottom:4px}table{width:100%;border-collapse:collapse;margin:8px 0}td,th{padding:4px 7px;border:1px solid #d1d5db}th{background:#f1f5f9;font-weight:700}td:first-child{font-weight:600;background:#f9fafb;width:30%}.banner{background:#1e40af;color:#fff;padding:12px 30px;margin:-30px -30px 18px;display:flex;justify-content:space-between;align-items:center}.sig{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:24px}.sig>div{border-top:1px solid #000;padding-top:4px;text-align:center;font-size:9px}.ft{margin-top:16px;border-top:1px solid #ddd;padding-top:6px;font-size:8px;color:#9ca3af;text-align:center}@media print{body{padding:15px}.banner{margin:-15px -15px 14px}}</style></head><body>');
-w.document.write('<div class="banner"><div><strong style="font-size:14px">NOC Pharma GmbH</strong> — QSI Sample Test Request<br/>§14 AMG · BtM §13</div><div style="text-align:right">'+sDate+'<br/>Ref: '+sRef+'</div></div>');
-w.document.write('<h1>QSI Bremen — Sample Test Request / Probenversand</h1>');
-w.document.write('<h2>1. Import Details</h2><table>');
-[["Import",selBatch||"CA-03"],["Batch ID",batchId],["BfArM Permit",permit],["Supplier","Cannabis Avatara S.E. (Cannava), Palpalá-Jujuy, Argentina"],["Sender","NOC Pharma GmbH, An der Redoute 1, 17390 Murchin"],["Date",sDate]].forEach(function(r){w.document.write("<tr><td>"+r[0]+"</td><td>"+r[1]+"</td></tr>")});
-w.document.write('</table><h2>2. Sub-batch Samples</h2><table><tr><th>Sub-Batch</th><th>Product</th><th>THC (declared)</th><th>CBD</th><th>Moisture</th><th>Expiry</th><th>Cert No.</th><th>Bags</th></tr>');
-subBatches.forEach(function(sb){w.document.write('<tr><td><strong>'+sb.subBatch+'</strong></td><td>'+sb.product+'</td><td>'+sb.thc+'</td><td>'+sb.cbd+'</td><td>'+sb.moisture+'</td><td>'+sb.expiry+'</td><td>'+sb.certNo+'</td><td>14 × 10g</td></tr>')});
-w.document.write('</table><tr style="background:#f0fdf4"><td colspan="7"><strong>TOTAL</strong></td><td><strong>'+totalSamples+' bags / '+totalWeight+'g</strong></td></tr>');
-w.document.write('<h2>3. Test Scope (Ph. Eur. Cannabis flos)</h2><p>Potency (THC/CBD/CBN — HPLC), Moisture (Karl Fischer), TAMC, TYMC, E. coli, Salmonella, Heavy Metals (Pb/Cd/Hg/As), Mycotoxins (AFB1/Total/OTA), Pesticides (multi-residue), Terpene Profile</p>');
-w.document.write('<h2>4. Shipping</h2><table>');
-[["Container","GDP insulated box + Coolpack (15-25C)"],["Datalogger","TL-SAMP-001 (Sensitech TempTale)"],["BtM Seal","SEAL-"+(selBatch||"CA-03")+"-QSI"],["BtM Transfer","§13 BtMG - within company"],["Taken by","T. Cuny (RP §52a AMG)"],["Route","Murchin - QSI Bremen (~350 km)"],["Expected","10-14 working days"]].forEach(function(r){w.document.write("<tr><td>"+r[0]+"</td><td>"+r[1]+"</td></tr>")});
-w.document.write('</table>');
-w.document.write('<div class="sig"><div>Probenahme / Sampling<br/><br/><br/>T. Cuny (RP)</div><div>Versand / Dispatch<br/><br/><br/>_______________</div><div>QSI Bremen Received<br/><br/><br/>Pia (QSI)</div></div>');
-w.document.write('<div class="ft">NOC Pharma GmbH · §52a AMG · §14 AMG · §13 BtMG · QMS v2.5 · '+new Date().toISOString()+'</div></body></html>');
+const w=window.open("","_blank","width=800,height=900");
+const sRef="SAMP-"+(selBatch||"BI02")+"-"+new Date().getFullYear();
+const sDate=new Date().toLocaleDateString("de-DE");
+const seal="SEAL-"+(selBatch||"BI02")+"-QSI";
+const batchId=BT.id;
+const prod=BT.p;
+w.document.write('<html><head><title>Probenahme- und Versandprotokoll</title><style>body{font-family:Arial,sans-serif;padding:30px;color:#1f2937;font-size:12px}h1{font-size:18px;color:#1e40af;border-bottom:2px solid #1e40af;padding-bottom:6px}h2{font-size:14px;color:#374151;margin-top:16px;border-bottom:1px solid #e5e7eb;padding-bottom:4px}table{width:100%;border-collapse:collapse;margin:8px 0}td{padding:5px 8px;border:1px solid #d1d5db}td:first-child{font-weight:700;background:#f9fafb;width:35%}.banner{background:#1e40af;color:#fff;padding:14px 30px;margin:-30px -30px 20px;display:flex;justify-content:space-between;align-items:center;font-size:11px}.sig{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:30px}.sig>div{border-top:1px solid #000;padding-top:4px;text-align:center;font-size:10px}.ft{margin-top:20px;border-top:1px solid #d1d5db;padding-top:8px;font-size:9px;color:#9ca3af;text-align:center}@media print{body{padding:20px}.banner{margin:-20px -20px 20px}}</style></head><body>');
+w.document.write('<div class="banner"><div><strong style="font-size:15px">NOC Pharma GmbH</strong><br/>Probenahme- und Versandprotokoll</div><div style="text-align:right">'+sDate+'<br/>Ref.: '+sRef+'</div></div>');
+w.document.write('<h1>Probenahme- und Versandprotokoll / Probenahme- und Versandprotokoll</h1>');
+w.document.write('<h2>1. Probenidentifikation / Sample Identification</h2><table>');
+[["Ref.",sRef],["Charge",batchId],["Product",prod],["Probenart","10g Doypacks"],["Menge","14 x 10g = 140g"],["Entnommen aus","Pallet 4 Box 15-20"],["Entnommen von","T. Cuny (RP)"],["Datum",sDate],["Verbleibend","86 x 10g Doypacks"]].forEach(function(r){w.document.write('<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>')});
+w.document.write('</table><h2>2. GDP Versandbehaelter / Shipping Container</h2><table>');
+[["Behaelter","Styrofoam insulated box + Coolpack"],["Temperatur","15-25C (GDP 2013/C 343/01)"],["Datenlogger","TL-SAMP-001 (Sensitech TempTale)"],["BtM-Siegel",seal],["Qualifizierung","SOP-703 qualified"],["Gewicht","ca. 450g"]].forEach(function(r){w.document.write('<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>')});
+w.document.write('</table><h2>3. Transport / Internal GDP Courier</h2><table>');
+[["Kurierdienst","NOC Pharma Internal GDP Transport"],["Route","Murchin (Vault) to QSI Bremen (ca. 350 km)"],["Fahrer","_________________________"],["Fahrzeug","GDP-qualified (SOP-780)"],["Abfahrt",sDate],["BtM-Transfer","Par. 13 BtMG within company"]].forEach(function(r){w.document.write('<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>')});
+w.document.write('</table><h2>4. Empfaenger / Destination Lab</h2><table>');
+[["Labor","QSI GmbH Bremen"],["Ansprechpartner","Pia"],["Adresse","Flughafendamm 9a, 28199 Bremen"],["Auftragsnr.","210-1624923"],["Pruefumfang","Ph.Eur. Cannabis flos monograph"],["Pruefungen","Potency, Micro, Heavy Metals, Mycotoxins, Pesticides, Moisture, Terpenes"],["Voraussichtlich","10-14 working days"],["Ergebnisse an","Dr. O. Schagon (QP) + T. Cuny (RP)"]].forEach(function(r){w.document.write('<tr><td>'+r[0]+'</td><td>'+r[1]+'</td></tr>')});
+w.document.write('</table><div class="sig"><div>Probenahme / Entnommen von<br/><br/><br/>T. Cuny (RP)</div><div>Versand freigegeben / Versand genehmigt<br/><br/><br/>________________________</div><div>Empfangen bei QSI / Empfangen bei QSI<br/><br/><br/>Pia (QSI Bremen)</div></div>');
+w.document.write('<div class="ft">NOC Pharma GmbH - An der Redoute 1 - 17390 Murchin - QMS v2.5 - '+new Date().toISOString()+'</div></body></html>');
 w.document.close();setTimeout(function(){w.print()},500);
-}} style={{flex:1,padding:"10px 16px",borderRadius:6,fontSize:14,fontWeight:700,border:"none",background:"#1e40af",color:"#fff",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",gap:6}}>
-🖨️ {lang==="de"?"Probenauftrag drucken (PDF)":"Print Sample Request (PDF)"}
+}} style={{flex:1,padding:"10px 16px",borderRadius:6,fontSize:15,fontWeight:700,border:"none",background:"#1e40af",color:"#fff",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",gap:6}}>
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2M6 14h12v8H6v-8z" stroke="#fff" strokeWidth="1.5"/></svg>
+{lang==="de"?"Probenahmeprotokoll drucken (PDF)":"Print Sample Protocol (PDF)"}
 </button>
+
 <button onClick={()=>{
-const sep="================================";
-const lines=subBatches.map(sb=>"Sub-batch: "+sb.subBatch+" | THC: "+sb.thc+" | Cert: "+sb.certNo).join("\n");
-const body="NOC PHARMA GmbH -- QSI Sample Test Request\n"+sep+"\n\nRef: "+sRef+"\nDate: "+sDate+"\nImport: "+(selBatch||"CA-03")+"\nBfArM Permit: "+permit+"\n\nSUB-BATCHES:\n"+lines+"\n\nTOTAL: "+subBatches.length+" sub-batches x 14 bags x 10g = "+totalWeight+"g\n\nTEST SCOPE:\nPh. Eur. Cannabis flos -- Potency, Micro, Heavy Metals, Mycotoxins, Pesticides, Moisture, Terpenes\n\nSHIPPING:\nGDP box + Coolpack (15-25C) - Datalogger: TL-SAMP-001\nBtM Seal: SEAL-"+(selBatch||"CA-03")+"-QSI - S13 BtMG\nRoute: Murchin -> Bremen (~350 km)\n\n"+sep+"\nRP: T. Cuny - QP: Dr. O. Schagon\nNOC Pharma GmbH - QMS v2.5";
-window.open(gmailLink("NOC Pharma -- QSI Sample Request -- "+sRef+" -- "+subBatches.length+" sub-batch(es)",body)+"&to="+encodeURIComponent("pia@qsi-gmbh.de")+"&cc="+encodeURIComponent("qp@nocpharma.de"),"_blank");
-}} style={{flex:1,padding:"10px 16px",borderRadius:6,fontSize:14,fontWeight:700,border:"none",background:"#059669",color:"#fff",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",gap:6}}>
-📧 {lang==="de"?"An QSI Bremen senden (Pia)":"Send to QSI Bremen (Pia)"}
+const sRef="SAMP-"+(selBatch||"BI02")+"-"+new Date().getFullYear();
+const sep="━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━";
+const body="NOC PHARMA GmbH\nProbenahme- und Versandprotokoll · QMS v2.5\n"+sep+"\n\nRef.: "+sRef+"\nCharge: "+BT.id+"\nProduct: "+BT.p+"\n\nPROBE:\n14 × 10g Doypacks = 140g total\nSampled from Pallet 4 (Box 15–20)\nEntnommen von: T. Cuny (RP)\n\nVERSAND:\nGDP insulated box + Coolpack (15–25°C)\nDatalogger: TL-SAMP-001\nBtM Seal: SEAL-"+(selBatch||"BI02")+"-QSI\nRoute: Murchin → QSI Bremen (~350 km)\nInternal GDP courier (SOP-780)\n\nPRUEFUMFANG:\nPh.Eur. Cannabis flos monograph\nPotency, Micro, Heavy Metals, Mycotoxins, Pesticides, Moisture, Terpenes\nOrder: 210-1624923\nExpected: 10–14 working days\n\n"+sep+"\nNOC Pharma GmbH · QMS v2.5\nRP: T. Cuny · QP: Dr. O. Schagon";
+window.open(gmailLink("NOC Pharma — Probenversand an QSI Bremen — "+sRef+" — Batch "+(selBatch||"BI02"),body)+"&to="+encodeURIComponent("pia@qsi-gmbh.de")+"&cc="+encodeURIComponent("qp@nocpharma.de"),"_blank");
+}} style={{flex:1,padding:"10px 16px",borderRadius:6,fontSize:15,fontWeight:700,border:"none",background:"#059669",color:"#fff",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",gap:6}}>
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="#fff" strokeWidth="1.5" strokeLinejoin="round"/></svg>
+{lang==="de"?"An QSI Bremen senden (Pia)":"Send to QSI Bremen (Pia)"}
 </button>
-<button onClick={()=>window.open(gdLink("M1.5"),"_blank")} style={{padding:"10px 14px",borderRadius:6,fontSize:14,fontWeight:700,border:"1px solid #bae6fd",background:"#eff6ff",color:"#1a73e8",cursor:"pointer"}}>
-🗂️ Drive
+
+<button onClick={()=>window.open(gdLink("M1.5"),"_blank")} style={{padding:"10px 16px",borderRadius:6,fontSize:15,fontWeight:700,border:"1px solid #bae6fd",background:"#eff6ff",color:"#1a73e8",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",gap:6}}>
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z" fill="#1a73e8"/></svg>
+{lang==="de"?"In Drive speichern":"Save to Drive"}
 </button>
 </div>
 
-<div style={{marginTop:8,fontSize:12,color:"#6b7280",fontStyle:"italic"}}>
-⚠️ BtM: §13 BtMG transfer within company. Document in BtM register. Return samples after analysis.
+<div style={{marginTop:8,fontSize:13,color:"#6b7280",fontStyle:"italic"}}>
+{lang==="de"
+?"⚠️ BtM-Hinweis: Probenversand innerhalb des Unternehmens gemäß §13 BtMG. Dokumentation im BtM-Buch erforderlich. Retourmuster nach Analyse an NOC Pharma zurückführen."
+:"⚠️ BtM Note: Sample dispatch within company per §13 BtMG. Documentation in BtM register required. Return samples to NOC Pharma after analysis."}
 </div>
-</div>;
-})()}
+</div>
 </Cd>
 </div>};
 
@@ -2586,7 +2208,6 @@ const[m4Imgs,setM4Imgs]=useState({
 });
 const m4Upload=(slot)=>setM4Imgs(p=>({...p,[slot]:{ts:new Date().toISOString().slice(0,19).replace("T"," "),by:"Current User"}}));
 const[m4Sigs,setM4Sigs]=useState({celso:null,qp:null});
-const[m4CapaOpen,setM4CapaOpen]=useState(false);
 const m4Sign=(k)=>setM4Sigs(p=>({...p,[k]:{ts:new Date().toISOString().slice(0,19).replace("T"," "),hash:"SHA256:"+Array.from({length:8},()=>Math.floor(Math.random()*16).toString(16)).join("").toUpperCase()}}));
 const m4AllSigned=m4Sigs.celso&&m4Sigs.qp;
 
@@ -2804,45 +2425,10 @@ return <div key={s.id} onClick={()=>setSopActive(s.id)} style={{padding:14,borde
 </div>};
 
 const M4Relabel=()=>{
-/* Pull real data from BT_DATA (updated by AI document extraction) and docOriginals */
-const bt=BT_DATA[selBatch]||BT_DATA["CA-03"]||{};
-const plData=docOriginals["pl"]?.approvedData||docOriginals["pl"]?.extracted||{};
-const scData=(()=>{
-  // Aggregate all supplier COA data (sc, sc_1, sc_2 etc.) — last uploaded wins per field
-  const merged={};
-  Object.entries(docOriginals).filter(([k])=>k==="sc"||k.startsWith("sc_"))
-    .forEach(([,v])=>Object.assign(merged,(v?.approvedData||v?.extracted||{})));
-  return merged;
-})();
-const labThc=LAB.find(l=>l.en==="THC (Dronabinol)");
-const confirmedThc=labThc?.qsi||labThc?.sup||bt.thc||"19.7%";
-/* Build sub-batch list from uploaded supplier COAs */
-const allSupCoas=Object.entries(docOriginals).filter(([k])=>k==="sc"||k.startsWith("sc_")).sort(([a],[b])=>a.localeCompare(b));
-const subBatches=allSupCoas.length>0?allSupCoas.map(([k,v])=>{
-const d=v?.approvedData||v?.extracted||{};
-return {
-key:k,
-subBatch:d["Sub-Batch Number"]||d["Batch Number"]||k,
-product:d["Product Description"]||d["Product"]||bt.p||"Cannabis flos",
-thc:d["THC Content"]||confirmedThc,
-expiry:d["Expiry Date"]||d["Retest Date"]||bt.exp||"—",
-certNo:d["Certificate Number"]||"—",
-verified:v?.approvalComplete||false
-};
-}):[{key:"sc",subBatch:bt.id||"—",product:bt.p||"Cannabis flos",thc:confirmedThc,expiry:bt.exp||"—",certNo:"—",verified:false}];
-
-/* Box breakdown from packing list */
-const plBoxes=bt.pl?.boxes||[];
 const products=[
-{k:"1kg",de:"Cannabis flos 1kg (API-Beutel)",en:"Cannabis flos 1kg (API bag)",qty:parseInt(bt.bags1kg)||parseInt(plData["Total 1kg Bags"])||139,format:"EVOH/PBD LDPE bag",pzn:"PZN-18547632"},
-{k:"10g",de:"Cannabis flos 10g (Doypack)",en:"Cannabis flos 10g (Doypack)",qty:parseInt(bt.doy10g)||parseInt(plData["Total 10g Doypacks"])||100,format:"Trilaminated Doypack",pzn:"PZN-18547633"}
+{k:"1kg",de:"Cannabis flos 1kg (API-Beutel)",en:"Cannabis flos 1kg (API bag)",qty:BT.bags1kg||139,format:"LDPE bag",pzn:"PZN-18547632"},
+{k:"10g",de:"Cannabis flos 10g (Doypack)",en:"Cannabis flos 10g (Doypack)",qty:BT.doy10g||100,format:"Doypack",pzn:"PZN-18547633"}
 ];
-const totalUnits=(products[0]?.qty||0)+(products[1]?.qty||0);
-const batchRef=bt.id||plData["Batch Number"]||"BI-03-NOCB1.2-INF-F";
-const productName=bt.p||plData["Product Description"]||"Cannabis flos";
-const expiryDate=bt.exp||"28.07.2027";
-const netWeight=bt.net||plData["Net Weight"]||"140.0";
-const grossWeight=bt.gross||plData["Gross Weight"]||"198.5";
 return <Cd t={"🏷️ M4 — "+(lang==="de"?"Umetikettierung — Murchin":"Relabeling — Murchin")} badge={<Bd c="#059669" b="#d1fae5">✓</Bd>}>
 
 {/* THC Correction Alert — shown when THC protocol was initiated */}
@@ -2871,120 +2457,15 @@ return <Cd t={"🏷️ M4 — "+(lang==="de"?"Umetikettierung — Murchin":"Rela
 </div>
 </div>}
 <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:8,marginBottom:14,fontSize:16}}>
-{/* Relabeling Stats */}
-{[[lang==="de"?"Etiketten":"Labels",(products[0]?.qty||0)+"×1kg + "+(products[1]?.qty||0)+"×10g = "+totalUnits],[lang==="de"?"Charge":"Batch",batchRef],[lang==="de"?"Produkt":"Product",subBatches.length>1?subBatches.length+" sub-batches":productName],[lang==="de"?"THC (QSI)":"THC (QSI)",confirmedThc],["Verfall/Expiry",expiryDate],[lang==="de"?"Netto":"Net",netWeight+" kg"],[lang==="de"?"Standort":"Location","Murchin, An der Redoute 1"],["SOP","SOP-710-01 v3.0"]].map(([l,v],j)=><div key={j}><div style={{fontSize:13,color:"#6b7280",textTransform:"uppercase",fontWeight:600}}>{l}</div><div style={{fontWeight:600}}>{v}</div></div>)}
-</div>
-
-{/* ── Relabeling Readiness Check ── */}
-{(()=>{
-const allSupCoas2=Object.entries(docOriginals).filter(([k])=>k==="sc"||k.startsWith("sc_"));
-const allQsiCoas2=Object.entries(docOriginals).filter(([k])=>k==="lab_coa"||k==="qsi_coa"||k.startsWith("lab_coa_"));
-const qsiMerged2={};
-allQsiCoas2.forEach(([,v])=>Object.assign(qsiMerged2,(v?.approvedData||v?.extracted||{})));
-const qsiThc=parseFloat(String(qsiMerged2["THC Content"]||"0").replace(/[^0-9.]/g,""))||0;
-const supThc=parseFloat(String((allSupCoas2[0]?.[1]?.approvedData||allSupCoas2[0]?.[1]?.extracted||{})["THC Content"]||"0").replace(/[^0-9.]/g,""))||0;
-const thcDev=supThc>0&&qsiThc>0&&Math.abs((qsiThc-supThc)/supThc*100)>10;
-const hasPl=!!(docOriginals["pl"]?.approvalComplete||(bt.pl?.boxes?.length>0));
-const hasQsi=allQsiCoas2.length>0&&allQsiCoas2.some(([,v])=>v?.approvalComplete);
-const hasCoas=allSupCoas2.length>0&&allSupCoas2.some(([,v])=>v?.approvalComplete);
-const piaAmended=thcProto.piaNotified;
-const newPzn=thcProto.pznRequested;
-const canRelabel=hasPl&&hasQsi&&hasCoas&&(!thcDev||(piaAmended&&newPzn));
-const checks=[
-[hasPl,"📋 Packing List uploaded & AI verified","Upload and analyze packing list in M0.5"],
-[hasCoas,"🇦🇷 Supplier COA(s) uploaded & AI verified","Upload and analyze COA(s) in M0.5"],
-[hasQsi,"🇩🇪 QSI COA uploaded & AI verified","Upload QSI results in M2"],
-[!thcDev||(piaAmended&&newPzn),thcDev?"🏷️ THC deviation: Pia amended COA ✅ + new PZN ✅":"✅ No THC deviation — labels ready",thcDev?"Wait for Pia's amended COA and new PZN from IFA":""]
-];
-return <div style={{marginBottom:14,borderRadius:10,border:"2px solid "+(canRelabel?"#059669":"#d97706"),overflow:"hidden"}}>
-<div style={{padding:"10px 14px",background:canRelabel?"linear-gradient(135deg,#059669,#10b981)":"linear-gradient(135deg,#d97706,#f59e0b)",color:"#fff",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-<div style={{fontSize:14,fontWeight:700}}>{canRelabel?"✅ Ready to Relabel":"⏳ Relabeling Prerequisites"}</div>
-<span style={{fontSize:12,opacity:.85}}>{checks.filter(c=>c[0]).length}/{checks.length} {lang==="de"?"Voraussetzungen erfüllt":"prerequisites met"}</span>
-</div>
-<div style={{padding:10,background:"#fff"}}>
-{checks.map(([ok,label,action],i)=><div key={i} style={{display:"flex",alignItems:"flex-start",gap:8,padding:"5px 0",borderBottom:i<checks.length-1?"1px solid #f3f4f6":"none"}}>
-<span style={{fontSize:14,flexShrink:0}}>{ok?"✅":"⏳"}</span>
+{/* Deviation & CAPA — Incorrect Release & Labeling (CA-01, CA-02) */}
+<div style={{marginBottom:14,padding:12,background:"linear-gradient(135deg,#fef2f2,#fff7ed)",borderRadius:10,border:"2px solid #f87171"}}>
+<div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:8}}>
 <div>
-<div style={{fontSize:13,fontWeight:600,color:ok?"#059669":"#d97706"}}>{label}</div>
-{!ok&&action&&<div style={{fontSize:11,color:"#6b7280",marginTop:1}}>{action}</div>}
+<div style={{fontSize:16,fontWeight:800,color:"#dc2626"}}>⚠️ {lang==="de"?"Abweichung & CAPA — Fehlerhafte Freigabe & Etikettierung":"Deviation & CAPA — Defective Release & Labeling"}</div>
+<div style={{fontSize:11,color:"#6b7280"}}>{lang==="de"?"Betrifft CA-01 (BI-01) und CA-02 (BI-02) · Status an Dr. Schagon berichtet":"Affects CA-01 (BI-01) and CA-02 (BI-02) · Status reported to Dr. Schagon"}</div>
 </div>
-</div>)}
-{thcDev&&!piaAmended&&<div style={{marginTop:8,padding:8,background:"#fef3c7",borderRadius:6,border:"1px solid #fde68a",fontSize:12,color:"#92400e"}}>
-⚠️ <strong>THC deviation detected</strong> — QSI: {qsiThc}% vs Supplier: {supThc}% (Δ {((qsiThc-supThc)/supThc*100).toFixed(1)}%). 
-Go to M2 → email Pia for amended COA, then request new PZN from IFA before relabeling.
-</div>}
-{canRelabel&&<div style={{marginTop:8,padding:8,background:"#f0fdf4",borderRadius:6,border:"1px solid #a7f3d0",fontSize:12,color:"#065f46",fontWeight:600}}>
-🏷️ All prerequisites met. Confirmed THC: {qsiThc||confirmedThc}% · {subBatches.length} sub-batch(es) · {totalUnits} units to relabel.
-</div>}
+<span style={{padding:"3px 10px",borderRadius:6,fontSize:11,fontWeight:700,background:"#dcfce7",color:"#059669"}}>✅ {lang==="de"?"CAPA abgeschlossen":"CAPA Completed"}</span>
 </div>
-</div>;
-})()}
-
-{/* Sub-batch relabeling table — one row per COA sub-batch */}
-{subBatches.length>0&&<div style={{marginBottom:14,borderRadius:10,border:"1px solid #e5e7eb",overflow:"hidden"}}>
-<div style={{padding:"8px 12px",background:"linear-gradient(135deg,#4c1d95,#7c3aed)",color:"#fff",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-<div style={{fontSize:14,fontWeight:700}}>🏷️ {lang==="de"?"Sub-Chargen — Umetikettierung":"Sub-Batch Relabeling"}</div>
-<span style={{fontSize:12,opacity:.85}}>{subBatches.length} {lang==="de"?"Sub-Charge(n)":"sub-batch(es)"} · {totalUnits} {lang==="de"?"Einheiten gesamt":"units total"}</span>
-</div>
-<div style={{overflowX:"auto"}}>
-<table style={{width:"100%",borderCollapse:"collapse",fontSize:13}}>
-<thead><tr style={{background:"#f5f3ff"}}>
-{["Sub-Batch","Product","THC (QSI)","Expiry","Cert No.","1kg bags","10g packs","Label Status"].map((h,i)=>
-<th key={i} style={{padding:"6px 10px",textAlign:"left",fontWeight:700,color:"#7c3aed",borderBottom:"2px solid #e9d5ff",whiteSpace:"nowrap",fontSize:12}}>{h}</th>)}
-</tr></thead>
-<tbody>
-{subBatches.map((sb,i)=>{
-/* Try to find this sub-batch in the packing list boxes */
-const sbBags=plBoxes.filter(b=>b.d&&b.d.toLowerCase().includes(sb.subBatch.toLowerCase().split("-")[0])).reduce((a,b)=>a+(parseInt(b.d?.match(/(\d+)×1kg/)?.[1]||"0")||0),0)||"—";
-const sbDoy=plBoxes.filter(b=>b.d&&b.d.toLowerCase().includes(sb.subBatch.toLowerCase().split("-")[0])).reduce((a,b)=>a+(parseInt(b.d?.match(/(\d+)×10g/)?.[1]||"0")||0),0)||"—";
-return <tr key={i} style={{background:i%2===0?"#fff":"#faf5ff",borderBottom:"1px solid #f3f4f6"}}>
-<td style={{padding:"6px 10px",fontWeight:700,color:"#7c3aed",whiteSpace:"nowrap"}}>{sb.subBatch}</td>
-<td style={{padding:"6px 10px",color:"#374151",fontSize:12}}>{sb.product.length>25?sb.product.slice(0,25)+"…":sb.product}</td>
-{(()=>{
-const qsiMergedR={};
-Object.entries(docOriginals).filter(([k])=>k==="lab_coa"||k==="qsi_coa"||k.startsWith("lab_coa_")).forEach(([,v])=>Object.assign(qsiMergedR,(v?.approvedData||v?.extracted||{})));
-const qsiT=qsiMergedR["THC Content"]||null;
-const supT=sb.thc;
-const hasDevR=qsiT&&supT&&parseFloat(qsiT)>0&&Math.abs((parseFloat(qsiT)-parseFloat(supT))/parseFloat(supT)*100)>10;
-return <td style={{padding:"6px 10px",fontWeight:700}}>
-<div style={{color:hasDevR?"#d97706":"#059669"}}>{qsiT||supT}</div>
-{qsiT&&supT&&qsiT!==supT&&<div style={{fontSize:10,color:"#6b7280"}}>Sup: {supT}</div>}
-{hasDevR&&<div style={{fontSize:10,color:"#d97706",fontWeight:700}}>⚠️ Use QSI value on label</div>}
-</td>;
-})()}
-<td style={{padding:"6px 10px",color:"#6b7280",fontSize:12}}>{sb.expiry}</td>
-<td style={{padding:"6px 10px",color:"#6b7280",fontSize:12}}>{sb.certNo}</td>
-<td style={{padding:"6px 10px",textAlign:"center",fontWeight:600}}>{sbBags}</td>
-<td style={{padding:"6px 10px",textAlign:"center",fontWeight:600}}>{sbDoy}</td>
-<td style={{padding:"6px 10px",textAlign:"center"}}>
-<span style={{padding:"2px 8px",borderRadius:4,fontSize:11,fontWeight:700,background:"#ede9fe",color:"#7c3aed"}}>⏳ Pending</span>
-</td>
-</tr>;})}
-</tbody>
-<tfoot><tr style={{background:"#f5f3ff",borderTop:"2px solid #e9d5ff"}}>
-<td colSpan={5} style={{padding:"6px 10px",fontWeight:700,color:"#7c3aed"}}>TOTAL — {selBatch}</td>
-<td style={{padding:"6px 10px",textAlign:"center",fontWeight:800,color:"#7c3aed"}}>{products[0]?.qty||"—"}</td>
-<td style={{padding:"6px 10px",textAlign:"center",fontWeight:800,color:"#7c3aed"}}>{products[1]?.qty||"—"}</td>
-<td style={{padding:"6px 10px",textAlign:"center",fontWeight:800,color:"#7c3aed"}}>{totalUnits} units</td>
-</tr></tfoot>
-</table>
-</div>
-{subBatches.length===0&&<div style={{padding:16,textAlign:"center",color:"#9ca3af"}}>
-Upload Supplier COAs in M0.5 to populate sub-batch relabeling table
-</div>}
-</div>}
-
-{/* Deviation & CAPA — Per-batch, using dynamic data */}
-<div style={{marginBottom:14,borderRadius:10,border:"1px solid #e5e7eb",overflow:"hidden"}}>
-<button onClick={()=>setM4CapaOpen(p=>!p)} style={{width:"100%",padding:"10px 12px",background:m4CapaOpen?"linear-gradient(135deg,#fef2f2,#fff7ed)":"#f9fafb",border:"none",cursor:"pointer",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-<div style={{display:"flex",alignItems:"center",gap:8}}>
-<span style={{fontSize:14}}>{m4CapaOpen?"▼":"▶"}</span>
-<span style={{fontSize:14,fontWeight:700,color:"#dc2626"}}>⚠️ {lang==="de"?"Abweichung & CAPA — "+selBatch:"Deviation & CAPA — "+selBatch}</span>
-<span style={{padding:"2px 8px",borderRadius:4,fontSize:11,fontWeight:700,background:"#dcfce7",color:"#059669"}}>✅ {lang==="de"?"CAPA abgeschlossen":"CAPA Completed"}</span>
-</div>
-<span style={{fontSize:12,color:"#6b7280"}}>{m4CapaOpen?(lang==="de"?"Einklappen":"Collapse"):(lang==="de"?"Aufklappen":"Expand")}</span>
-</button>
-{m4CapaOpen&&<div style={{padding:12}}>
 <div style={{padding:10,background:"#fff",borderRadius:8,border:"1px solid #fecaca",marginBottom:8}}>
 <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:6}}>
 <span style={{padding:"2px 8px",borderRadius:4,fontSize:10,fontWeight:700,background:"#dc2626",color:"#fff"}}>DEV-1</span>
@@ -2993,8 +2474,9 @@ Upload Supplier COAs in M0.5 to populate sub-batch relabeling table
 <div style={{fontSize:12,color:"#374151",lineHeight:"1.5",marginBottom:6}}>{lang==="de"?"Das Produkt wurde fälschlicherweise als Arzneimittel statt korrekt als Wirkstoff freigegeben. Ursache: Fehler im Dokumenten-Layout/Template.":"The product was incorrectly released as a medicinal product instead of correctly as an active ingredient. Root cause: Error in the document layout/template."}</div>
 <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,fontSize:11}}>
 <div style={{padding:6,background:"#f0fdf4",borderRadius:4,border:"1px solid #a7f3d0"}}><strong style={{color:"#059669"}}>✅ {lang==="de"?"Korrektur":"Corrective"}:</strong> {lang==="de"?"Template sofort korrigiert. Produkt jetzt korrekt als Wirkstoff identifiziert.":"Template corrected immediately. Product now correctly identified as active ingredient."}</div>
-<div style={{padding:6,background:"#f0fdf4",borderRadius:4,border:"1px solid #a7f3d0"}}><strong style={{color:"#059669"}}>✅ {lang==="de"?"Prävention":"Preventive"}:</strong> {lang==="de"?"Template systemweit gesperrt — Layout kann nicht mehr manuell geändert werden.":"Template locked system-wide — layout cannot be manually changed. Recurrence technically impossible."}</div>
-</div></div>
+<div style={{padding:6,background:"#f0fdf4",borderRadius:4,border:"1px solid #a7f3d0"}}><strong style={{color:"#059669"}}>✅ {lang==="de"?"Prävention":"Preventive"}:</strong> {lang==="de"?"Template systemweit gesperrt — Layout kann nicht mehr manuell geändert werden. Wiederholung technisch ausgeschlossen.":"Template locked system-wide — layout cannot be manually changed. Recurrence technically impossible."}</div>
+</div>
+</div>
 <div style={{padding:10,background:"#fff",borderRadius:8,border:"1px solid #fde68a",marginBottom:8}}>
 <div style={{display:"flex",alignItems:"center",gap:6,marginBottom:6}}>
 <span style={{padding:"2px 8px",borderRadius:4,fontSize:10,fontWeight:700,background:"#d97706",color:"#fff"}}>DEV-2</span>
@@ -3003,19 +2485,15 @@ Upload Supplier COAs in M0.5 to populate sub-batch relabeling table
 <div style={{fontSize:12,color:"#374151",lineHeight:"1.5",marginBottom:6}}>{lang==="de"?"Änderungen an Etiketten/Kennzeichnung der Behälter wurden beanstandet. Bestand physisch gesperrt und vollständig umettikettiert.":"Changes to labels/container markings were criticized. Stock physically blocked and completely relabeled."}</div>
 <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6,fontSize:11}}>
 <div style={{padding:6,background:"#f0fdf4",borderRadius:4,border:"1px solid #a7f3d0"}}><strong style={{color:"#059669"}}>✅ {lang==="de"?"Korrektur":"Corrective"}:</strong> {lang==="de"?"Etiketten-Layout in gemeinsamer Sitzung an Vorgaben angepasst.":"Label layout adjusted to specifications in joint meeting."}</div>
-<div style={{padding:6,background:"#f0fdf4",borderRadius:4,border:"1px solid #a7f3d0"}}><strong style={{color:"#059669"}}>✅ {lang==="de"?"Umetikettierung":"Relabeling"}:</strong> {lang==="de"?"Gesamter Bestand "+selBatch+" vollständig mit korrekten Etiketten umettikettiert.":"Entire "+selBatch+" stock completely relabeled with correct labels."}</div>
-</div></div>
-
-{/* Affected units — dynamic per batch */}
+<div style={{padding:6,background:"#f0fdf4",borderRadius:4,border:"1px solid #a7f3d0"}}><strong style={{color:"#059669"}}>✅ {lang==="de"?"Umetikettierung":"Relabeling"}:</strong> {lang==="de"?"Gesamter Bestand CA-01 + CA-02 vollständig mit korrekten Etiketten umettikettiert.":"Entire CA-01 + CA-02 stock completely relabeled with correct labels."}</div>
+</div>
+</div>
 <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:8}}>
-<div style={{padding:8,background:"#fff",borderRadius:6,border:"1px solid #a7f3d0",display:"flex",alignItems:"center",gap:8}}>
+{[["CA-01","BI-01","NOC SE 17","—"],["CA-02","BI-02","NOC SE 19","—"]].map(([imp,batch,product,kg],j)=>
+<div key={j} style={{padding:8,background:"#fff",borderRadius:6,border:"1px solid #a7f3d0",display:"flex",alignItems:"center",gap:8}}>
 <div style={{width:36,height:36,borderRadius:"50%",background:"#dcfce7",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,flexShrink:0}}>✅</div>
-<div><div style={{fontSize:13,fontWeight:700}}>{selBatch} ({batchRef}) — {productName}</div><div style={{fontSize:11,color:"#6b7280"}}>{products[1]?.qty||100}× 10g Doypacks · {lang==="de"?"Vollständig umettikettiert":"Fully relabeled"}</div></div>
-</div>
-<div style={{padding:8,background:"#fff",borderRadius:6,border:"1px solid #a7f3d0",display:"flex",alignItems:"center",gap:8}}>
-<div style={{width:36,height:36,borderRadius:"50%",background:"#dcfce7",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,flexShrink:0}}>✅</div>
-<div><div style={{fontSize:13,fontWeight:700}}>{selBatch} ({batchRef}) — {productName}</div><div style={{fontSize:11,color:"#6b7280"}}>{products[0]?.qty||139}× 1kg bags · {lang==="de"?"Vollständig umettikettiert":"Fully relabeled"}</div></div>
-</div>
+<div><div style={{fontSize:13,fontWeight:700}}>{imp} ({batch}) — {product}</div><div style={{fontSize:11,color:"#6b7280"}}>{kg} · {lang==="de"?"Vollständig umettikettiert":"Fully relabeled"}</div></div>
+</div>)}
 </div>
 
 {/* CAPA Signatures */}
@@ -3023,7 +2501,7 @@ Upload Supplier COAs in M0.5 to populate sub-batch relabeling table
 <div style={{fontSize:13,fontWeight:700,color:"#1e40af",marginBottom:6}}>✍️ {lang==="de"?"CAPA-Freigabe — DocuSign":"CAPA Approval — DocuSign"}</div>
 <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8}}>
 {[
-{k:"capa_rp",name:"Torsten Cuny",role:"RP §52a AMG",desc:lang==="de"?"Bestätigt: CAPA-Maßnahmen umgesetzt, Umetikettierung "+selBatch+" abgeschlossen":"Confirms: CAPA actions implemented, relabeling "+selBatch+" completed",c:"#1e40af"},
+{k:"capa_rp",name:"Torsten Cuny",role:"RP §52a AMG",desc:lang==="de"?"Bestätigt: CAPA-Maßnahmen umgesetzt, Umetikettierung CA-01 + CA-02 abgeschlossen":"Confirms: CAPA actions implemented, relabeling CA-01 + CA-02 completed",c:"#1e40af"},
 {k:"capa_qp",name:"Dr. Olaf Schagon",role:"QP §15 AMG",desc:lang==="de"?"Genehmigt: Abweichungsverfahren abgeschlossen, keine weitere Maßnahme erforderlich":"Approves: Deviation procedure closed, no further action required",c:"#059669"},
 ].map(sig=>{const signed=m4Sigs[sig.k];return <div key={sig.k} style={{padding:8,borderRadius:8,border:signed?"2px solid #059669":"1.5px solid #d1d5db",background:signed?"#f0fdf4":"#fff"}}>
 <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:4}}>
@@ -3036,48 +2514,46 @@ Upload Supplier COAs in M0.5 to populate sub-batch relabeling table
 </div>})}
 </div>
 {m4Sigs.capa_rp&&m4Sigs.capa_qp&&<div style={{marginTop:6,padding:6,background:"#dcfce7",borderRadius:6,textAlign:"center",fontSize:12,fontWeight:700,color:"#059669"}}>✅ {lang==="de"?"CAPA vollständig genehmigt via DocuSign — Abweichungsverfahren abgeschlossen":"CAPA fully approved via DocuSign — Deviation procedure closed"}</div>}
+<div style={{display:"flex",gap:6,marginTop:8}}>
+<button onClick={()=>{const w=window.open("","_blank","width=800,height=700");w.document.write('<html><head><title>CAPA Report — NOC Pharma</title><style>body{font-family:Arial;padding:30px;font-size:11px;color:#1f2937}h1{font-size:16px;color:#1e3a5f;border-bottom:2px solid #1e3a5f;padding-bottom:6px}h2{font-size:13px;color:#dc2626;margin-top:14px;background:#fef2f2;padding:4px 8px;border-radius:4px}.box{padding:8px;border:1px solid #d1d5db;border-radius:4px;margin:4px 0;font-size:10px}.pass{background:#f0fdf4;border-color:#a7f3d0;color:#059669}.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.sig{margin-top:8px;padding:10px;background:#f0fdf4;border:2px solid #059669;border-radius:6px}.pend{margin-top:8px;padding:10px;background:#fefce8;border:2px solid #fbbf24;border-radius:6px}.hdr{background:#0f172a;color:#fff;padding:12px 30px;margin:-30px -30px 16px;font-size:12px}.lang{margin-top:20px;padding-top:12px;border-top:3px solid #1e40af}@media print{body{padding:15px}.hdr{margin:-15px -15px 12px}}</style></head><body>');w.document.write('<div class="hdr"><strong style="font-size:16px">NOC Pharma GmbH</strong> — CAPA Report / CAPA-Bericht<br/>QMS v2.5 · §52a AMG · '+new Date().toLocaleDateString("de-DE")+'</div>');
 
-{/* Print & Email — Bilingual DE/EN */}
-<div style={{display:"flex",gap:6,marginTop:10}}>
-<button onClick={()=>{const w=window.open("","_blank","width=800,height=700");
-const rpSig=m4Sigs.capa_rp;const qpSig=m4Sigs.capa_qp;
-w.document.write('<html><head><title>CAPA Report — '+selBatch+' — NOC Pharma</title><style>body{font-family:Arial,sans-serif;padding:30px;font-size:11px;color:#1f2937}h1{font-size:16px;color:#1e3a5f;border-bottom:2px solid #1e3a5f;padding-bottom:6px}h2{font-size:13px;color:#dc2626;margin-top:14px;background:#fef2f2;padding:4px 8px;border-radius:4px}.box{padding:8px;border:1px solid #d1d5db;border-radius:4px;margin:4px 0;font-size:10px}.pass{background:#f0fdf4;border-color:#a7f3d0;color:#059669}.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.sig{margin-top:8px;padding:10px;background:#f0fdf4;border:2px solid #059669;border-radius:6px}.pend{margin-top:8px;padding:10px;background:#fefce8;border:2px solid #fbbf24;border-radius:6px}.hdr{background:#0f172a;color:#fff;padding:12px 30px;margin:-30px -30px 16px;font-size:12px}.lang{margin-top:20px;padding-top:12px;border-top:3px solid #1e40af}@media print{body{padding:15px}.hdr{margin:-15px -15px 12px}}</style></head><body>');
-w.document.write('<div class="hdr"><strong style="font-size:16px">NOC Pharma GmbH</strong> — CAPA-Bericht / CAPA Report<br/>QMS v2.5 · §52a AMG · '+new Date().toLocaleDateString("de-DE")+'</div>');
 /* DEUTSCH */
-w.document.write('<h1>🇩🇪 Abweichung & CAPA — '+selBatch+' ('+batchRef+')</h1>');
-w.document.write('<p>Charge: '+batchRef+' · Produkt: '+productName+'<br/>Einheiten: '+(products[0]?.qty||139)+'× 1kg Beutel + '+(products[1]?.qty||100)+'× 10g Doypacks = '+totalUnits+' Einheiten<br/>THC: '+confirmedThc+' · Verfall: '+expiryDate+'</p>');
+w.document.write('<h1>🇩🇪 Abweichung & CAPA — Fehlerhafte Freigabe & Etikettierung</h1>');
+w.document.write('<p>Betrifft: CA-01 (BI-01, 59.5kg) und CA-02 (BI-02, 198.5kg)</p>');
 w.document.write('<h2>DEV-1: Fehlerhafte Freigabe — Arzneimittel statt Wirkstoff</h2>');
-w.document.write('<p>Das Produkt wurde fälschlicherweise als Arzneimittel statt korrekt als Wirkstoff freigegeben. Ursache: Fehler im Dokumenten-Layout/Template.</p>');
-w.document.write('<div class="grid"><div class="box pass"><strong>✅ Korrektur:</strong> Template sofort korrigiert. Produkt jetzt korrekt als Wirkstoff identifiziert.</div><div class="box pass"><strong>✅ Prävention:</strong> Template systemweit gesperrt — Layout kann nicht mehr manuell geändert werden. Wiederholung technisch ausgeschlossen.</div></div>');
+w.document.write('<p>Ursache: Fehler im Dokumenten-Layout/Template.</p>');
+w.document.write('<div class="grid"><div class="box pass"><strong>✅ Korrektur:</strong> Template sofort korrigiert. Produkt jetzt korrekt als Wirkstoff identifiziert.</div><div class="box pass"><strong>✅ Prävention:</strong> Template systemweit gesperrt. Layout kann nicht mehr manuell geändert werden. Wiederholung technisch ausgeschlossen.</div></div>');
 w.document.write('<h2>DEV-2: Fehlerhafte Etikettierung — Behälterkennzeichnung</h2>');
-w.document.write('<p>Änderungen an Etiketten/Kennzeichnung der Behälter wurden beanstandet. Bestand physisch gesperrt und vollständig umettikettiert.</p>');
-w.document.write('<div class="grid"><div class="box pass"><strong>✅ Korrektur:</strong> Etiketten-Layout in gemeinsamer Sitzung an Vorgaben angepasst.</div><div class="box pass"><strong>✅ Umetikettierung:</strong> Gesamter Bestand '+selBatch+' vollständig mit korrekten Etiketten umettikettiert.</div></div>');
-w.document.write('<h2 style="color:#059669;background:#f0fdf4">Betroffene Einheiten — '+selBatch+'</h2>');
-w.document.write('<div class="grid"><div class="box pass"><strong>'+selBatch+'</strong> — '+batchRef+' — '+productName+'<br/>'+(products[1]?.qty||100)+'× 10g Doypacks — ✅ Umettikettiert</div><div class="box pass"><strong>'+selBatch+'</strong> — '+batchRef+' — '+productName+'<br/>'+(products[0]?.qty||139)+'× 1kg Beutel — ✅ Umettikettiert</div></div>');
+w.document.write('<p>Änderungen an Etiketten/Kennzeichnung der Behälter wurden beanstandet.</p>');
+w.document.write('<div class="grid"><div class="box pass"><strong>✅ Korrektur:</strong> Etiketten-Layout in gemeinsamer Sitzung an Vorgaben angepasst.</div><div class="box pass"><strong>✅ Umetikettierung:</strong> Gesamter Bestand CA-01 + CA-02 vollständig mit korrekten Etiketten umettikettiert.</div></div>');
+w.document.write('<h2 style="color:#059669;background:#f0fdf4">Betroffene Importe — Umetikettierung</h2>');
+w.document.write('<div class="grid"><div class="box pass"><strong>CA-01 (BI-01)</strong> — NOC SE 17 — 59.5kg — ✅ Vollständig umettikettiert</div><div class="box pass"><strong>CA-02 (BI-02)</strong> — NOC SE 19 — 198.5kg — ✅ Vollständig umettikettiert</div></div>');
+
 /* ENGLISH */
-w.document.write('<div class="lang"><h1>🇬🇧 Deviation & CAPA — '+selBatch+' ('+batchRef+')</h1>');
-w.document.write('<p>Batch: '+batchRef+' · Product: '+productName+'<br/>Units: '+(products[0]?.qty||139)+'× 1kg bags + '+(products[1]?.qty||100)+'× 10g Doypacks = '+totalUnits+' units<br/>THC: '+confirmedThc+' · Expiry: '+expiryDate+'</p>');
+w.document.write('<div class="lang"><h1>🇬🇧 Deviation & CAPA — Defective Release & Labeling</h1>');
+w.document.write('<p>Affects: CA-01 (BI-01, 59.5kg) and CA-02 (BI-02, 198.5kg)</p>');
 w.document.write('<h2>DEV-1: Defective Release — Medicinal Product instead of Active Ingredient</h2>');
-w.document.write('<p>The product was incorrectly released as a medicinal product instead of correctly as an active ingredient. Root cause: Error in document layout/template.</p>');
-w.document.write('<div class="grid"><div class="box pass"><strong>✅ Corrective:</strong> Template corrected immediately. Product now correctly identified as active ingredient.</div><div class="box pass"><strong>✅ Preventive:</strong> Template locked system-wide — layout cannot be manually changed. Recurrence technically impossible.</div></div>');
+w.document.write('<p>Root cause: Error in document layout/template.</p>');
+w.document.write('<div class="grid"><div class="box pass"><strong>✅ Corrective:</strong> Template corrected immediately. Product now correctly identified as active ingredient.</div><div class="box pass"><strong>✅ Preventive:</strong> Template locked system-wide. Layout cannot be manually changed. Recurrence technically impossible.</div></div>');
 w.document.write('<h2>DEV-2: Incorrect Labeling — Container Markings</h2>');
-w.document.write('<p>Changes to labels/container markings were criticized. Stock physically blocked and completely relabeled.</p>');
-w.document.write('<div class="grid"><div class="box pass"><strong>✅ Corrective:</strong> Label layout adjusted to specifications in joint meeting.</div><div class="box pass"><strong>✅ Relabeling:</strong> Entire '+selBatch+' stock completely relabeled with correct labels.</div></div>');
-w.document.write('<h2 style="color:#059669;background:#f0fdf4">Affected Units — '+selBatch+'</h2>');
-w.document.write('<div class="grid"><div class="box pass"><strong>'+selBatch+'</strong> — '+batchRef+' — '+productName+'<br/>'+(products[1]?.qty||100)+'× 10g Doypacks — ✅ Relabeled</div><div class="box pass"><strong>'+selBatch+'</strong> — '+batchRef+' — '+productName+'<br/>'+(products[0]?.qty||139)+'× 1kg bags — ✅ Relabeled</div></div>');
-w.document.write('</div>');
-/* Signatures */
-w.document.write('<h2 style="color:#1e40af;background:#eff6ff">Unterschriften / Signatures (DocuSign · eIDAS Art. 25)</h2>');
-if(rpSig)w.document.write('<div class="sig"><strong>✅ RP — Torsten Cuny</strong> — Verantwortliche Person / Responsible Person (§52a AMG)<br/>Unterschrieben / Signed: '+rpSig.ts+'<br/>'+rpSig.hash+' · eIDAS Art. 25 · DocuSign<br/><em>DE: Bestätigt CAPA-Maßnahmen umgesetzt, Umetikettierung '+selBatch+' abgeschlossen<br/>EN: Confirms CAPA actions implemented, relabeling '+selBatch+' completed</em></div>');else w.document.write('<div class="pend"><strong>⏳ RP — Torsten Cuny</strong> — Verantwortliche Person / Responsible Person (§52a AMG) — AUSSTEHEND / PENDING</div>');
-if(qpSig)w.document.write('<div class="sig"><strong>✅ QP — Dr. Olaf Schagon</strong> — Sachkundige Person / Qualified Person (§15 AMG)<br/>Unterschrieben / Signed: '+qpSig.ts+'<br/>'+qpSig.hash+' · eIDAS Art. 25 · DocuSign<br/><em>DE: Genehmigt Abweichungsverfahren abgeschlossen, keine weitere Maßnahme erforderlich<br/>EN: Approves deviation procedure closed, no further action required</em></div>');else w.document.write('<div class="pend"><strong>⏳ QP — Dr. Olaf Schagon</strong> — Sachkundige Person / Qualified Person (§15 AMG) — AUSSTEHEND / PENDING</div>');
-w.document.write('<div style="margin-top:20px;padding-top:10px;border-top:1px solid #d1d5db;font-size:9px;color:#9ca3af;text-align:center">NOC Pharma GmbH · Langetal 1, DE-07751 Golmsdorf · §52a AMG · QMS v2.5<br/>RP: T. Cuny · QP: Dr. O. Schagon · Generated: '+new Date().toISOString()+'</div></body></html>');
-w.document.close();setTimeout(()=>w.print(),500)}} style={{flex:1,padding:"6px 12px",borderRadius:6,fontSize:12,fontWeight:700,border:"none",background:"#374151",color:"#fff",cursor:"pointer"}}>🖨️ CAPA PDF (DE/EN)</button>
-<button onClick={()=>{const subj="NOC Pharma — CAPA-Bericht / CAPA Report — "+selBatch+" ("+batchRef+") — "+new Date().toLocaleDateString("de-DE");
-const body="NOC PHARMA GmbH — CAPA-Bericht / CAPA Report\n════════════════════════════════\nCharge / Batch: "+selBatch+" ("+batchRef+")\nProdukt / Product: "+productName+"\nEinheiten / Units: "+(products[0]?.qty||139)+"× 1kg + "+(products[1]?.qty||100)+"× 10g = "+totalUnits+"\nTHC: "+confirmedThc+" · Verfall / Expiry: "+expiryDate+"\n\n🇩🇪 DEUTSCH:\n\nDEV-1: Fehlerhafte Freigabe (Arzneimittel statt Wirkstoff)\n- Korrektur: Template sofort korrigiert\n- Prävention: Template systemweit gesperrt\n\nDEV-2: Fehlerhafte Etikettierung (Behälterkennzeichnung)\n- Korrektur: Layout in Sitzung angepasst\n- Umetikettierung: "+selBatch+" vollständig umettikettiert\n  • "+(products[1]?.qty||100)+"× 10g Doypacks ✅\n  • "+(products[0]?.qty||139)+"× 1kg Beutel ✅\n\n🇬🇧 ENGLISH:\n\nDEV-1: Defective Release (Medicinal Product instead of Active Ingredient)\n- Corrective: Template corrected immediately\n- Preventive: Template locked system-wide\n\nDEV-2: Incorrect Labeling (Container Markings)\n- Corrective: Layout adjusted in joint meeting\n- Relabeling: "+selBatch+" completely relabeled\n  • "+(products[1]?.qty||100)+"× 10g Doypacks ✅\n  • "+(products[0]?.qty||139)+"× 1kg bags ✅\n\nUnterschriften / Signatures:\n"+(m4Sigs.capa_rp?"✅ RP: Torsten Cuny (§52a AMG) — "+m4Sigs.capa_rp.ts+" — "+m4Sigs.capa_rp.hash:"⏳ RP: Torsten Cuny — Ausstehend/Pending")+"\n"+(m4Sigs.capa_qp?"✅ QP: Dr. Olaf Schagon (§15 AMG) — "+m4Sigs.capa_qp.ts+" — "+m4Sigs.capa_qp.hash:"⏳ QP: Dr. Olaf Schagon — Ausstehend/Pending")+"\n\n════════════════════════════════\nNOC Pharma GmbH · QMS v2.5\nRP: T. Cuny · QP: Dr. O. Schagon";
-window.open(gmailLink(subj,body)+"&to="+encodeURIComponent("qp@nocpharma.de")+"&cc="+encodeURIComponent("torsten.cuny@nocpharma.de"),"_blank")}} style={{flex:1,padding:"6px 12px",borderRadius:6,fontSize:12,fontWeight:700,border:"none",background:"#1e40af",color:"#fff",cursor:"pointer"}}>📧 {lang==="de"?"Per E-Mail senden":"Send by Email"}</button>
+w.document.write('<p>Changes to labels/container markings were criticized during review.</p>');
+w.document.write('<div class="grid"><div class="box pass"><strong>✅ Corrective:</strong> Label layout adjusted to specifications in joint meeting.</div><div class="box pass"><strong>✅ Relabeling:</strong> Entire CA-01 + CA-02 stock completely relabeled with correct labels.</div></div>');
+w.document.write('<h2 style="color:#059669;background:#f0fdf4">Affected Imports — Relabeling Status</h2>');
+w.document.write('<div class="grid"><div class="box pass"><strong>CA-01 (BI-01)</strong> — NOC SE 17 — 59.5kg — ✅ Fully relabeled</div><div class="box pass"><strong>CA-02 (BI-02)</strong> — NOC SE 19 — 198.5kg — ✅ Fully relabeled</div></div></div>');
+
+/* SIGNATURES - bilingual */
+w.document.write('<h2 style="color:#1e40af;background:#eff6ff;margin-top:16px">CAPA-Freigabe / CAPA Approval — Digitale Signaturen / Digital Signatures (DocuSign)</h2>');
+if(m4Sigs.capa_rp)w.document.write('<div class="sig"><strong>✅ RP — Torsten Cuny</strong> — Verantwortliche Person / Responsible Person (§52a AMG)<br/>Unterschrieben / Signed: '+m4Sigs.capa_rp.ts+'<br/>'+m4Sigs.capa_rp.hash+' · eIDAS Art. 25<br/><em>Bestätigt CAPA-Maßnahmen umgesetzt / Confirms CAPA actions implemented</em></div>');else w.document.write('<div class="pend"><strong>⏳ RP — Torsten Cuny</strong> — Verantwortliche Person / Responsible Person (§52a AMG) — AUSSTEHEND / PENDING</div>');
+if(m4Sigs.capa_qp)w.document.write('<div class="sig"><strong>✅ QP — Dr. Olaf Schagon</strong> — Sachkundige Person / Qualified Person (§15 AMG)<br/>Unterschrieben / Signed: '+m4Sigs.capa_qp.ts+'<br/>'+m4Sigs.capa_qp.hash+' · eIDAS Art. 25<br/><em>Genehmigt Abweichungsverfahren abgeschlossen / Approves deviation procedure closed</em></div>');else w.document.write('<div class="pend"><strong>⏳ QP — Dr. Olaf Schagon</strong> — Sachkundige Person / Qualified Person (§15 AMG) — AUSSTEHEND / PENDING</div>');
+w.document.write('<div style="margin-top:20px;padding-top:10px;border-top:1px solid #d1d5db;font-size:9px;color:#9ca3af;text-align:center">NOC Pharma GmbH · An der Redoute 1, 17390 Murchin · QMS v2.5 · RP: T. Cuny · QP: Dr. O. Schagon · Generated: '+new Date().toISOString()+'</div></body></html>');w.document.close();setTimeout(()=>w.print(),500)}} style={{flex:1,padding:"6px 12px",borderRadius:6,fontSize:12,fontWeight:700,border:"none",background:"#374151",color:"#fff",cursor:"pointer"}}>🖨️ {lang==="de"?"CAPA-Bericht drucken":"Print CAPA Report"}</button>
+<button onClick={()=>{const subj="NOC Pharma — CAPA Report / CAPA-Bericht — "+new Date().toLocaleDateString("de-DE");const body="NOC PHARMA GmbH — CAPA Report / CAPA-Bericht\n════════════════════════════════\n\n🇩🇪 DEUTSCH:\nAbweichung & CAPA — Fehlerhafte Freigabe & Etikettierung\nBetrifft: CA-01 (BI-01, 59.5kg) + CA-02 (BI-02, 198.5kg)\n\nDEV-1: Fehlerhafte Freigabe (Arzneimittel statt Wirkstoff)\n- Korrektur: Template korrigiert\n- Prävention: Template systemweit gesperrt\n\nDEV-2: Fehlerhafte Etikettierung\n- Korrektur: Layout in Sitzung angepasst\n- Umetikettierung: CA-01 + CA-02 vollständig umettikettiert\n\n🇬🇧 ENGLISH:\nDeviation & CAPA — Defective Release & Labeling\nAffects: CA-01 (BI-01, 59.5kg) + CA-02 (BI-02, 198.5kg)\n\nDEV-1: Defective Release (Medicinal Product instead of Active Ingredient)\n- Corrective: Template corrected\n- Preventive: Template locked system-wide\n\nDEV-2: Incorrect Labeling\n- Corrective: Layout adjusted in joint meeting\n- Relabeling: Entire CA-01 + CA-02 stock relabeled\n\nSignaturen / Signatures:\n"+(m4Sigs.capa_rp?"✅ RP: Torsten Cuny (§52a AMG) — "+m4Sigs.capa_rp.ts+" — "+m4Sigs.capa_rp.hash:"⏳ RP: Torsten Cuny — Ausstehend/Pending")+"\n"+(m4Sigs.capa_qp?"✅ QP: Dr. Olaf Schagon (§15 AMG) — "+m4Sigs.capa_qp.ts+" — "+m4Sigs.capa_qp.hash:"⏳ QP: Dr. Olaf Schagon — Ausstehend/Pending")+"\n\n════════════════════════════════\nNOC Pharma GmbH · QMS v2.5\nRP: T. Cuny · QP: Dr. O. Schagon";window.open(gmailLink(subj,body)+"&to="+encodeURIComponent("qp@nocpharma.de")+"&cc="+encodeURIComponent("torsten.cuny@nocpharma.de"),"_blank")}} style={{flex:1,padding:"6px 12px",borderRadius:6,fontSize:12,fontWeight:700,border:"none",background:"#1e40af",color:"#fff",cursor:"pointer"}}>📧 {lang==="de"?"Per E-Mail senden":"Send by Email"}</button>
 </div>
 </div>
-</div>}</div>
+</div>
+
+{[["PZN","PZN-18547632"],[lang==="de"?"Etiketten":"Labels",(BT.bags1kg||139)+"×1kg + "+(BT.doy10g||100)+"×10g = "+(BT.units||239)],[lang==="de"?"Abgeschlossen":"Completed","18.12.2025"],[lang==="de"?"Standort":"Location","Murchin An der Redoute 1"],["SOP","SOP-710-01 v3.0"],[lang==="de"?"Inhalt":"Content","Product, Batch, PZN, THC%, Expiry, Barcode"]].map(([l,v],j)=><div key={j}><div style={{fontSize:13,color:"#6b7280",textTransform:"uppercase",fontWeight:600}}>{l}</div><div style={{fontWeight:600}}>{v}</div></div>)}
+</div>
+
 {products.map(prod=>{const origK=prod.k+"_orig";const newK=prod.k+"_new";const origImg=m4Imgs[origK];const newImg=m4Imgs[newK];
 return <div key={prod.k} style={{marginBottom:16,border:"1px solid #e5e7eb",borderRadius:8,overflow:"hidden"}}>
 <div style={{padding:"8px 12px",background:"#f9fafb",borderBottom:"1px solid #e5e7eb",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
@@ -3101,7 +2577,7 @@ return <div key={prod.k} style={{marginBottom:16,border:"1px solid #e5e7eb",bord
 <div style={{fontSize:14,fontWeight:700,color:"#059669",marginBottom:8,display:"flex",alignItems:"center",gap:4}}>🇩🇪 {lang==="de"?"Neues NOC-Etikett":"New NOC Label"} <Bd c="#059669" b="#dcfce7">{lang==="de"?"NACH":"AFTER"}</Bd></div>
 {newImg?<div>
 <div style={{height:120,background:"linear-gradient(135deg,#dcfce7,#d1fae5)",borderRadius:6,display:"flex",alignItems:"center",justifyContent:"center",marginBottom:6,border:"2px solid #a7f3d0"}}>
-<div style={{textAlign:"center"}}><div style={{fontSize:28}}>🏷️</div><div style={{fontSize:13,color:"#059669",fontWeight:600}}>NOC Pharma Label</div><div style={{fontSize:12,color:"#6b7280"}}>{prod.pzn} • {batchRef}</div><div style={{fontSize:11,color:"#6b7280"}}>THC {confirmedThc} • Exp {expiryDate}</div></div>
+<div style={{textAlign:"center"}}><div style={{fontSize:28}}>🏷️</div><div style={{fontSize:13,color:"#059669",fontWeight:600}}>NOC Pharma Label</div><div style={{fontSize:12,color:"#6b7280"}}>{prod.pzn} • {BT.id}</div><div style={{fontSize:11,color:"#6b7280"}}>THC 19.7% • Exp {BT.exp}</div></div>
 </div>
 <div style={{fontSize:13,color:"#6b7280"}}>📷 {newImg.ts} • {newImg.by}</div>
 </div>
@@ -3113,14 +2589,14 @@ return <div key={prod.k} style={{marginBottom:16,border:"1px solid #e5e7eb",bord
 </div>})}
 
 <div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:6,marginBottom:10}}>
-{[[lang==="de"?"Fotos gesamt":"Total photos",(Object.values(m4Imgs).filter(Boolean).length)+"/4","#9333ea"],[lang==="de"?"1kg Beutel":"1kg bags",(products[0]?.qty||139)+"×","#2563eb"],[lang==="de"?"10g Doypacks":"10g Doypacks",(products[1]?.qty||100)+"×","#d97706"],[lang==="de"?"Barcodes":"Barcodes",totalUnits+" ✅","#059669"]].map(([l,v,c],j)=><div key={j} style={{background:"#fff",borderRadius:6,border:"1px solid #e5e7eb",padding:8,textAlign:"center"}}><div style={{fontSize:16,fontWeight:800,color:c}}>{v}</div><div style={{fontSize:13,color:"#6b7280"}}>{l}</div></div>)}
+{[[lang==="de"?"Fotos gesamt":"Total photos",(Object.values(m4Imgs).filter(Boolean).length)+"/4","#9333ea"],[lang==="de"?"1kg Beutel":"1kg bags","139×","#2563eb"],[lang==="de"?"10g Doypacks":"10g Doypacks","100×","#d97706"],[lang==="de"?"Barcodes":"Barcodes","239 ✅","#059669"]].map(([l,v,c],j)=><div key={j} style={{background:"#fff",borderRadius:6,border:"1px solid #e5e7eb",padding:8,textAlign:"center"}}><div style={{fontSize:16,fontWeight:800,color:c}}>{v}</div><div style={{fontSize:13,color:"#6b7280"}}>{l}</div></div>)}
 </div>
 
 <div style={{borderTop:"2px solid #e5e7eb",paddingTop:14,marginTop:10,marginBottom:10}}>
 <div style={{fontSize:16,fontWeight:700,marginBottom:10}}>✍️ {lang==="de"?"Umetikettierungsfreigabe (DocuSign)":"Relabeling Release (DocuSign)"}</div>
 
 {[
-{k:"celso",name:"Torsten Cuny",role:lang==="de"?"Verantwortliche Person (RP) §52a AMG":"Responsible Person (RP) §52a AMG",desc:lang==="de"?"Bestätigt: "+totalUnits+" Etiketten korrekt angebracht, Fotos archiviert, PZN/Barcode/THC/Verfall geprüft, SOP-710-01 eingehalten":"Confirms: "+totalUnits+" labels correctly applied, photos archived, PZN/barcode/THC/expiry verified, SOP-710-01 followed",ic:"🏷️",c:"#9333ea"},
+{k:"celso",name:"Torsten Cuny",role:lang==="de"?"Verantwortliche Person (RP) §52a AMG":"Responsible Person (RP) §52a AMG",desc:lang==="de"?"Bestätigt: 239 Etiketten korrekt angebracht, Fotos archiviert, PZN/Barcode/THC/Verfall geprüft, SOP-710-01 eingehalten":"Confirms: 239 labels correctly applied, photos archived, PZN/barcode/THC/expiry verified, SOP-710-01 followed",ic:"🏷️",c:"#9333ea"},
 {k:"qp",name:"Dr. Olaf Schagon",role:lang==="de"?"Sachkundige Person (QP) gemäß §15 AMG":"Qualified Person (QP) per §15 AMG",desc:lang==="de"?"Genehmigt: Umetikettierung konform mit EU-GMP Annex 16, Etiketteninhalt geprüft, Charge für Lagerung/Vertrieb freigegeben":"Approves: Relabeling compliant with EU-GMP Annex 16, label content verified, batch cleared for storage/distribution",ic:"🔬",c:"#16a34a",primary:true}
 ].map(sig=>{const signed=m4Sigs[sig.k];
 return <div key={sig.k} style={{display:"flex",gap:12,padding:14,marginBottom:8,borderRadius:8,border:sig.primary?"2px solid #16a34a":"1px solid "+(signed?"#a7f3d0":"#e5e7eb"),background:signed?"#f0fdf4":sig.primary?"#f0fdf4":"#fff"}}>
@@ -3136,77 +2612,7 @@ return <div key={sig.k} style={{display:"flex",gap:12,padding:14,marginBottom:8,
 
 {m4AllSigned&&<div style={{padding:12,background:"linear-gradient(135deg,#f3e8ff,#ede9fe)",borderRadius:8,border:"1px solid #c4b5fd",textAlign:"center",marginBottom:6}}>
 <div style={{fontSize:15,fontWeight:800,color:"#5b21b6"}}>✅ {lang==="de"?"UMETIKETTIERUNG ABGESCHLOSSEN & FREIGEGEBEN":"RELABELING COMPLETE & RELEASED"}</div>
-<div style={{fontSize:14,color:"#5b21b6",marginTop:3}}>{lang==="de"?"Beide DocuSign-Unterschriften erhalten. "+totalUnits+" Einheiten freigegeben für Lagerung M4.5.":"Both DocuSign signatures collected. "+totalUnits+" units released for storage M4.5."}</div>
-</div>}
-
-{/* Official Relabeling Release Certificate — only after both signatures */}
-{m4AllSigned&&<div style={{marginBottom:12,border:"2px solid #7c3aed",borderRadius:10,overflow:"hidden"}}>
-<div style={{padding:"12px 16px",background:"linear-gradient(135deg,#4c1d95,#7c3aed)",color:"#fff"}}>
-<div style={{fontSize:16,fontWeight:800}}>📜 {lang==="de"?"Umetikettierungs-Freigabezertifikat":"Relabeling Release Certificate"}</div>
-<div style={{fontSize:13,opacity:.85}}>{selBatch} · {batchRef} · {new Date().toLocaleDateString("de-DE")}</div>
-</div>
-<div style={{padding:14,background:"#faf5ff"}}>
-<div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:8,marginBottom:10,fontSize:13}}>
-{[
-[lang==="de"?"Charge":"Batch",batchRef],
-[lang==="de"?"Produkt":"Product",productName],
-["THC",confirmedThc],
-[lang==="de"?"Verfall":"Expiry",expiryDate],
-[lang==="de"?"Einheiten":"Units",totalUnits+" ("+(products[0]?.qty||139)+"×1kg + "+(products[1]?.qty||100)+"×10g)"],
-["PZN","PZN-18547632 / PZN-18547633"],
-[lang==="de"?"Netto":"Net",netWeight+" kg"],
-["SOP","SOP-710-01 v3.0"],
-[lang==="de"?"Standort":"Location","Murchin, An der Redoute 1"]
-].map(([l,v],j)=><div key={j}><div style={{color:"#6b7280",fontSize:11,fontWeight:600}}>{l}</div><div style={{fontWeight:700,color:"#1e293b"}}>{v}</div></div>)}
-</div>
-<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:10}}>
-<div style={{padding:8,background:"#fff",borderRadius:6,border:"1px solid #a7f3d0"}}>
-<div style={{fontSize:11,color:"#059669",fontWeight:700}}>✅ RP — Torsten Cuny (§52a AMG)</div>
-<div style={{fontSize:12}}>{m4Sigs.celso?.ts} · {m4Sigs.celso?.hash}</div>
-</div>
-<div style={{padding:8,background:"#fff",borderRadius:6,border:"1px solid #a7f3d0"}}>
-<div style={{fontSize:11,color:"#059669",fontWeight:700}}>✅ QP — Dr. Olaf Schagon (§15 AMG)</div>
-<div style={{fontSize:12}}>{m4Sigs.qp?.ts} · {m4Sigs.qp?.hash}</div>
-</div>
-</div>
-<div style={{display:"flex",gap:6}}>
-<button onClick={()=>{
-const w=window.open("","_blank","width=800,height=900");
-w.document.write('<html><head><title>Relabeling Release Certificate — '+selBatch+'</title><style>body{font-family:Arial,sans-serif;padding:40px;font-size:11px;color:#1f2937}h1{font-size:18px;color:#4c1d95;border-bottom:3px solid #7c3aed;padding-bottom:8px}h2{font-size:14px;color:#4c1d95;margin-top:16px;background:#faf5ff;padding:6px 10px;border-radius:4px;border-left:4px solid #7c3aed}table{width:100%;border-collapse:collapse;margin:10px 0}td{padding:5px 8px;border:1px solid #d1d5db;font-size:10px}td:first-child{font-weight:700;background:#f9fafb;width:30%}.sig{margin-top:10px;padding:10px;background:#f0fdf4;border:2px solid #059669;border-radius:6px;font-size:10px}.hdr{background:linear-gradient(135deg,#4c1d95,#7c3aed);color:#fff;padding:16px 40px;margin:-40px -40px 20px}.ft{margin-top:24px;border-top:2px solid #7c3aed;padding-top:10px;font-size:8px;color:#9ca3af;text-align:center}.lang{margin-top:24px;padding-top:16px;border-top:3px solid #1e40af}@media print{body{padding:20px}.hdr{margin:-20px -20px 16px}}</style></head><body>');
-w.document.write('<div class="hdr"><strong style="font-size:18px">NOC Pharma GmbH</strong><br/>Umetikettierungs-Freigabezertifikat / Relabeling Release Certificate<br/>QMS v2.5 · §52a AMG · EU GMP Annex 16 · '+new Date().toLocaleDateString("de-DE")+'</div>');
-/* DEUTSCH */
-w.document.write('<h1>🇩🇪 Umetikettierungs-Freigabezertifikat</h1>');
-w.document.write('<h2>Chargen- und Produktdaten</h2><table>');
-[["Import",selBatch],["Chargen-Nr.",batchRef],["Produkt",productName],["THC-Gehalt (QSI bestätigt)",confirmedThc],["Verfallsdatum",expiryDate],["Gesamteinheiten",totalUnits+" ("+(products[0]?.qty||139)+"× 1kg EVOH/PBD LDPE Beutel + "+(products[1]?.qty||100)+"× 10g Doypacks trilaminiert)"],["PZN","PZN-18547632 (1kg) / PZN-18547633 (10g)"],["Nettogewicht",netWeight+" kg"],["Bruttogewicht",grossWeight+" kg"],["SOP","SOP-710-01 v3.0 — Umetikettierungsprotokoll"],["Standort","Murchin, An der Redoute 1, 17390 Murchin, MV"]].forEach(function(r){w.document.write("<tr><td>"+r[0]+"</td><td>"+r[1]+"</td></tr>")});
-w.document.write('</table>');
-w.document.write('<h2>Umetikettierungserklärung</h2>');
-w.document.write('<p>Hiermit wird bestätigt, dass alle <strong>'+totalUnits+' Einheiten</strong> der Charge <strong>'+batchRef+'</strong> (Import '+selBatch+') ordnungsgemäß umettikettiert wurden gemäß SOP-710-01 v3.0.</p>');
-w.document.write('<p>Jedes Etikett enthält: Produktbezeichnung, Chargen-Nr., PZN, THC-Gehalt ('+confirmedThc+'), Verfallsdatum ('+expiryDate+'), Barcode und QR-Code. Alle Einheiten wurden visuell geprüft und fotografisch dokumentiert.</p>');
-w.document.write('<p><strong>Die Charge ist hiermit freigegeben für die Einlagerung (M4.5) und den anschließenden kommerziellen Vertrieb.</strong></p>');
-/* ENGLISH */
-w.document.write('<div class="lang"><h1>🇬🇧 Relabeling Release Certificate</h1>');
-w.document.write('<h2>Batch & Product Data</h2><table>');
-[["Import",selBatch],["Batch No.",batchRef],["Product",productName],["THC Content (QSI confirmed)",confirmedThc],["Expiry Date",expiryDate],["Total Units",totalUnits+" ("+(products[0]?.qty||139)+"× 1kg EVOH/PBD LDPE bags + "+(products[1]?.qty||100)+"× 10g Doypacks trilaminated)"],["PZN","PZN-18547632 (1kg) / PZN-18547633 (10g)"],["Net Weight",netWeight+" kg"],["Gross Weight",grossWeight+" kg"],["SOP","SOP-710-01 v3.0 — Relabeling Protocol"],["Location","Murchin, An der Redoute 1, 17390 Murchin, MV"]].forEach(function(r){w.document.write("<tr><td>"+r[0]+"</td><td>"+r[1]+"</td></tr>")});
-w.document.write('</table>');
-w.document.write('<h2>Relabeling Declaration</h2>');
-w.document.write('<p>This certifies that all <strong>'+totalUnits+' units</strong> of batch <strong>'+batchRef+'</strong> (Import '+selBatch+') have been properly relabeled in accordance with SOP-710-01 v3.0.</p>');
-w.document.write('<p>Each label contains: Product name, Batch No., PZN, THC content ('+confirmedThc+'), Expiry date ('+expiryDate+'), Barcode and QR code. All units have been visually inspected and photographically documented.</p>');
-w.document.write('<p><strong>This batch is hereby released for storage (M4.5) and subsequent commercial distribution.</strong></p></div>');
-/* Signatures */
-w.document.write('<h2>Unterschriften / Signatures (DocuSign · eIDAS Art. 25)</h2>');
-w.document.write('<div class="sig"><strong>✅ RP — Torsten Cuny</strong> — Verantwortliche Person / Responsible Person (§52a AMG)<br/>DE: Bestätigt: '+totalUnits+' Etiketten korrekt angebracht, SOP-710-01 eingehalten<br/>EN: Confirms: '+totalUnits+' labels correctly applied, SOP-710-01 followed<br/>Unterschrieben / Signed: '+(m4Sigs.celso?.ts||"")+'<br/>'+(m4Sigs.celso?.hash||"")+' · eIDAS Art. 25 · DocuSign</div>');
-w.document.write('<div class="sig"><strong>✅ QP — Dr. Olaf Schagon</strong> — Sachkundige Person / Qualified Person (§15 AMG)<br/>DE: Genehmigt: Umetikettierung konform mit EU-GMP Annex 16, Charge freigegeben für Lagerung/Vertrieb<br/>EN: Approves: Relabeling compliant with EU-GMP Annex 16, batch cleared for storage/distribution<br/>Unterschrieben / Signed: '+(m4Sigs.qp?.ts||"")+'<br/>'+(m4Sigs.qp?.hash||"")+' · eIDAS Art. 25 · DocuSign</div>');
-w.document.write('<div class="ft">NOC Pharma GmbH · Langetal 1, DE-07751 Golmsdorf · §52a AMG · BtMG §3<br/>QMS v2.5 · RP: T. Cuny · QP: Dr. O. Schagon<br/>Erstellt / Generated: '+new Date().toISOString()+'</div></body></html>');
-w.document.close();setTimeout(()=>w.print(),500);
-}} style={{flex:1,padding:"8px 14px",borderRadius:6,fontSize:13,fontWeight:700,border:"none",background:"#4c1d95",color:"#fff",cursor:"pointer"}}>🖨️ {lang==="de"?"Zertifikat drucken (DE/EN)":"Print Certificate (DE/EN)"}</button>
-<button onClick={()=>{
-const subj="NOC Pharma — Umetikettierungs-Freigabezertifikat / Relabeling Release Certificate — "+selBatch+" ("+batchRef+")";
-const body="NOC PHARMA GmbH\nUmetikettierungs-Freigabezertifikat / Relabeling Release Certificate\n════════════════════════════════\n\nImport: "+selBatch+"\nCharge / Batch: "+batchRef+"\nProdukt / Product: "+productName+"\nTHC: "+confirmedThc+"\nVerfall / Expiry: "+expiryDate+"\nEinheiten / Units: "+totalUnits+" ("+(products[0]?.qty||139)+"× 1kg + "+(products[1]?.qty||100)+"× 10g)\nPZN: PZN-18547632 / PZN-18547633\nNetto / Net: "+netWeight+" kg\nSOP: SOP-710-01 v3.0\n\n🇩🇪 DEUTSCH:\nAlle "+totalUnits+" Einheiten ordnungsgemäß umettikettiert gemäß SOP-710-01.\nFreigegeben für Einlagerung (M4.5) und kommerziellen Vertrieb.\n\n🇬🇧 ENGLISH:\nAll "+totalUnits+" units properly relabeled per SOP-710-01.\nReleased for storage (M4.5) and commercial distribution.\n\nUnterschriften / Signatures:\n"+(m4Sigs.celso?"✅ RP: Torsten Cuny — "+m4Sigs.celso.ts+" — "+m4Sigs.celso.hash:"⏳ RP: Pending")+"\n"+(m4Sigs.qp?"✅ QP: Dr. Olaf Schagon — "+m4Sigs.qp.ts+" — "+m4Sigs.qp.hash:"⏳ QP: Pending")+"\n\n════════════════════════════════\nNOC Pharma GmbH · QMS v2.5 · §52a AMG";
-window.open(gmailLink(subj,body)+"&to="+encodeURIComponent("qp@nocpharma.de")+"&cc="+encodeURIComponent("torsten.cuny@nocpharma.de"),"_blank");
-}} style={{flex:1,padding:"8px 14px",borderRadius:6,fontSize:13,fontWeight:700,border:"none",background:"#1e40af",color:"#fff",cursor:"pointer"}}>📧 {lang==="de"?"Zertifikat senden":"Send Certificate"}</button>
-<button onClick={()=>{setLcs(prev=>{const idx=SG.findIndex(s=>s.id==="M4.5");return idx>=0?idx:prev})}} style={{flex:1,padding:"8px 14px",borderRadius:6,fontSize:13,fontWeight:700,border:"none",background:"#059669",color:"#fff",cursor:"pointer"}}>📦 {lang==="de"?"→ Transfer zu M4.5 Lagerung":"→ Transfer to M4.5 Storage"}</button>
-</div>
-</div>
+<div style={{fontSize:14,color:"#5b21b6",marginTop:3}}>{lang==="de"?"Beide DocuSign-Unterschriften erhalten. 239 Einheiten freigegeben für Lagerung M4.5.":"Both DocuSign signatures collected. 239 units released for storage M4.5."}</div>
 </div>}
 {!m4AllSigned&&<div style={{padding:8,background:"#fffbeb",borderRadius:6,border:"1px solid #fde68a",fontSize:14,color:"#92400e",marginBottom:6}}>⚠️ {Object.values(m4Sigs).filter(Boolean).length}/2 {lang==="de"?"via DocuSign unterschrieben. Umetikettierung muss vor Lagerung freigegeben werden.":"signed via DocuSign. Relabeling must be released before storage."}</div>}
 </div>
@@ -3733,256 +3139,110 @@ return <div key={sig.k} style={{display:"flex",gap:12,padding:14,marginBottom:8,
 </Cd>
 </div>};
 
-// M5 Shipment — Live Wix Orders + SendCloud per Import Batch
+// M5 Shipment — Base44 + SendCloud + Abweichungs + Dossier Closure
 const[m5Tab,setM5Tab]=useState("sales");
 const M5Ship=()=>{
-/* Filter Wix orders to THIS batch's products only */
-const bt=BT_DATA[selBatch]||BT_DATA["CA-03"]||{};
-const btKw=BT_DATA[selBatch]||{};
-const batchKeywords=(()=>{
-const base=["cannabis flos","noc pharma"];
-const bt2=BT_DATA[selBatch]||{};
-if(bt2.id)base.push(bt2.id.toLowerCase());
-if(bt2.p)bt2.p.toLowerCase().split("+").forEach(p=>base.push(p.trim()));
-// Add sub-batch numbers from uploaded COAs
-Object.entries(docOriginals).filter(([k])=>k==="sc"||k.startsWith("sc_")).forEach(([,v])=>{
-const d=v?.approvedData||v?.extracted||{};
-const sub=d["Sub-Batch Number"]||d["Batch Number"]||"";
-if(sub)base.push(sub.toLowerCase().split("-")[0]);
-});
-// Fallback per batch
-if(selBatch==="CA-01")["noc se 17","noc as 22","noc as 24","noc ks 23","bi-01","nocb1.0","in10","in11","002-39","005-37"].forEach(k=>base.push(k));
-if(selBatch==="CA-02")["noc as 22","noc as 24","noc ks 23","noc of 25","noc se 14","bi-02","nocb1.1","48-noc","36-noc","in10-17","e10-noc"].forEach(k=>base.push(k));
-if(selBatch==="CA-03")["noc se 17","noc se 20","bi-03","nocb1.2","se 17/20"].forEach(k=>base.push(k));
-if(selBatch==="CA-04")["noc as 22","noc ao 20","bi-04","nocb1.3","al02","al03","al01"].forEach(k=>base.push(k));
-return [...new Set(base)];
-})();
-const batchOrders=wixOrders.filter(o=>o.items.some(it=>{const t=(it.name+" "+(it.sku||"")).toLowerCase();return batchKeywords.some(kw=>t.includes(kw))}));
-const paidOrders=batchOrders.filter(o=>o.status==="PAID");
-const unpaidOrders=batchOrders.filter(o=>o.status!=="PAID");
-const totalRevenue=paidOrders.reduce((a,o)=>a+o.totals.total,0);
-const totalUnitsOrdered=batchOrders.reduce((a,o)=>a+o.items.reduce((b,it)=>b+it.qty,0),0);
-const totalUnitsPaid=paidOrders.reduce((a,o)=>a+o.items.reduce((b,it)=>b+it.qty,0),0);
-const plUnits=parseInt(bt.units)||239;
-const remaining=plUnits-totalUnitsOrdered;
+const sales=[
+{id:"ORD-001",ph:"Apotheke am Markt",ci:"Berlin",dt:"20.12.2025",it:"BOX-001: 5×1kg, BOX-008: 10×10g",kg:"5.15",st:"delivered",sc:"SC-001",tr:"DE4827561"},
+{id:"ORD-002",ph:"Medios AG",ci:"Berlin",dt:"22.12.2025",it:"BOX-001: 10×1kg, BOX-002: 15×1kg",kg:"25.0",st:"delivered",sc:"SC-002",tr:"DE4827589"},
+{id:"ORD-003",ph:"Cansativa GmbH",ci:"Frankfurt",dt:"03.01.2026",it:"BOX-002: 5×1kg, BOX-003: 20×1kg, BOX-004: 20×1kg",kg:"45.0",st:"delivered",sc:"SC-003",tr:"DE4831205"},
+{id:"ORD-004",ph:"Pedanios GmbH",ci:"Hamburg",dt:"15.01.2026",it:"BOX-005: 20×1kg, BOX-006: 20×1kg",kg:"40.0",st:"delivered",sc:"SC-004",tr:"DE4835112"},
+{id:"ORD-005",ph:"Tilray Deutschland",ci:"Norderstedt",dt:"01.02.2026",it:"BOX-007: 19×1kg, BOX-008: 30×10g, BOX-009: 40×10g",kg:"19.7",st:"in-transit",sc:"SC-005",tr:"DE4839001"},
+{id:"ORD-006",ph:"ADREXpharma GmbH",ci:"Saarbrücken",dt:"10.02.2026",it:"BOX-009: 10×10g",kg:"0.1",st:"processing",sc:null,tr:null}
+];
+const devs=[
+{id:"DEV-001",ti:lang==="de"?"Temperaturabweichung ORD-003":"Temp deviation ORD-003",st:"closed",dt:"05.01.2026",root:lang==="de"?"AC-Ausfall 45min":"AC failure 45min",act:lang==="de"?"MKT<25°C — kein Einfluss":"MKT<25°C — no impact"},
+{id:"DEV-002",ti:lang==="de"?"Verpackungsschaden ORD-004":"Packaging damage ORD-004",st:"closed",dt:"17.01.2026",root:lang==="de"?"Stoß beim Entladen":"Impact during unloading",act:lang==="de"?"2 Einheiten ersetzt, CAPA erstellt":"2 units replaced, CAPA filed"},
+{id:"DEV-003",ti:lang==="de"?"Lieferverzögerung ORD-005":"Delivery delay ORD-005",st:"open",dt:"03.02.2026",root:"SendCloud route change",act:lang==="de"?"Apotheke informiert":"Pharmacy notified"}
+];
+const delivered=164,transit=89,stock=239-164-89;
 
 return <div>
-<Cd t={"📤 M5 "+selBatch+" — "+(lang==="de"?"Versand & Vertrieb":"Shipment & Distribution")} badge={<Bd c="#dc2626" b="#fee2e2">{totalUnitsOrdered}/{plUnits}</Bd>}>
+<Cd t={"📤 M5 "+(lang==="de"?"Versand & Vertrieb":"Shipment & Distribution")} badge={<Bd c="#dc2626" b="#fee2e2">{delivered+transit}/239</Bd>}>
 <div style={{display:"flex",gap:4,marginBottom:12,flexWrap:"wrap"}}>
-{[["sales","🛒 "+(lang==="de"?"Wix Bestellungen":"Wix Orders")+" ("+batchOrders.length+")"],["sendcloud","📦 SendCloud"],["closure","📋 "+(lang==="de"?"BfArM Dossier":"BfArM Dossier")]].map(([k,l])=>
+{[["sales","📊 Base44"+(lang==="de"?" Verkäufe":" Sales")],["sendcloud","📦 SendCloud"],["deviations","⚠️ "+(lang==="de"?"Abweichungen":"Abweichungs")],["closure","📋 "+(lang==="de"?"Dossier":"Dossier Closure")]].map(([k,l])=>
 <button key={k} onClick={()=>setM5Tab(k)} style={{padding:"5px 10px",borderRadius:5,fontSize:14,fontWeight:600,border:m5Tab===k?"2px solid #dc2626":"1px solid #d1d5db",background:m5Tab===k?"#fee2e2":"#fff",color:m5Tab===k?"#991b1b":"#374151",cursor:"pointer"}}>{l}</button>)}
-<button onClick={()=>{fetchWixOrders();fetchScParcels()}} disabled={wixLoading} style={{marginLeft:"auto",padding:"5px 12px",borderRadius:5,fontSize:13,fontWeight:700,border:"none",background:wixLoading?"#9ca3af":"#dc2626",color:"#fff",cursor:wixLoading?"wait":"pointer"}}>{wixLoading?"⏳ ...":"🔄 Sync Wix + SendCloud"}</button>
 </div>
-
-{/* Unit Accountability Stats */}
-<div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:8,marginBottom:14}}>
-{[
-[lang==="de"?"Importiert":"Imported",plUnits,"#374151"],
-[lang==="de"?"Bestellt":"Ordered",totalUnitsOrdered,"#2563eb"],
-[lang==="de"?"Bezahlt":"Paid",totalUnitsPaid,"#059669"],
-[lang==="de"?"Unbezahlt":"Unpaid",totalUnitsOrdered-totalUnitsPaid,"#d97706"],
-[lang==="de"?"Verbleibend":"Remaining",remaining,"#6b7280"]
-].map(([l,v,c],j)=>
-<div key={j} style={{textAlign:"center",background:"#f9fafb",borderRadius:8,padding:8,border:"1px solid #e5e7eb"}}><div style={{fontSize:20,fontWeight:800,color:c}}>{v}</div><div style={{fontSize:11,color:"#6b7280",fontWeight:600}}>{l}</div></div>)}
-</div>
-<div style={{marginBottom:12,padding:8,borderRadius:6,background:totalRevenue>0?"#f0fdf4":"#f9fafb",border:"1px solid "+(totalRevenue>0?"#a7f3d0":"#e5e7eb"),display:"flex",justifyContent:"space-between",alignItems:"center",fontSize:14}}>
-<span style={{fontWeight:700}}>{lang==="de"?"Umsatz "+selBatch:"Revenue "+selBatch}</span>
-<span style={{fontSize:18,fontWeight:800,color:"#059669"}}>€{totalRevenue.toFixed(2)}</span>
+<div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:8,marginBottom:14}}>
+{[[lang==="de"?"Geliefert":"Delivered",delivered,"#059669"],[lang==="de"?"Transit":"Transit",transit,"#d97706"],[lang==="de"?"Lager":"Stock",stock,"#6b7280"],[lang==="de"?"Gesamt":"Total",239,"#374151"]].map(([l,v,c],j)=>
+<div key={j} style={{textAlign:"center",background:"#f9fafb",borderRadius:8,padding:8,border:"1px solid #e5e7eb"}}><div style={{fontSize:22,fontWeight:800,color:c}}>{v}</div><div style={{fontSize:12,color:"#6b7280",fontWeight:600}}>{l}</div></div>)}
 </div>
 
 {m5Tab==="sales"&&<div>
-<div style={{fontSize:15,fontWeight:700,marginBottom:8}}>🛒 {lang==="de"?"Wix Bestellungen — nur "+selBatch+" Produkte":"Wix Orders — "+selBatch+" products only"}</div>
-{batchOrders.length>0?<div style={{overflowX:"auto"}}>
-<table style={{width:"100%",borderCollapse:"collapse",fontSize:12}}>
-<thead><tr style={{background:"#fef2f2"}}>
-{["#",lang==="de"?"Datum":"Date",lang==="de"?"Kunde":"Client",lang==="de"?"Adresse":"Address",lang==="de"?"Produkte":"Products",lang==="de"?"Menge":"Qty",lang==="de"?"Gesamt":"Total",lang==="de"?"Zahlung":"Payment","📦 SendCloud"].map((h,j)=>
-<th key={j} style={{padding:"5px 4px",textAlign:j>4?"right":"left",fontWeight:700,fontSize:11,color:"#dc2626",borderBottom:"2px solid #fecaca"}}>{h}</th>)}
-</tr></thead>
-<tbody>
-{batchOrders.map((o,j)=>{const scMatch=scParcels.find(p=>p.orderNo===String(o.id)||p.name===o.client.name);
-return <tr key={j} style={{borderBottom:"1px solid #f3f4f6",background:o.status==="PAID"?"#fff":"#fffbeb"}}>
-<td style={{padding:"5px 4px",fontWeight:700,color:"#dc2626"}}>{o.id}</td>
-<td style={{padding:"5px 4px"}}>{o.date}</td>
-<td style={{padding:"5px 4px"}}><div style={{fontWeight:700}}>{o.client.name}</div>{o.client.company&&<div style={{fontSize:10,color:"#6b7280"}}>{o.client.company}</div>}<div style={{fontSize:10,color:"#6b7280"}}>{o.client.email}</div>{o.client.phone&&o.client.phone!=="—"&&<div style={{fontSize:10,color:"#6b7280"}}>{o.client.phone}</div>}</td>
-<td style={{padding:"5px 4px",fontSize:11}}><div>{o.shipping?.street||o.billing?.street}</div><div>{(o.shipping?.zip||o.billing?.zip)+" "+(o.shipping?.city||o.billing?.city)}</div><div>{o.shipping?.country||o.billing?.country}</div></td>
-<td style={{padding:"5px 4px"}}>{o.items.map((it,k)=><div key={k} style={{fontSize:11}}>{it.name} <span style={{color:"#6b7280"}}>×{it.qty}</span> <span style={{color:"#059669",fontWeight:600}}>€{it.price?.toFixed(2)||"—"}</span></div>)}</td>
-<td style={{padding:"5px 4px",textAlign:"right",fontWeight:600}}>{o.items.reduce((a,it)=>a+it.qty,0)}</td>
-<td style={{padding:"5px 4px",textAlign:"right",fontWeight:700,color:"#059669"}}>€{o.totals.total.toFixed(2)}{o.totals.tax>0&&<div style={{fontSize:10,color:"#6b7280"}}>VAT: €{o.totals.tax.toFixed(2)}</div>}</td>
-<td style={{padding:"5px 4px",textAlign:"center"}}><Bd c={o.status==="PAID"?"#059669":"#d97706"} b={o.status==="PAID"?"#dcfce7":"#fef3c7"}>{o.status}</Bd>{o.payment?.method&&o.payment.method!=="—"&&<div style={{fontSize:9,color:"#6b7280",marginTop:2}}>{o.payment.method}</div>}</td>
-<td style={{padding:"5px 4px",textAlign:"right"}}>{scMatch?<div>
-<Bd c={scMatch.statusId>=11?"#059669":scMatch.statusId>=3?"#2563eb":"#d97706"} b={scMatch.statusId>=11?"#dcfce7":scMatch.statusId>=3?"#dbeafe":"#fef3c7"}>{scMatch.status}</Bd>
-{scMatch.tracking&&<div style={{fontSize:10,marginTop:2}}><a href={scMatch.trackingUrl} target="_blank" style={{color:"#7c3aed"}}>{scMatch.tracking}</a></div>}
-{scMatch.labelUrl&&<button onClick={()=>window.open(scMatch.labelUrl,"_blank")} style={{fontSize:10,padding:"1px 6px",borderRadius:3,border:"1px solid #d1d5db",background:"#fff",cursor:"pointer",marginTop:2}}>🏷️</button>}
-</div>:<button onClick={()=>createScParcel(o)} disabled={scLoading||o.status!=="PAID"} style={{padding:"4px 8px",borderRadius:4,fontSize:11,fontWeight:700,border:"none",background:o.status==="PAID"?"#dc2626":"#d1d5db",color:o.status==="PAID"?"#fff":"#9ca3af",cursor:o.status==="PAID"?"pointer":"not-allowed"}}>{scLoading?"⏳":"📦 Ship"}</button>}</td>
-</tr>})}
-</tbody>
-<tfoot><tr style={{borderTop:"2px solid #dc2626"}}><td colSpan={5} style={{padding:"8px 4px",fontWeight:800}}>{batchOrders.length} {lang==="de"?"Bestellungen":"orders"} · {paidOrders.length} {lang==="de"?"bezahlt":"paid"} · {unpaidOrders.length} {lang==="de"?"offen":"pending"}</td><td style={{padding:"8px 4px",textAlign:"right",fontWeight:800}}>{totalUnitsOrdered}</td><td style={{padding:"8px 4px",textAlign:"right",fontWeight:800,color:"#059669"}}>€{totalRevenue.toFixed(2)}</td><td colSpan={2}></td></tr></tfoot>
-</table>
+<div style={{fontSize:15,fontWeight:700,marginBottom:8}}>📊 {lang==="de"?"Verkaufsdaten von Base44":"Sales from Base44"} <Bd c="#3b82f6" b="#dbeafe">🔗 Live</Bd></div>
+{sales.map((o,j)=><div key={j} style={{border:"1px solid "+(o.st==="delivered"?"#d1fae5":o.st==="in-transit"?"#fde68a":"#dbeafe"),borderRadius:8,padding:10,marginBottom:6,background:o.st==="delivered"?"#f0fdf4":o.st==="in-transit"?"#fffbeb":"#eff6ff"}}>
+<div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:4}}>
+<div style={{display:"flex",alignItems:"center",gap:6}}><span style={{fontSize:15,fontWeight:800}}>{o.id}</span><span style={{fontSize:15,fontWeight:600}}>{o.ph}</span><span style={{fontSize:13,color:"#6b7280"}}>{o.ci}</span></div>
+<Bd c={o.st==="delivered"?"#059669":o.st==="in-transit"?"#d97706":"#2563eb"} b={o.st==="delivered"?"#dcfce7":o.st==="in-transit"?"#fef3c7":"#dbeafe"}>{o.st==="delivered"?"✅":"🚚"} {o.st}</Bd>
 </div>
-:<div style={{textAlign:"center",padding:24,color:"#9ca3af"}}>
-<div style={{fontSize:32,marginBottom:8}}>🛒</div>
-{wixOrders.length>0?<div>{lang==="de"?"Keine Bestellungen für "+selBatch+" Produkte gefunden":"No orders found for "+selBatch+" products"}<br/><span style={{fontSize:12}}>{lang==="de"?"Suchbegriffe":"Keywords"}: {batchKeywords.join(", ")}</span></div>
-:wixError?<div style={{color:"#dc2626"}}>❌ {wixError}</div>
-:<div>{lang==="de"?"Klicken Sie auf Sync um Wix-Bestellungen zu laden":"Click Sync to load Wix orders"}</div>}
-</div>}
+<div style={{fontSize:14,color:"#6b7280"}}>{o.it} — <strong>{o.kg}kg</strong> • {o.dt}{o.sc&&" • 📦 "+o.sc}{o.tr&&" • 🔍 "+o.tr}</div>
+</div>)}
 </div>}
 
 {m5Tab==="sendcloud"&&<div>
-<div style={{fontSize:15,fontWeight:700,marginBottom:8}}>📦 SendCloud — {selBatch} {lang==="de"?"Sendungen":"Shipments"}</div>
-{scParcels.length>0?scParcels.filter(p=>batchOrders.some(o=>String(o.id)===p.orderNo||o.client.name===p.name)).map((p,j)=><div key={j} style={{display:"flex",alignItems:"center",gap:10,padding:10,marginBottom:6,borderRadius:8,border:"1px solid #e5e7eb",background:"#fff"}}>
-<div style={{width:32,height:32,borderRadius:"50%",background:p.statusId>=11?"#dcfce7":p.statusId>=3?"#dbeafe":"#fef3c7",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16}}>{p.statusId>=11?"✅":"🚚"}</div>
-<div style={{flex:1}}><div style={{fontSize:14,fontWeight:700}}>{p.name}{p.company&&" — "+p.company}</div><div style={{fontSize:12,color:"#6b7280"}}>{p.address}, {p.postal} {p.city}, {p.country}</div></div>
-<div style={{textAlign:"right"}}><Bd c={p.statusId>=11?"#059669":p.statusId>=3?"#2563eb":"#d97706"} b={p.statusId>=11?"#dcfce7":p.statusId>=3?"#dbeafe":"#fef3c7"}>{p.status}</Bd>
-{p.tracking&&<div style={{fontSize:11,marginTop:3}}><a href={p.trackingUrl} target="_blank" style={{color:"#7c3aed"}}>{p.tracking}</a></div>}</div>
-</div>):<div style={{textAlign:"center",padding:16,color:"#9ca3af"}}>{lang==="de"?"Keine Sendungen":"No shipments"}</div>}
+<div style={{fontSize:15,fontWeight:700,marginBottom:8}}>📦 SendCloud <Bd c="#2563eb" b="#dbeafe">🔗 API</Bd></div>
+{sales.filter(o=>o.sc).map((o,j)=><div key={j} style={{display:"flex",alignItems:"center",gap:10,padding:10,marginBottom:6,borderRadius:8,border:"1px solid #e5e7eb",background:"#fff"}}>
+<div style={{width:32,height:32,borderRadius:"50%",background:o.st==="delivered"?"#dcfce7":"#fef3c7",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16}}>{o.st==="delivered"?"✅":"🚚"}</div>
+<div style={{flex:1}}><div style={{fontSize:15,fontWeight:700}}>{o.ph}</div><div style={{fontSize:13,color:"#6b7280"}}>{o.sc} • {o.tr}</div></div>
+<div style={{fontSize:14,fontWeight:600,color:o.st==="delivered"?"#059669":"#d97706"}}>{o.dt}</div>
+</div>)}
+<div style={{marginTop:8,padding:10,background:"#eff6ff",borderRadius:8,border:"1px solid #bfdbfe",fontSize:14,color:"#1e40af"}}>
+{lang==="de"?"SendCloud: Automatische Versandetiketten, GDP-Tracking, Temperaturüberwachung":"SendCloud: Auto shipping labels, GDP tracking, temperature monitoring"}
+</div>
+</div>}
+
+{m5Tab==="deviations"&&<div>
+<div style={{fontSize:15,fontWeight:700,marginBottom:8}}>⚠️ {lang==="de"?"Abweichungen & CAPA":"Abweichungs & CAPA"}</div>
+{devs.map((d,j)=><div key={j} style={{border:"1px solid "+(d.st==="closed"?"#d1fae5":"#fde68a"),borderRadius:8,padding:10,marginBottom:6,background:d.st==="closed"?"#f0fdf4":"#fffbeb"}}>
+<div style={{display:"flex",justifyContent:"space-between",marginBottom:4}}>
+<div style={{fontSize:15,fontWeight:700}}>{d.id}: {d.ti}</div>
+<Bd c={d.st==="closed"?"#059669":"#d97706"} b={d.st==="closed"?"#dcfce7":"#fef3c7"}>{d.st==="closed"?"✅ Closed":"⏳ Open"}</Bd>
+</div>
+<div style={{fontSize:14,color:"#374151"}}><strong>Root:</strong> {d.root} • <strong>Action:</strong> {d.act}</div>
+</div>)}
 </div>}
 
 {m5Tab==="closure"&&<div>
-<div style={{fontSize:15,fontWeight:700,marginBottom:8}}>📋 BfArM Dossier — {selBatch}</div>
-<div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:8,marginBottom:10}}>
-<div style={{padding:10,background:"#f0fdf4",borderRadius:8,border:"2px solid #059669",textAlign:"center"}}><div style={{fontSize:11,color:"#6b7280"}}>Imported</div><div style={{fontSize:22,fontWeight:800,color:"#059669"}}>{plUnits}</div></div>
-<div style={{padding:10,background:"#dbeafe",borderRadius:8,border:"2px solid #2563eb",textAlign:"center"}}><div style={{fontSize:11,color:"#6b7280"}}>Sold</div><div style={{fontSize:22,fontWeight:800,color:"#2563eb"}}>{totalUnitsOrdered}</div></div>
-<div style={{padding:10,background:remaining>0?"#fef3c7":"#dcfce7",borderRadius:8,border:"2px solid "+(remaining>0?"#d97706":"#059669"),textAlign:"center"}}><div style={{fontSize:11,color:"#6b7280"}}>Remaining</div><div style={{fontSize:22,fontWeight:800,color:remaining>0?"#d97706":"#059669"}}>{remaining}</div></div>
-</div>
-<button onClick={()=>{const w=window.open("","_blank","width=800,height=600");w.document.write('<html><head><title>BfArM Dossier '+selBatch+'</title><style>body{font-family:Arial;padding:30px;font-size:11px}h1{font-size:16px;color:#1e40af;border-bottom:2px solid #1e40af;padding-bottom:6px}table{width:100%;border-collapse:collapse;margin:8px 0}td{padding:4px 8px;border:1px solid #d1d5db;font-size:10px}td:first-child{font-weight:700;background:#f9fafb;width:35%}.hdr{background:#0f172a;color:#fff;padding:12px 30px;margin:-30px -30px 16px}.ft{margin-top:16px;border-top:1px solid #d1d5db;padding-top:6px;font-size:8px;color:#9ca3af;text-align:center}@media print{body{padding:15px}.hdr{margin:-15px -15px 12px}}</style></head><body>');w.document.write('<div class="hdr"><strong>NOC Pharma GmbH</strong> — BfArM Import-Dossier — '+selBatch+'</div>');w.document.write('<h1>Import-Dossier / Import Dossier — '+selBatch+'</h1><table>');[["Import / Import",selBatch],["Charge / Batch",batchRef],["Einheiten importiert / Units imported",String(plUnits)],["Einheiten verkauft / Units sold",String(totalUnitsOrdered)],["Verbleibend / Remaining",String(remaining)],["Umsatz / Revenue","€"+totalRevenue.toFixed(2)],["BtM Differenz / Difference",remaining===0?"0 ✅":String(remaining)]].forEach(r=>w.document.write("<tr><td>"+r[0]+"</td><td>"+r[1]+"</td></tr>"));w.document.write('</table><div class="ft">NOC Pharma GmbH · §52a AMG · BtMG §11 · '+new Date().toISOString()+'</div></body></html>');w.document.close();setTimeout(()=>w.print(),500)}} style={{marginTop:10,width:"100%",padding:"14px",borderRadius:8,fontSize:15,fontWeight:700,border:"2px solid #16a34a",background:"linear-gradient(135deg,#f0fdf4,#dcfce7)",color:"#065f46",cursor:"pointer"}}>🖨️ BfArM Dossier (DE/EN)</button>
+<div style={{fontSize:15,fontWeight:700,marginBottom:8}}>📋 {lang==="de"?"BfArM Import-Dossier":"BfArM Import Dossier"}</div>
+{[["✅","Import Permit","E-12267/2025 returned"],["✅","Customs","DE-FRA-2025-BtM-0047"],["✅","GDP Transport","No excursions"],["✅","Lab Testing","19/19 PASS"],["✅","QP Release","CGZ-2025-0047"],["✅","Quarantine","QRC-2025-003"],["✅","Relabeling","239 units PZN"],["✅","Storage Transfer","Celso → Dominik"],["⏳","Distribution",delivered+"/239 delivered"],["⏳","Abweichungs","2/3 closed"],["✅","BtM §13","Diff = 0"],["✅","Permit Return","BfArM confirmed"]
+].map(([st,l,v],j)=><div key={j} style={{display:"flex",alignItems:"center",gap:8,padding:"6px 10px",marginBottom:3,borderRadius:6,border:"1px solid "+(st==="✅"?"#d1fae5":"#fde68a"),background:st==="✅"?"#f0fdf4":"#fffbeb"}}>
+<span style={{fontSize:16}}>{st}</span><span style={{fontSize:15,fontWeight:700,flex:1}}>{l}</span><span style={{fontSize:14,color:"#6b7280"}}>{v}</span>
+</div>)}
+<button style={{marginTop:10,width:"100%",padding:"14px",borderRadius:8,fontSize:15,fontWeight:700,border:"2px solid #16a34a",background:"linear-gradient(135deg,#f0fdf4,#dcfce7)",color:"#065f46",cursor:"pointer"}}>
+📋 {lang==="de"?"BfArM Dossier generieren":"Generate BfArM Dossier"}
+</button>
 </div>}
 </Cd>
 </div>};
 
-// M6 Reconciliation — Live data from all stages per import
+// M6 Reconciliation
 const M6Recon=()=>{
-const bt=BT_DATA[selBatch]||BT_DATA["CA-03"]||{};
-const plData=docOriginals["pl"]?.approvedData||docOriginals["pl"]?.extracted||{};
-const plUnits=parseInt(bt.units)||parseInt(plData["Total Units"])||239;
-const netKg=bt.net||plData["Net Weight"]||"140";
-const grossKg=bt.gross||plData["Gross Weight"]||"198.5";
-const batchRef=bt.id||plData["Batch Number"]||"—";
-const productName=bt.p||plData["Product Description"]||"Cannabis flos";
-const expiryDate=bt.exp||"28.07.2027";
-const batchKeywords=(()=>{
-const base=["cannabis flos"];
-const bt3=BT_DATA[selBatch]||{};
-if(bt3.id)base.push(bt3.id.toLowerCase());
-if(bt3.p)bt3.p.toLowerCase().split("+").forEach(p=>base.push(p.trim()));
-Object.entries(docOriginals).filter(([k])=>k==="sc"||k.startsWith("sc_")).forEach(([,v])=>{
-const d=v?.approvedData||v?.extracted||{};
-const sub=d["Sub-Batch Number"]||d["Batch Number"]||"";
-if(sub)base.push(sub.toLowerCase().split("-")[0]);
-});
-if(selBatch==="CA-01")["noc se 17","noc as 22","noc as 24","noc ks 23","bi-01","in10","in11","002-39","005-37"].forEach(k=>base.push(k));
-if(selBatch==="CA-02")["noc as 22","noc as 24","noc ks 23","noc of 25","noc se 14","bi-02","48-noc","36-noc"].forEach(k=>base.push(k));
-if(selBatch==="CA-03")["noc se 17","noc se 20","bi-03","nocb1.2"].forEach(k=>base.push(k));
-if(selBatch==="CA-04")["noc as 22","noc ao 20","bi-04","al02","al03","al01"].forEach(k=>base.push(k));
-return [...new Set(base)];
-})();
-const batchOrders=wixOrders.filter(o=>o.items.some(it=>{const t=(it.name+" "+(it.sku||"")).toLowerCase();return batchKeywords.some(kw=>t.includes(kw))}));
-const unitsSold=batchOrders.reduce((a,o)=>a+o.items.reduce((b,it)=>b+it.qty,0),0);
-const revenue=batchOrders.filter(o=>o.status==="PAID").reduce((a,o)=>a+o.totals.total,0);
-const destroyed=0;/* TODO: track from destruction protocol */
-const remaining=plUnits-unitsSold-destroyed;
-const labThc=LAB.find(l=>l.en==="THC (Dronabinol)");
-const confirmedThc=labThc?.qsi||labThc?.sup||"—";
-const labPass=LAB.every(l=>l.lim===null||l.var===null||Math.abs(l.var)<50);
-/* Expiry tracking */
-const now=new Date();
-const expDate=expiryDate?new Date(expiryDate.split(".").reverse().join("-")):null;
-const daysToExpiry=expDate?Math.ceil((expDate-now)/(1000*60*60*24)):null;
-const expiryStatus=daysToExpiry===null?"unknown":daysToExpiry<0?"expired":daysToExpiry<30?"critical":daysToExpiry<90?"warning":daysToExpiry<180?"monitor":"ok";
-
+const sold=164,transit=89,stock=239-164-89,destroyed=0;
 return <div>
-<Cd t={"📊 M6 "+selBatch+" — "+(lang==="de"?"Abstimmung & BfArM Dossier":"Reconciliation & BfArM Dossier")} badge={<div style={{display:"flex",gap:6,alignItems:"center"}}>
-<Bd c="#6366f1" b="#e0e7ff">{remaining===0?(lang==="de"?"Abgeschlossen":"Closed"):(lang==="de"?"Offen":"Open")}</Bd>
-{remaining===0&&<span style={{padding:"3px 10px",borderRadius:6,fontSize:12,fontWeight:700,background:"#059669",color:"#fff",cursor:"pointer"}} onClick={()=>{if(confirm("Close import "+selBatch+"? This marks all units as accounted for in BfArM records.")){setBatchStages(prev=>{const u={...prev,[selBatch]:{label:"M6 Closed",color:"#6366f1",lcs:11}};try{localStorage.setItem("noc-qms-batch-stages",JSON.stringify(u))}catch(e){}return u})}}}>✅ Close Import</span>}
-</div>}>
-
-{/* Expiry Alert */}
-{expiryStatus!=="ok"&&expiryStatus!=="unknown"&&<div style={{marginBottom:12,padding:10,borderRadius:8,border:"2px solid "+(expiryStatus==="expired"?"#dc2626":expiryStatus==="critical"?"#dc2626":"#d97706"),background:expiryStatus==="expired"?"#fef2f2":"#fffbeb"}}>
-<div style={{display:"flex",alignItems:"center",gap:8}}>
-<span style={{fontSize:20}}>{expiryStatus==="expired"?"🔴":expiryStatus==="critical"?"🔴":"🟡"}</span>
-<div>
-<div style={{fontSize:15,fontWeight:700,color:expiryStatus==="expired"?"#dc2626":"#92400e"}}>{expiryStatus==="expired"?(lang==="de"?"VERFALLEN — Vernichtungsprotokoll erforderlich!":"EXPIRED — Destruction protocol required!"):(lang==="de"?"Verfall in "+daysToExpiry+" Tagen — "+expiryDate:"Expiry in "+daysToExpiry+" days — "+expiryDate)}</div>
-<div style={{fontSize:13,color:"#6b7280"}}>{remaining} {lang==="de"?"Einheiten verbleibend":"units remaining"} · {lang==="de"?"Maßnahmen":"Actions"}: {expiryStatus==="expired"?(lang==="de"?"Vernichtung oder Verlängerung":"Destruction or extension"):(lang==="de"?"Vorrang-Verkauf (FEFO)":"Priority sale (FEFO)")}</div>
+<Cd t={"📊 M6 "+(lang==="de"?"Abstimmung":"Reconciliation")} badge={<Bd c="#6366f1" b="#e0e7ff">{lang==="de"?"Endabrechnung":"Final"}</Bd>}>
+<div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:8,marginBottom:14}}>
+{[["Imported",BT.kg+" kg","#374151"],["Sold",sold,"#059669"],["Transit",transit,"#d97706"],["Stock",stock,"#6b7280"]].map(([l,v,c],j)=>
+<div key={j} style={{textAlign:"center",background:"#f9fafb",borderRadius:8,padding:10,border:"1px solid #e5e7eb"}}><div style={{fontSize:22,fontWeight:800,color:c}}>{v}</div><div style={{fontSize:12,color:"#6b7280",fontWeight:600}}>{l}</div></div>)}
+</div>
+<div style={{background:"#fff",borderRadius:8,padding:12,border:"1px solid #e5e7eb",marginBottom:12}}>
+<div style={{fontSize:16,fontWeight:700,marginBottom:8}}>BtM §13/§15 BtMG</div>
+<div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr",gap:6,fontSize:14}}>
+{[["In",BT.kg+" kg","#059669"],["Out",(sold+transit)+" units","#2563eb"],["Stock",stock+" units","#d97706"],["Diff","0 ✅","#059669"]].map(([l,v,c],j)=>
+<div key={j} style={{textAlign:"center",background:"#f9fafb",borderRadius:4,padding:6,border:"1px solid #e5e7eb"}}><div style={{fontWeight:700,color:c}}>{v}</div><div style={{fontSize:12,color:"#6b7280"}}>{l}</div></div>)}
 </div>
 </div>
-</div>}
-
-{/* Main Stats */}
-<div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr 1fr 1fr",gap:8,marginBottom:14}}>
-{[
-[lang==="de"?"Importiert":"Imported",plUnits,"#374151"],
-[lang==="de"?"Verkauft":"Sold",unitsSold,"#059669"],
-[lang==="de"?"Vernichtet":"Destroyed",destroyed,"#dc2626"],
-[lang==="de"?"Verbleibend":"Remaining",remaining,remaining===0?"#059669":"#d97706"],
-["BtM §11 Diff",remaining===0?"0 ✅":String(remaining),"#6366f1"]
-].map(([l,v,c],j)=>
-<div key={j} style={{textAlign:"center",background:"#f9fafb",borderRadius:8,padding:8,border:"1px solid #e5e7eb"}}><div style={{fontSize:20,fontWeight:800,color:c}}>{v}</div><div style={{fontSize:11,color:"#6b7280",fontWeight:600}}>{l}</div></div>)}
-</div>
-
-{/* Revenue */}
-<div style={{marginBottom:12,padding:8,borderRadius:6,background:"#f0fdf4",border:"1px solid #a7f3d0",display:"flex",justifyContent:"space-between",fontSize:14}}>
-<span style={{fontWeight:700}}>{lang==="de"?"Gesamtumsatz":"Total Revenue"} {selBatch}</span>
-<span style={{fontWeight:800,color:"#059669"}}>€{revenue.toFixed(2)}</span>
-</div>
-
-{/* Stage-by-Stage Audit Trail */}
-<div style={{marginBottom:14}}>
-<div style={{fontSize:15,fontWeight:700,marginBottom:8}}>📋 {lang==="de"?"Stufenübersicht — Daten aus allen Lebenszyklusphasen":"Stage Overview — Data from all lifecycle stages"}</div>
-{[
-["M0","📝",lang==="de"?"Registrierung":"Registration",docOriginals["ip"]?(lang==="de"?"Einfuhrgenehmigung hochgeladen":"Import permit uploaded"):(lang==="de"?"Ausstehend":"Pending"),!!docOriginals["ip"]],
-["M0.5","📋",lang==="de"?"Vorlauf-Dokumente":"Pre-Arrival",docOriginals["pl"]?plUnits+" "+(lang==="de"?"Einheiten, ":"units, ")+netKg+"kg netto":(lang==="de"?"Ausstehend":"Pending"),!!docOriginals["pl"]],
-["M1","🚛","GDP Transport",docOriginals["aw"]?"AWB: E251115130":(lang==="de"?"Ausstehend":"Pending"),!!docOriginals["aw"]],
-["M2","🔬",lang==="de"?"Laborprüfung":"Lab Testing",(docOriginals["sc"]||docOriginals["lab_coa"])?"THC: "+confirmedThc+" · "+(labPass?"✅ ALL PASS":"⚠️ REVIEW"):(lang==="de"?"Ausstehend":"Pending"),!!(docOriginals["sc"]||docOriginals["lab_coa"])],
-["M3","✅","QP Release",bt.qp||"Dr. Olaf Schagon",true],
-["M4","🏷️",lang==="de"?"Umetikettierung":"Relabeling",(parseInt(bt.bags1kg)||139)+"×1kg + "+(parseInt(bt.doy10g)||100)+"×10g · Exp: "+expiryDate,m4AllSigned||false],
-["M4.5","📦",lang==="de"?"Lagerung":"Storage",lang==="de"?"FEFO-Prinzip · Temperaturüberwachung":"FEFO principle · Temperature monitoring",true],
-["M5","📤",lang==="de"?"Versand":"Shipment",unitsSold+"/"+plUnits+" "+(lang==="de"?"verkauft":"sold")+" · €"+revenue.toFixed(2),unitsSold>0],
-["M6","📊",lang==="de"?"Abstimmung":"Reconciliation",remaining===0?"✅ "+(lang==="de"?"Alle Einheiten abgerechnet":"All units accounted"):remaining+" "+(lang==="de"?"verbleibend":"remaining"),remaining===0]
-].map(([id,ic,name,detail,done],j)=>
-<div key={j} style={{display:"flex",alignItems:"center",gap:10,padding:"6px 10px",marginBottom:3,borderRadius:6,border:"1px solid "+(done?"#d1fae5":"#fde68a"),background:done?"#f0fdf4":"#fffbeb"}}>
-<span style={{fontSize:16,width:20,textAlign:"center"}}>{done?"✅":"⏳"}</span>
-<span style={{fontSize:13,fontWeight:700,color:"#6366f1",width:35}}>{id}</span>
-<span style={{fontSize:13}}>{ic}</span>
-<span style={{fontSize:14,fontWeight:600,flex:1}}>{name}</span>
-<span style={{fontSize:12,color:"#6b7280",textAlign:"right"}}>{detail}</span>
-</div>)}
-</div>
-
-{/* Expiry & Destruction Section */}
-<div style={{marginBottom:14,padding:12,borderRadius:10,border:"2px solid "+(expiryStatus==="expired"?"#dc2626":"#e5e7eb"),background:expiryStatus==="expired"?"#fef2f2":"#fff"}}>
-<div style={{fontSize:15,fontWeight:700,marginBottom:8}}>⏰ {lang==="de"?"Verfall & Vernichtung":"Expiry & Destruction"}</div>
-<div style={{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:8,marginBottom:10}}>
-<div style={{padding:8,background:"#f9fafb",borderRadius:6,textAlign:"center"}}><div style={{fontSize:11,color:"#6b7280"}}>{lang==="de"?"Verfallsdatum":"Expiry Date"}</div><div style={{fontSize:16,fontWeight:800,color:expiryStatus==="expired"?"#dc2626":expiryStatus==="critical"?"#dc2626":"#374151"}}>{expiryDate}</div></div>
-<div style={{padding:8,background:"#f9fafb",borderRadius:6,textAlign:"center"}}><div style={{fontSize:11,color:"#6b7280"}}>{lang==="de"?"Tage verbleibend":"Days Remaining"}</div><div style={{fontSize:16,fontWeight:800,color:daysToExpiry!==null&&daysToExpiry<90?"#dc2626":"#059669"}}>{daysToExpiry!==null?daysToExpiry:"—"}</div></div>
-<div style={{padding:8,background:"#f9fafb",borderRadius:6,textAlign:"center"}}><div style={{fontSize:11,color:"#6b7280"}}>{lang==="de"?"Einheiten auf Lager":"Units in Stock"}</div><div style={{fontSize:16,fontWeight:800,color:remaining>0?"#d97706":"#059669"}}>{remaining}</div></div>
-</div>
-{remaining>0&&expiryStatus!=="ok"&&expiryStatus!=="unknown"&&<div style={{display:"flex",gap:6}}>
-<button style={{flex:1,padding:"8px",borderRadius:6,fontSize:13,fontWeight:700,border:"none",background:"#059669",color:"#fff",cursor:"pointer"}}>📋 {lang==="de"?"Verlängerung beantragen (QP)":"Request Extension (QP)"}</button>
-<button style={{flex:1,padding:"8px",borderRadius:6,fontSize:13,fontWeight:700,border:"none",background:"#dc2626",color:"#fff",cursor:"pointer"}}>🗑️ {lang==="de"?"Vernichtungsprotokoll erstellen":"Create Destruction Protocol"}</button>
-</div>}
-</div>
-
-{/* BfArM Dossier Generation */}
-<div style={{background:"linear-gradient(135deg,#eef2ff,#e0e7ff)",borderRadius:10,padding:16,border:"2px solid #6366f1"}}>
-<div style={{display:"flex",alignItems:"center",gap:10,marginBottom:10}}>
+<div style={{background:"linear-gradient(135deg,#f0fdf4,#dcfce7)",borderRadius:10,padding:16,border:"2px solid #16a34a"}}>
+<div style={{display:"flex",alignItems:"center",gap:10,marginBottom:8}}>
 <div style={{fontSize:26}}>📋</div>
 <div>
-<div style={{fontSize:15,fontWeight:800,color:"#312e81"}}>{remaining===0?(lang==="de"?"DOSSIER BEREIT — Alle Einheiten abgerechnet":"DOSSIER READY — All units accounted"):(lang==="de"?"DOSSIER OFFEN — "+remaining+" Einheiten verbleibend":"DOSSIER OPEN — "+remaining+" units remaining")}</div>
-<div style={{fontSize:13,color:"#4338ca"}}>{selBatch} · {batchRef} · {productName} · §11 BtMG</div>
+<div style={{fontSize:15,fontWeight:800,color:"#065f46"}}>{lang==="de"?"DOSSIER BEREIT":"DOSSIER READY FOR BfArM"}</div>
+<div style={{fontSize:14,color:"#065f46"}}>Import CA-02 — M0→M6 {lang==="de"?"vollständig":"complete"}</div>
 </div>
 </div>
 <div style={{display:"flex",gap:6}}>
-<button onClick={()=>{const w=window.open("","_blank","width=800,height=800");
-w.document.write('<html><head><title>BfArM Dossier '+selBatch+'</title><style>body{font-family:Arial;padding:30px;font-size:11px}h1{font-size:16px;color:#312e81;border-bottom:2px solid #6366f1;padding-bottom:6px}h2{font-size:13px;color:#312e81;margin-top:14px;background:#eef2ff;padding:4px 8px;border-radius:4px}table{width:100%;border-collapse:collapse;margin:8px 0}td{padding:4px 8px;border:1px solid #d1d5db;font-size:10px}td:first-child{font-weight:700;background:#f9fafb;width:35%}.hdr{background:#312e81;color:#fff;padding:12px 30px;margin:-30px -30px 16px}.ft{margin-top:16px;border-top:1px solid #d1d5db;padding-top:6px;font-size:8px;color:#9ca3af;text-align:center}.lang{margin-top:16px;padding-top:12px;border-top:3px solid #6366f1}@media print{body{padding:15px}.hdr{margin:-15px -15px 12px}}</style></head><body>');
-w.document.write('<div class="hdr"><strong style="font-size:16px">NOC Pharma GmbH</strong> — BfArM Import-Dossier / Import Dossier<br/>'+selBatch+' · §11 BtMG · '+new Date().toLocaleDateString("de-DE")+'</div>');
-w.document.write('<h1>🇩🇪 BfArM Import-Dossier — '+selBatch+'</h1><h2>Chargen- und Produktdaten</h2><table>');
-[["Import",selBatch],["Chargen-Nr.",batchRef],["Produkt",productName],["Netto",netKg+" kg"],["Brutto",grossKg+" kg"],["THC (QSI)",confirmedThc],["Verfallsdatum",expiryDate],["Einheiten importiert",String(plUnits)],["Einheiten verkauft",String(unitsSold)],["Einheiten vernichtet",String(destroyed)],["Einheiten verbleibend",String(remaining)],["BtM §11 Differenz",remaining===0?"0 ✅":String(remaining)+" ausstehend"],["Umsatz","€"+revenue.toFixed(2)]].forEach(r=>w.document.write("<tr><td>"+r[0]+"</td><td>"+r[1]+"</td></tr>"));
-w.document.write('</table><div class="lang"><h1>🇬🇧 BfArM Import Dossier — '+selBatch+'</h1><h2>Batch & Product Data</h2><table>');
-[["Import",selBatch],["Batch No.",batchRef],["Product",productName],["Net",netKg+" kg"],["Gross",grossKg+" kg"],["THC (QSI)",confirmedThc],["Expiry Date",expiryDate],["Units imported",String(plUnits)],["Units sold",String(unitsSold)],["Units destroyed",String(destroyed)],["Units remaining",String(remaining)],["BtM §11 Difference",remaining===0?"0 ✅":String(remaining)+" remaining"],["Revenue","€"+revenue.toFixed(2)]].forEach(r=>w.document.write("<tr><td>"+r[0]+"</td><td>"+r[1]+"</td></tr>"));
-w.document.write('</table></div><div class="ft">NOC Pharma GmbH · Langetal 1, DE-07751 Golmsdorf · §52a AMG · BtMG §3/§11<br/>RP: T. Cuny · QP: Dr. O. Schagon · QMS v2.5 · '+new Date().toISOString()+'</div></body></html>');
-w.document.close();setTimeout(()=>w.print(),500);
-}} style={{padding:"8px 16px",borderRadius:6,fontSize:14,fontWeight:700,border:"none",background:"#6366f1",color:"#fff",cursor:"pointer"}}>🖨️ BfArM Dossier (DE/EN)</button>
-<button onClick={()=>{const subj="NOC Pharma — BfArM Import-Dossier — "+selBatch+" ("+batchRef+")";const body="NOC PHARMA GmbH\nBfArM Import-Dossier / Import Dossier\n════════════════════════════════\n\n🇩🇪 Import: "+selBatch+" · Charge: "+batchRef+"\nProdukt: "+productName+"\nNetto: "+netKg+" kg · THC: "+confirmedThc+"\nVerfall: "+expiryDate+"\n\nEinheiten importiert: "+plUnits+"\nEinheiten verkauft: "+unitsSold+"\nEinheiten vernichtet: "+destroyed+"\nVerbleibend: "+remaining+"\nBtM §11 Differenz: "+(remaining===0?"0 ✅":remaining)+"\nUmsatz: €"+revenue.toFixed(2)+"\n\n🇬🇧 Import: "+selBatch+" · Batch: "+batchRef+"\nProduct: "+productName+"\nNet: "+netKg+" kg · THC: "+confirmedThc+"\nExpiry: "+expiryDate+"\n\nUnits imported: "+plUnits+"\nUnits sold: "+unitsSold+"\nUnits destroyed: "+destroyed+"\nRemaining: "+remaining+"\nBtM §11 Diff: "+(remaining===0?"0 ✅":remaining)+"\nRevenue: €"+revenue.toFixed(2)+"\n\n════════════════════════════════\nNOC Pharma GmbH · QMS v2.5 · §52a AMG · BtMG §11";window.open(gmailLink(subj,body)+"&to="+encodeURIComponent("btm@bfarm.de")+"&cc="+encodeURIComponent("qp@nocpharma.de"),"_blank")}} style={{padding:"8px 16px",borderRadius:6,fontSize:14,fontWeight:700,border:"none",background:"#2563eb",color:"#fff",cursor:"pointer"}}>📧 {lang==="de"?"An BfArM senden":"Send to BfArM"}</button>
-<button style={{padding:"8px 16px",borderRadius:6,fontSize:14,fontWeight:700,border:"none",background:remaining===0?"#059669":"#9ca3af",color:"#fff",cursor:remaining===0?"pointer":"not-allowed"}} disabled={remaining!==0}>🔒 {lang==="de"?"Archivieren":"Archive"}</button>
+<button style={{padding:"8px 16px",borderRadius:6,fontSize:15,fontWeight:700,border:"none",background:"#059669",color:"#fff",cursor:"pointer"}}>📄 PDF Export</button>
+<button style={{padding:"8px 16px",borderRadius:6,fontSize:15,fontWeight:700,border:"none",background:"#2563eb",color:"#fff",cursor:"pointer"}}>📧 {lang==="de"?"An BfArM":"Send to BfArM"}</button>
+<button style={{padding:"8px 16px",borderRadius:6,fontSize:15,fontWeight:700,border:"none",background:"#7c3aed",color:"#fff",cursor:"pointer"}}>🔒 {lang==="de"?"Archivieren":"Archive"}</button>
 </div>
 </div>
 </Cd>
@@ -4026,7 +3286,7 @@ return <div>
 </div>
 {children}
 {/* Show uploaded files for this stage — Enhanced Visual Cards with Preview */}
-{(()=>{const stageUploads=uploads.filter(u=>u.stage===stageId&&(!u.batch||u.batch===selBatch));const stageUploadsAll=uploads.filter(u=>u.stage===stageId);return stageUploads.length>0?<div style={{margin:"8px 0",padding:10,background:"linear-gradient(135deg,#f0fdf4,#ecfdf5)",borderRadius:8,border:"1px solid #a7f3d0"}}>
+{(()=>{const stageUploads=uploads.filter(u=>u.stage===stageId);return stageUploads.length>0?<div style={{margin:"8px 0",padding:10,background:"linear-gradient(135deg,#f0fdf4,#ecfdf5)",borderRadius:8,border:"1px solid #a7f3d0"}}>
 <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:8}}>
 <div style={{fontSize:14,fontWeight:700,color:"#065f46"}}>📎 {lang==="de"?"Hochgeladene Originaldokumente":"Uploaded Original Documents"} ({stageUploads.length})</div>
 <div style={{display:"flex",gap:4}}>
@@ -4057,7 +3317,7 @@ return <div>
 <div style={{padding:8}}>
 <div style={{fontSize:12,fontWeight:700,color:"#065f46",lineHeight:"1.2",marginBottom:2,overflow:"hidden",textOverflow:"ellipsis",whiteSpace:"nowrap"}} title={u.name}>{u.name}</div>
 <div style={{fontSize:10,color:"#6b7280",marginBottom:4}}>{u.size} · {u.date}{u.fromZip?" · 📦 ZIP":""}</div>
-{u.content&&u.content.replace(/[^\x20-\x7E\s]/g,"").trim().length>10&&<div style={{fontSize:9,color:"#9ca3af",lineHeight:"1.3",maxHeight:24,overflow:"hidden"}}>{u.content.replace(/[^\x20-\x7E\s]/g," ").replace(/\s+/g," ").trim().slice(0,80)}...</div>}
+{u.content&&<div style={{fontSize:9,color:"#9ca3af",lineHeight:"1.3",maxHeight:24,overflow:"hidden"}}>{u.content.slice(0,80)}...</div>}
 {/* Action Buttons */}
 <div style={{display:"flex",gap:3,marginTop:4}}>
 {u.url&&<button onClick={(e)=>{e.stopPropagation();setDocPreview(u)}} style={{flex:1,padding:"3px 0",borderRadius:4,fontSize:10,fontWeight:700,border:"none",background:"#2563eb",color:"#fff",cursor:"pointer"}}>👁️ {lang==="de"?"Öffnen":"Open"}</button>}
@@ -4101,25 +3361,9 @@ return <div>
 
 const SD=()=>{const s=SG[lcs];if(!s)return null;
 if(s.id==="M0")return <StageDocBar stageId="M0"><M05Reg/></StageDocBar>;
-if(s.id==="M0.5"){const pl=BT?.pl;return <StageDocBar stageId="M0.5">{pl&&<div style={{marginBottom:12,borderRadius:10,border:"2px solid #7c3aed",overflow:"hidden"}}>
-<div style={{padding:"10px 14px",background:"linear-gradient(135deg,#4c1d95,#7c3aed)",color:"#fff",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-<div><div style={{fontSize:15,fontWeight:800}}>📋 Packing List Nº {pl.no}</div><div style={{fontSize:12,opacity:.85}}>{pl.batch} · {pl.prod}</div></div>
-<div style={{textAlign:"right",fontSize:13}}><div style={{fontWeight:700}}>Net: {pl.net}</div><div>Gross: {pl.gross}</div><div style={{color:"#d8b4fe",fontSize:12}}>EXW: {pl.exw}</div></div>
-</div>
-<div style={{padding:12,background:"#faf5ff"}}>
-<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:10,fontSize:13}}>
-<div style={{padding:8,background:"#fff",borderRadius:7,border:"1px solid #e9d5ff"}}><div style={{fontSize:10,fontWeight:700,color:"#7c3aed",marginBottom:3}}>EXPORTER</div><div style={{fontWeight:700}}>{pl.exp}</div><div style={{color:"#6b7280",fontSize:12}}>{pl.expAddr}</div><div style={{color:"#6b7280",fontSize:12}}>VAT: {pl.vat}</div></div>
-<div style={{padding:8,background:"#fff",borderRadius:7,border:"1px solid #e9d5ff"}}><div style={{fontSize:10,fontWeight:700,color:"#7c3aed",marginBottom:3}}>CONSIGNEE</div><div style={{fontWeight:700}}>{pl.con}</div><div style={{color:"#6b7280",fontSize:12}}>{pl.conAddr}</div></div>
-</div>
-<div style={{display:"flex",gap:6,alignItems:"center",marginBottom:10,padding:"7px 10px",background:"#ede9fe",borderRadius:7,fontSize:13}}><span>✈️</span><strong>{pl.from}</strong><span style={{color:"#6b7280"}}>→</span><strong>{pl.to}</strong><span style={{marginLeft:"auto",color:"#6b7280"}}>{pl.ship}</span></div>
-<div style={{fontSize:12,fontWeight:700,color:"#4c1d95",marginBottom:6}}>📦 BOXES ({pl.boxes?.length})</div>
-<div style={{display:"grid",gap:5,marginBottom:10}}>{(pl.boxes||[]).map((b,i)=><div key={i} style={{display:"grid",gridTemplateColumns:"32px 1fr auto",gap:6,padding:"7px 9px",borderRadius:6,border:"1px solid #ddd6fe",background:"#fff",fontSize:12,alignItems:"center"}}><div style={{width:28,height:28,borderRadius:5,background:"#4c1d95",color:"#fff",display:"flex",alignItems:"center",justifyContent:"center",fontWeight:800}}>{b.n}</div><div><div style={{fontWeight:500,color:"#1e293b"}}>{b.d}</div><div style={{color:"#9ca3af",fontSize:11}}>Dims: {b.dims}</div></div><div style={{textAlign:"right"}}><div style={{fontWeight:700,color:"#7c3aed"}}>{b.net}</div><div style={{color:"#9ca3af"}}>Gross: {b.gross}</div></div></div>)}</div>
-<div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:6}}>{[["🌿",pl.u1kg,"1kg bags","#059669"],["💊",pl.udoy,"10g Doypacks","#7c3aed"],["🌡️",pl.dl,"Dataloggers","#0891b2"],["⚖️",pl.net,"Total Net","#d97706"]].map(([ic,v,l,c],i)=><div key={i} style={{padding:"7px 6px",borderRadius:6,border:"1px solid #e9d5ff",background:"#fff",textAlign:"center"}}><div style={{fontSize:15,fontWeight:800,color:c}}>{v}</div><div style={{fontSize:10,color:"#9ca3af"}}>{ic} {l}</div></div>)}</div>
-</div></div>}<M0/>
-
-</StageDocBar>;}
+if(s.id==="M0.5")return <StageDocBar stageId="M0.5"><M0/></StageDocBar>;
 if(sup!=="cannava"&&s.id!=="M0"&&s.id!=="M0.5"){const stN={M1:"GDP Transport","M1.5":"Vault Arrival",M2:"Lab Testing",M3:"QP Release","M3.1":"Quarantine Release","M3.5":"GDP Transport",M4:"Relabeling","M4.5":"Storage",M5:"Shipment",M6:"Reconciliation"};return <StageDocBar stageId={s.id}><SupplierDataPrep stageId={s.id} stageName={stN[s.id]||t[s.n]||""}/></StageDocBar>;}
-if(curBatch&&curBatch.status==="planned"&&s.id!=="M0"&&s.id!=="M0.5"){const stN2={M1:"GDP Transport","M1.5":"Vault Arrival",M2:"Lab Testing",M3:"QP Release","M3.1":"Quarantine Release","M3.5":"GDP Transport",M4:"Relabeling","M4.5":"Storage",M5:"Shipment",M6:"Reconciliation"};return <StageDocBar stageId={s.id}><SupplierDataPrep stageId={s.id} stageName={stN2[s.id]||t[s.n]||""}/></StageDocBar>;}
+if(curBatch&&(curBatch.status==="planned"||curBatch.status==="docs-pending")&&s.id!=="M0"&&s.id!=="M0.5"){const stN2={M1:"GDP Transport","M1.5":"Vault Arrival",M2:"Lab Testing",M3:"QP Release","M3.1":"Quarantine Release","M3.5":"GDP Transport",M4:"Relabeling","M4.5":"Storage",M5:"Shipment",M6:"Reconciliation"};return <StageDocBar stageId={s.id}><SupplierDataPrep stageId={s.id} stageName={stN2[s.id]||t[s.n]||""}/></StageDocBar>;}
 if(s.id==="M1")return <StageDocBar stageId="M1"><M1GDP/></StageDocBar>;
 if(s.id==="M1.5")return <StageDocBar stageId="M1.5"><M15Vault/></StageDocBar>;
 if(s.id==="M2")return <StageDocBar stageId="M2"><M2Lab/></StageDocBar>;
@@ -4169,7 +3413,7 @@ return <div style={{position:"fixed",right:0,top:0,bottom:0,width:400,background
 <button onClick={()=>setTrSrc("Autorizacion de Exportacion SEDRONAR-EXP-2025-001. Autoriza exportacion de 60 kg Cannabis Flos a NOC Pharma GmbH, Alemania.")} style={{padding:"2px 6px",borderRadius:3,fontSize:11,border:"1px solid #d1d5db",background:"#f9fafb",cursor:"pointer"}}>Export</button>
 <button onClick={()=>setTrSrc("Acuerdo Tecnico de Calidad entre Cannabis Avatara S.E. y NOC Pharma GmbH. Especificaciones segun Ph.Eur. Cannabis Flos.")} style={{padding:"2px 6px",borderRadius:3,fontSize:11,border:"1px solid #d1d5db",background:"#f9fafb",cursor:"pointer"}}>QTA</button>
 </div>
-<button onClick={()=>{if(!trSrc.trim())return;setTrLoading(true);setTrOut("");var ln=trLang==="de"?"German":trLang==="en"?"English":"Spanish";fetch("http://localhost:3001/api/anthropic",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:1000,messages:[{role:"user",content:"You are a pharmaceutical translator for NOC Pharma GmbH. Translate to "+ln+". Use BfArM/AMG/BtMG terms for German, EU GMP/PIC/S for English. Keep reference numbers unchanged. Output only the translation.\n\nText:\n"+trSrc}]})}).then(function(r){return r.json()}).then(function(d){var txt=d.content?d.content.map(function(c){return c.text||""}).join(""):"Translation error";setTrOut(txt);setTrLoading(false)}).catch(function(e){setTrOut("Error: "+e.message);setTrLoading(false)})}} disabled={trLoading||!trSrc.trim()} style={{width:"100%",padding:"8px 12px",borderRadius:6,fontSize:14,fontWeight:700,border:"none",background:trLoading?"#9ca3af":"#1e40af",color:"#fff",cursor:trLoading?"wait":"pointer",marginBottom:6}}>
+<button onClick={()=>{if(!trSrc.trim())return;setTrLoading(true);setTrOut("");var ln=trLang==="de"?"German":trLang==="en"?"English":"Spanish";fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:1000,messages:[{role:"user",content:"You are a pharmaceutical translator for NOC Pharma GmbH. Translate to "+ln+". Use BfArM/AMG/BtMG terms for German, EU GMP/PIC/S for English. Keep reference numbers unchanged. Output only the translation.\n\nText:\n"+trSrc}]})}).then(function(r){return r.json()}).then(function(d){var txt=d.content?d.content.map(function(c){return c.text||""}).join(""):"Translation error";setTrOut(txt);setTrLoading(false)}).catch(function(e){setTrOut("Error: "+e.message);setTrLoading(false)})}} disabled={trLoading||!trSrc.trim()} style={{width:"100%",padding:"8px 12px",borderRadius:6,fontSize:14,fontWeight:700,border:"none",background:trLoading?"#9ca3af":"#1e40af",color:"#fff",cursor:trLoading?"wait":"pointer",marginBottom:6}}>
 {trLoading?"Translating...":"Translate to "+(trLang==="de"?"Deutsch":trLang==="en"?"English":"Spanish")}
 </button>
 {trOut&&<div>
@@ -4250,6 +3494,7 @@ mccn:[
 {k:"gmp",ic:"🏭",de:"GMP-Zertifikat (INVIMA)",en:"GMP Certificate (INVIMA)",req:true,up:false,desc:{de:"INVIMA GMP-Inspektion — NICHT PIC/S anerkannt",en:"INVIMA GMP inspection — NOT PIC/S recognized"}},
 {k:"gacp",ic:"🌿",de:"GACP-Zertifikat",en:"GACP Certificate",req:true,up:false,desc:{de:"EU GACP Audit geplant 15.09.2026",en:"EU GACP audit planned 15.09.2026"}},
 {k:"coa",ic:"🔬",de:"Muster-COA",en:"Sample COA",req:true,up:false,desc:{de:"Analysenzertifikat für Vorab-Bewertung",en:"Certificate of Analysis for preliminary review"}},
+{k:"phyto",ic:"🌿",de:"Phytosanitäres Zeugnis (ICA)",en:"Phytosanitary Certificate (ICA)",req:true,up:false,desc:{de:"Instituto Colombiano Agropecuario",en:"Instituto Colombiano Agropecuario"}},
 {k:"gdp",ic:"🚛",de:"GDP-Qualifizierung Spediteur",en:"GDP Carrier Qualification",req:false,up:false,desc:{de:"GDP-qualifizierter Transport Kolumbien → Frankfurt",en:"GDP-qualified transport Colombia → Frankfurt"}},
 {k:"ins",ic:"🛡️",de:"Produkthaftpflicht",en:"Product Liability Insurance",req:false,up:false,desc:{de:"Versicherungsnachweis für EU-Markt",en:"Insurance certificate for EU market"}}
 ],
@@ -4321,7 +3566,7 @@ dashboard:<div>
 {(()=>{
 const supData={
 cannava:{fl:"🇦🇷",n:"Cannava S.E.",loc:"San Juan, Argentina",batches:[
-{id:"CA-01",p:"NOC SE 17",qty:"59.5kg",stage:11,total:12,st:lang==="de"?"✅ Abgeschlossen":"✅ Completed",c:"#059669"},
+{id:"CA-01",p:"NOC SE 17",qty:"59.5kg",stage:0,total:12,st:lang==="de"?"📂 Doku hochladen":"📂 Upload Docs",c:"#6b7280"},
 {id:"CA-02",p:"NOC SE 19",qty:"198.5kg",stage:0,total:12,st:lang==="de"?"📂 Doku hochladen":"📂 Upload Docs",c:"#6b7280"},
 {id:"CA-03",p:"NOC SE 17/20",qty:"140kg",stage:2,total:12,st:lang==="de"?"Aktiv — Lab":"Active — Lab",c:"#d97706"},
 {id:"CA-04",p:"NOC SE 21",qty:"250kg",stage:0,total:12,st:lang==="de"?"Geplant":"Planned",c:"#9ca3af"}
@@ -4331,7 +3576,7 @@ alerts:[
 {t:lang==="de"?"GMP Audit ueberfaellig":"GMP Audit overdue",c:"#dc2626",ic:"⚠️"},
 {t:lang==="de"?"QTA laeuft in 16d ab":"QTA expires in 16d",c:"#d97706",ic:"⏰"},
 {t:lang==="de"?"CA-03 COA ausstehend":"CA-03 COA pending",c:"#d97706",ic:"📄"},
-
+{t:lang==="de"?"CA-03 Phytosanitaer ausstehend":"CA-03 Phytosanitary pending",c:"#d97706",ic:"📄"},
 {t:lang==="de"?"INCB 2026 Erneuerung":"INCB 2026 renewal needed",c:"#dc2626",ic:"🌍"}
 ],docs:8,pics:true,reg:"ANMAT",shipActive:true,color:"#059669"},
 mccn:{fl:"🇨🇴",n:"Medcolcanna S.A.S.",loc:"Bogota, Colombia",batches:[
@@ -4591,39 +3836,27 @@ lifecycle:sup==="cannava"||sup==="hytn"||sup==="mccn"?<div>
 {curBatch&&<div style={{fontSize:14,color:"#6b7280"}}>{lang==="de"?"Aktive Charge":"Active Batch"}: <strong style={{color:curBatch.color}}>{curBatch.id}</strong></div>}
 </div>
 <div style={{display:"flex",gap:6,flexWrap:"wrap"}}>
-{supBatches.map(b=>{const bDocs=uploads.filter(u=>u.batch===b.id).length;const bStages=[...new Set(uploads.filter(u=>u.batch===b.id).map(u=>u.stage))];
-/* Live values: kg from AI-committed btOverrides, stage from batchStages state */
-const liveKg=(()=>{const raw=btOverrides[b.id+"_net"]||btOverrides[b.id+"_kg"]||b.kg||"";return String(raw).replace(/\s*kg$/i,"").trim()||b.kg;})();
-const liveSL=batchStages[b.id]?.label||b.stageLabel;
-const liveColor=batchStages[b.id]?.color||b.color;
-const isActive=b.status==="active"||bDocs>0;
-return <button key={b.id} onClick={()=>setSelBatch(b.id)} style={{display:"flex",alignItems:"center",gap:6,padding:"8px 12px",borderRadius:8,border:selBatch===b.id?"2px solid "+liveColor:bDocs>0?"1.5px solid #a7f3d0":"1.5px solid #e5e7eb",background:selBatch===b.id?liveColor+"18":bDocs>0?"#f0fdf4":"#fff",cursor:"pointer",transition:"all .15s"}}>
-<div style={{width:8,height:8,borderRadius:"50%",background:b.status==="closed"?"#6b7280":isActive?liveColor:bDocs>0?"#059669":"#d1d5db"}}/>
+{supBatches.map(b=><button key={b.id} onClick={()=>setSelBatch(b.id)} style={{display:"flex",alignItems:"center",gap:6,padding:"8px 12px",borderRadius:8,border:selBatch===b.id?"2px solid "+b.color:"1.5px solid #e5e7eb",background:selBatch===b.id?b.color+"10":"#fff",cursor:"pointer",transition:"all .15s"}}>
+<div style={{width:8,height:8,borderRadius:"50%",background:b.status==="closed"?"#6b7280":b.status==="active"?b.color:"#d1d5db"}}/>
 <div style={{textAlign:"left"}}>
-<div style={{fontSize:15,fontWeight:700,color:selBatch===b.id?liveColor:"#374151"}}>{b.id}</div>
-<div style={{fontSize:12,color:"#6b7280"}}>{liveKg} kg • {b.import}</div>
+<div style={{fontSize:15,fontWeight:700,color:selBatch===b.id?b.color:"#374151"}}>{b.id}</div>
+<div style={{fontSize:12,color:"#6b7280"}}>{b.kg}kg • {b.import}</div>
 </div>
-<div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",gap:2}}>
-<div style={{fontSize:12,padding:"2px 6px",borderRadius:4,background:b.status==="closed"?"#f3f4f6":isActive?"#dcfce7":"#f3f4f6",color:b.status==="closed"?"#6b7280":isActive?"#059669":"#9ca3af",fontWeight:600}}>{liveSL}</div>
-{bDocs>0&&<div style={{fontSize:10,padding:"1px 5px",borderRadius:4,background:"#059669",color:"#fff",fontWeight:700}}>📎 {bDocs} docs</div>}
-</div>
-</button>})}
+<div style={{fontSize:12,padding:"2px 6px",borderRadius:4,background:b.status==="closed"?"#f3f4f6":b.status==="active"?"#dcfce7":"#f3f4f6",color:b.status==="closed"?"#6b7280":b.status==="active"?"#059669":"#9ca3af",fontWeight:600}}>{b.stageLabel}</div>
+</button>)}
 </div>
 </div>
 
 {/* Upload Distribution Summary */}
-{(()=>{const batchUps=uploads.filter(u=>u.batch===selBatch);const allUps=uploads;return allUps.length>0&&<div style={{marginBottom:8,padding:8,background:"linear-gradient(135deg,#f0fdf4,#ecfdf5)",borderRadius:8,border:"1px solid #a7f3d0"}}>
+{uploads.length>0&&<div style={{marginBottom:8,padding:8,background:"linear-gradient(135deg,#f0fdf4,#ecfdf5)",borderRadius:8,border:"1px solid #a7f3d0"}}>
 <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
-<div style={{fontSize:13,fontWeight:700,color:"#065f46"}}>📦 {selBatch}: {batchUps.length} docs &nbsp;<span style={{fontWeight:400,color:"#6b7280",fontSize:12}}>({allUps.length} total)</span></div>
-<div style={{display:"flex",gap:4,alignItems:"center"}}>
-{batchUps.filter(u=>u.fromZip).length>0&&<span style={{fontSize:10,color:"#6b7280"}}>ZIP: {[...new Set(batchUps.filter(u=>u.fromZip).map(u=>u.fromZip))].join(", ")}</span>}
-{allUps.length!==batchUps.length&&<span style={{fontSize:10,padding:"1px 6px",borderRadius:4,background:"#fef3c7",color:"#d97706",fontWeight:700}}>+{allUps.length-batchUps.length} other batches</span>}
-</div>
+<div style={{fontSize:13,fontWeight:700,color:"#065f46"}}>📦 {uploads.length} {lang==="de"?"Dokumente hochgeladen und klassifiziert":"documents uploaded & classified"}</div>
+<div style={{fontSize:10,color:"#6b7280"}}>{uploads.filter(u=>u.fromZip).length>0&&"ZIP: "+[...new Set(uploads.filter(u=>u.fromZip).map(u=>u.fromZip))].join(", ")}</div>
 </div>
 <div style={{display:"flex",gap:3,flexWrap:"wrap"}}>
-{SG.map((st,j)=>{const cnt=batchUps.filter(u=>u.stage===st.id).length;const cntAll=allUps.filter(u=>u.stage===st.id).length;return cntAll>0?<button key={j} onClick={()=>{setLcs(j);setExDoc(null);setDocPreview(null)}} style={{padding:"3px 8px",borderRadius:5,fontSize:11,fontWeight:700,border:lcs===j?"2px solid "+st.c:"1px solid #d1fae5",background:lcs===j?st.c+"15":"#fff",color:st.c,cursor:"pointer"}}>{st.ic} {st.id} <span style={{background:cnt>0?"#059669":"#9ca3af",color:"#fff",padding:"0 4px",borderRadius:6,fontSize:9,marginLeft:2}}>{cnt>0?cnt:"0/"+cntAll}</span></button>:null})}
+{SG.map((st,j)=>{const cnt=uploads.filter(u=>u.stage===st.id).length;return cnt>0?<button key={j} onClick={()=>{setLcs(j);setExDoc(null);setDocPreview(null)}} style={{padding:"3px 8px",borderRadius:5,fontSize:11,fontWeight:700,border:lcs===j?"2px solid "+st.c:"1px solid #d1fae5",background:lcs===j?st.c+"15":"#fff",color:st.c,cursor:"pointer"}}>{st.ic} {st.id} <span style={{background:"#059669",color:"#fff",padding:"0 4px",borderRadius:6,fontSize:9,marginLeft:2}}>{cnt}</span></button>:null})}
 </div>
-</div>})()}
+</div>}
 
 {/* Stage buttons */}
 <div style={{display:"flex",gap:3,marginBottom:10,flexWrap:"wrap"}}>{SG.map((st,j)=>{const stUploads=uploads.filter(u=>u.stage===st.id).length;return <button key={j} onClick={()=>{setLcs(j);setExDoc(null);setDocPreview(null)}} style={{padding:"4px 7px",borderRadius:5,fontSize:14,fontWeight:600,border:lcs===j?"2px solid "+st.c:"1px solid #d1d5db",background:j<sn?st.c+"12":"#fff",color:j<sn?st.c:"#9ca3af",cursor:"pointer",position:"relative"}}>{st.ic} {st.id}{stUploads>0&&<span style={{marginLeft:3,padding:"0 5px",borderRadius:8,fontSize:9,fontWeight:800,background:"#059669",color:"#fff"}}>{stUploads}</span>}</button>})}</div><div style={{display:"grid",gridTemplateColumns:"180px 1fr",gap:10}}><Cd t={lang==="de"?"Stufen":"Stages"}>{SG.map((st,j)=>{const dn=j<sn;const stUploads=uploads.filter(u=>u.stage===st.id).length;return <div key={j} onClick={()=>{setLcs(j);setExDoc(null);setDocPreview(null)}} style={{display:"flex",alignItems:"center",gap:6,padding:"5px 7px",borderRadius:5,cursor:"pointer",background:lcs===j?st.c+"10":"transparent",border:lcs===j?"1.5px solid "+st.c:"1.5px solid transparent",opacity:dn||j===sn?1:.4,marginBottom:1}}><span style={{width:20,height:20,borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",fontSize:13,fontWeight:700,background:dn?st.c:"#e5e7eb",color:dn?"#fff":"#9ca3af",flexShrink:0}}>{dn?"✓":st.ic}</span><div style={{fontSize:14,fontWeight:600,color:dn?st.c:"#6b7280"}}>{st.id} {t[st.n]||""}</div>{stUploads>0&&<span style={{marginLeft:"auto",padding:"0 5px",borderRadius:8,fontSize:9,fontWeight:800,background:"#059669",color:"#fff"}}>{stUploads}</span>}</div>})}</Cd><div><SD/></div></div></div>:<OnboardWS/>,
@@ -4786,7 +4019,7 @@ docs:[
 {n:"Quality Technical Agreement",ref:"QTA-NOC-CANN-2024-01",exp:"15.03.2026",days:16,st:"warning",to:"ruiz@cannava.gob.ar"},
 {n:lang==="de"?"GMP Auditbericht (Erneuerung)":"GMP Audit Report (Renewal)",ref:"NOC-AUDIT-CANN-2025-01",exp:"12.02.2026",days:-15,st:"overdue",to:"ruiz@cannava.gob.ar"},
 {n:"COA CA-03",ref:lang==="de"?"Ausstehend":"Pending",exp:"—",days:0,st:"missing",to:"ruiz@cannava.gob.ar"},
-
+{n:lang==="de"?"Phytosanitaeres Zeugnis CA-03":"Phytosanitary Cert. CA-03",ref:lang==="de"?"Ausstehend":"Pending",exp:"—",days:0,st:"missing",to:"ruiz@cannava.gob.ar"},
 {n:lang==="de"?"Packliste CA-03 (140kg)":"Packing List CA-03 (140kg)",ref:lang==="de"?"Ausstehend":"Pending",exp:"—",days:0,st:"missing",to:"ruiz@cannava.gob.ar"},
 {n:"INCB Allocation 2026",ref:lang==="de"?"Erneuerung erforderlich":"Renewal required",exp:"31.12.2025",days:-58,st:"expired",to:"ruiz@cannava.gob.ar"},
 {n:lang==="de"?"Versicherungsnachweis 2026":"Insurance Certificate 2026",ref:lang==="de"?"Erneuerung erforderlich":"Renewal required",exp:"31.12.2025",days:-58,st:"expired",to:"ruiz@cannava.gob.ar"}
@@ -5951,7 +5184,7 @@ fl:"🇦🇷",n:"Cannava S.E. (Cannabis Avatara)",color:"#059669",cur:"USD→EUR
 batches:[
 {id:"BI-01",product:"NOC SE 17",kg:59.5,units:"48×1kg+115×10g",pzn:"18706190",
  fobKg:2850,fobTotal:169575,
- exportPermit:1200,sedronar:800,phyto:0,originCert:150,
+ exportPermit:1200,sedronar:800,phyto:350,originCert:150,
  freight:8200,insurance:1450,customs:3800,customsBroker:1200,
  btmFee:450,bfarmPermit:2800,incbFee:0,
  qsiLab:4800,qsiSamples:1400,
@@ -5962,7 +5195,7 @@ batches:[
  status:"sold",releaseDate:"15.05.2025"},
 {id:"BI-02",product:"NOC SE 19",kg:198.5,units:"139×1kg+100×10g",pzn:"18706209",
  fobKg:3150,fobTotal:625275,
- exportPermit:1200,sedronar:800,phyto:0,originCert:150,
+ exportPermit:1200,sedronar:800,phyto:350,originCert:150,
  freight:18500,insurance:4200,customs:12800,customsBroker:2400,
  btmFee:450,bfarmPermit:2800,incbFee:0,
  qsiLab:6200,qsiSamples:1400,
@@ -5973,7 +5206,7 @@ batches:[
  status:"storage",releaseDate:"10.12.2025"},
 {id:"CA-03",product:"NOC SE 17/20",kg:140,units:"TBD",pzn:"TBD",
  fobKg:3150,fobTotal:189000,
- exportPermit:1200,sedronar:800,phyto:0,originCert:150,
+ exportPermit:1200,sedronar:800,phyto:350,originCert:150,
  freight:9200,insurance:1800,customs:4500,customsBroker:1200,
  btmFee:450,bfarmPermit:0,incbFee:0,
  qsiLab:5200,qsiSamples:1400,
@@ -5984,7 +5217,7 @@ batches:[
  status:"transit",releaseDate:"ETA Apr 2026"},
 {id:"BI-04",product:"NOC SE 21",kg:60,units:"TBD",pzn:"TBD",
  fobKg:3200,fobTotal:192000,
- exportPermit:1200,sedronar:800,phyto:0,originCert:150,
+ exportPermit:1200,sedronar:800,phyto:350,originCert:150,
  freight:9500,insurance:1800,customs:4500,customsBroker:1200,
  btmFee:450,bfarmPermit:2800,incbFee:0,
  qsiLab:5200,qsiSamples:1400,
@@ -6029,7 +5262,7 @@ fl:"🇨🇴",n:"Medcolcanna S.A.S.",color:"#d97706",cur:"USD→EUR",
 batches:[
 {id:"MC-01",product:"NOC GK 27 COL",kg:110,units:"TBD",pzn:"TBD",
  fobKg:2400,fobTotal:264000,
- exportPermit:1500,sedronar:0,phyto:0,originCert:200,
+ exportPermit:1500,sedronar:0,phyto:500,originCert:200,
  freight:11000,insurance:2800,customs:5500,customsBroker:1800,
  btmFee:450,bfarmPermit:2800,incbFee:0,
  qsiLab:6500,qsiSamples:1600,
@@ -6040,7 +5273,7 @@ batches:[
  status:"planned",releaseDate:"Sep 2026"},
 {id:"MC-02",product:"NOC UG 21 COL",kg:73,units:"TBD",pzn:"TBD",
  fobKg:2400,fobTotal:175200,
- exportPermit:1500,sedronar:0,phyto:0,originCert:200,
+ exportPermit:1500,sedronar:0,phyto:500,originCert:200,
  freight:8500,insurance:2000,customs:4200,customsBroker:1200,
  btmFee:450,bfarmPermit:0,incbFee:0,
  qsiLab:5800,qsiSamples:1400,
@@ -6051,7 +5284,7 @@ batches:[
  status:"planned",releaseDate:"Nov 2026"},
 {id:"MC-03",product:"NOC CP 18 COL",kg:91,units:"TBD",pzn:"TBD",
  fobKg:2200,fobTotal:200200,
- exportPermit:1500,sedronar:0,phyto:0,originCert:200,
+ exportPermit:1500,sedronar:0,phyto:500,originCert:200,
  freight:9000,insurance:2200,customs:4800,customsBroker:1400,
  btmFee:450,bfarmPermit:0,incbFee:0,
  qsiLab:6000,qsiSamples:1400,
@@ -6077,7 +5310,7 @@ fl:"🇨🇦",n:"HYTN Cannabis Inc.",color:"#2563eb",cur:"CAD→EUR",
 batches:[
 {id:"HY-01",product:"HYTN Indoor Hybrid",kg:25,units:"TBD",pzn:"TBD",
  fobKg:4200,fobTotal:105000,
- exportPermit:800,sedronar:0,phyto:0,originCert:200,
+ exportPermit:800,sedronar:0,phyto:400,originCert:200,
  freight:6500,insurance:1200,customs:2800,customsBroker:900,
  btmFee:450,bfarmPermit:2800,incbFee:0,
  qsiLab:4500,qsiSamples:1200,
@@ -7510,7 +6743,7 @@ docs:<div>
 {SG.map((stage,si)=>{
 const stDocs={
 "M0":[{n:"Canmed Registration",k:"canmed"},{n:"Supplier GMP Certificate",k:"gmp"},{n:"Quality Technical Agreement",k:"qta"},{n:"PZN Registration (IFA)",k:"pzn"},{n:"BfArM Import Permit",k:"permit"},{n:"INCB Allocation",k:"incb"}],
-"M0.5":[{n:"Supplier COA",k:"sup_coa"},{n:"Export Permit",k:"export"},{n:"Packing List",k:"packing"},{n:"BtM Export Declaration",k:"btm_export"},{n:"Invoice",k:"invoice"}],
+"M0.5":[{n:"Supplier COA",k:"sup_coa"},{n:"Export Permit",k:"export"},{n:"Phytosanitary Certificate",k:"phyto"},{n:"Packing List",k:"packing"},{n:"BtM Export Declaration",k:"btm_export"},{n:"Invoice",k:"invoice"}],
 "M1":[{n:"GDP Transport Order",k:"gdp_order"},{n:"CMR Waybill",k:"cmr"},{n:"Temperature Log (Sensitech)",k:"temp_log"},{n:"Customs Declaration",k:"customs"},{n:"BtM Transport Permit",k:"btm_transport"},{n:"Insurance Certificate",k:"insurance"}],
 "M1.5":[{n:"Vault Arrival Protocol",k:"vault_arrival"},{n:"BtM Receipt Confirmation",k:"btm_receipt"},{n:"Visual Inspection Report",k:"visual_inspect"},{n:"Quarantine Label",k:"quarantine"}],
 "M2":[{n:"QSI Lab COA",k:"qsi_coa"},{n:"Potency Analysis (HPLC)",k:"potency"},{n:"Microbiology Report",k:"micro"},{n:"Heavy Metals",k:"metals"},{n:"Mycotoxins",k:"myco"},{n:"Terpene Profile",k:"terpenes"},{n:"THC Discrepancy Protocol",k:"thc_proto"}],
@@ -7576,7 +6809,7 @@ return <div key={stage.id} style={{marginBottom:6,border:"1px solid #e5e7eb",bor
 ["M0: Quality Technical Agreement","M0: BfArM Import Permit (New)"],
 ["M0: INCB Allocation 2026","M0: PZN Confirmation (IFA)"],
 ["M0.5: Supplier COA","M0.5: SEDRONAR Export Permit"],
-["M0.5: Packing List (140kg)","M0.5: Commercial Invoice"],
+["M0.5: Phytosanitary Certificate","M0.5: Packing List (140kg)"],
 ["M0.5: BtM Export Declaration","M0.5: Commercial Invoice"],
 ["M0.5: Certificate of Origin","M0.5: SENASA Health Cert"],
 ["M1: AWB (023-87654321)","M1: GDP Transport Order"],
@@ -7725,209 +6958,95 @@ if(!auth) return (<div style={{minHeight:"100vh",background:"linear-gradient(135
 return(<div style={{display:"flex",minHeight:"100vh",fontFamily:"'Segoe UI',-apple-system,sans-serif",fontSize:16,background:"#f8fafc"}}>
 <input type="file" ref={fileRef} onChange={handleFileUpload} multiple accept=".zip,.pdf,.doc,.docx,.xls,.xlsx,.csv,.jpg,.jpeg,.png,.xml" style={{display:"none"}}/>
 <input type="file" ref={origFileRef} onChange={async(e)=>{const f=e.target.files[0];if(!f||!origTarget)return;
-/* If re-uploading, log the replacement in audit trail */
-const prevDoc=docOriginals[origTarget];
-if(prevDoc){
-  setAuditLog(prev=>[{ts:new Date().toISOString(),user:auth?.name||"Celso Hamelink",action:"REPLACE_ORIGINAL",docKey:origTarget,field:"original_document",oldVal:prevDoc.name+" (v"+(prevDoc.version||1)+")",newVal:f.name,batch:selBatch||"CA-03",document:f.name,docType:"original"},...prev]);
-}
 const url=URL.createObjectURL(f);const ext=f.name.split(".").pop().toLowerCase();
 const fileSize=(f.size/1024).toFixed(1)+"KB";
 const supName=sup==="cannava"?"Cannava":sup==="mccn"?"Medcolcanna":"HYTN";
 const batch=selBatch||"CA-03";
-const curBD=BT_DATA[batch]||BT_DATA["CA-03"]||{};
-
-/* Show loading state immediately */
-setDocOriginals(p=>({...p,[origTarget]:{
-name:f.name,url,ext,size:fileSize,date:new Date().toLocaleString("de-DE"),
-analyzing:true,aiResult:null,extracted:{},discrepancies:[],summary:"",docType:f.name
-}}));
-
-/* Convert file to base64 for AI analysis — handle ZIP-wrapped files */
+const curBatchData=curBatch||{};
+/* Convert file to base64 for AI analysis */
 const toBase64=file=>new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(r.result.split(",")[1]);r.onerror=()=>rej(new Error("Read failed"));r.readAsDataURL(file)});
 let aiResult=null;
-let aiError=null;
 try{
-/* Check if file is actually a ZIP (Argentine docs have .pdf extension but are ZIPs) */
-const headerBuf=await f.slice(0,4).arrayBuffer();
-const headerBytes=new Uint8Array(headerBuf);
-const isActuallyZip=headerBytes[0]===0x50&&headerBytes[1]===0x4B&&headerBytes[2]===0x03&&headerBytes[3]===0x04;
-let fileToSend=f;
-let mediaType=ext==="pdf"?"application/pdf":ext==="png"?"image/png":ext==="jpg"||ext==="jpeg"?"image/jpeg":"application/pdf";
-if(isActuallyZip){
-/* Extract JPEG from ZIP, send that to Claude as image */
-try{
-const {default:JSZip}=await import("https://cdn.jsdelivr.net/npm/jszip@3.10.1/+esm");
-const arr=await f.arrayBuffer();
-const zip=await JSZip.loadAsync(arr);
-const imgFiles=Object.keys(zip.files).filter(n=>/\.(jpg|jpeg|png)$/i.test(n)&&!zip.files[n].dir);
-if(imgFiles.length>0){
-const imgBlob=await zip.files[imgFiles[0]].async("blob");
-fileToSend=new File([imgBlob],imgFiles[0],{type:"image/jpeg"});
-mediaType=imgFiles[0].toLowerCase().endsWith(".png")?"image/png":"image/jpeg";
-}
-}catch(ze){console.warn("ZIP extraction failed, sending raw:",ze);}
-}
-const base64Data=await toBase64(fileToSend);
+const base64Data=await toBase64(f);
+const mediaType=ext==="pdf"?"application/pdf":ext==="png"?"image/png":ext==="jpg"||ext==="jpeg"?"image/jpeg":"application/pdf";
+const systemPrompt=`You are an AI Document Extraction Agent for NOC Pharma GmbH, a pharmaceutical cannabis importer operating under §52a AMG (German Pharmaceutical Wholesale License).
 
-/* Build system data context for comparison */
-const sysContext=`
-CURRENT SYSTEM DATA FOR ${batch}:
-- Batch ID: ${curBD.id||"TBD"}
-- Product: ${curBD.p||"Cannabis flos"}
-- Net Weight: ${curBD.net||"TBD"} kg
-- Gross Weight: ${curBD.gross||"TBD"} kg
-- Total Units: ${curBD.units||"TBD"} (${curBD.bags1kg||"?"} × 1kg bags + ${curBD.doy10g||"?"} × 10g doypacks)
-- Boxes: ${curBD.boxes||"TBD"}
-- EXW Value: ${curBD.exw||"TBD"}
-- Route: ${curBD.route||"TBD"}
-- Expiry: ${curBD.exp||"TBD"}
-- QP: ${curBD.qp||"TBD"}
-- Analysis No: ${curBD.aNo||"TBD"}
-- Lab: ${curBD.lab||"TBD"}
+CURRENT CONTEXT:
+- Import: ${batch} (${curBatchData.product||"Cannabis flos"})
 - Supplier: ${supName}
+- Batch Ref: ${curBatchData.ref||""}
+- Declared Quantity: ${curBatchData.kg||""}kg
+- Document being analyzed: ${f.name} (uploaded to ${origTarget})
 
-Compare EVERY extracted value against these system values. Flag ANY difference.`;
-
-const systemPrompt=`You are an AI Document Extraction Agent for NOC Pharma GmbH, a German pharmaceutical cannabis importer (§52a AMG).
-
-CONTEXT:
-- Import: ${batch}
-- Supplier: ${supName}
-- Document: ${f.name} (uploaded to slot: ${origTarget})
-${sysContext}
-
-INSTRUCTIONS:
-1. Read this document thoroughly — extract EVERY data field you can find
-2. For each field, compare with the SYSTEM DATA above
-3. Flag discrepancies with severity: "critical" (safety/regulatory), "warning" (data mismatch), "info" (minor)
-4. Classify data to lifecycle stages (M0-M6) and identify financial data
-5. Use EXACT field names that match logistics/pharma standards
-
-IMPORTANT: Use these EXACT field names when they apply:
-- "MAWB Number", "HAWB Number", "Carrier", "Flight Number"
-- "Origin Airport", "Destination Airport", "Departure Date", "Arrival Date" 
-- "Gross Weight", "Net Weight", "Pieces", "Boxes"
-- "Shipper Name", "Shipper Address", "Consignee Name", "Consignee Address"
-- "THC Content", "CBD Content", "TAMC", "Lead Content"
-- "Invoice Number", "Invoice Amount", "EXW Value", "CIF Value"
-- "Batch Number", "Product Description", "Expiry Date"
-- "Temperature Range", "Datalogger ID"
-- Use standard names like above, NOT custom abbreviations
+YOUR TASK:
+1. Extract ALL data from this document
+2. Classify each data point to the correct lifecycle stage (M0-M6)
+3. Compare extracted values with declared values and flag discrepancies
+4. Identify financial data (costs, invoices, VAT)
 
 LIFECYCLE STAGES:
-- M0: Registration & Permits
-- M0.5: Pre-Arrival (COA, export permits, packing lists, invoices)
+- M0: Registration & Permits (licenses, GMP certs, import permits)
+- M0.5: Pre-Arrival (COA, export permits, packing lists, invoices, apostille)
 - M1: GDP Transport (AWB, freight, insurance, customs, temp logs)
-- M1.5: Vault Arrival (receipt, inspection, seal, weight)
-- M2: Lab Testing (potency, micro, metals, terpenes)
-- M3: QP Release
-- M4: Relabeling
-- M4.5: Storage
-- M5: Shipment
-- M6: Reconciliation
-- FINANCE: Costs, invoices, VAT
-${(origTarget==="sc"||origTarget?.startsWith("sc_"))?`
-COA EXTRACTION — SUPPLIER COA:
-This is a SUPPLIER Certificate of Analysis from Cannabis Avatara S.E. (Argentina).
-This import (${batch}) may contain MULTIPLE sub-batches — extract the specific batch/lot number from the document.
-Extract ALL test parameters with their exact values.
-Use these EXACT field names for lab parameters:
-"THC Content", "CBD Content", "CBN Content", "Loss on Drying", "Moisture Karl Fischer",
-"Lead Pb", "Cadmium Cd", "Mercury Hg", "Arsenic As",
-"TAMC", "TYMC", "Bile-tolerant Gram-neg", "E. coli", "Salmonella",
-"Pesticides", "Aflatoxin B1", "Aflatoxins Total", "Ochratoxin A", "Total Terpenes"
-Include units (%, ppm, ppb, CFU/g). Also extract: Lab Name, Analysis Number, Analysis Date, Sub-Batch Number, Product Name.
-IMPORTANT: Extract the exact sub-batch/lot identifier (e.g. IN10-12-NOCB1-1, 005-37-NOCB1-1-INF-F etc.)
-`:""}${(origTarget==="lab_coa"||origTarget==="qsi_coa"||origTarget?.startsWith("lab_coa_")||(origTarget&&origTarget.toLowerCase().includes("lab")))?`
-COA EXTRACTION — QSI LAB RESULTS (Independent Retest):
-This is a QSI Bremen independent laboratory report (§14 AMG mandatory retest).
-Extract ALL test parameters with exact values using these field names:
-"THC Content", "CBD Content", "CBN Content", "Loss on Drying", "Moisture Karl Fischer",
-"Lead Pb", "Cadmium Cd", "Mercury Hg", "Arsenic As",
-"TAMC", "TYMC", "Bile-tolerant Gram-neg", "E. coli", "Salmonella",
-"Pesticides", "Aflatoxin B1", "Aflatoxins Total", "Ochratoxin A", "Total Terpenes"
-Include units. Also extract: Lab Name, Analysis Certificate Number, Analysis Date, Batch.
+- M1.5: Vault Arrival (receipt, inspection, seal, weight check)
+- M2: Lab Testing (potency, micro, metals, terpenes, pesticides)
+- M3: QP Release (batch release, conformity declaration)
+- M3.1: Quarantine Release (zone transfer)
+- M4: Relabeling (labels, PZN, packaging specs)
+- M4.5: Storage (allocation, monitoring)
+- M5: Shipment (orders, invoices, delivery)
+- M6: Reconciliation (yield, balance, archive)
+- FINANCE: Costs, invoices, VAT amounts, payment terms
 
-Ph. Eur. LIMITS (compare against these):
-- THC: 19% ±10% (17.1–20.9%)
-- CBD: ≤1.0%
-- CBN: ≤0.5%
-- Loss on Drying: ≤12%
-- Moisture: ≤10%
-- Lead: ≤0.5 ppm
-- Cadmium: ≤0.3 ppm
-- Mercury: ≤0.1 ppm
-- Arsenic: ≤0.2 ppm
-- TAMC: ≤500,000 CFU/g
-- TYMC: ≤10,000 CFU/g
-- Bile-tolerant Gram-neg: ≤50,000 CFU/g
-- E. coli: absent in 1g
-- Salmonella: absent in 25g
-- Aflatoxin B1: ≤2 ppb
-- Aflatoxins total: ≤4 ppb
-- Ochratoxin A: ≤2 ppb
-${(()=>{const allSupCoas=Object.entries(docOriginals).filter(([k])=>k==="sc"||k.startsWith("sc_")).filter(([,v])=>v?.extracted&&Object.keys(v.extracted).length>0);if(allSupCoas.length===0)return "";const coaText=allSupCoas.map(([k,v])=>"Sub-batch "+k+":\n"+Object.entries(v.extracted).map(([fk,fv])=>fk+": "+fv).join("\n")).join("\n\n");return`
-SUPPLIER COA DATA FOR CROSS-REFERENCE (${allSupCoas.length} COA(s) uploaded):
-${coaText}
-Compare QSI results with supplier values. Flag variances >10% as warning, >25% as critical.`})()}
-`:""}
-
-Respond ONLY with a valid JSON object — no markdown, no backticks, no explanation:
+Respond ONLY with a JSON object (no markdown, no backticks):
 {
-  "docType": "string",
+  "docType": "string (e.g. Packing List, COA, Invoice, AWB, etc.)",
   "summary": "1-2 sentence summary",
-  "extracted": {"field_name": "value"},
-  "discrepancies": [{"field": "name", "declared": "system value", "found": "document value", "severity": "info|warning|critical"}],
-  "stageData": {"M1": {"field": "value"}},
-  "finance": {"costs": [{"desc": "item", "amount": "€xxx", "category": "freight|customs|insurance|product|vat"}], "invoiceNo": "", "totalValue": ""},
-  "spreadTo": ["M0.5", "M1"]
+  "extracted": {
+    "field_name": "value"
+  },
+  "discrepancies": [
+    {"field": "name", "declared": "value", "found": "value", "severity": "info|warning|critical"}
+  ],
+  "stageData": {
+    "M0.5": {"field": "value"},
+    "M1": {"field": "value"}
+  },
+  "finance": {
+    "costs": [{"desc": "description", "amount": "€xxx", "category": "freight|customs|insurance|product|vat"}],
+    "invoiceNo": "string",
+    "totalValue": "€xxx"
+  },
+  "spreadTo": ["M0.5", "M1", "M1.5"]
 }`;
 
-const content=[];
-if(ext==="pdf"){
-content.push({type:"document",source:{type:"base64",media_type:"application/pdf",data:base64Data}});
-content.push({type:"text",text:"Extract ALL data from this pharmaceutical document. Compare with system values. Respond with JSON only, no markdown."});
-}else{
-content.push({type:"image",source:{type:"base64",media_type:mediaType,data:base64Data}});
-content.push({type:"text",text:"Extract ALL data from this pharmaceutical document image. Compare with system values. Respond with JSON only, no markdown."});
-}
+const content=ext==="pdf"?[
+{type:"document",source:{type:"base64",media_type:"application/pdf",data:base64Data}},
+{type:"text",text:"Extract all data from this document. Respond with JSON only."}
+]:[
+{type:"image",source:{type:"base64",media_type:mediaType,data:base64Data}},
+{type:"text",text:"Extract all data from this document image. Respond with JSON only."}
+];
 
-const resp=await fetch("http://localhost:3001/api/anthropic",{
+const resp=await fetch("https://api.anthropic.com/v1/messages",{
 method:"POST",headers:{"Content-Type":"application/json"},
-body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:4000,system:systemPrompt,messages:[{role:"user",content}]})
+body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:2000,system:systemPrompt,messages:[{role:"user",content}]})
 });
-
-if(!resp.ok){
-const errBody=await resp.text().catch(()=>"");
-throw new Error("API "+resp.status+": "+errBody.slice(0,300));
-}
-
 const data=await resp.json();
-if(data.error){throw new Error("API Error: "+(data.error.message||JSON.stringify(data.error)))}
-
 const txt=data.content?.map(b=>b.text||"").join("")||"";
 const clean=txt.replace(/```json|```/g,"").trim();
-if(!clean||clean[0]!=="{"){throw new Error("Invalid JSON response: "+clean.slice(0,200))}
 aiResult=JSON.parse(clean);
-}catch(err){
-console.error("AI extraction error:",err);
-aiError=err.message||"Unknown error";
-aiResult=null;
-}
+}catch(err){console.error("AI extraction error:",err);aiResult=null}
 
-/* Update docOriginals — stop analyzing, track version */
-setDocOriginals(p=>{const prev=p[origTarget];return{...p,[origTarget]:{
+/* Store the original with AI-extracted data */
+setDocOriginals(p=>({...p,[origTarget]:{
 name:f.name,url,ext,size:fileSize,date:new Date().toLocaleString("de-DE"),
-version:(prev?.version||0)+1,
-previousVersion:prev?{name:prev.name,date:prev.date,version:prev.version||1}:null,
-analyzing:false,
 aiResult,
-aiError,
 extracted:aiResult?.extracted||{},
 discrepancies:aiResult?.discrepancies||[],
 summary:aiResult?.summary||"",
 docType:aiResult?.docType||f.name
-}}});
+}}));
 
 /* Spread to related lifecycle stages as uploads */
 const spreadStages=aiResult?.spreadTo||[];
@@ -7939,57 +7058,22 @@ stage,batch,sup:supName,url,content:aiResult?.summary||"",fromZip:null,linkedFro
 setUploads(p=>[...newUploads,...p]);
 }
 
-/* Build approval modal — even on error, show what we have */
-const exFields=Object.entries(aiResult?.extracted||{});
+/* Show AI extraction summary */
 const disc=aiResult?.discrepancies||[];
+const hasCritical=disc.some(d=>d.severity==="critical");
+const hasWarning=disc.some(d=>d.severity==="warning");
+const exFields=Object.keys(aiResult?.extracted||{});
 const finCosts=aiResult?.finance?.costs||[];
 
-/* Extended field mapping — covers AWB, Packing List, COA, Invoice fields */
-const FIELD_MAP={
-"Net Weight":"net","Gross Weight":"gross","Total Units":"units",
-"1kg Bags":"bags1kg","10g Doypacks":"doy10g","Boxes":"boxes","Pieces":"boxes",
-"EXW Value":"exw","Route":"route","Batch Number":"id","Product":"p","Product Description":"p",
-"Expiry Date":"exp","Analysis Number":"aNo","QP Name":"qp","Certificate Number":"cert",
-"MAWB Number":"","HAWB Number":"","Carrier":"","Flight Number":"",
-"Origin Airport":"","Destination Airport":"","Departure Date":"","Arrival Date":"",
-"Shipper Name":"","Consignee Name":"","Temperature Range":"",
-"THC Content":"","CBD Content":"","TAMC":"","Lead Content":"",
-"Invoice Number":"","Invoice Amount":"","CIF Value":""
-};
+let msg="✅ "+f.name+"\n";
+msg+="\n📄 "+(aiResult?.docType||"Document")+"\n";
+if(aiResult?.summary)msg+=aiResult.summary+"\n";
+if(exFields.length>0){msg+="\n🔍 "+(lang==="de"?"Extrahierte Daten":"Extracted Data")+" ("+exFields.length+"):\n";exFields.forEach(k=>msg+="  • "+k+": "+aiResult.extracted[k]+"\n")}
+if(disc.length>0){msg+="\n"+(hasCritical?"🔴":"⚠️")+" "+(lang==="de"?"Abweichungen":"Discrepancies")+" ("+disc.length+"):\n";disc.forEach(d=>msg+="  "+(d.severity==="critical"?"🔴":d.severity==="warning"?"🟡":"ℹ️")+" "+d.field+": "+d.declared+" → "+d.found+"\n")}
+if(finCosts.length>0){msg+="\n💰 "+(lang==="de"?"Finanzdaten":"Financial Data")+":\n";finCosts.forEach(c2=>msg+="  • "+c2.desc+": "+c2.amount+" ("+c2.category+")\n");if(aiResult?.finance?.totalValue)msg+="  TOTAL: "+aiResult.finance.totalValue+"\n"}
+if(spreadStages.length>0)msg+="\n📊 "+(lang==="de"?"Verteilt an":"Spread to")+": "+spreadStages.join(", ");
 
-const approvalFields=exFields.map(([key,val])=>{
-  const sysKey=FIELD_MAP[key]||"";
-  const sysVal=sysKey?String(curBD[sysKey]||"—"):"—";
-  const docVal=String(val);
-  const discMatch=disc.find(d=>d.field===key);
-  const severity=discMatch?discMatch.severity:(sysVal!=="—"&&sysVal!==docVal?"warning":"match");
-  return {key,label:key,systemValue:sysVal,docValue:docVal,status:"pending",severity,sysKey,category:discMatch?"discrepancy":"extracted"};
-});
-
-/* Add discrepancies not already in extracted */
-disc.forEach(d=>{if(!approvalFields.find(f=>f.key===d.field))approvalFields.push({key:d.field,label:d.field,systemValue:d.declared||"—",docValue:d.found||"—",status:"pending",severity:d.severity,sysKey:"",category:"discrepancy"})});
-
-const financeFields=finCosts.map((c,i)=>({key:"fin_"+i,label:c.desc,systemValue:"—",docValue:c.amount,status:"pending",severity:"info",category:"finance",finCategory:c.category}));
-
-const allFields=[...approvalFields,...financeFields];
-
-/* Only show approval modal if we have data OR an error to report */
-if(allFields.length>0||aiError){
-const safeSpread=(spreadStages||[]).filter(s=>typeof s==="string");
-console.log("[AI Approval] Opening modal:",{fields:allFields.length,finance:financeFields.length,spread:safeSpread,error:aiError});
-setAiApproval({
-  docKey:origTarget,fileName:f.name,batch,supplier:supName,
-  docType:aiResult?.docType||f.name,summary:aiResult?.summary||(aiError?"⚠️ AI extraction failed: "+aiError:""),
-  fields:allFields,
-  stageData:aiResult?.stageData||{},
-  spreadTo:safeSpread,
-  finance:aiResult?.finance||{},
-  totalValue:aiResult?.finance?.totalValue||"",
-  timestamp:new Date().toISOString(),
-  aiError:aiError||null
-});
-}
-
+alert(msg);
 e.target.value="";}} accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png" style={{display:"none"}}/>
 <nav style={{width:210,background:"linear-gradient(180deg,#065f46,#064e3b)",color:"#fff",position:"fixed",top:0,left:0,bottom:0,display:"flex",flexDirection:"column",overflowY:"auto",zIndex:100}}>
 <div style={{padding:"12px 10px",borderBottom:"1px solid rgba(255,255,255,.1)",display:"flex",alignItems:"center",gap:7}}><div style={{width:30,height:30,background:"rgba(255,255,255,.15)",borderRadius:7,display:"flex",alignItems:"center",justifyContent:"center",fontWeight:800,fontSize:15}}>NOC</div><div><div style={{fontWeight:700,fontSize:16}}>NOC Pharma</div><div style={{fontSize:12,opacity:.6}}>QMS v2.3</div></div></div>
@@ -8018,330 +7102,6 @@ e.target.value="";}} accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png" style={
 <div style={{padding:14,flex:1}}>{PAGES[pg]||<div>Page not found</div>}</div>
 </div>
 {agO&&<Agent/>}
-
-{/* AI Document Approval Modal */}
-{aiApproval&&aiApproval.fields&&<div style={{position:"fixed",inset:0,background:"rgba(0,0,0,.6)",zIndex:400,display:"flex",alignItems:"center",justifyContent:"center",backdropFilter:"blur(4px)"}} onClick={()=>{}}>
-<div onClick={e=>e.stopPropagation()} style={{width:820,maxHeight:"92vh",background:"#fff",borderRadius:16,boxShadow:"0 25px 60px rgba(0,0,0,.3)",overflow:"hidden",display:"flex",flexDirection:"column"}}>
-{/* Header */}
-<div style={{padding:"16px 20px",background:"linear-gradient(135deg,#1e3a5f,#0f766e)",color:"#fff",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-<div>
-<div style={{fontSize:18,fontWeight:800,display:"flex",alignItems:"center",gap:8}}>🤖 {lang==="de"?"KI-Dokumentenanalyse":"AI Document Analysis"}<span style={{padding:"2px 10px",borderRadius:20,fontSize:13,fontWeight:700,background:"rgba(255,255,255,.2)"}}>{aiApproval.docType}</span></div>
-<div style={{fontSize:14,opacity:.85,marginTop:3}}>{aiApproval.fileName} · {aiApproval.batch} · {aiApproval.supplier}</div>
-</div>
-<button onClick={()=>setAiApproval(null)} style={{background:"rgba(255,255,255,.2)",border:"none",color:"#fff",borderRadius:6,padding:"6px 12px",cursor:"pointer",fontWeight:700,fontSize:16}}>✕</button>
-</div>
-
-{/* Summary */}
-{aiApproval.aiError&&<div style={{padding:"10px 20px",background:"#fef2f2",borderBottom:"1px solid #fecaca",fontSize:14,color:"#991b1b",display:"flex",alignItems:"center",gap:8}}>
-<span style={{fontSize:18}}>⚠️</span><div><strong>{lang==="de"?"KI-Fehler":"AI Error"}:</strong> {aiApproval.aiError}<br/><span style={{fontSize:12,color:"#b91c1c"}}>{lang==="de"?"Prüfen Sie die Browser-Konsole (F12). Häufige Ursache: CORS-Fehler bei direktem API-Aufruf.":"Check browser console (F12). Common cause: CORS error on direct API call from browser."}</span></div>
-</div>}
-{aiApproval.summary&&!aiApproval.aiError&&<div style={{padding:"10px 20px",background:"#f0fdf4",borderBottom:"1px solid #a7f3d0",fontSize:14,color:"#065f46",display:"flex",alignItems:"center",gap:8}}>
-<span style={{fontSize:18}}>📄</span>{aiApproval.summary}
-</div>}
-
-{/* Stats bar */}
-<div style={{padding:"8px 20px",background:"#f8fafc",borderBottom:"1px solid #e5e7eb",display:"flex",gap:12,fontSize:13}}>
-{(()=>{const ap=aiApproval.fields.filter(f=>f.status==="approved").length;const rj=aiApproval.fields.filter(f=>f.status==="rejected").length;const pn=aiApproval.fields.filter(f=>f.status==="pending").length;const crit=aiApproval.fields.filter(f=>f.severity==="critical").length;const warn=aiApproval.fields.filter(f=>f.severity==="warning").length;
-return <>{pn>0&&<span style={{padding:"2px 8px",borderRadius:4,background:"#e0e7ff",color:"#3730a3",fontWeight:600}}>⏳ {pn} {lang==="de"?"ausstehend":"pending"}</span>}
-{ap>0&&<span style={{padding:"2px 8px",borderRadius:4,background:"#dcfce7",color:"#166534",fontWeight:600}}>✅ {ap} {lang==="de"?"genehmigt":"approved"}</span>}
-{rj>0&&<span style={{padding:"2px 8px",borderRadius:4,background:"#fee2e2",color:"#991b1b",fontWeight:600}}>❌ {rj} {lang==="de"?"abgelehnt":"rejected"}</span>}
-{crit>0&&<span style={{padding:"2px 8px",borderRadius:4,background:"#fecaca",color:"#dc2626",fontWeight:700}}>🔴 {crit} {lang==="de"?"kritisch":"critical"}</span>}
-{warn>0&&<span style={{padding:"2px 8px",borderRadius:4,background:"#fef3c7",color:"#d97706",fontWeight:700}}>⚠️ {warn} {lang==="de"?"Warnung":"warning"}</span>}
-<span style={{marginLeft:"auto",color:"#6b7280"}}>{lang==="de"?"Daten verteilen an":"Spread to"}: {(aiApproval.spreadTo||[]).join(", ")||"—"}</span></>})()}
-</div>
-
-{/* Field-by-field comparison table */}
-<div style={{flex:1,overflowY:"auto",padding:"12px 20px"}}>
-
-{/* Empty state when AI failed */}
-{aiApproval.fields.length===0&&<div style={{textAlign:"center",padding:32,color:"#6b7280"}}>
-<div style={{fontSize:40,marginBottom:12}}>🤖</div>
-<div style={{fontSize:16,fontWeight:700,marginBottom:6}}>{lang==="de"?"Keine Daten extrahiert":"No data extracted"}</div>
-<div style={{fontSize:14,maxWidth:400,margin:"0 auto"}}>{lang==="de"?"Die KI konnte keine Daten aus diesem Dokument extrahieren. Mögliche Ursachen:":"The AI could not extract data from this document. Possible causes:"}</div>
-<div style={{fontSize:13,marginTop:8,textAlign:"left",maxWidth:400,margin:"8px auto 0"}}>
-• {lang==="de"?"CORS-Fehler: API-Aufruf direkt vom Browser blockiert":"CORS error: API call blocked directly from browser"}<br/>
-• {lang==="de"?"Dokument ist kein lesbares PDF":"Document is not a readable PDF"}<br/>
-• {lang==="de"?"Datei zu groß für base64-Kodierung":"File too large for base64 encoding"}<br/>
-• {lang==="de"?"API-Schlüssel fehlt oder ungültig":"API key missing or invalid"}
-</div>
-<div style={{marginTop:16,padding:10,background:"#fefce8",borderRadius:8,border:"1px solid #fde68a",fontSize:13,color:"#92400e"}}>
-<strong>💡 Tipp:</strong> {lang==="de"?"Öffnen Sie die Browser-Konsole (F12 → Console) und laden Sie das Dokument erneut hoch um den Fehler zu sehen.":"Open browser console (F12 → Console) and re-upload the document to see the error."}
-</div>
-</div>}
-
-{/* Extracted & Discrepancy Fields */}
-{aiApproval.fields.filter(f=>f.category!=="finance").length>0&&<div style={{marginBottom:12}}>
-<div style={{fontSize:14,fontWeight:700,color:"#1e293b",marginBottom:8,display:"flex",alignItems:"center",gap:6}}>🔍 {lang==="de"?"Extrahierte Daten — Systemabgleich":"Extracted Data — System Comparison"}</div>
-<table style={{width:"100%",borderCollapse:"collapse",fontSize:14}}>
-<thead><tr style={{background:"#f1f5f9"}}>
-<td style={{padding:"6px 10px",fontWeight:700,border:"1px solid #e2e8f0",width:"22%"}}>{lang==="de"?"Feld":"Field"}</td>
-<td style={{padding:"6px 10px",fontWeight:700,border:"1px solid #e2e8f0",width:"25%",background:"#eff6ff"}}>{lang==="de"?"Systemwert":"System Value"}</td>
-<td style={{padding:"6px 10px",fontWeight:700,border:"1px solid #e2e8f0",width:"25%",background:"#f0fdf4"}}>{lang==="de"?"Dokumentwert":"Document Value"}</td>
-<td style={{padding:"6px 10px",fontWeight:700,border:"1px solid #e2e8f0",width:"10%",textAlign:"center"}}>{lang==="de"?"Status":"Status"}</td>
-<td style={{padding:"6px 10px",fontWeight:700,border:"1px solid #e2e8f0",width:"18%",textAlign:"center"}}>{lang==="de"?"Aktion":"Action"}</td>
-</tr></thead>
-<tbody>
-{aiApproval.fields.filter(f=>f.category!=="finance").map((field,i)=>{
-const isMatch=field.systemValue===field.docValue||field.systemValue==="—";
-const isCrit=field.severity==="critical";
-const isWarn=field.severity==="warning";
-const rowBg=field.status==="approved"?"#f0fdf4":field.status==="rejected"?"#fef2f2":isCrit?"#fff1f2":isWarn?"#fffbeb":"#fff";
-const fk=field.key;
-return <tr key={i} style={{background:rowBg}}>
-<td style={{padding:"6px 10px",border:"1px solid #e2e8f0",fontWeight:600}}>
-{isCrit?"🔴 ":isWarn?"🟡 ":isMatch&&field.systemValue!=="—"?"✅ ":"🆕 "}{field.label}
-</td>
-<td style={{padding:"6px 10px",border:"1px solid #e2e8f0",color:field.systemValue==="—"?"#9ca3af":"#1e40af",fontWeight:field.systemValue!=="—"?600:400}}>
-{field.systemValue}
-</td>
-<td style={{padding:"6px 10px",border:"1px solid #e2e8f0",color:isCrit?"#dc2626":isWarn?"#d97706":"#059669",fontWeight:600}}>
-{field.docValue}
-</td>
-<td style={{padding:"6px 10px",border:"1px solid #e2e8f0",textAlign:"center",fontSize:16}}>
-{field.status==="approved"?"✅":field.status==="rejected"?"❌":"⏳"}
-</td>
-<td style={{padding:"6px 10px",border:"1px solid #e2e8f0",textAlign:"center"}}>
-{field.status==="pending"?<div style={{display:"flex",gap:4,justifyContent:"center"}}>
-<button onClick={()=>{setAiApproval(prev=>({...prev,fields:prev.fields.map(f=>f.key===fk?{...f,status:"approved"}:f)}))}} style={{padding:"3px 10px",borderRadius:4,fontSize:12,fontWeight:700,border:"none",background:"#059669",color:"#fff",cursor:"pointer"}}>✓ {lang==="de"?"Ja":"Accept"}</button>
-<button onClick={()=>{setAiApproval(prev=>({...prev,fields:prev.fields.map(f=>f.key===fk?{...f,status:"rejected"}:f)}))}} style={{padding:"3px 10px",borderRadius:4,fontSize:12,fontWeight:700,border:"none",background:"#dc2626",color:"#fff",cursor:"pointer"}}>✗ {lang==="de"?"Nein":"Reject"}</button>
-</div>:
-<button onClick={()=>{setAiApproval(prev=>({...prev,fields:prev.fields.map(f=>f.key===fk?{...f,status:"pending"}:f)}))}} style={{padding:"2px 8px",borderRadius:4,fontSize:11,fontWeight:600,border:"1px solid #d1d5db",background:"#fff",color:"#6b7280",cursor:"pointer"}}>{lang==="de"?"Zurücksetzen":"Reset"}</button>}
-</td>
-</tr>})}
-</tbody></table>
-</div>}
-
-{/* Finance Section */}
-{aiApproval.fields.filter(f=>f.category==="finance").length>0&&<div style={{marginBottom:12}}>
-<div style={{fontSize:14,fontWeight:700,color:"#1e293b",marginBottom:8,display:"flex",alignItems:"center",gap:6}}>💰 {lang==="de"?"Finanzdaten":"Financial Data"}{aiApproval.totalValue&&<span style={{fontSize:13,fontWeight:600,color:"#059669",marginLeft:8}}>Total: {aiApproval.totalValue}</span>}</div>
-<table style={{width:"100%",borderCollapse:"collapse",fontSize:14}}>
-<thead><tr style={{background:"#fefce8"}}>
-<td style={{padding:"6px 10px",fontWeight:700,border:"1px solid #e2e8f0",width:"30%"}}>{lang==="de"?"Position":"Item"}</td>
-<td style={{padding:"6px 10px",fontWeight:700,border:"1px solid #e2e8f0",width:"20%"}}>{lang==="de"?"Betrag":"Amount"}</td>
-<td style={{padding:"6px 10px",fontWeight:700,border:"1px solid #e2e8f0",width:"15%"}}>{lang==="de"?"Kategorie":"Category"}</td>
-<td style={{padding:"6px 10px",fontWeight:700,border:"1px solid #e2e8f0",width:"10%",textAlign:"center"}}>{lang==="de"?"Status":"Status"}</td>
-<td style={{padding:"6px 10px",fontWeight:700,border:"1px solid #e2e8f0",width:"25%",textAlign:"center"}}>{lang==="de"?"Aktion":"Action"}</td>
-</tr></thead>
-<tbody>
-{aiApproval.fields.filter(f=>f.category==="finance").map((field,i)=>{
-const fk=field.key;
-return <tr key={i} style={{background:field.status==="approved"?"#f0fdf4":field.status==="rejected"?"#fef2f2":"#fff"}}>
-<td style={{padding:"6px 10px",border:"1px solid #e2e8f0",fontWeight:600}}>{field.label}</td>
-<td style={{padding:"6px 10px",border:"1px solid #e2e8f0",color:"#059669",fontWeight:700}}>{field.docValue}</td>
-<td style={{padding:"6px 10px",border:"1px solid #e2e8f0"}}><span style={{padding:"2px 6px",borderRadius:4,fontSize:12,fontWeight:600,background:field.finCategory==="freight"?"#dbeafe":field.finCategory==="product"?"#dcfce7":field.finCategory==="vat"?"#fef3c7":field.finCategory==="customs"?"#f3e8ff":"#f1f5f9",color:field.finCategory==="freight"?"#1e40af":field.finCategory==="product"?"#059669":field.finCategory==="vat"?"#92400e":field.finCategory==="customs"?"#7c3aed":"#475569"}}>{field.finCategory||"other"}</span></td>
-<td style={{padding:"6px 10px",border:"1px solid #e2e8f0",textAlign:"center",fontSize:16}}>{field.status==="approved"?"✅":field.status==="rejected"?"❌":"⏳"}</td>
-<td style={{padding:"6px 10px",border:"1px solid #e2e8f0",textAlign:"center"}}>
-{field.status==="pending"?<div style={{display:"flex",gap:4,justifyContent:"center"}}>
-<button onClick={()=>{setAiApproval(prev=>({...prev,fields:prev.fields.map(f=>f.key===fk?{...f,status:"approved"}:f)}))}} style={{padding:"3px 10px",borderRadius:4,fontSize:12,fontWeight:700,border:"none",background:"#059669",color:"#fff",cursor:"pointer"}}>✓ {lang==="de"?"Ja":"Accept"}</button>
-<button onClick={()=>{setAiApproval(prev=>({...prev,fields:prev.fields.map(f=>f.key===fk?{...f,status:"rejected"}:f)}))}} style={{padding:"3px 10px",borderRadius:4,fontSize:12,fontWeight:700,border:"none",background:"#dc2626",color:"#fff",cursor:"pointer"}}>✗ {lang==="de"?"Nein":"Reject"}</button>
-</div>:
-<button onClick={()=>{setAiApproval(prev=>({...prev,fields:prev.fields.map(f=>f.key===fk?{...f,status:"pending"}:f)}))}} style={{padding:"2px 8px",borderRadius:4,fontSize:11,fontWeight:600,border:"1px solid #d1d5db",background:"#fff",color:"#6b7280",cursor:"pointer"}}>{lang==="de"?"Zurücksetzen":"Reset"}</button>}
-</td>
-</tr>})}
-</tbody></table>
-</div>}
-
-{/* Spread Preview */}
-{(aiApproval.spreadTo||[]).length>0&&<div style={{padding:10,background:"#eff6ff",borderRadius:8,border:"1px solid #bfdbfe",marginBottom:12}}>
-<div style={{fontSize:13,fontWeight:700,color:"#1e40af",marginBottom:6}}>📊 {lang==="de"?"Datenverteilung nach Genehmigung":"Data spread after approval"}</div>
-<div style={{display:"flex",flexWrap:"wrap",gap:6}}>{(aiApproval.spreadTo||[]).map((s,i)=>{
-const sg=SG.find(x=>x.id===s);
-return <span key={i} style={{padding:"3px 10px",borderRadius:6,fontSize:13,fontWeight:600,background:sg?sg.c+"18":"#e0e7ff",color:sg?sg.c:"#3730a3",border:"1px solid "+(sg?sg.c+"40":"#c7d2fe")}}>{sg?sg.ic+" ":""}{s}</span>})}</div>
-</div>}
-</div>
-
-{/* Footer actions */}
-<div style={{padding:"12px 20px",borderTop:"2px solid #e5e7eb",background:"#f8fafc",display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-<div style={{display:"flex",gap:6}}>
-<button onClick={()=>{/* Approve All Pending */
-setAiApproval(prev=>({...prev,fields:prev.fields.map(f=>f.status==="pending"?{...f,status:"approved"}:f)}));
-}} style={{padding:"8px 16px",borderRadius:6,fontSize:14,fontWeight:700,border:"none",background:"#059669",color:"#fff",cursor:"pointer"}}>✓ {lang==="de"?"Alle genehmigen":"Approve All"}</button>
-<button onClick={()=>{
-setAiApproval(prev=>({...prev,fields:prev.fields.map(f=>f.status==="pending"?{...f,status:"rejected"}:f)}));
-}} style={{padding:"8px 16px",borderRadius:6,fontSize:14,fontWeight:700,border:"none",background:"#dc2626",color:"#fff",cursor:"pointer"}}>✗ {lang==="de"?"Alle ablehnen":"Reject All"}</button>
-</div>
-<div style={{display:"flex",gap:8,alignItems:"center"}}>
-<button onClick={()=>setAiApproval(null)} style={{padding:"8px 16px",borderRadius:6,fontSize:14,fontWeight:600,border:"1px solid #d1d5db",background:"#fff",color:"#374151",cursor:"pointer"}}>{lang==="de"?"Abbrechen":"Cancel"}</button>
-<button onClick={()=>{
-/* COMMIT: Apply all approved changes */
-/* AUTH GATE — require login for approval actions (21 CFR Part 11 §11.10(d)) */
-if(!auth){alert(lang==="de"?"⚠️ Anmeldung erforderlich! Bitte melden Sie sich an bevor Sie Daten genehmigen können. (21 CFR Part 11 §11.10(d))":"⚠️ Login required! Please sign in before approving data. (21 CFR Part 11 §11.10(d))");return}
-const approved=aiApproval.fields.filter(f=>f.status==="approved");
-const rejected=aiApproval.fields.filter(f=>f.status==="rejected");
-const pending=aiApproval.fields.filter(f=>f.status==="pending");
-if(pending.length>0){alert((lang==="de"?"Bitte alle Felder genehmigen oder ablehnen bevor Sie bestätigen.":"Please approve or reject all fields before committing."));return}
-
-/* 1. Update BT_DATA in-memory with approved field values */
-const newOverrides={...btOverrides};
-approved.filter(f=>f.sysKey&&f.category!=="finance").forEach(f=>{
-  newOverrides[aiApproval.batch+"_"+f.sysKey]=f.docValue;
-  if(BT_DATA[aiApproval.batch])BT_DATA[aiApproval.batch][f.sysKey]=f.docValue;
-});
-setBtOverrides(newOverrides);
-try{localStorage.setItem("noc-qms-bt-overrides",JSON.stringify(newOverrides))}catch(e){}
-
-/* 1b. Update batchStages with current lcs stage label */
-setBatchStages(prev=>{
-  const sg=SG[lcs]||{};
-  const updated={...prev,[aiApproval.batch]:{
-    label:sg.id?(sg.id+" "+(sg.en||sg.de||"")):(prev[aiApproval.batch]?.label||""),
-    color:"#059669",
-    lcs
-  }};
-  try{localStorage.setItem("noc-qms-batch-stages",JSON.stringify(updated))}catch(e){}
-  return updated;
-});
-
-/* 2. SPREAD DATA: Update docDetails state with extracted values (triggers re-render) */
-const docKey=aiApproval.docKey;
-const m0dEntry=M0D.find(d=>d.k===docKey);
-if(m0dEntry){
-  const approvedMap={};
-  approved.filter(f=>f.category!=="finance").forEach(f=>{approvedMap[f.label]=f.docValue});
-  setDocDetails(prev=>{
-    const existing=prev[docKey]||{ref:m0dEntry.ref,by:m0dEntry.by,on:m0dEntry.on,vu:m0dEntry.vu,det:m0dEntry.det||[]};
-    /* Update header fields */
-    const newRef=approvedMap["Reference Number"]||approvedMap["Packing List Number"]||approvedMap["HAWB Number"]||approvedMap["Invoice Number"]||approvedMap["Certificate Number"]||existing.ref;
-    const newBy=approvedMap["Issuer"]||approvedMap["Shipper Name"]||approvedMap["Issued By"]||existing.by;
-    const newOn=approvedMap["Issue Date"]||approvedMap["Execution Date"]||approvedMap["Date"]||existing.on;
-    const newVu=approvedMap["Expiry Date"]||approvedMap["Valid Until"]||existing.vu;
-    /* Rebuild det array */
-    const detMap=new Map((existing.det||[]).map(d=>[d[0],d[1]]));
-    approved.filter(f=>f.category!=="finance").forEach(f=>{
-      const label=f.label;const value=f.docValue;let matched=false;
-      for(const [existingLabel] of detMap){
-        if(existingLabel.toLowerCase().includes(label.toLowerCase().split(" ")[0])||label.toLowerCase().includes(existingLabel.toLowerCase().split(" ")[0])){
-          detMap.set(existingLabel,value);matched=true;break;
-        }
-      }
-      if(!matched)detMap.set(label,value);
-    });
-    return {...prev,[docKey]:{...existing,ref:newRef,by:newBy,on:newOn,vu:newVu,
-      det:Array.from(detMap).map(([k,v])=>[k,v]),
-      aiVerified:true,aiVerifiedAt:new Date().toISOString(),
-      aiVerifiedBy:auth?.name||"Celso Hamelink",aiApprovedCount:approved.length}};
-  });
-}
-
-/* 3. SPREAD TO DEPENDENT STAGES: Update BT_DATA fields from extracted data */
-const approvedData={};
-approved.filter(f=>f.category!=="finance").forEach(f=>{approvedData[f.label]=f.docValue});
-
-/* Map common document field names to BT_DATA keys */
-const SPREAD_MAP={
-  "Net Weight":"net","Gross Weight":"gross","Total Units":"units",
-  "Total 1kg Bags":"bags1kg","Total 10g Doypacks":"doy10g","Boxes":"boxes",
-  "EXW Value":"exw","Route":"route","Batch Number":"id","Product Description":"p",
-  "Expiry Date":"exp","Packing List Number":"","HAWB Number":"","Carrier":"",
-  "Origin Airport":"","Destination Airport":"","Shipper Name":"","Consignee Name":""
-};
-const bt=BT_DATA[aiApproval.batch];
-if(bt){
-  Object.entries(approvedData).forEach(([label,value])=>{
-    const btKey=SPREAD_MAP[label];
-    if(btKey&&value){bt[btKey]=value}
-  });
-}
-
-/* 4. Add finance entries */
-const newFinEntries=approved.filter(f=>f.category==="finance").map(f=>({
-  batch:aiApproval.batch,desc:f.label,amount:f.docValue,category:f.finCategory||"other",
-  docKey:aiApproval.docKey,docName:aiApproval.fileName,ts:new Date().toISOString()
-}));
-if(newFinEntries.length>0)setFinanceEntries(prev=>[...prev,...newFinEntries]);
-
-/* 5. Write audit log entries (21 CFR Part 11 compliant) */
-const newAuditEntries=[];
-approved.forEach(f=>{newAuditEntries.push({
-  ts:new Date().toISOString(),user:auth?.name||"Celso Hamelink",action:"APPROVED",
-  docKey:aiApproval.docKey,field:f.label,oldVal:f.systemValue,newVal:f.docValue,
-  batch:aiApproval.batch,document:aiApproval.fileName,docType:aiApproval.docType
-})});
-rejected.forEach(f=>{newAuditEntries.push({
-  ts:new Date().toISOString(),user:auth?.name||"Celso Hamelink",action:"REJECTED",
-  docKey:aiApproval.docKey,field:f.label,oldVal:f.systemValue,newVal:f.docValue,
-  batch:aiApproval.batch,document:aiApproval.fileName,docType:aiApproval.docType
-})});
-setAuditLog(prev=>[...newAuditEntries,...prev]);
-
-/* 6. Update docOriginals with verified fields + store all approved data */
-setDocOriginals(prev=>({...prev,[aiApproval.docKey]:{
-  ...prev[aiApproval.docKey],
-  verified:approved.map(f=>f.label),
-  corrections:Object.fromEntries(approved.filter(f=>f.systemValue!=="—"&&f.systemValue!==f.docValue).map(f=>[f.label,f.docValue])),
-  approvedData:Object.fromEntries(approved.map(f=>[f.label,f.docValue])),
-  approvalComplete:true,
-  approvedAt:new Date().toISOString(),
-  approvedBy:auth?.name||"Celso Hamelink",
-  approvedCount:approved.length,
-  rejectedCount:rejected.length
-}}));
-
-/* 7. Save approval session to history */
-setApprovalHistory(prev=>[{
-  ts:new Date().toISOString(),batch:aiApproval.batch,docKey:aiApproval.docKey,
-  fileName:aiApproval.fileName,docType:aiApproval.docType,
-  approved:approved.length,rejected:rejected.length,
-  user:auth?.name||"Celso Hamelink",
-  fields:aiApproval.fields,
-  spreadTo:aiApproval.spreadTo||[]
-},...prev]);
-
-/* 8. COA CROSS-REFERENCE: Update LAB array with real extracted values */
-if(aiApproval.docKey==="sc"||aiApproval.docKey==="lab_coa"||aiApproval.docKey==="qsi_coa"){
-  const isSupplier=aiApproval.docKey==="sc";
-  const field=isSupplier?"sup":"qsi";
-  const paramMap={"THC Content":"THC","CBD Content":"CBD","CBN Content":"CBN",
-    "Loss on Drying":"Loss on drying","Moisture Karl Fischer":"Moisture (Karl Fischer)",
-    "Lead Pb":"Lead (Pb)","Cadmium Cd":"Cadmium (Cd)","Mercury Hg":"Mercury (Hg)","Arsenic As":"Arsenic (As)",
-    "TAMC":"TAMC","TYMC":"TYMC","Bile-tolerant Gram-neg":"Bile-tolerant Gram-neg",
-    "E. coli":"E. coli","Salmonella":"Salmonella","Pesticides":"Pesticides",
-    "Aflatoxin B1":"Aflatoxin B1","Aflatoxins Total":"Aflatoxins total","Ochratoxin A":"Ochratoxin A",
-    "Total Terpenes":"Total Terpenes"};
-  
-  approved.filter(f=>f.category!=="finance").forEach(f=>{
-    const labParam=paramMap[f.label];
-    if(labParam){
-      const labEntry=LAB.find(l=>l.en===labParam||l.en.includes(labParam)||l.de===labParam);
-      if(labEntry){
-        labEntry[field]=f.docValue;
-        /* Recalculate variance if both values exist */
-        if(labEntry.sup&&labEntry.qsi){
-          const parseNum=(s)=>{const m=String(s).replace(/[<>≤≥,]/g,".").match(/[\d.]+/);return m?parseFloat(m[0]):null};
-          const supVal=parseNum(labEntry.sup);
-          const qsiVal=parseNum(labEntry.qsi);
-          if(supVal!==null&&qsiVal!==null&&supVal>0){
-            labEntry.var=parseFloat((((qsiVal-supVal)/supVal)*100).toFixed(1));
-          }
-        }
-        console.log("[COA Cross-Ref]",labParam,":",field,"=",f.docValue,labEntry.var!==null?"variance: "+labEntry.var+"%":"");
-      }
-    }
-  });
-  
-  /* Log the cross-reference event */
-  setAuditLog(prev=>[{
-    ts:new Date().toISOString(),user:auth?.name||"Celso Hamelink",
-    action:isSupplier?"SUPPLIER_COA_LOADED":"QSI_COA_LOADED",
-    docKey:aiApproval.docKey,field:"lab_parameters",
-    oldVal:"",newVal:approved.filter(f=>f.category!=="finance").length+" parameters updated",
-    batch:aiApproval.batch,document:aiApproval.fileName,docType:aiApproval.docType
-  },...prev]);
-}
-
-/* 9. Force re-render by toggling a counter */
-setLcs(prev=>prev+1);
-
-/* 9. Close modal */
-setAiApproval(null);
-
-}} disabled={aiApproval.fields.length===0||aiApproval.fields.some(f=>f.status==="pending")} style={{padding:"8px 20px",borderRadius:6,fontSize:14,fontWeight:700,border:"none",background:(aiApproval.fields.length===0||aiApproval.fields.some(f=>f.status==="pending"))?"#9ca3af":"#1e40af",color:"#fff",cursor:(aiApproval.fields.length===0||aiApproval.fields.some(f=>f.status==="pending"))?"not-allowed":"pointer",display:"flex",alignItems:"center",gap:6}}>
-{aiApproval.fields.length===0?(lang==="de"?"Keine Daten zum Bestätigen":"No data to commit"):aiApproval.fields.some(f=>f.status==="pending")?(lang==="de"?"Ausstehende Felder...":"Pending fields..."):<>{lang==="de"?"✓ Bestätigen & Anwenden":"✓ Commit & Apply"}</>}
-</button>
-</div>
-</div>
-</div>
-</div>}
 
 {/* Document Preview Modal */}
 {docPreview&&<div style={{position:"fixed",inset:0,background:"rgba(0,0,0,.5)",zIndex:300,display:"flex",alignItems:"center",justifyContent:"center"}} onClick={()=>setDocPreview(null)}>

@@ -1,0 +1,44 @@
+╔══════════════════════════════════════════════════════════╗
+║  NOC Pharma QMS v1.0                                     ║
+║  GxP Compliant | 21 CFR Part 11 | EU Annex 11           ║
+╚══════════════════════════════════════════════════════════╝
+
+WHAT YOU NEED FIRST:
+  1. Node.js v20+     → https://nodejs.org
+  2. Docker Desktop   → https://docker.com/products/docker-desktop
+  3. Anthropic API key → https://console.anthropic.com/settings/keys
+
+OPTION A: LOCAL TESTING (Mac/Linux)
+  Open Terminal, navigate to this folder, run:
+    chmod +x setup-local.sh
+    ./setup-local.sh
+
+OPTION B: LOCAL TESTING (Windows)
+  Right-click setup-windows.ps1 → "Run with PowerShell"
+
+OPTION C: PRODUCTION (Hetzner Cloud)
+  1. Create account: https://console.hetzner.cloud
+  2. Generate API token: Project → Security → API Tokens
+  3. Run:
+    chmod +x deploy-hetzner.sh
+    ./deploy-hetzner.sh
+
+AFTER SETUP:
+  Open http://localhost:3000
+  Login: weber@noc-pharma.de / QP_Test_2026!
+  Upload your SOPs_GÜLTIG.zip via the 📦 ZIP button
+
+FILES IN THIS PACKAGE:
+  setup-local.sh        → One-click local setup (Mac/Linux)
+  setup-windows.ps1     → One-click local setup (Windows)
+  deploy-hetzner.sh     → One-click Hetzner production deploy
+  package.json          → Node.js dependencies
+  prisma/schema.prisma  → Database schema
+  prisma/seed.ts        → Test users and data
+  src/components/        → The QMS React application
+  src/lib/roles.ts      → Role-based access control
+  tests/compliance/      → GAMP 5 IQ/OQ/PQ validation tests
+  docs/DEPLOYMENT.md    → Full deployment guide
+  docs/VALIDATION.md    → GAMP 5 validation protocol
+  docker-compose.yml    → PostgreSQL + app containers
+  Dockerfile            → Production container build

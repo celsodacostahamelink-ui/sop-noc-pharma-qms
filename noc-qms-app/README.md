@@ -1,16 +1,31 @@
-# React + Vite
+# NOC Pharma QMS v1.0
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**GxP Compliant Document Management System**  
+21 CFR Part 11 | EU Annex 11 | EU AI Act 2026 | GAMP 5
 
-Currently, two official plugins are available:
+Cannabis pharmaceutical wholesale — BfArM audit-ready.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- 📑 **230 SOP Management** — upload, view, search, filter
+- 📦 **Smart ZIP Upload** — auto-matches files to SOP codes
+- 🔬 **AI Compliance Scan** — PIC/S GMP + MedCanG/AMG analysis
+- ⚠️ **Legal Update Tracker** — 12 update categories, 79 SOPs flagged
+- 🤖 **AI Document Agent** — generates/updates SOPs via Claude API
+- 👤 **HITL Decisions** — digital signatures, override logging
+- ✅ **15-Item Audit Checklist** — BfArM-ready
+- 📝 **Immutable Audit Trail** — 10yr retention, CSV export
+- 🔐 **8 Roles** — QP, RP, QA, IT, Compliance, SCM, Auditor, Viewer
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Quick Start
 
-## Expanding the ESLint configuration
+```bash
+cp .env.example .env          # Configure
+docker compose up db -d       # Database
+npx prisma db push            # Schema
+npm run db:seed               # Test users
+npm run dev                   # http://localhost:3000
+npm run test:compliance       # GxP validation
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for full guide.
