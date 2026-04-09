@@ -1503,7 +1503,7 @@ export default function QMSApp() {
                               {sopAnalysis[sop.id] && (
                                 <button style={{padding:"5px 12px",background:sopAnalysis[sop.id]?.urgent?"#dc2626":sopAnalysis[sop.id]?.needsUpdate?"#d97706":"#16a34a",color:"white",border:"none",borderRadius:6,fontSize:11,fontWeight:700,cursor:"pointer"}}
                                   onClick={()=>setShowAnalysis(p=>({...p,[sop.id]:!p[sop.id]}))}>
-                                  {sopAnalysis[sop.id]?.urgent?"🔴":"sopAnalysis[sop.id]?.needsUpdate?"⚠️":"✅"} {showAnalysis[sop.id]?"Analyse ausblenden":"Analyse anzeigen"}
+                                  {sopAnalysis[sop.id]?.urgent?"🔴":sopAnalysis[sop.id]?.needsUpdate?"⚠️":"✅"} {showAnalysis[sop.id]?"Analyse ausblenden":"Analyse anzeigen"}
                                 </button>
                               )}
                               {/* Step 2: Generate update */}
