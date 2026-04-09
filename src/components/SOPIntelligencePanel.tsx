@@ -387,7 +387,7 @@ export default function SOPIntelligencePanel({ user }: { user?: any }) {
     for (const f of allFiles) {
       const sop = matchFileToSOP(f.name);
       if (sop) {
-        const blob = new Blob([f.data], {
+        const blob = new Blob([f.data.buffer as ArrayBuffer], {
           type: f.name.toLowerCase().endsWith(".pdf") ? "application/pdf" : "application/octet-stream"
         });
         const blobUrl = URL.createObjectURL(blob);
