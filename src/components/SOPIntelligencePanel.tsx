@@ -388,7 +388,7 @@ export default function SOPIntelligencePanel({ user }: { user?: any }) {
       const sop = matchFileToSOP(f.name);
       if (sop) {
         const blob = new Blob([f.data], {
-          type: /\.pdf$/i.test(f.name) ? "application/pdf" : "application/octet-stream"
+          type: f.name.toLowerCase().endsWith(".pdf") ? "application/pdf" : "application/octet-stream"
         });
         const blobUrl = URL.createObjectURL(blob);
         const extractedText = extractTextFromBytes(f.data, f.name);
