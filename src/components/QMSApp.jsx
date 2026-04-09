@@ -863,6 +863,13 @@ export default function QMSApp() {
   const [importSubmitted, setImportSubmitted] = useState(false);
   const [matrixFilter, setMatrixFilter] = useState("All");
   const [matrixSearch, setMatrixSearch] = useState("");
+  const [sopAnalysis, setSopAnalysis] = useState({});
+  const [sopNewVersion, setSopNewVersion] = useState({});
+  const [sopComparison, setSopComparison] = useState({});
+  const [sopApproved, setSopApproved] = useState({});
+  const [sopAuditTrail, setSopAuditTrail] = useState({});
+  const [analysing, setAnalysing] = useState({});
+  const [showAI, setShowAI] = useState({});
   const [envelopes, setEnvelopes] = useState([
     { id:"ENV-2026-001", sop:"SOP-100_A6", title:"Ablaufdiagramm Q-Prozesse v2.0", sent:"2026-02-23",
       signers:[{name:"Celso Hamelink",role:"RP",status:"signed",at:"2026-02-23 14:22"},{name:"Torsten Cuny",role:"QP",status:"awaiting"},{name:"Dr. Olaf Schagon",role:"QA",status:"awaiting"}]},
@@ -994,6 +1001,72 @@ export default function QMSApp() {
       setStage(p=>({...p,[sop.id]:"ai_generated"}));
     }
     if(missing.length>0) addLog("AI_BATCH", "v1.0 auto-generated fuer "+missing.length+" fehlende Dokumente", "done");
+  };
+
+  const addAuditEntry = (sopId, act, details) => {
+    setSopAuditTrail(p=>({...p,[sopId]:[...(p[sopId]||[]),{action:act,user:user?.name||"System",role:user?.role||"System",timestamp:new Date().toISOString(),details}]}));
+    addLog(act, sopId+": "+details, "cls");
+  };
+
+  const runSopAnalysis = async (sopId, sopTitle) => {
+    const uf = uploadedFiles[sopId];
+    if(!uf) { alert("Bitte zuerst Datei hochladen."); return; }
+    setAnalysing(p=>({...p,[sopId]:true}));
+    addAuditEntry(sopId,"AI_START","Analyse gestartet");
+    try {
+      const r = await fetch("/api/ai-agent",{method:"POST",headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({action:"analyse",sopId,sopTitle,extractedText:uf.extractedText||"SOP: "+sopTitle})});
+      const d = await r.json();
+      if(d.ok){
+        setSopAnalysis(p=>({...p,[sopId]:d}));
+        setShowAI(p=>({...p,[sopId]:"analysis"}));
+        addAuditEntry(sopId,"AI_DONE",d.urgent?"KRITISCH":d.needsUpdate?"Update noetig":"Konform");
+      }
+    } catch(e){ console.error(e); }
+    setAnalysing(p=>({...p,[sopId]:false}));
+  };
+
+  const generateSopUpdate = async (sopId, sopTitle) => {
+    const uf = uploadedFiles[sopId];
+    setAnalysing(p=>({...p,[sopId]:true}));
+    addAuditEntry(sopId,"GEN_START","Neue Version wird generiert");
+    try {
+      const r = await fetch("/api/ai-agent",{method:"POST",headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({action:"generate",sopId,sopTitle,extractedText:uf?.extractedText||"SOP: "+sopTitle})});
+      const d = await r.json();
+      if(d.ok){
+        setSopNewVersion(p=>({...p,[sopId]:d.updatedSOP}));
+        setShowAI(p=>({...p,[sopId]:"newversion"}));
+        addAuditEntry(sopId,"GEN_DONE","Neue Version generiert");
+      }
+    } catch(e){ console.error(e); }
+    setAnalysing(p=>({...p,[sopId]:false}));
+  };
+
+  const runSopComparison = async (sopId, sopTitle) => {
+    const uf = uploadedFiles[sopId];
+    const nv = sopNewVersion[sopId];
+    if(!nv){ alert("Bitte zuerst neue Version generieren."); return; }
+    setAnalysing(p=>({...p,[sopId]:true}));
+    try {
+      const r = await fetch("/api/ai-agent",{method:"POST",headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({action:"compare",sopId,sopTitle,oldText:uf?.extractedText||"Original",newText:nv})});
+      const d = await r.json();
+      if(d.ok){
+        setSopComparison(p=>({...p,[sopId]:d}));
+        setShowAI(p=>({...p,[sopId]:"compare"}));
+        addAuditEntry(sopId,"COMPARE_DONE",d.approved?"Freigabe empfohlen":"Ueberarbeitung noetig");
+      }
+    } catch(e){ console.error(e); }
+    setAnalysing(p=>({...p,[sopId]:false}));
+  };
+
+  const approveSop = (sopId) => {
+    if(!user||!["QP","RP"].includes(user.role)){ alert("Nur QP/RP kann freigeben."); return; }
+    setSopApproved(p=>({...p,[sopId]:true}));
+    setStage(p=>({...p,[sopId]:"active"}));
+    addAuditEntry(sopId,"QP_APPROVED","Freigegeben gemaess §15 AMG + Annex 11");
+    addLog("QP_SIGN", sopId+" freigegeben", "sign");
   };
 
   const auditDone = Object.values(auditChecked).filter(Boolean).length;
@@ -1271,6 +1344,49 @@ export default function QMSApp() {
                           </div>
                         )}
 
+                        {showAI[sop.id]&&sopAnalysis[sop.id]&&(
+                          <div style={{background:"#f8fafc",border:"1px solid #e2e8f0",borderRadius:8,padding:14,marginBottom:12,fontSize:12}}>
+                            <div style={{fontWeight:700,marginBottom:8,color:sopAnalysis[sop.id].urgent?"#dc2626":sopAnalysis[sop.id].needsUpdate?"#d97706":"#16a34a"}}>
+                              🔍 KI-Analyse: {sopAnalysis[sop.id].urgent?"🔴 DRINGEND":sopAnalysis[sop.id].needsUpdate?"⚠️ Update noetig":"✅ Konform"}
+                            </div>
+                            <div style={{whiteSpace:"pre-wrap",lineHeight:1.6,maxHeight:300,overflowY:"auto",color:"#374151"}}>
+                              {sopAnalysis[sop.id].regCheck}
+                            </div>
+                          </div>
+                        )}
+                        {showAI[sop.id]==="newversion"&&sopNewVersion[sop.id]&&(
+                          <div style={{background:"#f0fdf4",border:"1px solid #bbf7d0",borderRadius:8,padding:14,marginBottom:12,fontSize:12}}>
+                            <div style={{fontWeight:700,marginBottom:8,color:"#15803d"}}>🤖 Neue Version generiert</div>
+                            <pre style={{whiteSpace:"pre-wrap",maxHeight:300,overflowY:"auto",fontSize:11,fontFamily:"monospace",color:"#374151"}}>
+                              {sopNewVersion[sop.id].substring(0,2000)}
+                            </pre>
+                          </div>
+                        )}
+                        {showAI[sop.id]==="compare"&&sopComparison[sop.id]&&(
+                          <div style={{background:"#1e293b",borderRadius:8,padding:14,marginBottom:12}}>
+                            <div style={{fontWeight:700,marginBottom:8,color:"#e2e8f0",fontSize:12}}>⇔ Vergleichsbericht</div>
+                            <div style={{whiteSpace:"pre-wrap",maxHeight:400,overflowY:"auto",fontSize:11,color:"#94a3b8",lineHeight:1.6}}>
+                              {sopComparison[sop.id].comparison}
+                            </div>
+                            {sopComparison[sop.id].approved&&!sopApproved[sop.id]&&canDo("sign_approve")&&(
+                              <div style={{marginTop:12,display:"flex",gap:8,alignItems:"center"}}>
+                                <span style={{color:"#86efac",fontSize:12,fontWeight:700}}>✅ Freigabe empfohlen</span>
+                                <button style={{padding:"6px 14px",background:"#16a34a",color:"white",border:"none",borderRadius:6,fontSize:12,fontWeight:700,cursor:"pointer"}}
+                                  onClick={()=>approveSop(sop.id)}>QP freigeben & archivieren</button>
+                              </div>
+                            )}
+                            {sopAuditTrail[sop.id]?.length>0&&(
+                              <div style={{marginTop:10,borderTop:"1px solid #334155",paddingTop:8}}>
+                                <div style={{fontSize:10,color:"#64748b",fontWeight:700,marginBottom:4}}>AUDIT TRAIL</div>
+                                {sopAuditTrail[sop.id].map((e,i)=>(
+                                  <div key={i} style={{fontSize:10,color:"#94a3b8",fontFamily:"monospace"}}>
+                                    {new Date(e.timestamp).toLocaleString("de-DE")} · {e.user} · {e.action} · {e.details}
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        )}
                         {(sop.updates||0)>0&&(
                           <div>
                             <div className="gap-badges">
