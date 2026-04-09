@@ -862,16 +862,6 @@ export default function QMSApp() {
   const [importForm, setImportForm] = useState({});
   const [importSubmitted, setImportSubmitted] = useState(false);
   const [matrixFilter, setMatrixFilter] = useState("All");
-  const [sopAnalysis, setSopAnalysis] = useState({}); // sopId -> {docAnalysis, regCheck, needsUpdate, urgent}
-  const [sopNewVersion, setSopNewVersion] = useState({}); // sopId -> updated SOP text
-  const [sopComparison, setSopComparison] = useState({}); // sopId -> comparison report
-  const [sopApproved, setSopApproved] = useState({}); // sopId -> boolean
-  const [sopAuditTrail, setSopAuditTrail] = useState({}); // sopId -> [{action, user, timestamp}]
-  const [analysing, setAnalysing] = useState({}); // sopId -> boolean
-  const [showAnalysis, setShowAnalysis] = useState({}); // sopId -> boolean
-  const [showNewVersion, setShowNewVersion] = useState({}); // sopId -> boolean
-  const [showComparison, setShowComparison] = useState({}); // sopId -> boolean
-  const [regDailyReport, setRegDailyReport] = useState(null);
   const [matrixSearch, setMatrixSearch] = useState("");
   const [envelopes, setEnvelopes] = useState([
     { id:"ENV-2026-001", sop:"SOP-100_A6", title:"Ablaufdiagramm Q-Prozesse v2.0", sent:"2026-02-23",
@@ -1082,7 +1072,20 @@ export default function QMSApp() {
     e.target.value="";
   };
 
-
+  // PLACEHOLDER — keep same structure below
+  const _unused = {
+    total: 0, matched: 0, unmatched: 0,
+    files: [],
+    newUploads: {},
+    simFiles: [], size: "0KB",
+        uploadedAt: new Date().toLocaleString("de-DE"),
+        fromZip: true,
+        originalPreserved: true,
+      };
+    });
+    setUploadedFiles(p=>({...p,...newUploads}));
+    setZipResult(result);
+    setZipProcessing(false);
     addLog("ZIP_DONE", result.matched+"/"+result.total+" matched, auto-generating "+result.unmatched+" missing", "zip");
     // AUTO-GENERATE v1.0 for all missing docs
     const missing = ALL_SOPS.filter(s=>!newUploads[s.id]);
@@ -1091,144 +1094,6 @@ export default function QMSApp() {
       setStage(p=>({...p,[sop.id]:"ai_generated"}));
     }
     if(missing.length>0) addLog("AI_BATCH", "v1.0 auto-generated fuer "+missing.length+" fehlende Dokumente", "done");
-  };
-
-  // ── AI PIPELINE FUNCTIONS ──────────────────────────────────────────────────
-
-  const addAuditEntry = (sopId, action, details) => {
-    const entry = {
-      action,
-      user: user?.name || "System",
-      role: user?.role || "System",
-      timestamp: new Date().toISOString(),
-      details,
-    };
-    setSopAuditTrail(p => ({
-      ...p,
-      [sopId]: [...(p[sopId] || []), entry],
-    }));
-    addLog(action, `${sopId}: ${details}`, "cls");
-  };
-
-  const runSopAnalysis = async (sopId, sopTitle) => {
-    const uploadedFile = uploadedFiles[sopId];
-    if (!uploadedFile?.extractedText && !uploadedFile?.blobUrl) {
-      alert(de ? "Bitte zuerst die Original-Datei hochladen." : "Please upload the original file first.");
-      return;
-    }
-    setAnalysing(p => ({ ...p, [sopId]: true }));
-    addAuditEntry(sopId, "AI_ANALYSE_START", "KI-Analyse gestartet");
-    try {
-      const resp = await fetch("/api/ai-agent", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          action: "analyse",
-          sopId,
-          sopTitle,
-          extractedText: uploadedFile?.extractedText || `SOP: ${sopTitle}`,
-        }),
-      });
-      const data = await resp.json();
-      if (data.ok) {
-        setSopAnalysis(p => ({ ...p, [sopId]: data }));
-        setShowAnalysis(p => ({ ...p, [sopId]: true }));
-        addAuditEntry(sopId, "AI_ANALYSE_DONE",
-          data.urgent ? "KRITISCH: Sofortiger Update erforderlich" :
-          data.needsUpdate ? "Update empfohlen" : "Konform");
-      }
-    } catch (e) {
-      console.error("Analysis error:", e);
-    }
-    setAnalysing(p => ({ ...p, [sopId]: false }));
-  };
-
-  const generateSopUpdate = async (sopId, sopTitle) => {
-    const uploadedFile = uploadedFiles[sopId];
-    setAnalysing(p => ({ ...p, [sopId]: true }));
-    addAuditEntry(sopId, "AI_GENERATE_START", "Neue Version wird generiert");
-    try {
-      const resp = await fetch("/api/ai-agent", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          action: "generate",
-          sopId,
-          sopTitle,
-          extractedText: uploadedFile?.extractedText || `SOP: ${sopTitle}`,
-        }),
-      });
-      const data = await resp.json();
-      if (data.ok) {
-        setSopNewVersion(p => ({ ...p, [sopId]: data.updatedSOP }));
-        setShowNewVersion(p => ({ ...p, [sopId]: true }));
-        addAuditEntry(sopId, "AI_GENERATE_DONE", "Neue Version v2.0 generiert — wartet auf QP-Freigabe");
-      }
-    } catch (e) {
-      console.error("Generate error:", e);
-    }
-    setAnalysing(p => ({ ...p, [sopId]: false }));
-  };
-
-  const runComparison = async (sopId, sopTitle) => {
-    const uploadedFile = uploadedFiles[sopId];
-    const newVersion = sopNewVersion[sopId];
-    if (!newVersion) { alert("Bitte zuerst neue Version generieren."); return; }
-    setAnalysing(p => ({ ...p, [sopId]: true }));
-    try {
-      const resp = await fetch("/api/ai-agent", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          action: "compare",
-          sopId,
-          sopTitle,
-          oldText: uploadedFile?.extractedText || "Original",
-          newText: newVersion,
-        }),
-      });
-      const data = await resp.json();
-      if (data.ok) {
-        setSopComparison(p => ({ ...p, [sopId]: data }));
-        setShowComparison(p => ({ ...p, [sopId]: true }));
-        addAuditEntry(sopId, "AI_COMPARE_DONE",
-          data.approved ? "KI-Empfehlung: Freigabe" : "KI-Empfehlung: Überarbeitung");
-      }
-    } catch (e) {
-      console.error("Compare error:", e);
-    }
-    setAnalysing(p => ({ ...p, [sopId]: false }));
-  };
-
-  const approveAndFile = (sopId, sopTitle) => {
-    if (!user || !["QP","RP"].includes(user.role)) {
-      alert(de ? "Nur QP oder RP können Dokumente freigeben." : "Only QP or RP can approve documents.");
-      return;
-    }
-    setSopApproved(p => ({ ...p, [sopId]: true }));
-    setStage(p => ({ ...p, [sopId]: "active" }));
-    setGenerated(p => ({ ...p, [sopId]: true }));
-    addAuditEntry(sopId, "QP_APPROVED",
-      `Freigegeben durch ${user.name} (${user.role}) — elektronische Signatur gemäß §15 AMG + Annex 11`);
-    addLog("QP_SIGN", `${sopId} freigegeben und archiviert`, "sign");
-  };
-
-  const runDailyRegCheck = async () => {
-    addLog("REG_CHECK", "Tägliche Regulatorische Prüfung gestartet", "cls");
-    try {
-      const resp = await fetch("/api/ai-agent", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ action: "regulatory-check", sopList: ALL_SOPS.map(s => s.id) }),
-      });
-      const data = await resp.json();
-      if (data.ok) {
-        setRegDailyReport(data.report);
-        addLog("REG_CHECK_DONE", "Regulatorischer Tagesbericht erstellt", "done");
-      }
-    } catch (e) {
-      console.error("Reg check error:", e);
-    }
   };
 
   const auditDone = Object.values(auditChecked).filter(Boolean).length;
@@ -1374,9 +1239,6 @@ export default function QMSApp() {
               </label>
             )}
             {canDo("generate_sop")&&<button className="btn btn-r">⚡ {de?"Alle aktualisieren":"Batch Update All"}</button>}
-            <button className="btn btn-b" style={{fontSize:11}} onClick={runDailyRegCheck}>
-              📡 {de?"Regulatorische Tagesprüfung":"Daily Reg Check"}
-            </button>
           </div>
         </div>
 
@@ -1484,148 +1346,24 @@ export default function QMSApp() {
                               </div>
                             )}
                             <div style={{marginTop:8,display:"flex",gap:6,flexWrap:"wrap",alignItems:"center"}}>
-                              {/* PDF open */}
+                              <button className="btn btn-out" style={{fontSize:"11px"}} onClick={()=>setCompareModal(sop)}>
+                                ⇔ {de?"Alt vs. Neu vergleichen":"Compare Old vs New"}
+                              </button>
+                              {uploadedFile?.extractedText && canDo("generate_sop") && (
+                                <button className="btn btn-b" style={{fontSize:"11px"}} onClick={()=>doGenerate(sop.id)}>
+                                  🤖 {de?"KI analysieren & aktualisieren":"AI Analyse & Update"}
+                                </button>
+                              )}
                               {uploadedFile?.blobUrl && (
                                 <a href={uploadedFile.blobUrl} target="_blank" rel="noopener noreferrer"
-                                  style={{fontSize:"11px",padding:"5px 12px",background:"#1d4ed8",color:"white",borderRadius:6,textDecoration:"none",fontWeight:700}}>
-                                  👁 {de?"PDF öffnen":"Open PDF"}
+                                  style={{fontSize:"11px",padding:"4px 10px",background:"#1d4ed8",color:"white",borderRadius:5,textDecoration:"none",fontWeight:600}}>
+                                  👁 {de?"PDF oeffnen":"Open PDF"}
                                 </a>
                               )}
-                              {/* Step 1: Analyse */}
-                              {uploadedFile && canDo("generate_sop") && !sopAnalysis[sop.id] && (
-                                <button style={{padding:"5px 12px",background:"#0d47a1",color:"white",border:"none",borderRadius:6,fontSize:11,fontWeight:700,cursor:"pointer"}}
-                                  onClick={()=>runSopAnalysis(sop.id, sop.title)}
-                                  disabled={analysing[sop.id]}>
-                                  {analysing[sop.id]?"⏳ Analysiere...":"🔍 KI analysieren"}
-                                </button>
-                              )}
-                              {/* Toggle analysis */}
-                              {sopAnalysis[sop.id] && (
-                                <button style={{padding:"5px 12px",background:sopAnalysis[sop.id]?.urgent?"#dc2626":sopAnalysis[sop.id]?.needsUpdate?"#d97706":"#16a34a",color:"white",border:"none",borderRadius:6,fontSize:11,fontWeight:700,cursor:"pointer"}}
-                                  onClick={()=>setShowAnalysis(p=>({...p,[sop.id]:!p[sop.id]}))}>
-                                  {sopAnalysis[sop.id]?.urgent?"🔴":sopAnalysis[sop.id]?.needsUpdate?"⚠️":"✅"} {showAnalysis[sop.id]?"Analyse ausblenden":"Analyse anzeigen"}
-                                </button>
-                              )}
-                              {/* Step 2: Generate update */}
-                              {sopAnalysis[sop.id]?.needsUpdate && !sopNewVersion[sop.id] && canDo("generate_sop") && (
-                                <button style={{padding:"5px 12px",background:"#059669",color:"white",border:"none",borderRadius:6,fontSize:11,fontWeight:700,cursor:"pointer"}}
-                                  onClick={()=>generateSopUpdate(sop.id, sop.title)}
-                                  disabled={analysing[sop.id]}>
-                                  {analysing[sop.id]?"⏳ Generiere...":"🤖 Neue Version generieren"}
-                                </button>
-                              )}
-                              {/* Step 3: Compare */}
-                              {sopNewVersion[sop.id] && (
-                                <button style={{padding:"5px 12px",background:"#7c3aed",color:"white",border:"none",borderRadius:6,fontSize:11,fontWeight:700,cursor:"pointer"}}
-                                  onClick={()=>runComparison(sop.id, sop.title)}
-                                  disabled={analysing[sop.id]}>
-                                  {analysing[sop.id]?"⏳ Vergleiche...":"⇔ Alt vs Neu vergleichen"}
-                                </button>
-                              )}
-                              {/* Step 4: QP Approve */}
-                              {sopComparison[sop.id] && !sopApproved[sop.id] && canDo("sign_approve") && (
-                                <button style={{padding:"5px 12px",background:"#15803d",color:"white",border:"none",borderRadius:6,fontSize:11,fontWeight:700,cursor:"pointer"}}
-                                  onClick={()=>approveAndFile(sop.id, sop.title)}>
-                                  ✅ QP freigeben & archivieren
-                                </button>
-                              )}
-                              {sopApproved[sop.id] && (
-                                <span style={{fontSize:11,color:"#15803d",fontWeight:700}}>✅ Freigegeben · Archiviert</span>
-                              )}
                               <span style={{fontSize:"11px",color:"#059669",alignSelf:"center"}}>
-                                ✅ {de?"Original gesichert · unveränderlich":"Original preserved · immutable"}
+                                ✅ {de?"Original gesichert · unveraenderlich":"Original preserved · immutable"}
                               </span>
                             </div>
-                          </div>
-                        )}
-
-                        {/* AI ANALYSIS PANEL */}
-                        {showAnalysis[sop.id] && sopAnalysis[sop.id] && (
-                          <div style={{background:"#f8fafc",border:"1px solid #e2e8f0",borderRadius:10,padding:16,marginBottom:14}}>
-                            <div style={{fontSize:11,fontWeight:800,textTransform:"uppercase",letterSpacing:1,color:"#94a3b8",marginBottom:12}}>
-                              🔍 KI-QP-ANALYSE — {sop.id}
-                              <span style={{marginLeft:8,padding:"2px 8px",borderRadius:99,fontSize:10,
-                                background:sopAnalysis[sop.id]?.urgent?"#fee2e2":sopAnalysis[sop.id]?.needsUpdate?"#fef3c7":"#dcfce7",
-                                color:sopAnalysis[sop.id]?.urgent?"#dc2626":sopAnalysis[sop.id]?.needsUpdate?"#d97706":"#16a34a"}}>
-                                {sopAnalysis[sop.id]?.urgent?"🔴 DRINGEND":sopAnalysis[sop.id]?.needsUpdate?"⚠️ UPDATE":"✅ KONFORM"}
-                              </span>
-                            </div>
-                            <div style={{fontSize:12,lineHeight:1.7,color:"#374151",whiteSpace:"pre-wrap",maxHeight:400,overflowY:"auto"}}>
-                              {sopAnalysis[sop.id]?.regCheck}
-                            </div>
-                          </div>
-                        )}
-
-                        {/* NEW VERSION PANEL */}
-                        {showNewVersion[sop.id] && sopNewVersion[sop.id] && (
-                          <div style={{background:"#f0fdf4",border:"1px solid #bbf7d0",borderRadius:10,padding:16,marginBottom:14}}>
-                            <div style={{fontSize:11,fontWeight:800,textTransform:"uppercase",letterSpacing:1,color:"#15803d",marginBottom:12}}>
-                              🤖 NEUE VERSION — KI-GENERIERT · {sop.id}
-                            </div>
-                            <div style={{display:"flex",gap:8,marginBottom:12}}>
-                              <button style={{padding:"4px 10px",fontSize:11,background:"#7c3aed",color:"white",border:"none",borderRadius:5,cursor:"pointer",fontWeight:700}}
-                                onClick={()=>runComparison(sop.id, sop.title)}
-                                disabled={analysing[sop.id]}>
-                                ⇔ Vergleich starten
-                              </button>
-                              <button style={{padding:"4px 10px",fontSize:11,background:"white",color:"#374151",border:"1px solid #d1d5db",borderRadius:5,cursor:"pointer"}}
-                                onClick={()=>setShowNewVersion(p=>({...p,[sop.id]:!p[sop.id]}))}>
-                                Ausblenden
-                              </button>
-                            </div>
-                            <pre style={{fontSize:11,fontFamily:"monospace",whiteSpace:"pre-wrap",maxHeight:500,overflowY:"auto",background:"white",padding:12,borderRadius:6,border:"1px solid #d1fae5"}}>
-                              {sopNewVersion[sop.id]}
-                            </pre>
-                          </div>
-                        )}
-
-                        {/* COMPARISON PANEL */}
-                        {showComparison[sop.id] && sopComparison[sop.id] && (
-                          <div style={{background:"#1e293b",borderRadius:10,padding:16,marginBottom:14}}>
-                            <div style={{fontSize:11,fontWeight:800,textTransform:"uppercase",letterSpacing:1,color:"#94a3b8",marginBottom:12}}>
-                              ⇔ VERSIONSVERGLEICH — {sop.id}
-                            </div>
-                            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12,marginBottom:12}}>
-                              <div style={{background:"#0f172a",borderRadius:8,padding:12}}>
-                                <div style={{fontSize:10,color:"#64748b",fontWeight:700,marginBottom:8,textTransform:"uppercase"}}>ALTE VERSION</div>
-                                <pre style={{color:"#fca5a5",fontSize:10,fontFamily:"monospace",whiteSpace:"pre-wrap",maxHeight:200,overflowY:"auto",margin:0}}>
-                                  {uploadedFiles[sop.id]?.extractedText?.substring(0,1500) || "Original"}
-                                </pre>
-                              </div>
-                              <div style={{background:"#0f172a",borderRadius:8,padding:12}}>
-                                <div style={{fontSize:10,color:"#64748b",fontWeight:700,marginBottom:8,textTransform:"uppercase"}}>NEUE VERSION</div>
-                                <pre style={{color:"#86efac",fontSize:10,fontFamily:"monospace",whiteSpace:"pre-wrap",maxHeight:200,overflowY:"auto",margin:0}}>
-                                  {sopNewVersion[sop.id]?.substring(0,1500)}
-                                </pre>
-                              </div>
-                            </div>
-                            <div style={{background:"white",borderRadius:8,padding:14,fontSize:12,lineHeight:1.7,whiteSpace:"pre-wrap",maxHeight:400,overflowY:"auto",marginBottom:12}}>
-                              {sopComparison[sop.id]?.comparison}
-                            </div>
-                            {sopComparison[sop.id]?.approved && !sopApproved[sop.id] && canDo("sign_approve") && (
-                              <div style={{background:"#f0fdf4",border:"1px solid #bbf7d0",borderRadius:8,padding:12,display:"flex",alignItems:"center",gap:12}}>
-                                <span style={{fontSize:24}}>✅</span>
-                                <div style={{flex:1}}>
-                                  <div style={{fontSize:13,fontWeight:700,color:"#15803d"}}>KI-Empfehlung: Freigabe</div>
-                                  <div style={{fontSize:11,color:"#166534"}}>QP-Unterschrift gemäß §15 AMG + Annex 11 erforderlich</div>
-                                </div>
-                                <button style={{padding:"8px 16px",background:"#16a34a",color:"white",border:"none",borderRadius:6,fontSize:12,fontWeight:700,cursor:"pointer"}}
-                                  onClick={()=>approveAndFile(sop.id, sop.title)}>
-                                  ✅ QP freigeben & archivieren
-                                </button>
-                              </div>
-                            )}
-                            {/* Audit Trail */}
-                            {sopAuditTrail[sop.id]?.length > 0 && (
-                              <div style={{marginTop:12,background:"#0f172a",borderRadius:8,padding:12}}>
-                                <div style={{fontSize:10,color:"#64748b",fontWeight:700,marginBottom:8,textTransform:"uppercase"}}>📋 AUDIT TRAIL (ALCOA+)</div>
-                                {sopAuditTrail[sop.id].map((entry, i) => (
-                                  <div key={i} style={{fontSize:10,color:"#94a3b8",fontFamily:"monospace",marginBottom:4}}>
-                                    {new Date(entry.timestamp).toLocaleString("de-DE")} · {entry.user} ({entry.role}) · {entry.action} · {entry.details}
-                                  </div>
-                                ))}
-                              </div>
-                            )}
                           </div>
                         )}
 
