@@ -959,37 +959,77 @@ export default function QMSApp() {
     setZipProcessing(true);
     setZipModal(true);
     addLog("ZIP_START", f.name, "zip");
-    // Simulate processing (real impl would use JSZip)
-    await new Promise(r=>setTimeout(r,2200));
+    // REAL ZIP extraction
+    const buffer = await f.arrayBuffer();
+    const bytes = new Uint8Array(buffer);
     const allIds = ALL_SOPS.map(s=>s.id);
-    // Simulate match results  -  in real app JSZip would extract filenames
-    const simFiles = allIds.slice(0, 227).map(id => ({
-      filename: `${id}_${ALL_SOPS.find(s=>s.id===id)?.title?.replace(/[^a-zA-Z0-9]/g,"_").slice(0,30)}.pdf`,
-      matchedId: id,
-      matched: true,
-    }));
-    const unmatched = [
-      {filename:"_ARCHIVE_old_version_2019.pdf", matched:false},
-      {filename:"TEMP_working_copy.docx", matched:false},
-      {filename:"~$SOP-100_A6.docx", matched:false},
-    ];
-    const result = {
-      total: simFiles.length + unmatched.length,
-      matched: simFiles.length,
-      unmatched: unmatched.length,
-      files: [...simFiles, ...unmatched],
-    };
-    // Save all matched originals into uploadedFiles state (preserving originals)
+    const matchedFiles = [];
+    const unmatchedFiles = [];
     const newUploads = {};
-    simFiles.forEach(file => {
-      newUploads[file.matchedId] = {
-        name: file.filename,
-        size: (Math.random()*500+50).toFixed(0)+"KB",
-        uploadedAt: new Date().toLocaleString("de-DE"),
-        fromZip: true,
-        originalPreserved: true,
-      };
-    });
+
+    // Extract files from ZIP
+    let i = 0;
+    while (i < bytes.length - 4) {
+      if (bytes[i]===0x50&&bytes[i+1]===0x4b&&bytes[i+2]===0x03&&bytes[i+3]===0x04) {
+        try {
+          const compression = bytes[i+8]|(bytes[i+9]<<8);
+          const compSize = bytes[i+18]|(bytes[i+19]<<8)|(bytes[i+20]<<16)|(bytes[i+21]<<24);
+          const uncompSize = bytes[i+22]|(bytes[i+23]<<8)|(bytes[i+24]<<16)|(bytes[i+25]<<24);
+          const fnLen = bytes[i+26]|(bytes[i+27]<<8);
+          const exLen = bytes[i+28]|(bytes[i+29]<<8);
+          const name = new TextDecoder("utf-8",{fatal:false}).decode(bytes.slice(i+30,i+30+fnLen));
+          const dataStart = i+30+fnLen+exLen;
+          if (!name.endsWith("/")&&!name.startsWith("__MACOSX")&&/\.(pdf|docx?|txt)$/i.test(name)) {
+            const baseName = name.split("/").pop()||name;
+            const data = bytes.slice(dataStart, dataStart+(compression===0?uncompSize:compSize));
+            // Match to SOP
+            const baseNorm = baseName.replace(/\.[^.]+$/,"");
+            let matchedId = null;
+            for (const id of allIds) {
+              const idN = id.replace(/[^a-zA-Z0-9]/g,"").toUpperCase();
+              const fN = baseNorm.replace(/[^a-zA-Z0-9]/g,"").toUpperCase();
+              if ((fN.startsWith(idN)||fN.includes(idN))&&idN.length>=3) { matchedId=id; break; }
+            }
+            if (matchedId) {
+              const blob = new Blob([data.buffer],{type:/\.pdf$/i.test(baseName)?"application/pdf":"application/octet-stream"});
+              const blobUrl = URL.createObjectURL(blob);
+              // Extract text
+              let extractedText = "";
+              try {
+                const str = new TextDecoder("utf-8",{fatal:false}).decode(data);
+                if (/\.docx?$/i.test(baseName)) {
+                  const m = str.match(/<w:t[^>]*>([^<]+)<\/w:t>/g)||[];
+                  extractedText = m.map(x=>x.replace(/<[^>]+>/g,"")).join(" ").replace(/\s+/g," ").trim().substring(0,4000);
+                } else {
+                  extractedText = str.replace(/[^\x20-\x7E\n\r\t]/g," ").replace(/\s+/g," ").trim().substring(0,4000);
+                }
+              } catch(e) {}
+              newUploads[matchedId] = {
+                name: baseName,
+                size: Math.round(data.length/1024)+"KB",
+                uploadedAt: new Date().toLocaleString("de-DE"),
+                fromZip: true,
+                originalPreserved: true,
+                blobUrl,
+                extractedText,
+              };
+              matchedFiles.push({filename:baseName, matchedId, matched:true});
+            } else {
+              unmatchedFiles.push({filename:baseName, matched:false});
+            }
+          }
+          i = dataStart + compSize;
+          if (i<=dataStart) i=dataStart+1;
+        } catch(e) { i++; }
+      } else { i++; }
+    }
+
+    const result = {
+      total: matchedFiles.length+unmatchedFiles.length,
+      matched: matchedFiles.length,
+      unmatched: unmatchedFiles.length,
+      files: [...matchedFiles,...unmatchedFiles],
+    };
     setUploadedFiles(p=>({...p,...newUploads}));
     setZipResult(result);
     setZipProcessing(false);
