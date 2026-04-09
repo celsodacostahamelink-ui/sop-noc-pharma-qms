@@ -991,8 +991,9 @@ export default function QMSApp() {
               if ((fN.startsWith(idN)||fN.includes(idN))&&idN.length>=3) { matchedId=id; break; }
             }
             if (matchedId) {
-              const blob = new Blob([data.buffer],{type:/\.pdf$/i.test(baseName)?"application/pdf":"application/octet-stream"});
-              const blobUrl = URL.createObjectURL(blob);
+              const mimeType=baseName.toLowerCase().endsWith(".pdf")?"application/pdf":"application/octet-stream";
+              const base64=btoa(String.fromCharCode(...Array.from(data.slice(0,500000))));
+              const blobUrl="data:"+mimeType+";base64,"+base64;
               // Extract text
               let extractedText = "";
               try {
