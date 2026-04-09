@@ -9,7 +9,7 @@ const SOPIntelligencePanel = dynamic(() => import("@/components/SOPIntelligenceP
 export default function DashboardPage() {
   const [user, setUser] = useState<any>(null);
   const [loading, setLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState<"qms" | "batch" | "intelligence">("intelligence");
+  const [activeTab, setActiveTab] = useState<"qms" | "batch" | "intelligence">("qms");
 
   useEffect(() => {
     fetch("/api/auth")
