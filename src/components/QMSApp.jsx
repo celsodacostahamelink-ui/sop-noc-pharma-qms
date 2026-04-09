@@ -1353,6 +1353,30 @@ export default function QMSApp() {
                               <button className="btn btn-out" style={{fontSize:"11px"}} onClick={()=>setCompareModal(sop)}>
                                 ⇔ {de?"Alt vs. Neu vergleichen":"Compare Old vs New"}
                               </button>
+                              {generated[sop.id]&&(
+                                <>
+                                  <button className="btn btn-b" style={{fontSize:"11px"}} onClick={()=>{
+                                    const content = `NOC PHARMA GMBH\nSOP: ${sop.id} — ${sop.title}\nVersion: 2.0\nDatum: ${new Date().toLocaleDateString("de-DE")}\nGeneriert: KI Master QP Agent\n\n${document.querySelector(".generated-content-"+sop.id.replace(/[^a-z0-9]/gi,"_"))?.innerText||"Inhalt verfuegbar nach Generierung"}`;
+                                    const w=window.open("","_blank");
+                                    w.document.write("<html><head><title>"+sop.id+"</title><style>body{font-family:Arial;padding:20px;font-size:12px;line-height:1.6}pre{white-space:pre-wrap}</style></head><body><pre>"+content+"</pre></body></html>");
+                                    w.document.close();
+                                    w.print();
+                                  }}>🖨️ {de?"Drucken":"Print"}</button>
+                                  <button className="btn btn-b" style={{fontSize:"11px"}} onClick={async()=>{
+                                    const content = `NOC PHARMA GMBH - ${sop.id}\n${sop.title}\nVersion 2.0 - ${new Date().toLocaleDateString("de-DE")}\nKI Master QP Agent`;
+                                    const blob = new Blob([content],{type:"text/plain"});
+                                    const a = document.createElement("a");
+                                    a.href = URL.createObjectURL(blob);
+                                    a.download = sop.id+"_v2_KI_generiert.txt";
+                                    a.click();
+                                  }}>💾 {de?"Speichern":"Save"}</button>
+                                  <button className="btn btn-g" style={{fontSize:"11px"}} onClick={()=>{
+                                    const subject = encodeURIComponent("QP-Freigabe erforderlich: "+sop.id+" — "+sop.title);
+                                    const body = encodeURIComponent("Sehr geehrter Herr Cuny,\n\nDie KI hat eine neue Version von "+sop.id+" ("+sop.title+") generiert.\n\nBitte prüfen und freigeben gemäß §15 AMG.\n\nZu prüfen unter: https://sop-noc-pharma-qms.onrender.com/dashboard\n\nMit freundlichen Grüßen\nNOC Pharma QMS");
+                                    window.open("mailto:torsten.cuny@nocpharma.de?subject="+subject+"&body="+body);
+                                  }}>📧 {de?"An QP senden":"Send to QP"}</button>
+                                </>
+                              )}
                               <span style={{fontSize:"11px",color:"#059669",alignSelf:"center"}}>
                                 ✅ {de?"Original gesichert · unveraenderlich":"Original preserved · immutable"}
                               </span>
