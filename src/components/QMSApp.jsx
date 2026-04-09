@@ -1082,20 +1082,7 @@ export default function QMSApp() {
     e.target.value="";
   };
 
-  // PLACEHOLDER — keep same structure below
-  const _unused = {
-    total: 0, matched: 0, unmatched: 0,
-    files: [],
-    newUploads: {},
-    simFiles: [], size: "0KB",
-        uploadedAt: new Date().toLocaleString("de-DE"),
-        fromZip: true,
-        originalPreserved: true,
-      };
-    });
-    setUploadedFiles(p=>({...p,...newUploads}));
-    setZipResult(result);
-    setZipProcessing(false);
+
     addLog("ZIP_DONE", result.matched+"/"+result.total+" matched, auto-generating "+result.unmatched+" missing", "zip");
     // AUTO-GENERATE v1.0 for all missing docs
     const missing = ALL_SOPS.filter(s=>!newUploads[s.id]);
