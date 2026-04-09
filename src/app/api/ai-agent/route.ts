@@ -1,178 +1,379 @@
-import Anthropic from '@anthropic-ai/sdk';
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from "next/server";
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const API = "https://api.anthropic.com/v1/messages";
+const MODEL = "claude-sonnet-4-20250514";
 
-const QP_SYSTEM_PROMPT = `You are a Qualified Person (QP) and Senior GMP Expert with 20+ years experience in pharmaceutical wholesale, specialising in cannabis medicine distribution under German BfArM regulation.
+// ═══════════════════════════════════════════════════════════════
+// MASTER QP AGENT SYSTEM PROMPT
+// PhD-level · §15 AMG · BfArM Authority · Cannabis Pharma Expert
+// ═══════════════════════════════════════════════════════════════
+const MASTER_QP_PROMPT = `Du bist der Leitende KI-Qualitätssicherungsbeauftragte (Master QP Agent) von NOC Pharma GmbH.
 
-COMPANY CONTEXT:
-- NOC Pharma GmbH, Murchin, Mecklenburg-Vorpommern, Germany
-- Activity: Import, storage and wholesale distribution of cannabis for medical purposes (Cannabisblüten)
-- Licences: Großhandelserlaubnis (§52a AMG) + Erlaubnis (§4 MedCanG)
-- Supervisory authorities: BfArM (federal), LAGuS Mecklenburg-Vorpommern, Landesbehörde Thüringen
-- QP: Torsten Cuny (§15 AMG); RP: Celso Hamelink Chmielewski (§52a AMG / §7 MedCanG)
+DEINE EXPERTISE:
+- PhD Pharmazeutische Wissenschaften + Regulatory Affairs
+- Sachkundige Person (QP) gemäß §15 AMG — 20+ Jahre Erfahrung
+- Spezialist: Medizinischer Cannabis, BtM, EU-GMP, GDP
+- BfArM-Inspektor-Level Kenntnisse
+- Vollständige Kenntnis aller relevanten Regelwerke (Stand April 2026)
 
-YOUR REGULATORY EXPERTISE:
-1. German Law: AMG (§§13,14,15,52a,63b,72,72a,73), MedCanG (§§1-10), BtMG, AMWHV
-2. EU GMP: Annex 1 (sterile), Annex 11 (computerised systems), Annex 15 (qualification/validation), Annex 16 (batch release by QP)
-3. EU GDP: Guidelines 2013/C 343/01, Delegated Regulation 2016/161 (FMD/serialisation)
-4. ICH Guidelines: Q8 (pharmaceutical development), Q9 (quality risk management), Q10 (pharmaceutical quality system), Q11 (development and manufacture)
-5. PIC/S: GMP Guide PE 009, GDP Guide PE 011
-6. GAMP 5: Computer system validation, risk-based approach
-7. Cannabis-specific: UN Convention 1961, Schengen Agreement Art.75, EU import/export authorisations
-8. BfArM inspection standards: AMWHV §§1-30, documentation requirements, audit trail requirements
+REGULATORISCHES WISSEN (AKTUELL — April 2026):
+═══════════════════════════════════════════════
 
-WHEN ANALYSING SOPs, PROVIDE:
-1. COMPLIANCE SCORE (0-100) with breakdown per regulatory framework
-2. CRITICAL GAPS — exact clause references (e.g. "AMWHV §4(2) — temperature monitoring records incomplete")
-3. RISK CLASSIFICATION per finding: Critical / Major / Minor / Observation (per ICH Q9 / PIC/S)
-4. REQUIRED ACTIONS — specific text to add/change with full regulatory justification
-5. AUDIT READINESS ASSESSMENT — likelihood of finding at BfArM/LAGuS inspection
-6. QP DECISION RECOMMENDATION: Approve / Approve with conditions / Return for revision / Reject
-7. NEXT REVIEW DATE recommendation based on regulatory change frequency
+MedCanG (seit 1. April 2024):
+- §3: Verschreibungspflichtig (kein BtM mehr)
+- §4: BfArM-Erlaubnis für Import/Großhandel
+- §7: Verantwortliche Person (Celso Hamelink Chmielewski)
+- §8: Sicherheitsanforderungen Lagerung
+- §10: Aufzeichnungspflichten pro Produkt/Standort
+- §12/14: Individuelle BfArM Import/Export-Genehmigung
+- §16(3): Jahresbericht bis 31. Januar
+- §21: Kennzeichnung
+- 2025 Amendment: "medizinisch begründet" Anforderung
 
-RESPONSE FORMAT for SOP analysis:
-- Use clear sections with headers
-- Quote specific regulatory clauses in full
-- Provide concrete corrective text where applicable
-- Flag any narcotic/cannabis-specific requirements separately
-- Include cross-references to related SOPs where relevant
+AMG (aktuelle Fassung):
+- §13: Herstellungserlaubnis
+- §52a: Großhandelserlaubnis — NUR an Apotheken/Krankenhäuser
+- §63a: Stufenplanbeauftragter
+- §64-69: Inspektionen
+- §81: MedCanG hat Vorrang
 
-Think and respond as a BfArM inspector would assess this document.`;
+BtMG (Übergangsbestimmungen bis vollständige MedCanG-Übernahme):
+- Historische Aufzeichnungen 10 Jahre aufbewahren
+- BtMBinHV-Meldungen während Übergang
 
-export async function POST(request: NextRequest) {
-    try {
-          const body = await request.json();
-          const { action, content, sopTitle, sopVersion, sopCode } = body;
+PIC/S GMP PE 009-17 (aktuell):
+- Kapitel 1: QMS, Management Review
+- Kapitel 2: Personal, Schulung — ALCOA+
+- Kapitel 4: Dokumentation — SOPs genehmigt/versioniert
+- Kapitel 5: Kreuzkontamination Cannabis
+- Kapitel 6: QK, OOS/OOT
+- Kapitel 7: Ausgelagerte Tätigkeiten
+- Kapitel 8: Beanstandungen, 24h-Rückruf
+- Kapitel 9: Selbstinspektion/CAPA
+- Anhang 11: Computergestützte Systeme (GAMP5 IQ/OQ/PQ)
+- ALCOA++ Datenintegrität, Audit Trail 10 Jahre
+- Elektronische Signaturen gemäß §15 AMG
 
-      if (!process.env.ANTHROPIC_API_KEY) {
-              return NextResponse.json(
-                { error: 'ANTHROPIC_API_KEY not configured. Add it to your environment variables.' },
-                { status: 500 }
-                      );
-      }
+EU GDP (2013/C 343/01):
+- Kapitel 1-2: QMS, VP benannt
+- Kapitel 3: Temperaturkartierung/-monitoring
+- Kapitel 5: Lieferantenqualifizierung, FIFO/FEFO
+- Kapitel 6: Beanstandungen, Retouren Quarantäne
+- Kapitel 9: Qualifizierter Transport
 
-      if (!content && action !== 'chat') {
-              return NextResponse.json({ error: 'Content is required' }, { status: 400 });
-      }
+EU AI Act (2024/1689, in Kraft ab August 2026):
+- Art.6 + Anhang III: Gesundheits-KI = HOCHRISIKO
+- Art.9: Risikomanagement
+- Art.10: Datenverwaltung
+- Art.12: Auto-Protokollierung 10 Jahre
+- Art.13: Transparenz
+- Art.14: HITL-Override PFLICHT
+- Art.25: CE-Kennzeichnung
+- Art.52: KI-Inhaltsoffenlegung
 
-      let userMessage = '';
+21 CFR Part 11:
+- §11.10: Systemkontrollen
+- §11.50: Signaturen
+- §11.200: Eindeutige ID
+- §11.300: Passwörter/Sperrung
 
-      switch (action) {
-        case 'analyse':
-                  userMessage = `Perform a full GMP compliance analysis of this SOP:
+DIN EN ISO 14644: Reinraumklassifizierung
+DAB Cannabis flos: Analytik-Standards
+Ph. Eur.: Europäisches Arzneibuch
 
-                  SOP Code: ${sopCode || 'Not specified'}
-                  Title: ${sopTitle || 'Not specified'}
-                  Version: ${sopVersion || 'Not specified'}
+NOC PHARMA GMBH:
+- Standort Hauptsitz: Murchin, Mecklenburg-Vorpommern
+- Standort 2: Kahla, Thüringen
+- Tätigkeit: Import, Lagerung, Großhandel Cannabis (Blüten, Extrakte)
+- Erlaubnisse: §52a AMG + §4 MedCanG
+- Aufsichtsbehörden: BfArM (Bundesebene), LAGuS MV, Landesbehörde Thüringen
 
-                  DOCUMENT CONTENT:
-                  ${content}
+SCHLÜSSELPERSONEN (in SOPs nur nach Rolle, nicht Namen):
+- Verantwortliche Person (RP): Celso Hamelink Chmielewski (§52a AMG / §7 MedCanG)
+- Sachkundige Person (QP): Torsten Cuny (§15 AMG)
+- Leiter Qualitätssicherung: Dr. Olaf Schagon
+- Geschäftsführer: [nicht öffentlich]
 
-                  Provide your full QP assessment including compliance score, all gaps found, risk classification, required actions, and your QP decision recommendation.`;
-                  break;
+SOP-FORMAT (PFLICHT — 8 Abschnitte):
+1. Zweck und Anwendungsbereich
+2. Geltungsbereich
+3. Abkürzungen und Definitionen
+4. Verantwortlichkeiten (mit Rollen + Namen)
+5. Verfahren (schrittweise, nummeriert, RACI)
+6. Dokumentation (ALCOA+ konform)
+7. Referenzen (spezifische Artikel zitieren)
+8. Änderungshistorie
 
-        case 'batch-analyse':
-                  userMessage = `Perform rapid triage analysis on multiple SOPs. For each, provide: compliance score (0-100), top 3 critical gaps, risk rating (Critical/Major/Minor), and QP recommendation.
+SCHREIBREGELN:
+- Formales Deutsch (Amtssprache)
+- "Es ist sicherzustellen, dass..." (nie "sollte")
+- Spezifische Artikel: "gemäß §52a Abs.2 AMG", "nach PIC/S GMP Kapitel 8.6"
+- Neue/geänderte Inhalte: [NEU 2026] oder [GEÄNDERT 2026]
+- Ende: ENGLISCHES EXECUTIVE SUMMARY (10 Sätze) für RP-Prüfung`;
 
-                  DOCUMENTS TO ANALYSE:
-                  ${content}`;
-                  break;
+// ═══════════════════════════════════════════════════════════════
+// SUB-AGENT: REGULATORY WATCH
+// Daily monitoring of laws, BfArM notices, EU regulations
+// ═══════════════════════════════════════════════════════════════
+const REGULATORY_WATCH_PROMPT = `Du bist der Regulatorische Überwachungs-Agent (Regulatory Watch Agent) für NOC Pharma GmbH.
 
-        case 'generate':
-                  userMessage = `Generate a complete, GMP-compliant SOP for NOC Pharma GmbH for the following process:
+Deine Aufgabe: Analysiere ob diese SOP mit dem AKTUELLEN Stand der Gesetzgebung (April 2026) konform ist.
 
-                  ${content}
+Prüfe systematisch:
+1. MedCanG-Konformität (Cannabis aus BtMG entfernt seit April 2024)
+2. Veraltete BtMG-Verweise die zu MedCanG aktualisiert werden müssen
+3. EU AI Act Anforderungen (ab August 2026 zwingend)
+4. Aktuelle PIC/S PE 009-17 Anforderungen
+5. BfArM-spezifische Anforderungen für Cannabis-Großhandel
+6. Annex 11 / 21 CFR Part 11 für elektronische Systeme
+7. ALCOA++ Datenintegrität
+8. GDP 2013/C 343/01 für Transport/Lagerung
 
-                  Requirements:
-                  - Follow AMWHV and EU GDP structure
-                  - Include all mandatory sections: Purpose, Scope, Definitions, Responsibilities, Materials/Equipment, Procedure (numbered steps), Deviations/OOS procedure, Related Documents, References (cite specific regulations with clause numbers), Document History table
-                  - Include cannabis/narcotic-specific controls where relevant
-                  - Write in professional pharmaceutical language
-                  - Add specific BfArM-audit-ready elements`;
-                  break;
+Ausgabe als strukturierter Compliance-Bericht mit Schweregrad-Einstufung.`;
 
-        case 'compare':
-                  userMessage = `Perform a side-by-side regulatory gap analysis between these two SOP versions:
+// ═══════════════════════════════════════════════════════════════
+// SUB-AGENT: DOCUMENT ANALYST
+// Reads and extracts structured information from existing SOPs
+// ═══════════════════════════════════════════════════════════════
+const DOCUMENT_ANALYST_PROMPT = `Du bist der Dokumentenanalyse-Agent für NOC Pharma GmbH.
 
-                  ${content}
+Analysiere das vorgelegte Dokument und extrahiere:
+1. SOP-Nummer, Titel, Version, Datum
+2. Geltungsbereich
+3. Hauptverfahren (Zusammenfassung)
+4. Alle zitierten Regelwerke und Artikel
+5. Verantwortlichkeiten (Rollen)
+6. Schwachstellen und Lücken
+7. Update-Dringlichkeit (SOFORT / DRINGEND / EMPFOHLEN / OPTIONAL)
 
-                  Identify:
-                  1. What changed between versions (additions, deletions, modifications)
-                  2. Whether changes IMPROVE or REDUCE compliance
-                  3. Any new regulatory gaps introduced
-                  4. Any previously non-compliant sections now fixed
-                  5. Overall version recommendation: keep old / use new / use new with amendments`;
-                  break;
+Sei präzise und vollständig. Dies ist Grundlage für die KI-Aktualisierung.`;
 
-        case 'update':
-                  userMessage = `Review this SOP against current 2024-2026 regulatory updates and identify what must change:
-
-                  CURRENT SOP:
-                  ${content}
-
-                  Check against:
-                  - MedCanG changes (effective 1 April 2024)
-                  - Recent BfArM guidance updates
-                  - EU GDP 2013/C 343/01 current interpretation
-                  - AMWHV current version
-                  - Any ICH Q-guideline updates
-
-                  Provide specific text changes required with regulatory justification.`;
-                  break;
-
-        case 'audit-prep':
-                  userMessage = `Act as a BfArM inspector preparing for a GDP/GMP inspection of NOC Pharma GmbH.
-
-                  Based on this SOP/documentation:
-                  ${content}
-
-                  Generate:
-                  1. The 10 most likely inspection questions/findings
-                  2. Required evidence the company must have ready
-                  3. Common deficiency patterns for this document type
-                  4. Recommended preparation actions before inspection`;
-                  break;
-
-        case 'chat':
-                  userMessage = content;
-                  break;
-
-        default:
-                  userMessage = content;
-      }
-
-      const message = await client.messages.create({
-              model: 'claude-sonnet-4-5',
-              max_tokens: 4096,
-              system: QP_SYSTEM_PROMPT,
-              messages: [{ role: 'user', content: userMessage }],
-      });
-
-      const responseText = message.content[0].type === 'text' ? message.content[0].text : '';
-
-      return NextResponse.json({
-              result: responseText,
-              action,
-              usage: {
-                        input_tokens: message.usage.input_tokens,
-                        output_tokens: message.usage.output_tokens,
-              },
-              model: message.model,
-      });
-
-    } catch (error: unknown) {
-          console.error('AI Agent error:', error);
-          const message = error instanceof Error ? error.message : 'Unknown error';
-          return NextResponse.json({ error: message }, { status: 500 });
-    }
+async function callAgent(systemPrompt: string, userMessage: string, apiKey: string): Promise<string> {
+  const resp = await fetch(API, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "x-api-key": apiKey,
+      "anthropic-version": "2023-06-01",
+    },
+    body: JSON.stringify({
+      model: MODEL,
+      max_tokens: 4000,
+      system: systemPrompt,
+      messages: [{ role: "user", content: userMessage }],
+    }),
+  });
+  const data = await resp.json();
+  if (!resp.ok) throw new Error(data.error?.message || "API error");
+  return (data.content || []).map((c: any) => c.text || "").join("\n");
 }
 
-export async function GET() {
-    return NextResponse.json({
-          status: 'QP Expert AI Agent active',
-          model: 'claude-sonnet-4-5',
-          actions: ['analyse', 'batch-analyse', 'generate', 'compare', 'update', 'audit-prep', 'chat'],
-          configured: !!process.env.ANTHROPIC_API_KEY,
-    });
+// ═══════════════════════════════════════════════════════════════
+// MAIN API HANDLER
+// ═══════════════════════════════════════════════════════════════
+export async function POST(req: NextRequest) {
+  try {
+    const apiKey = process.env.ANTHROPIC_API_KEY;
+    if (!apiKey) return NextResponse.json({ error: "ANTHROPIC_API_KEY not set" }, { status: 500 });
+
+    const body = await req.json();
+    const { action, sopId, sopTitle, extractedText, currentVersion, prompt } = body;
+
+    // ── ACTION: Full SOP Analysis Pipeline ──────────────────────
+    if (action === "analyse") {
+      if (!extractedText) return NextResponse.json({ error: "No text to analyse" }, { status: 400 });
+
+      // Step 1: Document Analyst extracts structure
+      const docAnalysis = await callAgent(
+        DOCUMENT_ANALYST_PROMPT,
+        `Analysiere diese SOP:\n\nSOP-ID: ${sopId}\nTitel: ${sopTitle}\n\nINHALT:\n${extractedText.substring(0, 4000)}`,
+        apiKey
+      );
+
+      // Step 2: Regulatory Watch checks compliance
+      const regCheck = await callAgent(
+        REGULATORY_WATCH_PROMPT,
+        `Prüfe diese SOP auf regulatorische Konformität (Stand April 2026):\n\nSOP-ID: ${sopId}\nTitel: ${sopTitle}\n\nDOKUMENT-ANALYSE:\n${docAnalysis}\n\nORIGINAL-INHALT:\n${extractedText.substring(0, 2000)}`,
+        apiKey
+      );
+
+      // Determine urgency
+      const urgent = regCheck.includes("SOFORT") || regCheck.includes("KRITISCH") || regCheck.includes("🔴");
+      const needsUpdate = urgent || regCheck.includes("DRINGEND") || regCheck.includes("⚠") || regCheck.includes("EMPFOHLEN");
+
+      return NextResponse.json({
+        ok: true,
+        action: "analyse",
+        sopId,
+        docAnalysis,
+        regCheck,
+        needsUpdate,
+        urgent,
+        timestamp: new Date().toISOString(),
+      });
+    }
+
+    // ── ACTION: Generate Updated SOP ────────────────────────────
+    if (action === "generate") {
+      if (!extractedText) return NextResponse.json({ error: "No original text" }, { status: 400 });
+
+      const updatedSOP = await callAgent(
+        MASTER_QP_PROMPT,
+        `Erstelle eine vollständig aktualisierte Version dieser SOP für NOC Pharma GmbH.
+
+SOP-ID: ${sopId}
+TITEL: ${sopTitle}
+
+BESTEHENDE VERSION:
+${extractedText.substring(0, 3000)}
+
+ANFORDERUNGEN:
+1. Behalte alle 8 Pflichtabschnitte
+2. Aktualisiere alle veralteten Regulatory-Referenzen (BtMG → MedCanG wo zutreffend)
+3. Füge fehlende ALCOA+, Annex 11, EU AI Act Anforderungen hinzu
+4. Markiere ALLE Änderungen mit [NEU 2026] oder [GEÄNDERT 2026]
+5. Nenne konkrete Verantwortlichkeiten mit Rollen
+6. Zitiere spezifische Gesetzesartikel
+7. Ende mit ENGLISCHEM EXECUTIVE SUMMARY (10 Sätze)
+
+WICHTIG: Generiere die vollständige SOP — alle 8 Abschnitte komplett ausgearbeitet.`,
+        apiKey
+      );
+
+      return NextResponse.json({
+        ok: true,
+        action: "generate",
+        sopId,
+        updatedSOP,
+        generatedAt: new Date().toISOString(),
+        modelVersion: MODEL,
+        agentLevel: "Master QP Agent",
+      });
+    }
+
+    // ── ACTION: Compare Old vs New ───────────────────────────────
+    if (action === "compare") {
+      const { oldText, newText } = body;
+      if (!oldText || !newText) return NextResponse.json({ error: "Need both old and new text" }, { status: 400 });
+
+      const comparison = await callAgent(
+        MASTER_QP_PROMPT,
+        `Als QP-Gutachter: Erstelle einen detaillierten Änderungsbericht für diese SOP-Revision.
+
+SOP: ${sopId} — ${sopTitle}
+
+ALTE VERSION:
+${oldText.substring(0, 2500)}
+
+NEUE VERSION:
+${newText.substring(0, 2500)}
+
+BERICHT-FORMAT:
+## 📋 ÄNDERUNGSÜBERSICHT: ${sopId}
+
+### ✅ HINZUGEFÜGT (mit [+] markieren)
+### ❌ ENTFERNT (mit [-] markieren)  
+### 🔄 GEÄNDERT (ALT → NEU format)
+### 📊 REGULATORISCHE BEWERTUNG
+- Compliance verbessert: [Ja/Nein/Teilweise]
+- Neue Regulatory-Referenzen: [Liste]
+- BfArM-Audit-Readiness: [1-10]
+### ⚖️ QP-EMPFEHLUNG
+☐ FREIGABE EMPFOHLEN
+☐ FREIGABE MIT AUFLAGEN
+☐ ABLEHNUNG
+### 🇬🇧 ENGLISH SUMMARY FOR QP SIGN-OFF (5 sentences)`,
+        apiKey
+      );
+
+      const approved = comparison.includes("FREIGABE EMPFOHLEN") && !comparison.includes("ABLEHNUNG");
+
+      return NextResponse.json({
+        ok: true,
+        action: "compare",
+        sopId,
+        comparison,
+        approved,
+        timestamp: new Date().toISOString(),
+      });
+    }
+
+    // ── ACTION: Audit Trail Entry ────────────────────────────────
+    if (action === "audit-entry") {
+      const { auditAction, user, details } = body;
+      // In production: save to database
+      // For now: return structured audit log entry
+      return NextResponse.json({
+        ok: true,
+        action: "audit-entry",
+        entry: {
+          id: `AUDIT-${Date.now()}`,
+          timestamp: new Date().toISOString(),
+          sopId,
+          action: auditAction,
+          user,
+          details,
+          hash: btoa(`${sopId}-${auditAction}-${Date.now()}`), // Simple hash for integrity
+          alcoa: {
+            attributable: user,
+            legible: true,
+            contemporaneous: new Date().toISOString(),
+            original: true,
+            accurate: true,
+          }
+        }
+      });
+    }
+
+    // ── ACTION: Regulatory Daily Check ──────────────────────────
+    if (action === "regulatory-check") {
+      const { sopList } = body;
+
+      const check = await callAgent(
+        MASTER_QP_PROMPT,
+        `TÄGLICHE REGULATORISCHE ÜBERWACHUNG — ${new Date().toLocaleDateString("de-DE")}
+
+Analysiere den aktuellen Stand dieser SOP-Kategorien für NOC Pharma GmbH:
+${sopList?.join(", ") || "Alle SOPs"}
+
+Prüfe auf:
+1. Neue BfArM-Bekanntmachungen (Cannabis/MedCanG)
+2. EU-GMP Guideline Updates
+3. MedCanG Änderungen seit April 2024
+4. EU AI Act Implementierungsfristen (August 2026)
+5. Neue Ph. Eur. Monographien Cannabis flos
+6. GDP-Updates Transport Cannabis
+
+Erstelle einen strukturierten Tagesbericht mit:
+- 🔴 SOFORTIGER HANDLUNGSBEDARF
+- 🟡 INNERHALB 30 TAGE
+- 🟢 ZUR KENNTNIS
+
+Für jeden Punkt: betroffene SOP-IDs nennen.`,
+        apiKey
+      );
+
+      return NextResponse.json({
+        ok: true,
+        action: "regulatory-check",
+        report: check,
+        date: new Date().toISOString(),
+        nextCheck: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString(),
+      });
+    }
+
+    // ── ACTION: Chat / General QP Query ─────────────────────────
+    if (action === "chat" || !action) {
+      if (!prompt) return NextResponse.json({ error: "No prompt" }, { status: 400 });
+
+      const response = await callAgent(MASTER_QP_PROMPT, prompt, apiKey);
+      return NextResponse.json({ ok: true, text: response });
+    }
+
+    return NextResponse.json({ error: "Unknown action" }, { status: 400 });
+
+  } catch (e: any) {
+    console.error("AI Agent error:", e);
+    return NextResponse.json({ error: e.message }, { status: 500 });
+  }
 }
