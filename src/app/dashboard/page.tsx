@@ -4,11 +4,12 @@ import dynamic from "next/dynamic";
 
 const QMSApp = dynamic(() => import("@/components/QMSApp.jsx"), { ssr: false });
 const BatchSOPManager = dynamic(() => import("@/components/BatchSOPManager"), { ssr: false });
+const SOPIntelligencePanel = dynamic(() => import("@/components/SOPIntelligencePanel"), { ssr: false });
 
 export default function DashboardPage() {
   const [user, setUser] = useState<any>(null);
   const [loading, setLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState<"qms" | "batch">("qms");
+  const [activeTab, setActiveTab] = useState<"qms" | "batch" | "intelligence">("intelligence");
 
   useEffect(() => {
     fetch("/api/auth")
@@ -33,46 +34,29 @@ export default function DashboardPage() {
   if (!user) return null;
 
   return (
-    <div>
-      {/* Top bar */}
-      <div style={{ background: "#0a0a0a", borderBottom: "1px solid #1a1a1a", padding: "4px 12px", display: "flex", justifyContent: "space-between", alignItems: "center", fontFamily: "system-ui" }}>
+    <div style={{ fontFamily: "system-ui" }}>
+      <div style={{ background: "#0a0a0a", borderBottom: "1px solid #1a1a1a", padding: "4px 12px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
           <div style={{ fontSize: 9, color: "#555" }}>
-            Signed in as <strong style={{ color: "#aaa" }}>{user.name}</strong> ({user.role}) — {user.email}
+            <strong style={{ color: "#aaa" }}>{user.name}</strong> ({user.role}) — {user.email}
           </div>
-          {/* Tab switcher */}
-          <div style={{ display: "flex", gap: 4 }}>
-            <button
-              onClick={() => setActiveTab("qms")}
-              style={{
-                padding: "3px 10px", borderRadius: 4, border: "none", fontSize: 10, cursor: "pointer", fontWeight: 600,
-                background: activeTab === "qms" ? "#0d47a1" : "transparent",
-                color: activeTab === "qms" ? "white" : "#666",
-              }}
-            >
-              🏛️ QMS
-            </button>
-            <button
-              onClick={() => setActiveTab("batch")}
-              style={{
-                padding: "3px 10px", borderRadius: 4, border: "none", fontSize: 10, cursor: "pointer", fontWeight: 600,
-                background: activeTab === "batch" ? "#0d47a1" : "transparent",
-                color: activeTab === "batch" ? "white" : "#666",
-              }}
-            >
-              📁 Batch SOP Upload
-            </button>
+          <div style={{ display: "flex", gap: 2 }}>
+            {[
+              { key: "intelligence", label: "🏛️ SOP Intelligence" },
+              { key: "qms", label: "📋 QMS Bibliothek" },
+              { key: "batch", label: "📁 Batch Upload" },
+            ].map(t => (
+              <button key={t.key} onClick={() => setActiveTab(t.key as any)} style={{ padding: "3px 10px", borderRadius: 4, border: "none", fontSize: 10, cursor: "pointer", fontWeight: 700, background: activeTab === t.key ? "#0d47a1" : "transparent", color: activeTab === t.key ? "white" : "#555" }}>
+                {t.label}
+              </button>
+            ))}
           </div>
         </div>
-        <button
-          onClick={() => { document.cookie = "session=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; window.location.href = "/"; }}
-          style={{ padding: "2px 8px", borderRadius: 3, border: "1px solid #222", background: "transparent", color: "#666", fontSize: 9, cursor: "pointer" }}
-        >
+        <button onClick={() => { document.cookie = "session=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"; window.location.href = "/"; }} style={{ padding: "2px 8px", borderRadius: 3, border: "1px solid #222", background: "transparent", color: "#666", fontSize: 9, cursor: "pointer" }}>
           Sign Out
         </button>
       </div>
-
-      {/* Content */}
+      {activeTab === "intelligence" && <SOPIntelligencePanel user={user} />}
       {activeTab === "qms" && <QMSApp />}
       {activeTab === "batch" && <BatchSOPManager />}
     </div>
