@@ -1034,7 +1034,31 @@ export default function QMSApp() {
     setUploadedFiles(p=>({...p,...newUploads}));
     setZipResult(result);
     setZipProcessing(false);
-    addLog("ZIP_DONE", result.matched+"/"+result.total+" matched, auto-generating "+result.unmatched+" missing", "zip");
+    addLog("ZIP_DONE", result.matched+"/"+result.total+" matched", "zip");
+
+    // AUTO-PIPELINE: analyse all matched SOPs
+    const matchedIds = Object.keys(newUploads);
+    addLog("AI_PIPELINE", "KI analysiert "+matchedIds.length+" SOPs...", "cls");
+    for (const sopId of matchedIds) {
+      const sopEntry = ALL_SOPS.find(s=>s.id===sopId);
+      if (!sopEntry) continue;
+      try {
+        const resp = await fetch("/api/ai-agent", {
+          method:"POST", headers:{"Content-Type":"application/json"},
+          body: JSON.stringify({
+            action:"analyse", sopId, sopTitle:sopEntry.title,
+            extractedText:(newUploads[sopId].extractedText||"SOP: "+sopEntry.title).substring(0,4000)
+          })
+        });
+        const data = await resp.json();
+        if (data.ok) {
+          setGenerated(p=>({...p,[sopId]:true}));
+          setStage(p=>({...p,[sopId]:"ai_generated"}));
+          addLog("AI_OK", sopId+": "+(data.urgent?"🔴 DRINGEND":data.needsUpdate?"⚠️ Update":"✅ Konform"), data.urgent?"zip":"done");
+        }
+      } catch(e) { addLog("AI_ERR", sopId+": "+e.message, "zip"); }
+    }
+    addLog("AI_DONE", "Pipeline abgeschlossen fuer "+matchedIds.length+" SOPs", "done");
     // AUTO-GENERATE v1.0 for all missing docs
     const missing = ALL_SOPS.filter(s=>!newUploads[s.id]);
     for(const sop of missing.slice(0,50)){
